@@ -1,0 +1,8 @@
+{
+  "name": "Drupal Detection",
+  "conditions": ["drupal", "sites/default"],
+  "meta_tags": [
+    "Technology: Drupal",
+    "SecurityRisk: Check for Known Vulnerabilities"
+  ]
+}

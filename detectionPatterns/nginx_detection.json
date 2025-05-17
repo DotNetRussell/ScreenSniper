@@ -1,0 +1,7 @@
+{
+  "name": "Nginx Detection",
+  "conditions": ["nginx"],
+  "meta_tags": [
+    "Technology: Nginx"
+  ]
+}

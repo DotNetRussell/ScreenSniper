@@ -1,0 +1,9 @@
+{
+  "name": "WordPress Detection",
+  "conditions": ["wordpress", "wp-content", "wp-admin"],
+  "negative_conditions": ["allow", "disallow", "site-map"],
+  "meta_tags": [
+    "Technology: WordPress",
+    "SecurityRisk: Check for Known Vulnerabilities"
+  ]
+}

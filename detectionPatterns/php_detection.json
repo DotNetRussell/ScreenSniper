@@ -1,0 +1,9 @@
+{
+  "name": "PHP Detection",
+  "conditions": [".php", "php fatal", "php version"],
+  "negative_conditions": ["allow","disallow","site-map"],
+  "meta_tags": [
+    "PageType: PHP Page",
+    "Technology: PHP"
+  ]
+}

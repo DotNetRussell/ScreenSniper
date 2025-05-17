@@ -1,0 +1,7 @@
+{
+  "name": "IIS Detection",
+  "conditions": ["iis", "microsoft"],
+  "meta_tags": [
+    "Technology: IIS"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Default Apache Page",
+  "conditions": ["apache", "default"],
+  "meta_tags": [
+    "Security: Default Apache Page",
+    "SecurityRisk: Default Configuration"
+  ]
+}

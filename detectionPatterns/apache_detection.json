@@ -1,0 +1,7 @@
+{
+  "name": "Apache Detection",
+  "conditions": ["apache"],
+  "meta_tags": [
+    "Technology: Apache"
+  ]
+}

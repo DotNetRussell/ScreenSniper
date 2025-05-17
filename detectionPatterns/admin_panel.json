@@ -1,0 +1,9 @@
+{
+  "name": "Admin Panel",
+  "conditions": ["admin", "dashboard", "control panel"],
+  "negative_conditions": ["Internal Server Error","misconfiguration","error","default page", "allow", "disallow", "site-map"],
+  "meta_tags": [
+    "PageType: Admin Panel",
+    "SecurityRisk: Potential Unauthorized Access Target"
+  ]
+}

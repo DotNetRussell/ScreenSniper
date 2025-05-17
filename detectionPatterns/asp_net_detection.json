@@ -1,0 +1,7 @@
+{
+  "name": "ASP.NET Detection",
+  "conditions": [".asp", ".aspx", "System.NullReferenceException", "Object reference not set to an instance of an object", "System.Web"],
+  "meta_tags": [
+    "Technology: ASP.NET"
+  ]
+}

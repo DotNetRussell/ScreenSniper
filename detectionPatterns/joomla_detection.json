@@ -1,0 +1,8 @@
+{
+  "name": "Joomla Detection",
+  "conditions": ["joomla"],
+  "meta_tags": [
+    "Technology: Joomla",
+    "SecurityRisk: Check for Known Vulnerabilities"
+  ]
+}

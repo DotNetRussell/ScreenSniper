@@ -1,0 +1,7 @@
+{
+  "name": "Default 403 page",
+  "conditions": ["forbidden", "403"],
+  "meta_tags": [
+    "Security: Default 403 page"
+  ]
+}

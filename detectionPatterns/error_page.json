@@ -1,0 +1,7 @@
+{
+  "name": "Error Page",
+  "conditions": ["error", "exception", "fatal"],
+  "meta_tags": [
+    "PageType: Error Page"
+  ]
+}

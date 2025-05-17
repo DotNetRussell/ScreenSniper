@@ -1,0 +1,8 @@
+{
+  "name": "Server Signature Exposure",
+  "conditions": ["server at", "powered by"],
+  "meta_tags": [
+    "Security: Server Signature Exposed",
+    "SecurityRisk: Information Disclosure"
+  ]
+}

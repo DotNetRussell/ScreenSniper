@@ -1,0 +1,9 @@
+{
+  "name": "SQL Error",
+  "conditions": ["sql"],
+  "negative_conditions": ["php version"],
+  "meta_tags": [
+    "Security: SQL Error",
+    "SecurityRisk: Potential SQL Injection"
+  ]
+}

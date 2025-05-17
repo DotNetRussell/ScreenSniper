@@ -1,0 +1,8 @@
+{
+  "name": "File Upload Form",
+  "conditions": ["upload", "choose file", "file input"],
+  "meta_tags": [
+    "PageType: File Upload Form",
+    "SecurityRisk: Potential File Upload Vulnerability"
+  ]
+}

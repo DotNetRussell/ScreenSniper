@@ -1,0 +1,8 @@
+{
+  "name": "Backup Files in Directory Listing",
+  "conditions": ["index of", "backup", "bak"],
+  "meta_tags": [
+    "Security: Backup File Exposed",
+    "SecurityRisk: Sensitive Data Exposure"
+  ]
+}

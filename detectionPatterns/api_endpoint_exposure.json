@@ -1,0 +1,8 @@
+{
+  "name": "API Endpoint Exposure",
+  "conditions": ["/api", "api/v1", "rest api"],
+  "meta_tags": [
+    "Security: API Endpoint Exposed",
+    "SecurityRisk: Check for Authentication and Authorization"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "name": "Debug Information Exposure",
+  "conditions": ["debug", "debugging"],
+  "meta_tags": [
+    "Security: Debug Information Exposed",
+    "SecurityRisk: Sensitive Information Disclosure"
+  ]
+}

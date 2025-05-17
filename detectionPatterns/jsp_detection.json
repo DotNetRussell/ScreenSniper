@@ -1,0 +1,7 @@
+{
+  "name": "ASP.NET Detection",
+  "conditions": [".asp", ".aspx"],
+  "meta_tags": [
+    "Technology: ASP.NET"
+  ]
+}

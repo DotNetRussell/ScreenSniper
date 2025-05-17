@@ -1,0 +1,9 @@
+{
+  "name": "Database Connection Error",
+  "conditions": ["mysql", "postgres", "database", "connection"],
+  "negative_conditions": ["php version"],
+  "meta_tags": [
+    "Security: Database Connection Error",
+    "SecurityRisk: Information Disclosure"
+  ]
+}

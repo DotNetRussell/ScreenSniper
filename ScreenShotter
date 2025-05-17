@@ -1,0 +1,58 @@
+#!/usr/bin/python3
+import asyncio
+from urllib.parse import urlparse
+import sys
+from playwright.async_api import async_playwright, TimeoutError as PlaywrightTimeoutError
+
+async def take_screenshot(url, index, semaphore):
+    async with semaphore:
+        try:
+            async with async_playwright() as p:
+                browser = await p.chromium.launch(headless=True)
+                page = await browser.new_page(
+                    viewport={'width': 1280, 'height': 720},
+                    user_agent='Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+                )
+                # Ensure URL has scheme
+                if not url.startswith(('http://', 'https://')):
+                    url = f'https://{url}'
+                
+                try:
+                    # Navigate and wait until network is idle
+                    await page.goto(url, wait_until='networkidle', timeout=10000)
+                    # Additional wait for dynamic content
+                    await page.wait_for_timeout(1000)
+                    # Take screenshot
+                    cleanPath = urlparse(url).netloc
+                    await page.screenshot(path=f'{cleanPath}.png', full_page=False)
+                    print(f'Saved screenshot for {url} as {index}.png')
+                except PlaywrightTimeoutError:
+                    print(f'Timeout while loading {url}, skipping...')
+                except Exception as e:
+                    print(f'Error processing {url}: {str(e)}')
+                finally:
+                    await browser.close()
+        except Exception as e:
+            print(f'Failed to process {url}: {str(e)}')
+
+async def main():
+    # Read domains from stdin
+    domains = [line.strip() for line in sys.stdin if line.strip()]
+    if not domains:
+        print("No domains provided.")
+        return
+
+    # Limit concurrent browsers to avoid resource exhaustion
+    semaphore = asyncio.Semaphore(5)
+    
+    # Create tasks for each domain
+    tasks = [
+        take_screenshot(domain, i + 1, semaphore)
+        for i, domain in enumerate(domains)
+    ]
+    
+    # Run tasks concurrently
+    await asyncio.gather(*tasks)
+
+if __name__ == '__main__':
+    asyncio.run(main())

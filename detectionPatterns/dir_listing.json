@@ -1,0 +1,12 @@
+{
+  "name": "Directory Listing",
+  "conditions": ["index of", "parent directory"],
+  "meta_tags": [
+    "PageType: Directory Listing",
+    "Security: Directory Listing Exposed",
+    "SecurityRisk: Sensitive Information Exposure"
+  ],
+  "additional_checks": {
+    "sensitive_extensions": [".bak", ".conf", ".sql", ".log", ".zip", ".tar", ".gz", ".php", ".asp", ".aspx", ".jsp"]
+  }
+}

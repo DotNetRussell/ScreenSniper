@@ -1,0 +1,8 @@
+{
+  "name": "Robots.txt page",
+  "conditions": ["allow", "disallow", "site-map"],
+  "meta_tags": [
+    "PageType: Robots.txt page",
+    "Information: robots.txt page with entries"
+  ]
+}
