@@ -28,7 +28,7 @@ ScreenSniper is a Python-based tool designed for penetration testers to analyze 
 ### Steps
 1. **Clone the Repository**:
    ```
-   git clone https://github.com/yourusername/screensniper.git
+   git clone https://github.com/DotNetRussell/screensniper.git
    cd screensniper
    ```
 
@@ -238,7 +238,7 @@ A Python script that captures screenshots of websites using Playwright. The scri
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/your-repo.git
+   git clone https://github.com/DotNetRussell/ScreenSniper.git
    cd your-repo
    ```
 
