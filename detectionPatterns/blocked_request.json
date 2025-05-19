@@ -1,0 +1,7 @@
+{
+  "name": "Blocked Request",
+  "conditions": ["The request is blocked", "request blocked"],
+  "meta_tags": [
+    "PageType: Possible WAF Blocked Request"
+  ]
+}

@@ -24,7 +24,7 @@ def preprocess_image(image_path, verbose=False):
         print("Image loaded successfully.")
     
     # Resize to a higher resolution to improve text detection
-    scale_factor = 2
+    scale_factor = 4
     img = cv2.resize(img, None, fx=scale_factor, fy=scale_factor, interpolation=cv2.INTER_CUBIC)
     if verbose:
         cv2.imwrite(".debug_resized.png", img)
@@ -186,6 +186,7 @@ def analyze_screenshot(image_path, templates, verbose=False):
         
         # Generate meta tags
         meta_tags = generate_meta_tags(extracted_text, templates)
+        meta_tags.append(f"Extracted Text: {extracted_text}")
         meta_tags.append(f"File Path: {image_path}")
         # Return results
         return extracted_text, meta_tags
