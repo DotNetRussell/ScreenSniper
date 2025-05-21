@@ -1,0 +1,475 @@
+Training model with 8 threads...
+Model trained and saved.
+Text: 404 Not Found
+Predicted: Error Page, Probability: 1.0000
+Matched Words: 404 (1), not (1), found (1)
+Loading saved model...
+Model loaded.
+Text: 500 Internal Server Error
+Predicted: Error Page, Probability: 1.0000
+Matched Words: error (1), server (1), 500 (1), internal (1)
+Loading saved model...
+Model loaded.
+Text: 503 Service Unavailable
+Predicted: Error Page, Probability: 1.0000
+Matched Words: 503 (1), unavailable (1)
+Loading saved model...
+Model loaded.
+Text: 502 Bad Gateway
+Predicted: Error Page, Probability: 0.9986
+Matched Words: 502 (1), gateway (1), bad (1)
+Loading saved model...
+Model loaded.
+Text: 408 Request Timeout
+Predicted: Error Page, Probability: 0.9997
+Matched Words: timeout (1), request (1)
+Loading saved model...
+Model loaded.
+Text: 429 Too Many Requests
+Predicted: Error Page, Probability: 0.9999
+Matched Words: 429 (1)
+Loading saved model...
+Model loaded.
+Text: 401 Unauthorized
+Predicted: Error Page, Probability: 0.7887
+Matched Words: 401 (1), unauthorized (1)
+Loading saved model...
+Model loaded.
+Text: 403 Forbidden
+Predicted: Error Page, Probability: 1.0000
+Matched Words: forbidden (1), 403 (1)
+Loading saved model...
+Model loaded.
+Text: Page Not Found
+Predicted: Error Page, Probability: 1.0000
+Matched Words: not (1), found (1), page (1)
+Loading saved model...
+Model loaded.
+Text: Something Went Wrong
+Predicted: Error Page, Probability: 0.9923
+Matched Words: wrong (1)
+Loading saved model...
+Model loaded.
+Text: Oops! Something Broke
+Predicted: Error Page, Probability: 0.9720
+Matched Words: oops (1), broke (1)
+Loading saved model...
+Model loaded.
+Text: Server Error
+Predicted: Error Page, Probability: 1.0000
+Matched Words: error (1), server (1)
+Loading saved model...
+Model loaded.
+Text: Connection Timed Out
+Predicted: Error Page, Probability: 0.9937
+Matched Words: timed (1), connection (1)
+Loading saved model...
+Model loaded.
+Text: Bad Request
+Predicted: Error Page, Probability: 1.0000
+Matched Words: bad (1), request (1)
+Loading saved model...
+Model loaded.
+Text: Gateway Timeout
+Predicted: Error Page, Probability: 0.7569
+Matched Words: timeout (1), gateway (1)
+Loading saved model...
+Model loaded.
+Text: Service Temporarily Unavailable
+Predicted: Error Page, Probability: 1.0000
+Matched Words: unavailable (1), temporarily (1)
+Loading saved model...
+Model loaded.
+Text: We're Sorry, An Error Occurred
+Predicted: Error Page, Probability: 1.0000
+Matched Words: error (1), sorry (1)
+Loading saved model...
+Model loaded.
+Text: Resource Not Found
+Predicted: Error Page, Probability: 1.0000
+Matched Words: not (1), found (1), resource (1)
+Loading saved model...
+Model loaded.
+Text: Access Denied
+Predicted: Error Page, Probability: 1.0000
+Matched Words: access (1), denied (1)
+Loading saved model...
+Model loaded.
+Text: Internal Error
+Predicted: Error Page, Probability: 1.0000
+Matched Words: error (1), internal (1)
+Loading saved model...
+Model loaded.
+Text: The Server Encountered An Error
+Predicted: Error Page, Probability: 1.0000
+Matched Words: error (1), server (1)
+Loading saved model...
+Model loaded.
+Text: This Page Isn't Working
+Predicted: Error Page, Probability: 0.9998
+Matched Words: page (1), working (1)
+Loading saved model...
+Model loaded.
+Text: Unable To Connect
+Predicted: Error Page, Probability: 0.9997
+Matched Words: connect (1)
+Loading saved model...
+Model loaded.
+Text: Network Error
+Predicted: Error Page, Probability: 1.0000
+Matched Words: error (1)
+Loading saved model...
+Model loaded.
+Text: Something's Not Right
+Predicted: Error Page, Probability: 0.9974
+Matched Words: not (1)
+Loading saved model...
+Model loaded.
+Text: Try Again Later
+Predicted: Error Page, Probability: 0.9465
+Matched Words: try (1)
+Loading saved model...
+Model loaded.
+Text: Whoops! Something Went Wrong
+Predicted: Error Page, Probability: 0.9975
+Matched Words: wrong (1), whoops (1)
+Loading saved model...
+Model loaded.
+Text: Error Loading Page
+Predicted: Error Page, Probability: 1.0000
+Matched Words: error (1), page (1)
+Loading saved model...
+Model loaded.
+Text: The Request Could Not Be Processed
+Predicted: Error Page, Probability: 0.9990
+Matched Words: not (1), request (1)
+Loading saved model...
+Model loaded.
+Text: Server Unavailable
+Predicted: Error Page, Probability: 1.0000
+Matched Words: server (1), unavailable (1)
+Loading saved model...
+Model loaded.
+Text: Page Temporarily Unavailable
+Predicted: Error Page, Probability: 1.0000
+Matched Words: unavailable (1), page (1), temporarily (1)
+Loading saved model...
+Model loaded.
+Text: Unexpected Error
+Predicted: Error Page, Probability: 1.0000
+Matched Words: error (1)
+Loading saved model...
+Model loaded.
+Text: We're Experiencing Technical Difficulties
+Predicted: Error Page, Probability: 0.9766
+Matched Words: technical (1), difficulties (1)
+Loading saved model...
+Model loaded.
+Text: The Page You Requested Was Not Found
+Predicted: Error Page, Probability: 0.9942
+Matched Words: not (1), found (1), page (1)
+Loading saved model...
+Model loaded.
+Text: Database Connection Failed
+Predicted: Error Page, Probability: 1.0000
+Matched Words: failed (1), connection (1)
+Loading saved model...
+Model loaded.
+Text: Invalid Request
+Predicted: Error Page, Probability: 1.0000
+Matched Words: request (1), invalid (1)
+Loading saved model...
+Model loaded.
+Text: Operation Timed Out
+Predicted: Not Error Page, Probability: 0.1380
+Matched Words: timed (1)
+Loading saved model...
+Model loaded.
+Text: Service Down
+Predicted: Error Page, Probability: 1.0000
+Matched Words: down (1)
+Loading saved model...
+Model loaded.
+Text: Maintenance In Progress
+Predicted: Error Page, Probability: 0.9997
+Matched Words: maintenance (1)
+Loading saved model...
+Model loaded.
+Text: Site Under Maintenance
+Predicted: Error Page, Probability: 0.9997
+Matched Words: maintenance (1), site (1)
+Loading saved model...
+Model loaded.
+Text: Permission Denied
+Predicted: Error Page, Probability: 0.9984
+Matched Words: denied (1)
+Loading saved model...
+Model loaded.
+Text: You Don't Have Access To This Page
+Predicted: Error Page, Probability: 0.9386
+Matched Words: access (1), page (1)
+Loading saved model...
+Model loaded.
+Text: Request Failed
+Predicted: Error Page, Probability: 1.0000
+Matched Words: failed (1), request (1)
+Loading saved model...
+Model loaded.
+Text: Server Overloaded
+Predicted: Error Page, Probability: 0.9933
+Matched Words: server (1), overloaded (1)
+Loading saved model...
+Model loaded.
+Text: Too Many Connections
+Predicted: Not Error Page, Probability: 0.4010
+Matched Words: connections (1)
+Loading saved model...
+Model loaded.
+Text: Failed To Load Resource
+Predicted: Error Page, Probability: 1.0000
+Matched Words: failed (1), resource (1)
+Loading saved model...
+Model loaded.
+Text: This Page Is Currently Unavailable
+Predicted: Error Page, Probability: 0.9253
+Matched Words: unavailable (1), page (1), currently (1)
+Loading saved model...
+Model loaded.
+Text: Something Crashed
+Predicted: Not Error Page, Probability: 0.4472
+Matched Words: crashed (1)
+Loading saved model...
+Model loaded.
+Text: Error 404: Page Missing
+Predicted: Error Page, Probability: 1.0000
+Matched Words: error (1), 404 (1), missing (1), page (1)
+Loading saved model...
+Model loaded.
+Text: We're Working On It
+Predicted: Error Page, Probability: 0.9993
+Matched Words: working (1)
+Loading saved model...
+Model loaded.
+Text: The Server Is Down
+Predicted: Error Page, Probability: 0.9993
+Matched Words: server (1), down (1)
+Loading saved model...
+Model loaded.
+Text: Could Not Complete Your Request
+Predicted: Error Page, Probability: 0.9999
+Matched Words: not (1), request (1)
+Loading saved model...
+Model loaded.
+Text: An Unexpected Error Has Occurred
+Predicted: Error Page, Probability: 0.9996
+Matched Words: error (1)
+Loading saved model...
+Model loaded.
+Text: No Such Page Exists
+Predicted: Not Error Page, Probability: 0.1860
+Matched Words: page (1), exists (1)
+Loading saved model...
+Model loaded.
+Text: Connection Refused
+Predicted: Error Page, Probability: 1.0000
+Matched Words: connection (1), refused (1)
+Loading saved model...
+Model loaded.
+Text: Server Not Responding
+Predicted: Error Page, Probability: 1.0000
+Matched Words: not (1), server (1)
+Loading saved model...
+Model loaded.
+Text: The Website Is Down For Maintenance
+Predicted: Error Page, Probability: 0.9999
+Matched Words: website (1), maintenance (1), down (1)
+Loading saved model...
+Model loaded.
+Text: Please Try Again
+Predicted: Error Page, Probability: 0.9465
+Matched Words: try (1)
+Loading saved model...
+Model loaded.
+Text: Error Processing Request
+Predicted: Error Page, Probability: 1.0000
+Matched Words: error (1), request (1)
+Loading saved model...
+Model loaded.
+Text: File Not Found
+Predicted: Error Page, Probability: 1.0000
+Matched Words: not (1), found (1)
+Loading saved model...
+Model loaded.
+Text: Session Expired
+Predicted: Error Page, Probability: 1.0000
+Matched Words: session (1), expired (1)
+Loading saved model...
+Model loaded.
+Text: Authentication Required
+Predicted: Error Page, Probability: 0.9996
+Matched Words: authentication (1), required (1)
+Loading saved model...
+Model loaded.
+Text: Invalid URL
+Predicted: Not Error Page, Probability: 0.0142
+Matched Words: invalid (1), url (1)
+Loading saved model...
+Model loaded.
+Text: The Site Is Experiencing Issues
+Predicted: Error Page, Probability: 0.7101
+Matched Words: site (1), issues (1)
+Loading saved model...
+Model loaded.
+Text: Server Misconfiguration
+Predicted: Error Page, Probability: 0.7602
+Matched Words: server (1), misconfiguration (1)
+Loading saved model...
+Model loaded.
+Text: We're Fixing Things Up
+Predicted: Error Page, Probability: 0.9986
+Matched Words: fixing (1)
+Loading saved model...
+Model loaded.
+Text: This Page Cannot Be Displayed
+Predicted: Error Page, Probability: 0.9360
+Matched Words: page (1), displayed (1)
+Loading saved model...
+Model loaded.
+Text: Request Cannot Be Fulfilled
+Predicted: Error Page, Probability: 0.9871
+Matched Words: request (1)
+Loading saved model...
+Model loaded.
+Text: System Error
+Predicted: Error Page, Probability: 1.0000
+Matched Words: error (1), system (1)
+Loading saved model...
+Model loaded.
+Text: Something Failed On Our End
+Predicted: Error Page, Probability: 0.9865
+Matched Words: failed (1)
+Loading saved model...
+Model loaded.
+Text: The Server Is Temporarily Busy
+Predicted: Error Page, Probability: 0.9415
+Matched Words: server (1), busy (1), temporarily (1)
+Loading saved model...
+Model loaded.
+Text: Access Restricted
+Predicted: Error Page, Probability: 1.0000
+Matched Words: access (1), restricted (1)
+Loading saved model...
+Model loaded.
+Text: Error Communicating With Server
+Predicted: Error Page, Probability: 1.0000
+Matched Words: error (1), server (1)
+Loading saved model...
+Model loaded.
+Text: Page Load Failed
+Predicted: Error Page, Probability: 1.0000
+Matched Words: failed (1), page (1)
+Loading saved model...
+Model loaded.
+Text: The Resource Is Unavailable
+Predicted: Error Page, Probability: 0.9994
+Matched Words: unavailable (1), resource (1)
+Loading saved model...
+Model loaded.
+Text: Technical Issue Detected
+Predicted: Error Page, Probability: 0.9998
+Matched Words: technical (1), issue (1)
+Loading saved model...
+Model loaded.
+Text: Website Offline
+Predicted: Error Page, Probability: 0.9905
+Matched Words: website (1), offline (1)
+Loading saved model...
+Model loaded.
+Text: Unable To Process Your Request
+Predicted: Error Page, Probability: 0.8816
+Matched Words: request (1)
+Loading saved model...
+Model loaded.
+Text: Server Capacity Exceeded
+Predicted: Error Page, Probability: 0.9614
+Matched Words: server (1), capacity (1), exceeded (1)
+Loading saved model...
+Model loaded.
+Text: Content Not Available
+Predicted: Error Page, Probability: 0.9974
+Matched Words: not (1)
+Loading saved model...
+Model loaded.
+Text: An Error Was Encountered
+Predicted: Error Page, Probability: 1.0000
+Matched Words: error (1)
+Loading saved model...
+Model loaded.
+Text: Check Your Connection
+Predicted: Error Page, Probability: 0.7406
+Matched Words: connection (1), check (1)
+Loading saved model...
+Model loaded.
+Text: The Page Could Not Be Loaded
+Predicted: Error Page, Probability: 0.8503
+Matched Words: not (1), page (1)
+Loading saved model...
+Model loaded.
+Text: Server Response Error
+Predicted: Error Page, Probability: 1.0000
+Matched Words: error (1), server (1)
+Loading saved model...
+Model loaded.
+Text: This Request Is Invalid
+Predicted: Error Page, Probability: 0.9918
+Matched Words: request (1), invalid (1)
+Loading saved model...
+Model loaded.
+Text: We're Having Some Trouble
+Predicted: Error Page, Probability: 0.9935
+Matched Words: trouble (1)
+Loading saved model...
+Model loaded.
+Text: Data Not Found
+Predicted: Error Page, Probability: 1.0000
+Matched Words: not (1), found (1)
+Loading saved model...
+Model loaded.
+Text: Operation Failed
+Predicted: Error Page, Probability: 1.0000
+Matched Words: failed (1)
+Loading saved model...
+Model loaded.
+Text: The System Is Down
+Predicted: Error Page, Probability: 0.9881
+Matched Words: system (1), down (1)
+Loading saved model...
+Model loaded.
+Text: Something Is Broken
+Predicted: Error Page, Probability: 0.6772
+Matched Words: broken (1)
+Loading saved model...
+Model loaded.
+Text: Please Refresh The Page
+Predicted: Not Error Page, Probability: 0.1762
+Matched Words: page (1), refresh (1)
+Loading saved model...
+Model loaded.
+Text: Error: Service Disruption
+Predicted: Error Page, Probability: 1.0000
+Matched Words: error (1)
+Loading saved model...
+Model loaded.
+Text: We Couldn't Find That Page
+Predicted: Not Error Page, Probability: 0.1412
+Matched Words: page (1)
+Loading saved model...
+Model loaded.
+Text: Temporary Server Issue
+Predicted: Error Page, Probability: 0.9886
+Matched Words: server (1), issue (1)
+Loading saved model...
+Model loaded.
+Text: The Connection Was Reset
+Predicted: Not Error Page, Probability: 0.3401
+Matched Words: connection (1), reset (1)

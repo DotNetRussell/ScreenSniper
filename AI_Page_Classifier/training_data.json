@@ -1,0 +1,3698 @@
+[
+    {
+        "Text": "401 Unauthorized Error",
+        "Target": 1
+    },
+    {
+        "Text": "Too Many Connections Failure",
+        "Target": 1
+    },
+    {
+        "Text": "We're Working On It Now",
+        "Target": 1
+    },
+    {
+        "Text": "No Such Page Exists Error",
+        "Target": 1
+    },
+    {
+        "Text": "Authentication Required 401",
+        "Target": 1
+    },
+    {
+        "Text": "Invalid URL Error 400",
+        "Target": 1
+    },
+    {
+        "Text": "Website Offline Temporarily",
+        "Target": 1
+    },
+    {
+        "Text": "Something Is Broken Sorry",
+        "Target": 1
+    },
+    {
+        "Text": "Please Refresh The Page Error",
+        "Target": 1
+    },
+    {
+        "Text": "We Couldn't Find That Page 404",
+        "Target": 1
+    },
+    {
+        "Text": "401 Unauthorized Access",
+        "Target": 1
+    },
+    {
+        "Text": "Something Went Wrong Error",
+        "Target": 1
+    },
+    {
+        "Text": "Oops Something Broke Down",
+        "Target": 1
+    },
+    {
+        "Text": "Connection Timed Out Error",
+        "Target": 1
+    },
+    {
+        "Text": "Service Temporarily Unavailable Now",
+        "Target": 1
+    },
+    {
+        "Text": "This Page Isn't Working Sorry",
+        "Target": 1
+    },
+    {
+        "Text": "Unable To Connect Network",
+        "Target": 1
+    },
+    {
+        "Text": "Whoops Something Went Wrong",
+        "Target": 1
+    },
+    {
+        "Text": "Server Unavailable Error 503",
+        "Target": 1
+    },
+    {
+        "Text": "Experiencing Technical Difficulties",
+        "Target": 1
+    },
+    {
+        "Text": "Database Connection Failed",
+        "Target": 1
+    },
+    {
+        "Text": "Operation Timed Out Failure",
+        "Target": 1
+    },
+    {
+        "Text": "Service Down Temporarily",
+        "Target": 1
+    },
+    {
+        "Text": "Maintenance In Progress Now",
+        "Target": 1
+    },
+    {
+        "Text": "Site Under Maintenance Error",
+        "Target": 1
+    },
+    {
+        "Text": "Server Overloaded Try Later",
+        "Target": 1
+    },
+    {
+        "Text": "Too Many Connections Error",
+        "Target": 1
+    },
+    {
+        "Text": "Page Currently Unavailable",
+        "Target": 1
+    },
+    {
+        "Text": "Something Crashed Sorry",
+        "Target": 1
+    },
+    {
+        "Text": "We're Working On It Error",
+        "Target": 1
+    },
+    {
+        "Text": "The Server Is Down Now",
+        "Target": 1
+    },
+    {
+        "Text": "No Such Page Exists Error",
+        "Target": 1
+    },
+    {
+        "Text": "Connection Refused Network",
+        "Target": 1
+    },
+    {
+        "Text": "Website Down For Maintenance",
+        "Target": 1
+    },
+    {
+        "Text": "Session Expired Please Login",
+        "Target": 1
+    },
+    {
+        "Text": "Authentication Required Error",
+        "Target": 1
+    },
+    {
+        "Text": "Invalid URL Error 400",
+        "Target": 1
+    },
+    {
+        "Text": "Site Experiencing Issues",
+        "Target": 1
+    },
+    {
+        "Text": "Server Misconfiguration Error",
+        "Target": 1
+    },
+    {
+        "Text": "We're Fixing Things Up Now",
+        "Target": 1
+    },
+    {
+        "Text": "Page Cannot Be Displayed",
+        "Target": 1
+    },
+    {
+        "Text": "Something Failed On Our End",
+        "Target": 1
+    },
+    {
+        "Text": "Server Temporarily Busy",
+        "Target": 1
+    },
+    {
+        "Text": "Resource Is Unavailable Error",
+        "Target": 1
+    },
+    {
+        "Text": "Technical Issue Detected",
+        "Target": 1
+    },
+    {
+        "Text": "Website Offline Error",
+        "Target": 1
+    },
+    {
+        "Text": "Server Capacity Exceeded 503",
+        "Target": 1
+    },
+    {
+        "Text": "Check Your Connection Error",
+        "Target": 1
+    },
+    {
+        "Text": "Having Some Trouble Now",
+        "Target": 1
+    },
+    {
+        "Text": "Operation Failed Error",
+        "Target": 1
+    },
+    {
+        "Text": "The System Is Down Error",
+        "Target": 1
+    },
+    {
+        "Text": "Something Is Broken Error",
+        "Target": 1
+    },
+    {
+        "Text": "Please Refresh The Page Error",
+        "Target": 1
+    },
+    {
+        "Text": "Couldn't Find That Page",
+        "Target": 1
+    },
+    {
+        "Text": "Temporary Server Issue 503",
+        "Target": 1
+    },
+    {
+        "Text": "Connection Was Reset Error",
+        "Target": 1
+    },
+    {
+        "Text": "Not Found",
+        "Target": 1
+    },
+    {
+        "Text": "Page Not Found",
+        "Target": 1
+    },
+    {
+        "Text": "404 Not Found Page Missing",
+        "Target": 1
+    },
+    {
+        "Text": "Error 500 Server Failed",
+        "Target": 1
+    },
+    {
+        "Text": "Oops Something Broke 503 Service",
+        "Target": 1
+    },
+    {
+        "Text": "Forbidden Access Denied 403",
+        "Target": 1
+    },
+    {
+        "Text": "Server Error Contact Admin 500",
+        "Target": 1
+    },
+    {
+        "Text": "404 Page Not Found Sorry",
+        "Target": 1
+    },
+    {
+        "Text": "Internal Error 500 Retry",
+        "Target": 1
+    },
+    {
+        "Text": "Service Unavailable 503",
+        "Target": 1
+    },
+    {
+        "Text": "Broken Link Error 404",
+        "Target": 1
+    },
+    {
+        "Text": "Error Page Load Failed",
+        "Target": 1
+    },
+    {
+        "Text": "502 Bad Gateway Error",
+        "Target": 1
+    },
+    {
+        "Text": "429 Too Many Requests Slow",
+        "Target": 1
+    },
+    {
+        "Text": "Something Wrong Try Again",
+        "Target": 1
+    },
+    {
+        "Text": "503 Maintenance Mode",
+        "Target": 1
+    },
+    {
+        "Text": "404 Resource Not Found",
+        "Target": 1
+    },
+    {
+        "Text": "Server Crashed 500 Error",
+        "Target": 1
+    },
+    {
+        "Text": "Access Forbidden 403 Sorry",
+        "Target": 1
+    },
+    {
+        "Text": "Oops Page Broken 404",
+        "Target": 1
+    },
+    {
+        "Text": "500 Internal Server Error",
+        "Target": 1
+    },
+    {
+        "Text": "Rate Limit 429 Exceeded",
+        "Target": 1
+    },
+    {
+        "Text": "404 Error Page Not Found",
+        "Target": 1
+    },
+    {
+        "Text": "Server Error 500 Try Later",
+        "Target": 1
+    },
+    {
+        "Text": "503 Service Down Now",
+        "Target": 1
+    },
+    {
+        "Text": "Forbidden 403 Access Blocked",
+        "Target": 1
+    },
+    {
+        "Text": "502 Error Bad Gateway",
+        "Target": 1
+    },
+    {
+        "Text": "429 Rate Limit Reached",
+        "Target": 1
+    },
+    {
+        "Text": "Something Failed 500 Error",
+        "Target": 1
+    },
+    {
+        "Text": "404 Missing Resource",
+        "Target": 1
+    },
+    {
+        "Text": "Oops Error 503 Unavailable",
+        "Target": 1
+    },
+    {
+        "Text": "500 Server Crash Contact Us",
+        "Target": 1
+    },
+    {
+        "Text": "403 Access Denied No Entry",
+        "Target": 1
+    },
+    {
+        "Text": "404 Not Found Try Again",
+        "Target": 1
+    },
+    {
+        "Text": "502 Gateway Error Retry",
+        "Target": 1
+    },
+    {
+        "Text": "429 Too Many Attempts",
+        "Target": 1
+    },
+    {
+        "Text": "503 Maintenance In Progress",
+        "Target": 1
+    },
+    {
+        "Text": "500 Internal Error Sorry",
+        "Target": 1
+    },
+    {
+        "Text": "404 Page Gone Missing",
+        "Target": 1
+    },
+    {
+        "Text": "Server Error 500 Admin Alert",
+        "Target": 1
+    },
+    {
+        "Text": "403 Forbidden No Access",
+        "Target": 1
+    },
+    {
+        "Text": "502 Bad Response Error",
+        "Target": 1
+    },
+    {
+        "Text": "429 Rate Exceeded Slow Down",
+        "Target": 1
+    },
+    {
+        "Text": "503 Service Offline",
+        "Target": 1
+    },
+    {
+        "Text": "404 Error Resource Gone",
+        "Target": 1
+    },
+    {
+        "Text": "500 Server Failed Now",
+        "Target": 1
+    },
+    {
+        "Text": "Oops 503 Broken Service",
+        "Target": 1
+    },
+    {
+        "Text": "403 Denied Access Restricted",
+        "Target": 1
+    },
+    {
+        "Text": "502 Error Gateway Down",
+        "Target": 1
+    },
+    {
+        "Text": "429 Limited Requests",
+        "Target": 1
+    },
+    {
+        "Text": "404 Not Found Page Error",
+        "Target": 1
+    },
+    {
+        "Text": "500 Internal Crash",
+        "Target": 1
+    },
+    {
+        "Text": "Error 404 Page Lost Sorry",
+        "Target": 1
+    },
+    {
+        "Text": "500 Server Error Contact",
+        "Target": 1
+    },
+    {
+        "Text": "503 Unavailable Service",
+        "Target": 1
+    },
+    {
+        "Text": "403 Forbidden Entry Block",
+        "Target": 1
+    },
+    {
+        "Text": "502 Bad Gateway Failed",
+        "Target": 1
+    },
+    {
+        "Text": "429 Too Many Tries",
+        "Target": 1
+    },
+    {
+        "Text": "404 Resource Missing Error",
+        "Target": 1
+    },
+    {
+        "Text": "500 Crash Error Sorry",
+        "Target": 1
+    },
+    {
+        "Text": "503 Service Broke Now",
+        "Target": 1
+    },
+    {
+        "Text": "403 No Access Denied",
+        "Target": 1
+    },
+    {
+        "Text": "502 Gateway Error Oops",
+        "Target": 1
+    },
+    {
+        "Text": "429 Rate Limit Broken",
+        "Target": 1
+    },
+    {
+        "Text": "404 Page Not Here Error",
+        "Target": 1
+    },
+    {
+        "Text": "500 Server Down Sorry",
+        "Target": 1
+    },
+    {
+        "Text": "503 Offline Maintenance",
+        "Target": 1
+    },
+    {
+        "Text": "403 Access Blocked Now",
+        "Target": 1
+    },
+    {
+        "Text": "502 Error Bad Link",
+        "Target": 1
+    },
+    {
+        "Text": "429 Exceeded Tries",
+        "Target": 1
+    },
+    {
+        "Text": "404 Lost Page Error",
+        "Target": 1
+    },
+    {
+        "Text": "500 Failed Server",
+        "Target": 1
+    },
+    {
+        "Text": "503 Service Not Found",
+        "Target": 1
+    },
+    {
+        "Text": "403 Denied Forbidden",
+        "Target": 1
+    },
+    {
+        "Text": "502 Gateway Failed",
+        "Target": 1
+    },
+    {
+        "Text": "429 Too Fast Requests",
+        "Target": 1
+    },
+    {
+        "Text": "404 Error Gone Page",
+        "Target": 1
+    },
+    {
+        "Text": "500 Crashed Internal",
+        "Target": 1
+    },
+    {
+        "Text": "503 Broken Unavailable",
+        "Target": 1
+    },
+    {
+        "Text": "403 No Entry Error",
+        "Target": 1
+    },
+    {
+        "Text": "502 Bad Gateway Sorry",
+        "Target": 1
+    },
+    {
+        "Text": "429 Limited Access",
+        "Target": 1
+    },
+    {
+        "Text": "404 Page Missing Sorry",
+        "Target": 1
+    },
+    {
+        "Text": "500 Error Server Down",
+        "Target": 1
+    },
+    {
+        "Text": "503 Service Crashed",
+        "Target": 1
+    },
+    {
+        "Text": "403 Forbidden Block",
+        "Target": 1
+    },
+    {
+        "Text": "502 Error Gateway",
+        "Target": 1
+    },
+    {
+        "Text": "429 Rate Limit Sorry",
+        "Target": 1
+    },
+    {
+        "Text": "Error 404 Resource Unavailable",
+        "Target": 1
+    },
+    {
+        "Text": "500 Server Issue Sorry",
+        "Target": 1
+    },
+    {
+        "Text": "503 Service Temporarily Down",
+        "Target": 1
+    },
+    {
+        "Text": "403 Access Not Allowed",
+        "Target": 1
+    },
+    {
+        "Text": "502 Gateway Issue",
+        "Target": 1
+    },
+    {
+        "Text": "429 Request Limit Exceeded",
+        "Target": 1
+    },
+    {
+        "Text": "Welcome to Home Page",
+        "Target": 0
+    },
+    {
+        "Text": "Buy Products Online Now",
+        "Target": 0
+    },
+    {
+        "Text": "Learn About Services Offer",
+        "Target": 0
+    },
+    {
+        "Text": "Contact Us for Info",
+        "Target": 0
+    },
+    {
+        "Text": "News Updates Events",
+        "Target": 0
+    },
+    {
+        "Text": "Product Catalog Browse",
+        "Target": 0
+    },
+    {
+        "Text": "About Company Team",
+        "Target": 0
+    },
+    {
+        "Text": "Service Plans Available",
+        "Target": 0
+    },
+    {
+        "Text": "Home Great Deals Now",
+        "Target": 0
+    },
+    {
+        "Text": "Info New Products",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Latest Collection",
+        "Target": 0
+    },
+    {
+        "Text": "Subscribe Newsletter",
+        "Target": 0
+    },
+    {
+        "Text": "Blog Latest Trends",
+        "Target": 0
+    },
+    {
+        "Text": "Sign Up Free Trial",
+        "Target": 0
+    },
+    {
+        "Text": "Explore Features Now",
+        "Target": 0
+    },
+    {
+        "Text": "Customer Support Contact",
+        "Target": 0
+    },
+    {
+        "Text": "Product Reviews Ratings",
+        "Target": 0
+    },
+    {
+        "Text": "Homepage Special Offers",
+        "Target": 0
+    },
+    {
+        "Text": "Learn More About Us",
+        "Target": 0
+    },
+    {
+        "Text": "Buy Tickets Events",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Online Deals",
+        "Target": 0
+    },
+    {
+        "Text": "Welcome Explore Site",
+        "Target": 0
+    },
+    {
+        "Text": "Product Info Browse",
+        "Target": 0
+    },
+    {
+        "Text": "Contact Support Team",
+        "Target": 0
+    },
+    {
+        "Text": "Newsletter Sign Up Now",
+        "Target": 0
+    },
+    {
+        "Text": "Blog Post New Ideas",
+        "Target": 0
+    },
+    {
+        "Text": "Services Offer Details",
+        "Target": 0
+    },
+    {
+        "Text": "Home Page Features",
+        "Target": 0
+    },
+    {
+        "Text": "About Our Mission",
+        "Target": 0
+    },
+    {
+        "Text": "Buy Now Save More",
+        "Target": 0
+    },
+    {
+        "Text": "Customer Reviews Shop",
+        "Target": 0
+    },
+    {
+        "Text": "Subscribe Updates",
+        "Target": 0
+    },
+    {
+        "Text": "Explore Products Today",
+        "Target": 0
+    },
+    {
+        "Text": "Learn Services Info",
+        "Target": 0
+    },
+    {
+        "Text": "Contact Us Free Info",
+        "Target": 0
+    },
+    {
+        "Text": "Homepage New Arrivals",
+        "Target": 0
+    },
+    {
+        "Text": "Blog Trends Today",
+        "Target": 0
+    },
+    {
+        "Text": "Sign Up Offers Now",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Deals Online",
+        "Target": 0
+    },
+    {
+        "Text": "Welcome Our Features",
+        "Target": 0
+    },
+    {
+        "Text": "Product Catalog Now",
+        "Target": 0
+    },
+    {
+        "Text": "About Team Mission",
+        "Target": 0
+    },
+    {
+        "Text": "Service Info Browse",
+        "Target": 0
+    },
+    {
+        "Text": "Home Special Deals",
+        "Target": 0
+    },
+    {
+        "Text": "Buy Products Today",
+        "Target": 0
+    },
+    {
+        "Text": "Contact Support Now",
+        "Target": 0
+    },
+    {
+        "Text": "Newsletter Updates",
+        "Target": 0
+    },
+    {
+        "Text": "Blog Post Features",
+        "Target": 0
+    },
+    {
+        "Text": "Sign Up Free Offer",
+        "Target": 0
+    },
+    {
+        "Text": "Welcome Shop Today",
+        "Target": 0
+    },
+    {
+        "Text": "Product Offers Now",
+        "Target": 0
+    },
+    {
+        "Text": "Learn About Deals",
+        "Target": 0
+    },
+    {
+        "Text": "Contact Team Info",
+        "Target": 0
+    },
+    {
+        "Text": "News Events Updates",
+        "Target": 0
+    },
+    {
+        "Text": "Catalog Browse Today",
+        "Target": 0
+    },
+    {
+        "Text": "About Company Info",
+        "Target": 0
+    },
+    {
+        "Text": "Services Available Now",
+        "Target": 0
+    },
+    {
+        "Text": "Home Page Offers",
+        "Target": 0
+    },
+    {
+        "Text": "Buy New Products",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Online Now",
+        "Target": 0
+    },
+    {
+        "Text": "Subscribe Free Info",
+        "Target": 0
+    },
+    {
+        "Text": "Blog New Trends",
+        "Target": 0
+    },
+    {
+        "Text": "Sign Up Today Offer",
+        "Target": 0
+    },
+    {
+        "Text": "Explore Site Features",
+        "Target": 0
+    },
+    {
+        "Text": "Support Contact Us",
+        "Target": 0
+    },
+    {
+        "Text": "Reviews Products Now",
+        "Target": 0
+    },
+    {
+        "Text": "Homepage Deals Today",
+        "Target": 0
+    },
+    {
+        "Text": "Learn More Info",
+        "Target": 0
+    },
+    {
+        "Text": "Buy Events Tickets",
+        "Target": 0
+    },
+    {
+        "Text": "Shop New Arrivals",
+        "Target": 0
+    },
+    {
+        "Text": "Welcome to Our Store",
+        "Target": 0
+    },
+    {
+        "Text": "Browse Product Catalog",
+        "Target": 0
+    },
+    {
+        "Text": "Contact Our Team",
+        "Target": 0
+    },
+    {
+        "Text": "Request Blocked - Cloudfront",
+        "Target": 1
+    },
+    {
+        "Text": "Access Denied by AWS WAF",
+        "Target": 1
+    },
+    {
+        "Text": "403 Forbidden - Security Violation Detected",
+        "Target": 1
+    },
+    {
+        "Text": "Cloudflare Error: Access Blocked",
+        "Target": 1
+    },
+    {
+        "Text": "Firewall Block: Suspicious Request",
+        "Target": 1
+    },
+    {
+        "Text": "429 Too Many Requests - Rate Limit Exceeded",
+        "Target": 1
+    },
+    {
+        "Text": "Imperva SecureSphere: Access Denied",
+        "Target": 1
+    },
+    {
+        "Text": "Request Blocked by Web Application Firewall",
+        "Target": 1
+    },
+    {
+        "Text": "Akamai Security: Forbidden Request",
+        "Target": 1
+    },
+    {
+        "Text": "Error: Malicious Activity Detected",
+        "Target": 1
+    },
+    {
+        "Text": "Access Blocked - Potential Threat",
+        "Target": 1
+    },
+    {
+        "Text": "WAF Protection: Request Denied",
+        "Target": 1
+    },
+    {
+        "Text": "403 Error: Firewall Rule Triggered",
+        "Target": 1
+    },
+    {
+        "Text": "Cloudfront: Suspicious Request Blocked",
+        "Target": 1
+    },
+    {
+        "Text": "Security Error: Access Restricted",
+        "Target": 1
+    },
+    {
+        "Text": "Request Denied by Firewall Policy",
+        "Target": 1
+    },
+    {
+        "Text": "429 Rate Limit - Try Again Later",
+        "Target": 1
+    },
+    {
+        "Text": "AWS WAF: Forbidden Access Detected",
+        "Target": 1
+    },
+    {
+        "Text": "Cloudflare: Access Denied for Security",
+        "Target": 1
+    },
+    {
+        "Text": "Incident ID: Request Blocked by WAF",
+        "Target": 1
+    },
+    {
+        "Text": "Firewall: Malicious Request Stopped",
+        "Target": 1
+    },
+    {
+        "Text": "403 Access Denied - WAF Protection",
+        "Target": 1
+    },
+    {
+        "Text": "Imperva: Suspicious Activity Blocked",
+        "Target": 1
+    },
+    {
+        "Text": "Error: Request Violates Security Rules",
+        "Target": 1
+    },
+    {
+        "Text": "Akamai: Access Blocked by Firewall",
+        "Target": 1
+    },
+    {
+        "Text": "WAF Error: Invalid Request Detected",
+        "Target": 1
+    },
+    {
+        "Text": "Cloudfront Security: Access Denied",
+        "Target": 1
+    },
+    {
+        "Text": "429 Too Many Attempts - Blocked",
+        "Target": 1
+    },
+    {
+        "Text": "AWS WAF: Request Blocked for Safety",
+        "Target": 1
+    },
+    {
+        "Text": "Cloudflare Firewall: Access Restricted",
+        "Target": 1
+    },
+    {
+        "Text": "Security Violation: Request Blocked",
+        "Target": 1
+    },
+    {
+        "Text": "Firewall: Access Denied to Resource",
+        "Target": 1
+    },
+    {
+        "Text": "403 Forbidden: WAF Rule Violation",
+        "Target": 1
+    },
+    {
+        "Text": "Imperva: Request Blocked by Policy",
+        "Target": 1
+    },
+    {
+        "Text": "Error: Suspicious Input Detected",
+        "Target": 1
+    },
+    {
+        "Text": "Akamai Security: Request Denied",
+        "Target": 1
+    },
+    {
+        "Text": "WAF: Access Blocked for Protection",
+        "Target": 1
+    },
+    {
+        "Text": "Cloudfront: Firewall Block Error",
+        "Target": 1
+    },
+    {
+        "Text": "429 Rate Limit Exceeded - Blocked",
+        "Target": 1
+    },
+    {
+        "Text": "AWS WAF: Security Rule Triggered",
+        "Target": 1
+    },
+    {
+        "Text": "Cloudflare: Request Denied by Firewall",
+        "Target": 1
+    },
+    {
+        "Text": "Firewall Error: Access Not Allowed",
+        "Target": 1
+    },
+    {
+        "Text": "403 Error: Blocked by WAF",
+        "Target": 1
+    },
+    {
+        "Text": "Imperva Firewall: Access Denied",
+        "Target": 1
+    },
+    {
+        "Text": "Security Error: Request Blocked",
+        "Target": 1
+    },
+    {
+        "Text": "Akamai: Forbidden by Security Policy",
+        "Target": 1
+    },
+    {
+        "Text": "WAF Protection: Suspicious Request",
+        "Target": 1
+    },
+    {
+        "Text": "Cloudfront: Access Restricted by WAF",
+        "Target": 1
+    },
+    {
+        "Text": "429 Too Many Requests - Firewall",
+        "Target": 1
+    },
+    {
+        "Text": "AWS WAF: Blocked for Security",
+        "Target": 1
+    },
+    {
+        "Text": "Welcome to Our Homepage",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Our Latest Products",
+        "Target": 0
+    },
+    {
+        "Text": "Contact Us for Support",
+        "Target": 0
+    },
+    {
+        "Text": "Browse Our Product Catalog",
+        "Target": 0
+    },
+    {
+        "Text": "Learn About Our Services",
+        "Target": 0
+    },
+    {
+        "Text": "Sign Up for Our Newsletter",
+        "Target": 0
+    },
+    {
+        "Text": "Explore New Features Today",
+        "Target": 0
+    },
+    {
+        "Text": "Buy Now and Save More",
+        "Target": 0
+    },
+    {
+        "Text": "Home Page Special Offers",
+        "Target": 0
+    },
+    {
+        "Text": "About Our Company Mission",
+        "Target": 0
+    },
+    {
+        "Text": "Customer Reviews and Ratings",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Online Deals Now",
+        "Target": 0
+    },
+    {
+        "Text": "Welcome to Our Store",
+        "Target": 0
+    },
+    {
+        "Text": "Product Info and Details",
+        "Target": 0
+    },
+    {
+        "Text": "Contact Our Support Team",
+        "Target": 0
+    },
+    {
+        "Text": "Blog Post Latest Trends",
+        "Target": 0
+    },
+    {
+        "Text": "Services and Plans Available",
+        "Target": 0
+    },
+    {
+        "Text": "Homepage New Arrivals",
+        "Target": 0
+    },
+    {
+        "Text": "Subscribe for Updates",
+        "Target": 0
+    },
+    {
+        "Text": "Explore Our Product Range",
+        "Target": 0
+    },
+    {
+        "Text": "Learn More About Us",
+        "Target": 0
+    },
+    {
+        "Text": "Buy Tickets for Events",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Our Special Deals",
+        "Target": 0
+    },
+    {
+        "Text": "Welcome to Our Features",
+        "Target": 0
+    },
+    {
+        "Text": "Product Catalog Browse Now",
+        "Target": 0
+    },
+    {
+        "Text": "About Our Team and Vision",
+        "Target": 0
+    },
+    {
+        "Text": "Service Info and Support",
+        "Target": 0
+    },
+    {
+        "Text": "Home Page Great Offers",
+        "Target": 0
+    },
+    {
+        "Text": "Buy Products Online Today",
+        "Target": 0
+    },
+    {
+        "Text": "Contact Us for Info",
+        "Target": 0
+    },
+    {
+        "Text": "Newsletter Sign Up Today",
+        "Target": 0
+    },
+    {
+        "Text": "Blog Post New Features",
+        "Target": 0
+    },
+    {
+        "Text": "Sign Up for Free Trial",
+        "Target": 0
+    },
+    {
+        "Text": "Shop New Arrivals Now",
+        "Target": 0
+    },
+    {
+        "Text": "Welcome to Our Site",
+        "Target": 0
+    },
+    {
+        "Text": "Browse Our Latest Offers",
+        "Target": 0
+    },
+    {
+        "Text": "Contact Our Team Today",
+        "Target": 0
+    },
+    {
+        "Text": "News and Events Updates",
+        "Target": 0
+    },
+    {
+        "Text": "Catalog Browse Online",
+        "Target": 0
+    },
+    {
+        "Text": "About Our Company Info",
+        "Target": 0
+    },
+    {
+        "Text": "Services Available Today",
+        "Target": 0
+    },
+    {
+        "Text": "Home Page New Deals",
+        "Target": 0
+    },
+    {
+        "Text": "Buy Our New Products",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Online Specials",
+        "Target": 0
+    },
+    {
+        "Text": "Subscribe for Free Info",
+        "Target": 0
+    },
+    {
+        "Text": "Blog New Trends Today",
+        "Target": 0
+    },
+    {
+        "Text": "Sign Up for Offers",
+        "Target": 0
+    },
+    {
+        "Text": "Explore Site Features",
+        "Target": 0
+    },
+    {
+        "Text": "Support Contact Us Now",
+        "Target": 0
+    },
+    {
+        "Text": "Apache2 Ubuntu Default Page",
+        "Target": 1
+    },
+    {
+        "Text": "404 Not Found - Apache Server",
+        "Target": 1
+    },
+    {
+        "Text": "403 Forbidden - Apache Error",
+        "Target": 1
+    },
+    {
+        "Text": "Apache Server Error 500",
+        "Target": 1
+    },
+    {
+        "Text": "It works! Apache Default Page",
+        "Target": 1
+    },
+    {
+        "Text": "Apache Configuration Error",
+        "Target": 1
+    },
+    {
+        "Text": "Access Denied - Apache 403",
+        "Target": 1
+    },
+    {
+        "Text": "Apache2 Default Server Page",
+        "Target": 1
+    },
+    {
+        "Text": "404 Page Not Found - Apache",
+        "Target": 1
+    },
+    {
+        "Text": "500 Internal Server Error - Apache",
+        "Target": 1
+    },
+    {
+        "Text": "Apache Error: Resource Not Found",
+        "Target": 1
+    },
+    {
+        "Text": "Forbidden Access - Apache Server",
+        "Target": 1
+    },
+    {
+        "Text": "Apache2 Test Page",
+        "Target": 1
+    },
+    {
+        "Text": "Error 404 - Apache Web Server",
+        "Target": 1
+    },
+    {
+        "Text": "Apache: Access Restricted 403",
+        "Target": 1
+    },
+    {
+        "Text": "500 Server Error - Apache2",
+        "Target": 1
+    },
+    {
+        "Text": "Apache: Page Not Found 404",
+        "Target": 1
+    },
+    {
+        "Text": "403 Error - Apache Access Denied",
+        "Target": 1
+    },
+    {
+        "Text": "Apache Default Welcome Page",
+        "Target": 1
+    },
+    {
+        "Text": "500 Error - Apache Misconfiguration",
+        "Target": 1
+    },
+    {
+        "Text": "Apache2: Forbidden Resource",
+        "Target": 1
+    },
+    {
+        "Text": "404 Error - Apache Server",
+        "Target": 1
+    },
+    {
+        "Text": "Apache: Internal Error 500",
+        "Target": 1
+    },
+    {
+        "Text": "Access Forbidden - Apache 403",
+        "Target": 1
+    },
+    {
+        "Text": "Apache2 Default Configuration",
+        "Target": 1
+    },
+    {
+        "Text": "404 Not Found - Apache2 Error",
+        "Target": 1
+    },
+    {
+        "Text": "500 Server Failure - Apache",
+        "Target": 1
+    },
+    {
+        "Text": "Apache Error: Access Denied",
+        "Target": 1
+    },
+    {
+        "Text": "403 Forbidden - Apache2 Server",
+        "Target": 1
+    },
+    {
+        "Text": "Apache: Default Page Enabled",
+        "Target": 1
+    },
+    {
+        "Text": "404 Page Missing - Apache",
+        "Target": 1
+    },
+    {
+        "Text": "500 Internal Error - Apache2",
+        "Target": 1
+    },
+    {
+        "Text": "Apache: Forbidden Access Error",
+        "Target": 1
+    },
+    {
+        "Text": "403 Error - Apache Server",
+        "Target": 1
+    },
+    {
+        "Text": "Apache2: Resource Not Available",
+        "Target": 1
+    },
+    {
+        "Text": "404 Error Page - Apache",
+        "Target": 1
+    },
+    {
+        "Text": "500 Server Error - Apache Config",
+        "Target": 1
+    },
+    {
+        "Text": "Apache: Access Blocked 403",
+        "Target": 1
+    },
+    {
+        "Text": "Apache2 Default Error Page",
+        "Target": 1
+    },
+    {
+        "Text": "404 Not Found - Apache Config",
+        "Target": 1
+    },
+    {
+        "Text": "500 Error - Apache Server Failure",
+        "Target": 1
+    },
+    {
+        "Text": "Apache: Forbidden 403 Error",
+        "Target": 1
+    },
+    {
+        "Text": "403 Access Denied - Apache2",
+        "Target": 1
+    },
+    {
+        "Text": "Apache: Page Not Found Error",
+        "Target": 1
+    },
+    {
+        "Text": "404 Error - Apache Misconfig",
+        "Target": 1
+    },
+    {
+        "Text": "500 Internal Server - Apache",
+        "Target": 1
+    },
+    {
+        "Text": "Apache2: Access Forbidden",
+        "Target": 1
+    },
+    {
+        "Text": "403 Error - Apache Resource",
+        "Target": 1
+    },
+    {
+        "Text": "Apache: Default Server Page",
+        "Target": 1
+    },
+    {
+        "Text": "404 Page Not Found - Apache2",
+        "Target": 1
+    },
+    {
+        "Text": "Welcome to Our Apache Site",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Apache Hosted Products",
+        "Target": 0
+    },
+    {
+        "Text": "Contact Us on Apache Server",
+        "Target": 0
+    },
+    {
+        "Text": "Browse Our Apache Catalog",
+        "Target": 0
+    },
+    {
+        "Text": "Learn About Apache Services",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Site Newsletter Signup",
+        "Target": 0
+    },
+    {
+        "Text": "Explore Apache Site Features",
+        "Target": 0
+    },
+    {
+        "Text": "Buy Now on Apache Server",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Homepage Offers",
+        "Target": 0
+    },
+    {
+        "Text": "About Our Apache Company",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Customer Reviews",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Online Apache Deals",
+        "Target": 0
+    },
+    {
+        "Text": "Welcome to Apache Store",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Product Information",
+        "Target": 0
+    },
+    {
+        "Text": "Contact Apache Support",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Blog Latest Trends",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Services Available",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Homepage Arrivals",
+        "Target": 0
+    },
+    {
+        "Text": "Subscribe Apache Updates",
+        "Target": 0
+    },
+    {
+        "Text": "Explore Apache Products",
+        "Target": 0
+    },
+    {
+        "Text": "Learn More Apache Info",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Event Tickets",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Apache Special Deals",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Site Features",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Product Catalog",
+        "Target": 0
+    },
+    {
+        "Text": "About Apache Team",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Service Info",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Homepage Deals",
+        "Target": 0
+    },
+    {
+        "Text": "Buy Apache Products",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Contact Info",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Newsletter Updates",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Blog Features",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Free Trial Signup",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Apache Arrivals",
+        "Target": 0
+    },
+    {
+        "Text": "Welcome Apache Site",
+        "Target": 0
+    },
+    {
+        "Text": "Browse Apache Offers",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Team Contact",
+        "Target": 0
+    },
+    {
+        "Text": "Apache News Updates",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Catalog Browse",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Company Info",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Services Today",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Homepage New",
+        "Target": 0
+    },
+    {
+        "Text": "Buy Apache New Products",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Apache Specials",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Free Info",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Blog Trends",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Offer Signup",
+        "Target": 0
+    },
+    {
+        "Text": "Explore Apache Features",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Support Contact",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Product Reviews",
+        "Target": 0
+    },
+    {
+        "Text": "Apache Tomcat Default Page",
+        "Target": 1
+    },
+    {
+        "Text": "404 Not Found - Tomcat Server",
+        "Target": 1
+    },
+    {
+        "Text": "403 Access Denied - Tomcat",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat Error 500",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat Welcome Page",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat Configuration Error",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat 404 Page Not Found",
+        "Target": 1
+    },
+    {
+        "Text": "500 Internal Error - Tomcat",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat: Forbidden Access 403",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat Default Application Page",
+        "Target": 1
+    },
+    {
+        "Text": "Error 404 - Tomcat Server",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat: Server Error 500",
+        "Target": 1
+    },
+    {
+        "Text": "403 Forbidden - Tomcat Error",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat: Resource Not Found",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat Default Error Page",
+        "Target": 1
+    },
+    {
+        "Text": "404 Error - Tomcat Application",
+        "Target": 1
+    },
+    {
+        "Text": "500 Error - Tomcat Server",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat: Access Restricted",
+        "Target": 1
+    },
+    {
+        "Text": "403 Error - Tomcat Server",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat: Page Not Found 404",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat Default Manager Page",
+        "Target": 1
+    },
+    {
+        "Text": "404 Not Found - Tomcat Error",
+        "Target": 1
+    },
+    {
+        "Text": "500 Internal Server - Tomcat",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat: Forbidden 403",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat Error: Access Denied",
+        "Target": 1
+    },
+    {
+        "Text": "403 Access Denied - Tomcat",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat: 404 Resource Missing",
+        "Target": 1
+    },
+    {
+        "Text": "500 Error - Tomcat Config",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat: Default Page Error",
+        "Target": 1
+    },
+    {
+        "Text": "404 Page Not Found - Tomcat",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat: Server Failure 500",
+        "Target": 1
+    },
+    {
+        "Text": "403 Forbidden - Tomcat App",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat: Error 404 Page",
+        "Target": 1
+    },
+    {
+        "Text": "500 Internal Error - Tomcat",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat: Access Forbidden",
+        "Target": 1
+    },
+    {
+        "Text": "403 Error - Tomcat Resource",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat: Default Server Page",
+        "Target": 1
+    },
+    {
+        "Text": "404 Error - Tomcat Misconfig",
+        "Target": 1
+    },
+    {
+        "Text": "500 Server Error - Tomcat",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat: Forbidden Access",
+        "Target": 1
+    },
+    {
+        "Text": "403 Access Denied - Tomcat App",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat: Page Not Found",
+        "Target": 1
+    },
+    {
+        "Text": "404 Not Found - Tomcat Config",
+        "Target": 1
+    },
+    {
+        "Text": "500 Error - Tomcat Failure",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat: 403 Forbidden Error",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat Default Error Page",
+        "Target": 1
+    },
+    {
+        "Text": "404 Page Missing - Tomcat",
+        "Target": 1
+    },
+    {
+        "Text": "500 Server Error - Tomcat App",
+        "Target": 1
+    },
+    {
+        "Text": "Tomcat: Access Denied 403",
+        "Target": 1
+    },
+    {
+        "Text": "403 Error - Tomcat Server",
+        "Target": 1
+    },
+    {
+        "Text": "Welcome to Tomcat Site",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Tomcat Hosted Apps",
+        "Target": 0
+    },
+    {
+        "Text": "Contact Tomcat Support",
+        "Target": 0
+    },
+    {
+        "Text": "Browse Tomcat Catalog",
+        "Target": 0
+    },
+    {
+        "Text": "Learn Tomcat Services",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Newsletter Signup",
+        "Target": 0
+    },
+    {
+        "Text": "Explore Tomcat Features",
+        "Target": 0
+    },
+    {
+        "Text": "Buy on Tomcat Server",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Homepage Offers",
+        "Target": 0
+    },
+    {
+        "Text": "About Tomcat Company",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Customer Reviews",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Tomcat Online Deals",
+        "Target": 0
+    },
+    {
+        "Text": "Welcome Tomcat Store",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Product Info",
+        "Target": 0
+    },
+    {
+        "Text": "Contact Tomcat Team",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Blog Trends",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Services Available",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Homepage Arrivals",
+        "Target": 0
+    },
+    {
+        "Text": "Subscribe Tomcat Updates",
+        "Target": 0
+    },
+    {
+        "Text": "Explore Tomcat Products",
+        "Target": 0
+    },
+    {
+        "Text": "Learn Tomcat Info",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Event Tickets",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Tomcat Deals",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Site Features",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Product Catalog",
+        "Target": 0
+    },
+    {
+        "Text": "About Tomcat Team",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Service Info",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Homepage Deals",
+        "Target": 0
+    },
+    {
+        "Text": "Buy Tomcat Products",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Contact Info",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Newsletter Updates",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Blog Features",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Free Trial",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Tomcat Arrivals",
+        "Target": 0
+    },
+    {
+        "Text": "Welcome Tomcat Site",
+        "Target": 0
+    },
+    {
+        "Text": "Browse Tomcat Offers",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Team Contact",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat News Updates",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Catalog Browse",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Company Info",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Services Today",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Homepage New",
+        "Target": 0
+    },
+    {
+        "Text": "Buy Tomcat Products",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Tomcat Specials",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Free Info",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Blog Trends",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Offer Signup",
+        "Target": 0
+    },
+    {
+        "Text": "Explore Tomcat Features",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Support Contact",
+        "Target": 0
+    },
+    {
+        "Text": "Tomcat Product Reviews",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Default Welcome Page",
+        "Target": 1
+    },
+    {
+        "Text": "404 Not Found - IIS Server",
+        "Target": 1
+    },
+    {
+        "Text": "403 Forbidden - IIS Error",
+        "Target": 1
+    },
+    {
+        "Text": "IIS Error 500 Internal",
+        "Target": 1
+    },
+    {
+        "Text": "IIS 7.5 Default Page",
+        "Target": 1
+    },
+    {
+        "Text": "IIS Configuration Error",
+        "Target": 1
+    },
+    {
+        "Text": "403 Access Denied - IIS",
+        "Target": 1
+    },
+    {
+        "Text": "IIS 404 Page Not Found",
+        "Target": 1
+    },
+    {
+        "Text": "500 Server Error - IIS",
+        "Target": 1
+    },
+    {
+        "Text": "IIS: Forbidden Access 403",
+        "Target": 1
+    },
+    {
+        "Text": "IIS Default Server Page",
+        "Target": 1
+    },
+    {
+        "Text": "Error 404 - IIS Web Server",
+        "Target": 1
+    },
+    {
+        "Text": "IIS: Server Error 500",
+        "Target": 1
+    },
+    {
+        "Text": "403 Error - IIS Forbidden",
+        "Target": 1
+    },
+    {
+        "Text": "IIS: Resource Not Found",
+        "Target": 1
+    },
+    {
+        "Text": "IIS Default Error Page",
+        "Target": 1
+    },
+    {
+        "Text": "404 Error - IIS Application",
+        "Target": 1
+    },
+    {
+        "Text": "500 Error - IIS Server",
+        "Target": 1
+    },
+    {
+        "Text": "IIS: Access Restricted",
+        "Target": 1
+    },
+    {
+        "Text": "403 Error - IIS Server",
+        "Target": 1
+    },
+    {
+        "Text": "IIS: Page Not Found 404",
+        "Target": 1
+    },
+    {
+        "Text": "IIS Default Web Page",
+        "Target": 1
+    },
+    {
+        "Text": "404 Not Found - IIS Error",
+        "Target": 1
+    },
+    {
+        "Text": "500 Internal Server - IIS",
+        "Target": 1
+    },
+    {
+        "Text": "IIS: Forbidden 403",
+        "Target": 1
+    },
+    {
+        "Text": "IIS Error: Access Denied",
+        "Target": 1
+    },
+    {
+        "Text": "403 Access Denied - IIS",
+        "Target": 1
+    },
+    {
+        "Text": "IIS: 404 Resource Missing",
+        "Target": 1
+    },
+    {
+        "Text": "500 Error - IIS Config",
+        "Target": 1
+    },
+    {
+        "Text": "IIS: Default Page Error",
+        "Target": 1
+    },
+    {
+        "Text": "404 Page Not Found - IIS",
+        "Target": 1
+    },
+    {
+        "Text": "IIS: Server Failure 500",
+        "Target": 1
+    },
+    {
+        "Text": "403 Forbidden - IIS App",
+        "Target": 1
+    },
+    {
+        "Text": "IIS: Error 404 Page",
+        "Target": 1
+    },
+    {
+        "Text": "500 Internal Error - IIS",
+        "Target": 1
+    },
+    {
+        "Text": "IIS: Access Forbidden",
+        "Target": 1
+    },
+    {
+        "Text": "403 Error - IIS Resource",
+        "Target": 1
+    },
+    {
+        "Text": "IIS: Default Server Page",
+        "Target": 1
+    },
+    {
+        "Text": "404 Error - IIS Misconfig",
+        "Target": 1
+    },
+    {
+        "Text": "500 Server Error - IIS",
+        "Target": 1
+    },
+    {
+        "Text": "IIS: Forbidden Access",
+        "Target": 1
+    },
+    {
+        "Text": "403 Access Denied - IIS App",
+        "Target": 1
+    },
+    {
+        "Text": "IIS: Page Not Found",
+        "Target": 1
+    },
+    {
+        "Text": "404 Not Found - IIS Config",
+        "Target": 1
+    },
+    {
+        "Text": "500 Error - IIS Failure",
+        "Target": 1
+    },
+    {
+        "Text": "IIS: 403 Forbidden Error",
+        "Target": 1
+    },
+    {
+        "Text": "IIS Default Error Page",
+        "Target": 1
+    },
+    {
+        "Text": "404 Page Missing - IIS",
+        "Target": 1
+    },
+    {
+        "Text": "500 Server Error - IIS App",
+        "Target": 1
+    },
+    {
+        "Text": "IIS: Access Denied 403",
+        "Target": 1
+    },
+    {
+        "Text": "403 Error - IIS Server",
+        "Target": 1
+    },
+    {
+        "Text": "Welcome to IIS Site",
+        "Target": 0
+    },
+    {
+        "Text": "Shop IIS Hosted Apps",
+        "Target": 0
+    },
+    {
+        "Text": "Contact IIS Support",
+        "Target": 0
+    },
+    {
+        "Text": "Browse IIS Catalog",
+        "Target": 0
+    },
+    {
+        "Text": "Learn IIS Services",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Newsletter Signup",
+        "Target": 0
+    },
+    {
+        "Text": "Explore IIS Features",
+        "Target": 0
+    },
+    {
+        "Text": "Buy on IIS Server",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Homepage Offers",
+        "Target": 0
+    },
+    {
+        "Text": "About IIS Company",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Customer Reviews",
+        "Target": 0
+    },
+    {
+        "Text": "Shop IIS Online Deals",
+        "Target": 0
+    },
+    {
+        "Text": "Welcome IIS Store",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Product Info",
+        "Target": 0
+    },
+    {
+        "Text": "Contact IIS Team",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Blog Trends",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Services Available",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Homepage Arrivals",
+        "Target": 0
+    },
+    {
+        "Text": "Subscribe IIS Updates",
+        "Target": 0
+    },
+    {
+        "Text": "Explore IIS Products",
+        "Target": 0
+    },
+    {
+        "Text": "Learn IIS Info",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Event Tickets",
+        "Target": 0
+    },
+    {
+        "Text": "Shop IIS Deals",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Site Features",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Product Catalog",
+        "Target": 0
+    },
+    {
+        "Text": "About IIS Team",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Service Info",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Homepage Deals",
+        "Target": 0
+    },
+    {
+        "Text": "Buy IIS Products",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Contact Info",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Newsletter Updates",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Blog Features",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Free Trial",
+        "Target": 0
+    },
+    {
+        "Text": "Shop IIS Arrivals",
+        "Target": 0
+    },
+    {
+        "Text": "Welcome IIS Site",
+        "Target": 0
+    },
+    {
+        "Text": "Browse IIS Offers",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Team Contact",
+        "Target": 0
+    },
+    {
+        "Text": "IIS News Updates",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Catalog Browse",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Company Info",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Services Today",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Homepage New",
+        "Target": 0
+    },
+    {
+        "Text": "Buy IIS Products",
+        "Target": 0
+    },
+    {
+        "Text": "Shop IIS Specials",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Free Info",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Blog Trends",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Offer Signup",
+        "Target": 0
+    },
+    {
+        "Text": "Explore IIS Features",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Support Contact",
+        "Target": 0
+    },
+    {
+        "Text": "IIS Product Reviews",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Fatal Error: Configuration",
+        "Target": 1
+    },
+    {
+        "Text": "404 Not Found - PHP Script",
+        "Target": 1
+    },
+    {
+        "Text": "PHP Parse Error",
+        "Target": 1
+    },
+    {
+        "Text": "500 Internal Error - PHP",
+        "Target": 1
+    },
+    {
+        "Text": "PHP Default Error Page",
+        "Target": 1
+    },
+    {
+        "Text": "PHP: Access Denied 403",
+        "Target": 1
+    },
+    {
+        "Text": "404 Page Not Found - PHP",
+        "Target": 1
+    },
+    {
+        "Text": "PHP Error: Resource Missing",
+        "Target": 1
+    },
+    {
+        "Text": "403 Forbidden - PHP Script",
+        "Target": 1
+    },
+    {
+        "Text": "PHP: Server Error 500",
+        "Target": 1
+    },
+    {
+        "Text": "PHP Notice: Undefined Variable",
+        "Target": 1
+    },
+    {
+        "Text": "404 Error - PHP Application",
+        "Target": 1
+    },
+    {
+        "Text": "500 Error - PHP Server",
+        "Target": 1
+    },
+    {
+        "Text": "PHP: Forbidden Access",
+        "Target": 1
+    },
+    {
+        "Text": "403 Error - PHP Page",
+        "Target": 1
+    },
+    {
+        "Text": "PHP: Page Not Found 404",
+        "Target": 1
+    },
+    {
+        "Text": "PHP Default Script Error",
+        "Target": 1
+    },
+    {
+        "Text": "404 Not Found - PHP Error",
+        "Target": 1
+    },
+    {
+        "Text": "500 Internal Server - PHP",
+        "Target": 1
+    },
+    {
+        "Text": "PHP: Access Restricted",
+        "Target": 1
+    },
+    {
+        "Text": "403 Forbidden - PHP App",
+        "Target": 1
+    },
+    {
+        "Text": "PHP Error: 404 Page",
+        "Target": 1
+    },
+    {
+        "Text": "500 Error - PHP Config",
+        "Target": 1
+    },
+    {
+        "Text": "PHP: Resource Not Found",
+        "Target": 1
+    },
+    {
+        "Text": "404 Error - PHP Server",
+        "Target": 1
+    },
+    {
+        "Text": "PHP: Server Failure 500",
+        "Target": 1
+    },
+    {
+        "Text": "403 Access Denied - PHP",
+        "Target": 1
+    },
+    {
+        "Text": "PHP: Error 404 Not Found",
+        "Target": 1
+    },
+    {
+        "Text": "500 Internal Error - PHP App",
+        "Target": 1
+    },
+    {
+        "Text": "PHP: Forbidden 403 Error",
+        "Target": 1
+    },
+    {
+        "Text": "404 Page Missing - PHP",
+        "Target": 1
+    },
+    {
+        "Text": "PHP Error: Access Denied",
+        "Target": 1
+    },
+    {
+        "Text": "403 Error - PHP Resource",
+        "Target": 1
+    },
+    {
+        "Text": "PHP: Default Error Page",
+        "Target": 1
+    },
+    {
+        "Text": "404 Not Found - PHP Config",
+        "Target": 1
+    },
+    {
+        "Text": "500 Server Error - PHP",
+        "Target": 1
+    },
+    {
+        "Text": "PHP: Access Forbidden",
+        "Target": 1
+    },
+    {
+        "Text": "403 Forbidden - PHP Server",
+        "Target": 1
+    },
+    {
+        "Text": "PHP: Page Not Found",
+        "Target": 1
+    },
+    {
+        "Text": "404 Error - PHP Misconfig",
+        "Target": 1
+    },
+    {
+        "Text": "500 Error - PHP Failure",
+        "Target": 1
+    },
+    {
+        "Text": "PHP: 403 Access Denied",
+        "Target": 1
+    },
+    {
+        "Text": "PHP Default Page Error",
+        "Target": 1
+    },
+    {
+        "Text": "404 Page Not Found - PHP App",
+        "Target": 1
+    },
+    {
+        "Text": "500 Server Error - PHP Script",
+        "Target": 1
+    },
+    {
+        "Text": "PHP: Forbidden Resource",
+        "Target": 1
+    },
+    {
+        "Text": "403 Error - PHP Server",
+        "Target": 1
+    },
+    {
+        "Text": "PHP: 404 Resource Missing",
+        "Target": 1
+    },
+    {
+        "Text": "500 Internal Error - PHP Config",
+        "Target": 1
+    },
+    {
+        "Text": "PHP: Access Denied 403",
+        "Target": 1
+    },
+    {
+        "Text": "Welcome to PHP Site",
+        "Target": 0
+    },
+    {
+        "Text": "Shop PHP Hosted Apps",
+        "Target": 0
+    },
+    {
+        "Text": "Contact PHP Support",
+        "Target": 0
+    },
+    {
+        "Text": "Browse PHP Catalog",
+        "Target": 0
+    },
+    {
+        "Text": "Learn PHP Services",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Newsletter Signup",
+        "Target": 0
+    },
+    {
+        "Text": "Explore PHP Features",
+        "Target": 0
+    },
+    {
+        "Text": "Buy on PHP Server",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Homepage Offers",
+        "Target": 0
+    },
+    {
+        "Text": "About PHP Company",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Customer Reviews",
+        "Target": 0
+    },
+    {
+        "Text": "Shop PHP Online Deals",
+        "Target": 0
+    },
+    {
+        "Text": "Welcome PHP Store",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Product Info",
+        "Target": 0
+    },
+    {
+        "Text": "Contact PHP Team",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Blog Trends",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Services Available",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Homepage Arrivals",
+        "Target": 0
+    },
+    {
+        "Text": "Subscribe PHP Updates",
+        "Target": 0
+    },
+    {
+        "Text": "Explore PHP Products",
+        "Target": 0
+    },
+    {
+        "Text": "Learn PHP Info",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Event Tickets",
+        "Target": 0
+    },
+    {
+        "Text": "Shop PHP Deals",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Site Features",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Product Catalog",
+        "Target": 0
+    },
+    {
+        "Text": "About PHP Team",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Service Info",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Homepage Deals",
+        "Target": 0
+    },
+    {
+        "Text": "Buy PHP Products",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Contact Info",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Newsletter Updates",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Blog Features",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Free Trial",
+        "Target": 0
+    },
+    {
+        "Text": "Shop PHP Arrivals",
+        "Target": 0
+    },
+    {
+        "Text": "Welcome PHP Site",
+        "Target": 0
+    },
+    {
+        "Text": "Browse PHP Offers",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Team Contact",
+        "Target": 0
+    },
+    {
+        "Text": "PHP News Updates",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Catalog Browse",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Company Info",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Services Today",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Homepage New",
+        "Target": 0
+    },
+    {
+        "Text": "Buy PHP Products",
+        "Target": 0
+    },
+    {
+        "Text": "Shop PHP Specials",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Free Info",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Blog Trends",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Offer Signup",
+        "Target": 0
+    },
+    {
+        "Text": "Explore PHP Features",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Support Contact",
+        "Target": 0
+    },
+    {
+        "Text": "PHP Product Reviews",
+        "Target": 0
+    },
+    {
+        "Text": "Python Flask 404 Not Found",
+        "Target": 1
+    },
+    {
+        "Text": "Django Error: Page Not Found",
+        "Target": 1
+    },
+    {
+        "Text": "403 Forbidden - Python Server",
+        "Target": 1
+    },
+    {
+        "Text": "500 Internal Error - Python",
+        "Target": 1
+    },
+    {
+        "Text": "Python Default Error Page",
+        "Target": 1
+    },
+    {
+        "Text": "Python: Access Denied 403",
+        "Target": 1
+    },
+    {
+        "Text": "404 Page Not Found - Python",
+        "Target": 1
+    },
+    {
+        "Text": "Python Error: Resource Missing",
+        "Target": 1
+    },
+    {
+        "Text": "403 Forbidden - Python App",
+        "Target": 1
+    },
+    {
+        "Text": "Python: Server Error 500",
+        "Target": 1
+    },
+    {
+        "Text": "Django: 404 Error Page",
+        "Target": 1
+    },
+    {
+        "Text": "404 Error - Python Application",
+        "Target": 1
+    },
+    {
+        "Text": "500 Error - Python Server",
+        "Target": 1
+    },
+    {
+        "Text": "Python: Forbidden Access",
+        "Target": 1
+    },
+    {
+        "Text": "403 Error - Python Page",
+        "Target": 1
+    },
+    {
+        "Text": "Python: Page Not Found 404",
+        "Target": 1
+    },
+    {
+        "Text": "Flask Default Error Page",
+        "Target": 1
+    },
+    {
+        "Text": "404 Not Found - Python Error",
+        "Target": 1
+    },
+    {
+        "Text": "500 Internal Server - Python",
+        "Target": 1
+    },
+    {
+        "Text": "Python: Access Restricted",
+        "Target": 1
+    },
+    {
+        "Text": "403 Forbidden - Python Script",
+        "Target": 1
+    },
+    {
+        "Text": "Python Error: 404 Page",
+        "Target": 1
+    },
+    {
+        "Text": "500 Error - Python Config",
+        "Target": 1
+    },
+    {
+        "Text": "Python: Resource Not Found",
+        "Target": 1
+    },
+    {
+        "Text": "404 Error - Python Server",
+        "Target": 1
+    },
+    {
+        "Text": "Python: Server Failure 500",
+        "Target": 1
+    },
+    {
+        "Text": "403 Access Denied - Python",
+        "Target": 1
+    },
+    {
+        "Text": "Python: Error 404 Not Found",
+        "Target": 1
+    },
+    {
+        "Text": "500 Internal Error - Python App",
+        "Target": 1
+    },
+    {
+        "Text": "Python: Forbidden 403 Error",
+        "Target": 1
+    },
+    {
+        "Text": "404 Page Missing - Python",
+        "Target": 1
+    },
+    {
+        "Text": "Python Error: Access Denied",
+        "Target": 1
+    },
+    {
+        "Text": "403 Error - Python Resource",
+        "Target": 1
+    },
+    {
+        "Text": "Python: Default Error Page",
+        "Target": 1
+    },
+    {
+        "Text": "404 Not Found - Python Config",
+        "Target": 1
+    },
+    {
+        "Text": "500 Server Error - Python",
+        "Target": 1
+    },
+    {
+        "Text": "Python: Access Forbidden",
+        "Target": 1
+    },
+    {
+        "Text": "403 Forbidden - Python Server",
+        "Target": 1
+    },
+    {
+        "Text": "Python: Page Not Found",
+        "Target": 1
+    },
+    {
+        "Text": "404 Error - Python Misconfig",
+        "Target": 1
+    },
+    {
+        "Text": "500 Error - Python Failure",
+        "Target": 1
+    },
+    {
+        "Text": "Python: 403 Access Denied",
+        "Target": 1
+    },
+    {
+        "Text": "Python Default Page Error",
+        "Target": 1
+    },
+    {
+        "Text": "404 Page Not Found - Python App",
+        "Target": 1
+    },
+    {
+        "Text": "500 Server Error - Python Script",
+        "Target": 1
+    },
+    {
+        "Text": "Python: Forbidden Resource",
+        "Target": 1
+    },
+    {
+        "Text": "403 Error - Python Server",
+        "Target": 1
+    },
+    {
+        "Text": "Python: 404 Resource Missing",
+        "Target": 1
+    },
+    {
+        "Text": "500 Internal Error - Python Config",
+        "Target": 1
+    },
+    {
+        "Text": "Python: Access Denied 403",
+        "Target": 1
+    },
+    {
+        "Text": "Welcome to Python Site",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Python Hosted Apps",
+        "Target": 0
+    },
+    {
+        "Text": "Contact Python Support",
+        "Target": 0
+    },
+    {
+        "Text": "Browse Python Catalog",
+        "Target": 0
+    },
+    {
+        "Text": "Learn Python Services",
+        "Target": 0
+    },
+    {
+        "Text": "Python Newsletter Signup",
+        "Target": 0
+    },
+    {
+        "Text": "Explore Python Features",
+        "Target": 0
+    },
+    {
+        "Text": "Buy on Python Server",
+        "Target": 0
+    },
+    {
+        "Text": "Python Homepage Offers",
+        "Target": 0
+    },
+    {
+        "Text": "About Python Company",
+        "Target": 0
+    },
+    {
+        "Text": "Python Customer Reviews",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Python Online Deals",
+        "Target": 0
+    },
+    {
+        "Text": "Welcome Python Store",
+        "Target": 0
+    },
+    {
+        "Text": "Python Product Info",
+        "Target": 0
+    },
+    {
+        "Text": "Contact Python Team",
+        "Target": 0
+    },
+    {
+        "Text": "Python Blog Trends",
+        "Target": 0
+    },
+    {
+        "Text": "Python Services Available",
+        "Target": 0
+    },
+    {
+        "Text": "Python Homepage Arrivals",
+        "Target": 0
+    },
+    {
+        "Text": "Subscribe Python Updates",
+        "Target": 0
+    },
+    {
+        "Text": "Explore Python Products",
+        "Target": 0
+    },
+    {
+        "Text": "Learn Python Info",
+        "Target": 0
+    },
+    {
+        "Text": "Python Event Tickets",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Python Deals",
+        "Target": 0
+    },
+    {
+        "Text": "Python Site Features",
+        "Target": 0
+    },
+    {
+        "Text": "Python Product Catalog",
+        "Target": 0
+    },
+    {
+        "Text": "About Python Team",
+        "Target": 0
+    },
+    {
+        "Text": "Python Service Info",
+        "Target": 0
+    },
+    {
+        "Text": "Python Homepage Deals",
+        "Target": 0
+    },
+    {
+        "Text": "Buy Python Products",
+        "Target": 0
+    },
+    {
+        "Text": "Python Contact Info",
+        "Target": 0
+    },
+    {
+        "Text": "Python Newsletter Updates",
+        "Target": 0
+    },
+    {
+        "Text": "Python Blog Features",
+        "Target": 0
+    },
+    {
+        "Text": "Python Free Trial",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Python Arrivals",
+        "Target": 0
+    },
+    {
+        "Text": "Welcome Python Site",
+        "Target": 0
+    },
+    {
+        "Text": "Browse Python Offers",
+        "Target": 0
+    },
+    {
+        "Text": "Python Team Contact",
+        "Target": 0
+    },
+    {
+        "Text": "Python News Updates",
+        "Target": 0
+    },
+    {
+        "Text": "Python Catalog Browse",
+        "Target": 0
+    },
+    {
+        "Text": "Python Company Info",
+        "Target": 0
+    },
+    {
+        "Text": "Python Services Today",
+        "Target": 0
+    },
+    {
+        "Text": "Python Homepage New",
+        "Target": 0
+    },
+    {
+        "Text": "Buy Python Products",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Python Specials",
+        "Target": 0
+    },
+    {
+        "Text": "Python Free Info",
+        "Target": 0
+    },
+    {
+        "Text": "Python Blog Trends",
+        "Target": 0
+    },
+    {
+        "Text": "Python Offer Signup",
+        "Target": 0
+    },
+    {
+        "Text": "Explore Python Features",
+        "Target": 0
+    },
+    {
+        "Text": "Python Support Contact",
+        "Target": 0
+    },
+    {
+        "Text": "Python Product Reviews",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Default Welcome Page",
+        "Target": 1
+    },
+    {
+        "Text": "404 Not Found - Nginx Server",
+        "Target": 1
+    },
+    {
+        "Text": "403 Forbidden - Nginx Error",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx Error 500 Internal",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx Default Server Page",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx Configuration Error",
+        "Target": 1
+    },
+    {
+        "Text": "403 Access Denied - Nginx",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx 404 Page Not Found",
+        "Target": 1
+    },
+    {
+        "Text": "500 Server Error - Nginx",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx: Forbidden Access 403",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx Default Error Page",
+        "Target": 1
+    },
+    {
+        "Text": "Error 404 - Nginx Web Server",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx: Server Error 500",
+        "Target": 1
+    },
+    {
+        "Text": "403 Error - Nginx Forbidden",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx: Resource Not Found",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx Default Page Error",
+        "Target": 1
+    },
+    {
+        "Text": "404 Error - Nginx Application",
+        "Target": 1
+    },
+    {
+        "Text": "500 Error - Nginx Server",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx: Access Restricted",
+        "Target": 1
+    },
+    {
+        "Text": "403 Error - Nginx Server",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx: Page Not Found 404",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx Default Web Page",
+        "Target": 1
+    },
+    {
+        "Text": "404 Not Found - Nginx Error",
+        "Target": 1
+    },
+    {
+        "Text": "500 Internal Server - Nginx",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx: Forbidden 403",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx Error: Access Denied",
+        "Target": 1
+    },
+    {
+        "Text": "403 Access Denied - Nginx",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx: 404 Resource Missing",
+        "Target": 1
+    },
+    {
+        "Text": "500 Error - Nginx Config",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx: Default Page Error",
+        "Target": 1
+    },
+    {
+        "Text": "404 Page Not Found - Nginx",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx: Server Failure 500",
+        "Target": 1
+    },
+    {
+        "Text": "403 Forbidden - Nginx App",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx: Error 404 Page",
+        "Target": 1
+    },
+    {
+        "Text": "500 Internal Error - Nginx",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx: Access Forbidden",
+        "Target": 1
+    },
+    {
+        "Text": "403 Error - Nginx Resource",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx: Default Server Page",
+        "Target": 1
+    },
+    {
+        "Text": "404 Error - Nginx Misconfig",
+        "Target": 1
+    },
+    {
+        "Text": "500 Server Error - Nginx",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx: Forbidden Access",
+        "Target": 1
+    },
+    {
+        "Text": "403 Access Denied - Nginx App",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx: Page Not Found",
+        "Target": 1
+    },
+    {
+        "Text": "404 Not Found - Nginx Config",
+        "Target": 1
+    },
+    {
+        "Text": "500 Error - Nginx Failure",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx: 403 Forbidden Error",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx Default Error Page",
+        "Target": 1
+    },
+    {
+        "Text": "404 Page Missing - Nginx",
+        "Target": 1
+    },
+    {
+        "Text": "500 Server Error - Nginx App",
+        "Target": 1
+    },
+    {
+        "Text": "Nginx: Access Denied 403",
+        "Target": 1
+    },
+    {
+        "Text": "403 Error - Nginx Server",
+        "Target": 1
+    },
+    {
+        "Text": "Welcome to Nginx Site",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Nginx Hosted Apps",
+        "Target": 0
+    },
+    {
+        "Text": "Contact Nginx Support",
+        "Target": 0
+    },
+    {
+        "Text": "Browse Nginx Catalog",
+        "Target": 0
+    },
+    {
+        "Text": "Learn Nginx Services",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Newsletter Signup",
+        "Target": 0
+    },
+    {
+        "Text": "Explore Nginx Features",
+        "Target": 0
+    },
+    {
+        "Text": "Buy on Nginx Server",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Homepage Offers",
+        "Target": 0
+    },
+    {
+        "Text": "About Nginx Company",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Customer Reviews",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Nginx Online Deals",
+        "Target": 0
+    },
+    {
+        "Text": "Welcome Nginx Store",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Product Info",
+        "Target": 0
+    },
+    {
+        "Text": "Contact Nginx Team",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Blog Trends",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Services Available",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Homepage Arrivals",
+        "Target": 0
+    },
+    {
+        "Text": "Subscribe Nginx Updates",
+        "Target": 0
+    },
+    {
+        "Text": "Explore Nginx Products",
+        "Target": 0
+    },
+    {
+        "Text": "Learn Nginx Info",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Event Tickets",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Nginx Deals",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Site Features",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Product Catalog",
+        "Target": 0
+    },
+    {
+        "Text": "About Nginx Team",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Service Info",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Homepage Deals",
+        "Target": 0
+    },
+    {
+        "Text": "Buy Nginx Products",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Contact Info",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Newsletter Updates",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Blog Features",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Free Trial",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Nginx Arrivals",
+        "Target": 0
+    },
+    {
+        "Text": "Welcome Nginx Site",
+        "Target": 0
+    },
+    {
+        "Text": "Browse Nginx Offers",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Team Contact",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx News Updates",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Catalog Browse",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Company Info",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Services Today",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Homepage New",
+        "Target": 0
+    },
+    {
+        "Text": "Buy Nginx Products",
+        "Target": 0
+    },
+    {
+        "Text": "Shop Nginx Specials",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Free Info",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Blog Trends",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Offer Signup",
+        "Target": 0
+    },
+    {
+        "Text": "Explore Nginx Features",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Support Contact",
+        "Target": 0
+    },
+    {
+        "Text": "Nginx Product Reviews",
+        "Target": 0
+    }
+]
