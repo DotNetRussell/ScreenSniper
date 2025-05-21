@@ -1,0 +1,7 @@
+{
+  "name": "Default 403 page",
+  "conditions": ["You don't have permission", "Access Denied"],
+  "meta_tags": [
+    "Security: Access denied page"
+  ]
+}

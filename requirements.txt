@@ -1,2 +1,5 @@
 playwright>=1.47.0
-opencv-python pytesseract Pillow numpy
+opencv-python
+pytesseract
+Pillow
+numpy
