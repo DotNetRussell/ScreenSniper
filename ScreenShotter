@@ -24,7 +24,7 @@ async def take_screenshot(url, index, semaphore):
                     await page.wait_for_timeout(1000)
                     # Take screenshot
                     cleanPath = urlparse(url).netloc
-                    await page.screenshot(path=f'{cleanPath}.png', full_page=False)
+                    await page.screenshot(path=f'{cleanPath}.png', full_page=True)
                     print(f'Saved screenshot for {url} as {index}.png')
                 except PlaywrightTimeoutError:
                     print(f'Timeout while loading {url}, skipping...')

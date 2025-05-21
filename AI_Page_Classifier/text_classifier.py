@@ -249,7 +249,7 @@ def main():
         
         is_error, probability, features, matched_words = classifier.predict(ocr_text)
         print(f"Text: {ocr_text}")
-        print(f"Predicted: {'Error Page' if is_error else 'Not Error Page'}, Probability: {probability:.4f}")
+        print(f"Predicted: {'Interesting Page' if is_error else 'Not Interesting Page'}, Probability: {probability:.4f}")
         print(f"Matched Words: {', '.join(matched_words) if matched_words else 'None'}")
     
     except Exception as ex:
