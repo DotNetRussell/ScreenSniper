@@ -12,17 +12,6 @@ import json
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
 import subprocess
-import shutil
-import base64
-
-# Function to check if Tesseract is installed
-def check_tesseract(verbose=False):
-    if not shutil.which("tesseract"):
-        error_msg = "Tesseract OCR is not installed or not in PATH. Install with 'apt-get install tesseract-ocr' (Debian/Ubuntu) and 'pip install pytesseract'."
-        if verbose:
-            print(error_msg)
-        return False, error_msg
-    return True, ""
 
 # Function to preprocess image for OCR
 def preprocess_image(image_path, verbose=False):
@@ -78,11 +67,6 @@ def preprocess_image(image_path, verbose=False):
 
 # Function to extract text from image using Tesseract OCR
 def extract_text(image_path, verbose=False):
-    # Check Tesseract availability
-    tesseract_ok, error_msg = check_tesseract(verbose)
-    if not tesseract_ok:
-        return f"OCR Error: {error_msg}"
-    
     try:
         # Use Pillow to open image for Tesseract
         img = Image.open(image_path)
@@ -195,52 +179,18 @@ def format_output(meta_tags, output_format):
 # Function to call text_classifier.py with OCR'd text
 def run_text_classifier(text, verbose=False):
     try:
-        # Check if text_classifier.py exists
-        classifier_path = os.path.join(os.getcwd(), "AI_Page_Classifier", "text_classifier.py")
-        if not os.path.isfile(classifier_path):
-            if verbose:
-                print("Text classifier script (text_classifier.py) not found in AI_Page_Classifier directory")
-            return {
-                "ClassifierError": "text_classifier.py not found",
-                "Suggestion": "Ensure text_classifier.py is in the AI_Page_Classifier directory"
-            }
-        
         # Escape quotes in text to handle special characters
         escaped_text = text.replace('"', '\\"')
-        cmd = ['python3', classifier_path, escaped_text, '--automation']
+        cmd = ['python3', 'AI_Page_Classifier/text_classifier.py', escaped_text, '--automation']
         if verbose:
-            print(f"Running text classifier command: {' '.join(cmd[:2])} [sanitized text] --automation")
+            print(f"Running text classifier: {' '.join(cmd)}")
         
         result = subprocess.run(
             cmd,
             capture_output=True,
             text=True,
-            check=False  # Don't raise on non-zero exit code
+            check=True
         )
-        
-        # Debug: Log stdout, stderr, and return code in verbose mode
-        if verbose:
-            print(f"Text classifier return code: {result.returncode}")
-            print(f"Text classifier stdout: {result.stdout!r}")
-            print(f"Text classifier stderr: {result.stderr!r}")
-        
-        # Check for subprocess failure
-        if result.returncode != 0:
-            if verbose:
-                print(f"Text classifier failed with exit code {result.returncode}")
-            return {
-                "ClassifierError": f"Subprocess failed with exit code {result.returncode}: {result.stderr}",
-                "Suggestion": "Check text_classifier.py dependencies (model.pt, training_data.json, vocabulary.json)"
-            }
-        
-        # Check if stdout is empty
-        if not result.stdout.strip():
-            if verbose:
-                print("Text classifier produced no output")
-            return {
-                "ClassifierError": "Text classifier produced no output",
-                "Suggestion": "Ensure text_classifier.py is configured correctly"
-            }
         
         # Parse JSON output
         try:
@@ -248,22 +198,17 @@ def run_text_classifier(text, verbose=False):
         except json.JSONDecodeError as e:
             if verbose:
                 print(f"Error parsing text classifier output: {e}")
-            return {
-                "ClassifierError": f"Failed to parse classifier output: {e}",
-                "Suggestion": "Check text_classifier.py for non-JSON output or errors"
-            }
+            return {"ClassifierError": f"Failed to parse classifier output: {e}"}
         
         if "error" in output:
             if verbose:
                 print(f"Text classifier error: {output['error']}")
-            return {
-                "ClassifierError": output['error'],
-                "Suggestion": "Review text_classifier.py configuration or input text"
-            }
+            return {"ClassifierError": output['error']}
         
         # Extract results
         meta_tags = []
-        meta_tags.append(f"Interesting Page: {output.get('is_interesting', False)}")
+        if output.get("is_interesting", False):
+            meta_tags.append("PageType: Interesting")
         meta_tags.append(f"ClassifierProbability: {output.get('probability', 0.0):.4f}")
         if verbose:
             print(f"Text classifier results: is_interesting={output.get('is_interesting', False)}, probability={output.get('probability', 0.0)}")
@@ -273,27 +218,18 @@ def run_text_classifier(text, verbose=False):
     except subprocess.CalledProcessError as e:
         if verbose:
             print(f"Text classifier subprocess failed: {e.stderr}")
-        return {
-            "ClassifierError": f"Subprocess failed: {e.stderr}",
-            "Suggestion": "Check text_classifier.py dependencies"
-        }
+        return {"ClassifierError": f"Subprocess failed: {e.stderr}"}
     except FileNotFoundError:
         if verbose:
             print("Text classifier script (text_classifier.py) not found")
-        return {
-            "ClassifierError": "text_classifier.py not found",
-            "Suggestion": "Ensure text_classifier.py is in the AI_Page_Classifier directory"
-        }
+        return {"ClassifierError": "text_classifier.py not found"}
     except Exception as e:
         if verbose:
             print(f"Unexpected error running text classifier: {str(e)}")
-        return {
-            "ClassifierError": str(e),
-            "Suggestion": "Review text_classifier.py execution environment"
-        }
+        return {"ClassifierError": str(e)}
 
 # Main function to analyze screenshot and generate meta tags
-def analyze_screenshot(image_path, templates, verbose=False, ai=False, include_extracted=False, detection_pattern=False):
+def analyze_screenshot(image_path, templates, verbose=False, ai=False):
     try:
         # Preprocess image
         preprocess_image(image_path, verbose)
@@ -301,10 +237,8 @@ def analyze_screenshot(image_path, templates, verbose=False, ai=False, include_e
         # Extract text using OCR
         extracted_text = extract_text(".preprocessed.png", verbose)
         
-        # Generate meta tags from templates only if --detection-pattern is set
-        meta_tags = []
-        if detection_pattern:
-            meta_tags = generate_meta_tags(extracted_text, templates)
+        # Generate meta tags from templates
+        meta_tags = generate_meta_tags(extracted_text, templates)
         
         # Run text classifier if --ai flag is set
         if ai and not extracted_text.startswith("OCR Error"):
@@ -318,19 +252,8 @@ def analyze_screenshot(image_path, templates, verbose=False, ai=False, include_e
             else:
                 # Handle error case
                 meta_tags.append(classifier_results.get("ClassifierError", "ClassifierError: Unknown error"))
-                if "Suggestion" in classifier_results:
-                    meta_tags.append(classifier_results["Suggestion"])
         
-        # Conditionally include extracted text (Base64 or plain) if --include-extracted is set
-        if include_extracted and not extracted_text.startswith("OCR Error"):
-            try:
-                base64_text = base64.b64encode(extracted_text.encode('utf-8')).decode('utf-8')
-                meta_tags.append(f"ExtractedTextBase64: {base64_text}")
-            except Exception as e:
-                meta_tags.append(f"ExtractedTextError: Failed to encode text to Base64: {str(e)}")
-        elif include_extracted:
-            meta_tags.append(f"Extracted Text: {extracted_text}")
-        
+        meta_tags.append(f"Extracted Text: {extracted_text}")
         meta_tags.append(f"File Path: {image_path}")
         
         return extracted_text, meta_tags
@@ -345,8 +268,6 @@ if __name__ == "__main__":
     parser.add_argument("--verbose", action="store_true", help="Enable verbose output for debugging")
     parser.add_argument("--output-format", choices=["normal", "json", "xml"], default="normal", help="Output format: normal (default), json, or xml")
     parser.add_argument("--ai", action="store_true", help="Enable AI text classification using text_classifier.py")
-    parser.add_argument("--include-extracted", action="store_true", help="Include extracted text in Base64 format as a meta tag")
-    parser.add_argument("--detection-pattern", action="store_true", help="Include meta tags from detection patterns")
     
     # Parse arguments
     args = parser.parse_args()
@@ -354,8 +275,6 @@ if __name__ == "__main__":
     verbose = args.verbose
     output_format = args.output_format
     ai = args.ai
-    include_extracted = args.include_extracted
-    detection_pattern = args.detection_pattern
 
     # Validate that the file exists
     if not os.path.isfile(screenshot_path):
@@ -372,7 +291,7 @@ if __name__ == "__main__":
     templates = load_templates("detectionPatterns")
 
     # Analyze the screenshot
-    extracted_text, meta_tags = analyze_screenshot(screenshot_path, templates, verbose, ai, include_extracted, detection_pattern)
+    extracted_text, meta_tags = analyze_screenshot(screenshot_path, templates, verbose, ai)
 
     # Output results in the specified format
     if verbose:

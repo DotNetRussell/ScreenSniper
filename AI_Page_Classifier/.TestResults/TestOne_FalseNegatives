@@ -1,0 +1,183 @@
+958-Text: 401 Unauthorized
+982:Predicted: Not Error Page, Probability: 0.0002
+1030-Matched Words: unauthorized (1)
+--
+1395-Text: Something Went Wrong
+1423:Predicted: Not Error Page, Probability: 0.0003
+1471-Matched Words: None
+--
+1531-Text: Oops! Something Broke
+1560:Predicted: Not Error Page, Probability: 0.0102
+1608-Matched Words: oops (1)
+--
+1813-Text: Connection Timed Out
+1841:Predicted: Not Error Page, Probability: 0.0003
+1889-Matched Words: None
+--
+2235-Text: Service Temporarily Unavailable
+2274:Predicted: Not Error Page, Probability: 0.0011
+2322-Matched Words: unavailable (1)
+--
+3157-Text: This Page Isn't Working
+3188:Predicted: Not Error Page, Probability: 0.0731
+3236-Matched Words: page (1)
+--
+3300-Text: Unable To Connect
+3325:Predicted: Not Error Page, Probability: 0.0003
+3373-Matched Words: None
+--
+3829-Text: Whoops! Something Went Wrong
+3865:Predicted: Not Error Page, Probability: 0.0003
+3913-Matched Words: None
+--
+4280-Text: Server Unavailable
+4306:Predicted: Not Error Page, Probability: 0.1585
+4354-Matched Words: server (1), unavailable (1)
+--
+4731-Text: We're Experiencing Technical Difficulties
+4780:Predicted: Not Error Page, Probability: 0.0003
+4828-Matched Words: None
+--
+5060-Text: Database Connection Failed
+5094:Predicted: Not Error Page, Probability: 0.0030
+5142-Matched Words: failed (1)
+--
+5355-Text: Operation Timed Out
+5382:Predicted: Not Error Page, Probability: 0.0003
+5430-Matched Words: None
+--
+5490-Text: Service Down
+5510:Predicted: Not Error Page, Probability: 0.0003
+5558-Matched Words: None
+--
+5618-Text: Maintenance In Progress
+5649:Predicted: Not Error Page, Probability: 0.0014
+5697-Matched Words: maintenance (1)
+--
+5768-Text: Site Under Maintenance
+5798:Predicted: Not Error Page, Probability: 0.0014
+5846-Matched Words: maintenance (1)
+--
+6359-Text: Server Overloaded
+6384:Predicted: Not Error Page, Probability: 0.0106
+6432-Matched Words: server (1)
+--
+6498-Text: Too Many Connections
+6526:Predicted: Not Error Page, Probability: 0.0003
+6574-Matched Words: None
+--
+6789-Text: This Page Is Currently Unavailable
+6831:Predicted: Not Error Page, Probability: 0.0615
+6879-Matched Words: unavailable (1), page (1)
+--
+6960-Text: Something Crashed
+6985:Predicted: Not Error Page, Probability: 0.0003
+7033-Matched Words: None
+--
+7265-Text: We're Working On It
+7292:Predicted: Not Error Page, Probability: 0.0003
+7340-Matched Words: None
+--
+7400-Text: The Server Is Down
+7426:Predicted: Not Error Page, Probability: 0.0015
+7474-Matched Words: server (1)
+--
+7848-Text: No Such Page Exists
+7875:Predicted: Not Error Page, Probability: 0.0731
+7923-Matched Words: page (1)
+--
+7987-Text: Connection Refused
+8013:Predicted: Not Error Page, Probability: 0.0003
+8061-Matched Words: None
+--
+8269-Text: The Website Is Down For Maintenance
+8312:Predicted: Not Error Page, Probability: 0.0006
+8360-Matched Words: maintenance (1)
+--
+8856-Text: Session Expired
+8879:Predicted: Not Error Page, Probability: 0.0003
+8927-Matched Words: None
+--
+8987-Text: Authentication Required
+9018:Predicted: Not Error Page, Probability: 0.0003
+9066-Matched Words: None
+--
+9126-Text: Invalid URL
+9145:Predicted: Not Error Page, Probability: 0.0005
+9193-Matched Words: invalid (1)
+--
+9260-Text: The Site Is Experiencing Issues
+9299:Predicted: Not Error Page, Probability: 0.0003
+9347-Matched Words: None
+--
+9407-Text: Server Misconfiguration
+9438:Predicted: Not Error Page, Probability: 0.0106
+9486-Matched Words: server (1)
+--
+9552-Text: We're Fixing Things Up
+9582:Predicted: Not Error Page, Probability: 0.0003
+9630-Matched Words: None
+--
+9690-Text: This Page Cannot Be Displayed
+9727:Predicted: Not Error Page, Probability: 0.0236
+9775-Matched Words: page (1)
+--
+10114-Text: Something Failed On Our End
+10149:Predicted: Not Error Page, Probability: 0.0010
+10197-Matched Words: failed (1)
+--
+10263-Text: The Server Is Temporarily Busy
+10301:Predicted: Not Error Page, Probability: 0.0011
+10349-Matched Words: server (1)
+--
+10870-Text: The Resource Is Unavailable
+10905:Predicted: Not Error Page, Probability: 0.3076
+10953-Matched Words: unavailable (1), resource (1)
+--
+11038-Text: Technical Issue Detected
+11070:Predicted: Not Error Page, Probability: 0.0003
+11118-Matched Words: None
+--
+11178-Text: Website Offline
+11201:Predicted: Not Error Page, Probability: 0.0003
+11249-Matched Words: None
+--
+11458-Text: Server Capacity Exceeded
+11490:Predicted: Not Error Page, Probability: 0.0029
+11538-Matched Words: server (1)
+--
+11881-Text: Check Your Connection
+11910:Predicted: Not Error Page, Probability: 0.0003
+11958-Matched Words: None
+--
+12476-Text: We're Having Some Trouble
+12509:Predicted: Not Error Page, Probability: 0.0003
+12557-Matched Words: None
+--
+12757-Text: Operation Failed
+12781:Predicted: Not Error Page, Probability: 0.0133
+12829-Matched Words: failed (1)
+--
+12895-Text: The System Is Down
+12921:Predicted: Not Error Page, Probability: 0.0003
+12969-Matched Words: None
+--
+13029-Text: Something Is Broken
+13056:Predicted: Not Error Page, Probability: 0.0008
+13104-Matched Words: broken (1)
+--
+13170-Text: Please Refresh The Page
+13201:Predicted: Not Error Page, Probability: 0.0731
+13249-Matched Words: page (1)
+--
+13455-Text: We Couldn't Find That Page
+13489:Predicted: Not Error Page, Probability: 0.0236
+13537-Matched Words: page (1)
+--
+13601-Text: Temporary Server Issue
+13631:Predicted: Not Error Page, Probability: 0.0029
+13679-Matched Words: server (1)
+--
+13745-Text: The Connection Was Reset
+13777:Predicted: Not Error Page, Probability: 0.0003
+13825-Matched Words: None

@@ -1,5 +1,81 @@
 [
     {
+        "Text": "server error application object reference set instance object description unhandled exception occurred execution current web request please review stack trace information error originated code exception details system nullreferenceexception object reference set instance object source error unhandled exception generated execution current web request information regarding origin location exception stack trace nullreferenceexception object reference set instance object com vizz web index page load object sender eventargs 72 system web ui control loadrecursive 70 system web ui page processrequestmain boolean includestagesbeforeasyncpoint boolean includestagesafterasyncpoint 3177",
+        "Target": 1
+    },
+    {
+        "Text": "welcome nginx working configuration required thank using nginx",
+        "Target": 1
+    },
+    {
+        "Text": "apache2 ubuntu default page welcome page test correct operation apache2 server installation ubuntu systems based equivalent page debian ubuntu apache packaging derived read page means apache http server installed site working properly replace file located var www html index html continuing operate http server normal user web site know page probably means site currently unavailable due maintenance problem persists please contact site administrator configuration ubuntu apache2 default configuration different upstream default configuration split several files optimized interaction ubuntu tools configuration system fully documented usr share doc apache2 readme debian gz refer full documentation documentation web server found accessing manual apache2-doc package installed server configuration layout apache2 web server installation ubuntu systems follows ports conf mods-enabled load conf conf-enabled conf sites-enabled apache2 conf main configuration file puts pieces including remaining configuration files starting web server",
+        "Target": 1
+    },
+    {
+        "Text": "drupal 7 home welcome drupal 7 front page content created simpletest example add new content currently 1 user online 5010 web app home screen add home screen",
+        "Target": 1
+    },
+    {
+        "Text": "please upload profile picture key profile image file type jpg png answered",
+        "Target": 1
+    },
+    {
+        "Text": "upload files select file permissions image png 343-83 kb image-png cancel upload",
+        "Target": 1
+    },
+    {
+        "Text": "upload select file upload home4 example public-html maximum file size allowed upload 500 mb overwrite existing files drop files start uploading hello_i_am_snappy txt 19 bytes complete go back home4 example public-html",
+        "Target": 1
+    },
+    {
+        "Text": "upload files status drop files add files clicking select files button available add tags close",
+        "Target": 1
+    },
+    {
+        "Text": "server encountered internal error misconfiguration unable complete request please contact server administrator root localhost inform time error occurred actions performed error information error available server error log",
+        "Target": 1
+    },
+    {
+        "Text": "index blog images name last modified size description parent directory 13-oct-2006 22-24 activity-icon gif 01-aug-2002 13-52 1k adesso-keyboard ipaq 19-jan-2006 09-40 10k amazon-uk-dvd-rental 21-aug-2006 00-39 27k american red cross gqif 31-aug-2005 17-15 5k",
+        "Target": 1
+    },
+    {
+        "Text": "username password forgotten password username amfoss cms club",
+        "Target": 1
+    },
+    {
+        "Text": "security challenge select squares image please type word above",
+        "Target": 0
+    },
+    {
+        "Text": "internal server error server encountered internal error misconfiguration unable complete request please contact server administrator root localhost inform time error occurred actions information error available server error log",
+        "Target": 1
+    },
+    {
+        "Text": "squid sec twitter squidsec podcast squidsec team home coinbase catastrophe pennybags loses big bitcoin hack key points direct answer incident overview may 15 2025 coinbase disclosed cyberattack hackers bribed overseas support",
+        "Target": 0
+    },
+    {
+        "Text": "user-agent disallow wp-admin allow wp-admin admin-ajax php sitemap https kinsta com sitemap index xml de dk es fr it jp nl pt se",
+        "Target": 1
+    },
+    {
+        "Text": "security challenge select squares image",
+        "Target": 0
+    },
+    {
+        "Text": "type word above",
+        "Target": 0
+    },
+    {
+        "Text": "security challenge select squares image type word above",
+        "Target": 0
+    },
+    {
+        "Text": "username email address password recaptcha privacy terms remember lost password privacy policy terms service",
+        "Target": 0
+    },
+    {
         "Text": "401 Unauthorized Error",
         "Target": 1
     },

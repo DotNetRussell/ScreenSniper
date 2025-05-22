@@ -1,1 +1,6 @@
 .preprocessed.png
+.debug_clahe.png
+.debug_dilated.png
+.debug_grayscale.png
+.debug_resized.png
+.debug_threshold.png

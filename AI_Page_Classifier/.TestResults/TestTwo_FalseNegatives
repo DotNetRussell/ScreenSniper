@@ -1,0 +1,39 @@
+979-Text: 401 Unauthorized
+1003:Predicted: Not Error Page, Probability: 0.0226
+1051-Matched Words: unauthorized (1)
+--
+6645-Text: Too Many Connections
+6673:Predicted: Not Error Page, Probability: 0.0127
+6721-Matched Words: None
+--
+7426-Text: We're Working On It
+7453:Predicted: Not Error Page, Probability: 0.2490
+7501-Matched Words: working (1)
+--
+8022-Text: No Such Page Exists
+8049:Predicted: Not Error Page, Probability: 0.2449
+8097-Matched Words: page (1), exists (1)
+--
+9214-Text: Authentication Required
+9245:Predicted: Not Error Page, Probability: 0.0174
+9293-Matched Words: authentication (1), required (1)
+--
+9381-Text: Invalid URL
+9400:Predicted: Not Error Page, Probability: 0.0235
+9448-Matched Words: invalid (1), url (1)
+--
+11528-Text: Website Offline
+11551:Predicted: Not Error Page, Probability: 0.1293
+11599-Matched Words: offline (1)
+--
+13438-Text: Something Is Broken
+13465:Predicted: Not Error Page, Probability: 0.0672
+13513-Matched Words: broken (1)
+--
+13579-Text: Please Refresh The Page
+13610:Predicted: Not Error Page, Probability: 0.2633
+13658-Matched Words: page (1), refresh (1)
+--
+13877-Text: We Couldn't Find That Page
+13911:Predicted: Not Error Page, Probability: 0.1341
+13959-Matched Words: page (1)
