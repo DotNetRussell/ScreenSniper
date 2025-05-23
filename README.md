@@ -4,7 +4,6 @@
 
 ScreenSniper is a Python tool designed to analyze webpage screenshots by extracting text via OCR (Optical Character Recognition) and categorizing content using detection patterns and/or an AI text classifier. It generates meta tags to provide insights into technologies, security issues, and page types, making it useful for web reconnaissance, security assessments, and bug bounty hunting.
 
-
 - [ScreenSniper](#screensniper)
   - [Features](#features)
   - [Installation](#installation)
@@ -18,8 +17,8 @@ ScreenSniper is a Python tool designed to analyze webpage screenshots by extract
     - [Command-Line Flags](#command-line-flags)
     - [Example Outputs](#example-outputs)
       - [JSON Output with AI and Extracted Text](#json-output-with-ai-and-extracted-text)
-      - [XML Output with Detection Patterns](#xml-output-with-detection-patterns)
-      - [Normal Output with AI and Detection Patterns](#normal-output-with-ai-and-detection-patterns)
+      - [XML Output with Detection Patterns and Report](#xml-output-with-detection-patterns-and-report)
+      - [Normal Output with AI, Detection Patterns, and Directory](#normal-output-with-ai-detection-patterns-and-directory)
   - [AI Integration](#ai-integration)
   - [Detection Patterns](#detection-patterns)
   - [Dependencies](#dependencies)
@@ -28,20 +27,25 @@ ScreenSniper is a Python tool designed to analyze webpage screenshots by extract
   - [License](#license)
   - [Contact](#contact)
 
-
 The tool supports:
 - **Template-based detection** using JSON patterns in the `detectionPatterns` directory.
 - **AI-based classification** using a trained neural network to identify interesting pages (e.g., error pages, login pages).
 - Multiple output formats: normal (plain text), JSON, and XML.
 
-Recent updates include integration with an AI classifier (`text_classifier.py`) for enhanced page analysis, new flags for flexible output control, and Docker support for easy deployment.
+Recent updates include:
+- Integration with an AI classifier (`text_classifier.py`) for enhanced page analysis.
+- New flags for flexible output control (`--report`, `--directory`).
+- Base64-encoded extracted text output to prevent formatting issues.
+- Docker support for easy deployment.
 
 ## Features
 - Extracts text from screenshots using Tesseract OCR.
 - Categorizes pages using detection patterns (e.g., identifying IIS, login pages).
 - AI classification to predict if a page is "interesting" (e.g., error pages, sensitive content).
-- Supports Base64-encoded extracted text output.
+- Supports Base64-encoded extracted text output, included only with `--include-extracted` or `--verbose`.
 - Configurable output formats: normal, JSON, XML.
+- Single report file generation for all processed images with `--report`.
+- Directory processing to analyze multiple screenshots with `--directory`.
 - Verbose mode for debugging OCR and classification steps.
 - Docker support for consistent and portable execution.
 
@@ -115,14 +119,17 @@ ScreenSniper/
 ### Manual Usage
 Run `ScreenSniper` on a single screenshot:
 ```bash
-python3 ScreenSniper --output-format=json --ai --include-extracted ./path/to/screenshot.png
+python3 ScreenSniper --image_path ./path/to/screenshot.png --output-format=json --ai --include-extracted
 ```
 
-Process multiple screenshots in a directory:
+Process a directory of screenshots:
 ```bash
-for image in $(ls testImages/); do
-    python3 ScreenSniper --include-extracted --output-format=json --ai testImages/$image
-done
+python3 ScreenSniper --directory ./testImages --output-format=json --ai --report
+```
+
+Generate a report for a single screenshot:
+```bash
+python3 ScreenSniper --image_path ./path/to/screenshot.png --report --output-format=xml --detection-pattern
 ```
 
 ### Docker Usage
@@ -131,7 +138,7 @@ Run ScreenSniper in a Docker container by mounting the current directory to `/ap
 #### Example Commands
 Analyze a WordPress page screenshot:
 ```bash
-docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --output-format=json testImages/random-wp-page.png --ai
+docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --image_path testImages/random-wp-page.png --output-format=json --ai
 ```
 **Output**:
 ```json
@@ -146,7 +153,7 @@ docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --output-fo
 
 Analyze an ASPX stacktrace screenshot:
 ```bash
-docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --output-format=json testImages/aspx-stacktrace.png --ai
+docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --image_path testImages/aspx-stacktrace.png --output-format=json --ai
 ```
 **Output**:
 ```json
@@ -159,6 +166,11 @@ docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --output-fo
 }
 ```
 
+Analyze a directory of screenshots with a report:
+```bash
+docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --directory testImages --report --output-format=json --ai
+```
+
 **Notes**:
 - The `--rm` flag ensures the container is removed after execution.
 - The `-it` flag enables interactive mode with a TTY.
@@ -166,17 +178,20 @@ docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --output-fo
 - The `--ai` flag enables AI classification, and `--output-format=json` specifies JSON output.
 
 ### Command-Line Flags
-- `--verbose`: Enable detailed debugging output (e.g., OCR steps, classifier logs).
+- `--image_path <path>`: Path to a single screenshot image file (e.g., `screenshot.png`).
+- `--directory <path>`: Path to a directory containing multiple screenshot image files.
+- `--verbose`: Enable detailed debugging output (e.g., OCR steps, classifier logs) and include Base64-encoded extracted text.
 - `--output-format [normal|json|xml]`: Specify output format (default: normal).
 - `--ai`: Enable AI text classification using `text_classifier.py` to predict if a page is interesting.
 - `--include-extracted`: Include the OCR’d text as a Base64-encoded meta tag (`ExtractedTextBase64`).
 - `--detection-pattern`: Include meta tags from template-based detection patterns in `detectionPatterns`.
+- `--report`: Generate a single report file (`screensniper_report_YYYYMMDD_HHMMSS.<format>`) with analysis results for all images.
 
 ### Example Outputs
 
 #### JSON Output with AI and Extracted Text
 ```bash
-python3 ScreenSniper --output-format=json --ai --include-extracted ./starbucks.com.png
+python3 ScreenSniper --image_path ./starbucks.com.png --output-format=json --ai --include-extracted
 ```
 ```json
 {
@@ -189,31 +204,56 @@ python3 ScreenSniper --output-format=json --ai --include-extracted ./starbucks.c
 }
 ```
 
-#### XML Output with Detection Patterns
+#### XML Output with Detection Patterns and Report
 ```bash
-python3 ScreenSniper --output-format=xml --detection-pattern ./starbucks.com.png
+python3 ScreenSniper --image_path ./starbucks.com.png --output-format=xml --detection-pattern --report
 ```
+**Console and Report File (`screensniper_report_YYYYMMDD_HHMMSS.xml`)**:
 ```xml
 <?xml version="1.0" ?>
-<result>
-    <meta_tags>
-        <meta_tag>Technology: IIS</meta_tag>
-        <meta_tag>PageType: Login Page</meta_tag>
-        <meta_tag>File Path: ./starbucks.com.png</meta_tag>
-    </meta_tags>
-</result>
+<report>
+    <generated>2025-05-23 17:28:00</generated>
+    <output_format>xml</output_format>
+    <total_images>1</total_images>
+    <results>
+        <result>
+            <image_path>./starbucks.com.png</image_path>
+            <meta_tags>
+                <meta_tag>Technology: IIS</meta_tag>
+                <meta_tag>PageType: Login Page</meta_tag>
+                <meta_tag>File Path: ./starbucks.com.png</meta_tag>
+            </meta_tags>
+        </result>
+    </results>
+</report>
 ```
 
-#### Normal Output with AI and Detection Patterns
+#### Normal Output with AI, Detection Patterns, and Directory
 ```bash
-python3 ScreenSniper --ai --detection-pattern ./starbucks.com.png
+python3 ScreenSniper --directory ./testImages --ai --detection-pattern --verbose
 ```
+**Output for each image**:
 ```
-Technology: IIS
+Analysis Results:
+File Path: testImages/random-wp-page.png
+Extracted Text (Base64): V29yZFByZXNzIExvZ2lu
+Meta Tags:
+Technology: WordPress
 PageType: Login Page
+Interesting Page: False
+ClassifierProbability: 0.6768
+File Path: testImages/random-wp-page.png
+--------------------------------------------------
+Analysis Results:
+File Path: testImages/aspx-stacktrace.png
+Extracted Text (Base64): QVNQLk5FVCBFcnJvcg==
+Meta Tags:
+Technology: ASP.NET
+PageType: Error Page
 Interesting Page: True
-ClassifierProbability: 0.6623
-File Path: ./starbucks.com.png
+ClassifierProbability: 0.9485
+File Path: testImages/aspx-stacktrace.png
+--------------------------------------------------
 ```
 
 ## AI Integration
@@ -231,7 +271,7 @@ To update the training data or retrain the model, modify `training_data.json` an
 python3 AI_Page_Classifier/text_classifier.py --retrain "dummy text"
 ```
 
-Recent updates include a newly trained model for improved accuracy, with training data included in the `AI_Page_Classifier` directory.[](https://x.com/DotNetRussell/status/1925196652383469796)
+Recent updates include a newly trained model for improved accuracy, with training data included in the `AI_Page_Classifier` directory.
 
 ## Detection Patterns
 The `--detection-pattern` flag enables template-based detection using JSON files in the `detectionPatterns` directory. Each file specifies conditions (e.g., keywords like "IIS", "login") and corresponding meta tags (e.g., `Technology: IIS`, `PageType: Login Page`). Example:
@@ -242,7 +282,7 @@ The `--detection-pattern` flag enables template-based detection using JSON files
 }
 ```
 
-Without `--detection-pattern`, only AI classifier results (if `--ai` is set) and file path are included, unless `--include-extracted` is used.
+Without `--detection-pattern`, only AI classifier results (if `--ai` is set) and file path are included, unless `--include-extracted` or `--verbose` is used.
 
 ## Dependencies
 - **System**: `tesseract-ocr`, `chromium`, `chromium-driver` (included in Docker image)
@@ -263,6 +303,7 @@ pip install opencv-python pytesseract Pillow numpy torch
 - **OCR Failure**: Use `--verbose` to inspect preprocessing steps (saved as `.debug_*.png`).
 - **Gibberish in Text**: Some screenshots may produce noisy OCR output. Update `training_data.json` to improve classifier performance.
 - **Docker Issues**: Ensure the `-v $(pwd):/app` flag is used correctly to mount the current directory. Verify Docker image is built with `docker build -t screensniper .`.
+- **Report File Issues**: Ensure write permissions in the current directory for report files (`screensniper_report_*.`).
 
 ## Contributing
 Contributions are welcome! Please:
@@ -282,32 +323,3 @@ MIT License. See `LICENSE` for details.
 - Website: [https://www.SquidHacker.com](https://www.SquidHacker.com)
 
 For issues or feature requests, open an issue on GitHub or contact via Twitter.
-
-
-### Changes Made
-1. **Added Docker Section**:
-   - Created a "Docker Installation" subsection under "Installation" to describe the Dockerfile and how to build the image.
-   - Added a "Docker Usage" subsection under "Usage" to explain running ScreenSniper in a container.
-   - Included the provided Docker run commands with their outputs, formatted consistently with existing examples.
-   - Explained the `-v $(pwd):/app` flag, linking it to your earlier question about mounting paths instead of copying.
-
-2. **Updated Features**:
-   - Added "Docker support for consistent and portable execution" to the Features list.
-
-3. **Updated Directory Structure**:
-   - Added `Dockerfile` and `testImages/` to the directory structure for completeness.
-
-4. **Updated Dependencies**:
-   - Added `chromium` and `chromium-driver` to the system dependencies list, as they are included in the Dockerfile.
-   - Noted that these are included in the Docker image for clarity.
-
-5. **Troubleshooting**:
-   - Added a Docker-specific troubleshooting tip about verifying the `-v` flag and image build.
-
-6. **Maintained Style**:
-   - Kept the formatting, tone, and structure consistent with the original README.
-   - Ensured example outputs and commands align with existing examples (e.g., JSON, XML, normal output sections).
-
-7. **Dockerfile Details**:
-   - Highlighted key components of the Dockerfile (base image, system dependencies, Python dependencies, file copying, and environment setup) without reproducing the entire file, keeping the README concise.
-
