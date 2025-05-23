@@ -4,6 +4,31 @@
 
 ScreenSniper is a Python tool designed to analyze webpage screenshots by extracting text via OCR (Optical Character Recognition) and categorizing content using detection patterns and/or an AI text classifier. It generates meta tags to provide insights into technologies, security issues, and page types, making it useful for web reconnaissance, security assessments, and bug bounty hunting.
 
+
+- [ScreenSniper](#screensniper)
+  - [Features](#features)
+  - [Installation](#installation)
+    - [Prerequisites](#prerequisites)
+    - [Manual Installation](#manual-installation)
+    - [Docker Installation](#docker-installation)
+  - [Directory Structure](#directory-structure)
+  - [Usage](#usage)
+    - [Manual Usage](#manual-usage)
+    - [Docker Usage](#docker-usage)
+    - [Command-Line Flags](#command-line-flags)
+    - [Example Outputs](#example-outputs)
+      - [JSON Output with AI and Extracted Text](#json-output-with-ai-and-extracted-text)
+      - [XML Output with Detection Patterns](#xml-output-with-detection-patterns)
+      - [Normal Output with AI and Detection Patterns](#normal-output-with-ai-and-detection-patterns)
+  - [AI Integration](#ai-integration)
+  - [Detection Patterns](#detection-patterns)
+  - [Dependencies](#dependencies)
+  - [Troubleshooting](#troubleshooting)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Contact](#contact)
+
+
 The tool supports:
 - **Template-based detection** using JSON patterns in the `detectionPatterns` directory.
 - **AI-based classification** using a trained neural network to identify interesting pages (e.g., error pages, login pages).
