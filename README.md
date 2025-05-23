@@ -1,5 +1,33 @@
 ![ScreenSniper Logo](https://i.imgur.com/yfJZLWm.png)  
 
+
+## FAST TRACK
+
+### DOWNLOAD
+`https://github.com/DotNetRussell/ScreenSniper.git`
+
+### BUILD
+```
+cd ScreenSniper
+docker build -t screensniper .
+```
+
+### RUN
+
+- How to give it a directory of images
+`docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --directory testImages/ --detection-pattern --output-format=json --ai`
+
+- How to give it a single image
+`docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --image_path testImages/aspx-stacktrace.png --detection-pattern --output-format=json --ai`
+
+- How to report
+`docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --image_path testImages/aspx-stacktrace.png --detection-pattern --output-format=json --ai --report`
+
+- How to retrain
+`docker run --rm -it -v $(pwd):/app screensniper python3 AI_Page_Classifier/text_classifier.py --retrain --threads=20 --verbose "test text"`
+
+
+
 # ScreenSniper
 
 ScreenSniper is a Python tool designed to analyze webpage screenshots by extracting text via OCR (Optical Character Recognition) and categorizing content using detection patterns and/or an AI text classifier. It generates meta tags to provide insights into technologies, security issues, and page types, making it useful for web reconnaissance, security assessments, and bug bounty hunting.
