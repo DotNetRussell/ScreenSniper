@@ -14,6 +14,7 @@ from xml.dom import minidom
 import subprocess
 import shutil
 import base64
+import datetime
 
 # Function to check if Tesseract is installed
 def check_tesseract(verbose=False):
@@ -27,7 +28,7 @@ def check_tesseract(verbose=False):
 # Function to preprocess image for OCR
 def preprocess_image(image_path, verbose=False):
     if verbose:
-        print("Starting image preprocessing...")
+        print(f"Starting image preprocessing for {image_path}...")
     # Load image with OpenCV
     img = cv2.imread(image_path)
     if img is None:
@@ -192,6 +193,117 @@ def format_output(meta_tags, output_format):
     else:
         raise ValueError(f"Unsupported output format: {output_format}")
 
+# Function to generate and save report for multiple images
+def generate_report(results, output_format, verbose=False, include_extracted=False):
+    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    report_filename = f"screensniper_report_{timestamp}.{output_format}"
+    
+    # Initialize report content
+    report_content = [
+        f"ScreenSniper Analysis Report",
+        f"Generated: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}",
+        f"Output Format: {output_format}",
+        f"Total Images Processed: {len(results)}",
+        "=" * 50
+    ]
+    
+    # JSON and XML structures
+    report_dict = {
+        "report": {
+            "generated": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "output_format": output_format,
+            "total_images": len(results),
+            "results": []
+        }
+    }
+    xml_root = ET.Element("report")
+    ET.SubElement(xml_root, "generated").text = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    ET.SubElement(xml_root, "output_format").text = output_format
+    ET.SubElement(xml_root, "total_images").text = str(len(results))
+    xml_results = ET.SubElement(xml_root, "results")
+    
+    # Process each result
+    for result in results:
+        image_path = result["image_path"]
+        extracted_text = result["extracted_text"]
+        meta_tags = result["meta_tags"]
+        formatted_output = format_output(meta_tags, output_format)
+        
+        # Normal format content
+        report_content.extend([
+            f"Image Path: {image_path}",
+            "-" * 50
+        ])
+        
+        # Only include extracted text if verbose or include_extracted is set
+        if verbose or include_extracted:
+            try:
+                base64_text = base64.b64encode(extracted_text.encode('utf-8')).decode('utf-8')
+                report_content.extend([
+                    "Extracted Text (Base64):",
+                    base64_text,
+                    "-" * 50
+                ])
+            except Exception as e:
+                report_content.extend([
+                    f"Extracted Text Error: Failed to encode text to Base64: {str(e)}",
+                    "-" * 50
+                ])
+        
+        report_content.extend([
+            "Meta Tags:",
+            formatted_output,
+            "=" * 50
+        ])
+        
+        # JSON format content
+        json_result = {
+            "image_path": image_path,
+            "meta_tags": meta_tags
+        }
+        if verbose or include_extracted:
+            try:
+                json_result["extracted_text_base64"] = base64.b64encode(extracted_text.encode('utf-8')).decode('utf-8')
+            except Exception as e:
+                json_result["extracted_text_error"] = f"Failed to encode text to Base64: {str(e)}"
+        report_dict["report"]["results"].append(json_result)
+        
+        # XML format content
+        xml_result = ET.SubElement(xml_results, "result")
+        ET.SubElement(xml_result, "image_path").text = image_path
+        if verbose or include_extracted:
+            try:
+                base64_text = base64.b64encode(extracted_text.encode('utf-8')).decode('utf-8')
+                ET.SubElement(xml_result, "extracted_text_base64").text = base64_text
+            except Exception as e:
+                ET.SubElement(xml_result, "extracted_text_error").text = f"Failed to encode text to Base64: {str(e)}"
+        xml_meta_tags = ET.SubElement(xml_result, "meta_tags")
+        for tag in meta_tags:
+            tag_elem = ET.SubElement(xml_meta_tags, "meta_tag")
+            tag_elem.text = tag
+    
+    # Finalize report text based on format
+    if output_format == "normal":
+        report_text = "\n".join(report_content)
+    elif output_format == "json":
+        report_text = json.dumps(report_dict, indent=4)
+    elif output_format == "xml":
+        report_text = minidom.parseString(ET.tostring(xml_root)).toprettyxml(indent="    ").strip()
+    
+    # Print to console
+    print(report_text)
+    
+    # Save to file
+    try:
+        with open(report_filename, "w", encoding="utf-8") as f:
+            f.write(report_text)
+        if verbose:
+            print(f"Report saved to {report_filename}")
+    except Exception as e:
+        print(f"Error saving report: {str(e)}")
+    
+    return report_text
+
 # Function to call text_classifier.py with OCR'd text
 def run_text_classifier(text, verbose=False):
     try:
@@ -321,15 +433,13 @@ def analyze_screenshot(image_path, templates, verbose=False, ai=False, include_e
                 if "Suggestion" in classifier_results:
                     meta_tags.append(classifier_results["Suggestion"])
         
-        # Conditionally include extracted text (Base64 or plain) if --include-extracted is set
-        if include_extracted and not extracted_text.startswith("OCR Error"):
+        # Only include extracted text (Base64 encoded) if --include-extracted or --verbose is set
+        if (include_extracted or verbose) and not extracted_text.startswith("OCR Error"):
             try:
                 base64_text = base64.b64encode(extracted_text.encode('utf-8')).decode('utf-8')
                 meta_tags.append(f"ExtractedTextBase64: {base64_text}")
             except Exception as e:
                 meta_tags.append(f"ExtractedTextError: Failed to encode text to Base64: {str(e)}")
-        elif include_extracted:
-            meta_tags.append(f"Extracted Text: {extracted_text}")
         
         meta_tags.append(f"File Path: {image_path}")
         
@@ -337,47 +447,130 @@ def analyze_screenshot(image_path, templates, verbose=False, ai=False, include_e
     except Exception as e:
         return f"Error: {str(e)}", ["Error: Analysis failed"]
 
+# Function to process all images in a directory
+def process_directory(directory_path, templates, verbose=False, ai=False, include_extracted=False, detection_pattern=False, report=False, output_format="normal"):
+    valid_extensions = (".png", ".jpg", ".jpeg", ".gif", ".bmp")
+    results = []
+    
+    if not os.path.isdir(directory_path):
+        print(f"Error: The directory '{directory_path}' does not exist.")
+        sys.exit(1)
+    
+    # Collect all valid image files
+    image_files = [f for f in os.listdir(directory_path) if f.lower().endswith(valid_extensions)]
+    
+    if not image_files:
+        print(f"Error: No valid image files found in '{directory_path}'.")
+        sys.exit(1)
+    
+    if verbose:
+        print(f"Found {len(image_files)} image(s) in directory: {directory_path}")
+    
+    # Process each image
+    for image_file in image_files:
+        image_path = os.path.join(directory_path, image_file)
+        if verbose:
+            print(f"\nProcessing image: {image_path}")
+        
+        # Analyze the screenshot
+        extracted_text, meta_tags = analyze_screenshot(image_path, templates, verbose, ai, include_extracted, detection_pattern)
+        
+        # Store results
+        results.append({
+            "image_path": image_path,
+            "extracted_text": extracted_text,
+            "meta_tags": meta_tags
+        })
+        
+        # Handle output for this image (console only unless report flag is set)
+        if not report:
+            if verbose:
+                print("Analysis Results:")
+                print(f"File Path: {image_path}")
+                if verbose or include_extracted:
+                    try:
+                        base64_text = base64.b64encode(extracted_text.encode('utf-8')).decode('utf-8')
+                        print(f"Extracted Text (Base64): {base64_text}")
+                    except Exception as e:
+                        print(f"Extracted Text Error: Failed to encode text to Base64: {str(e)}")
+                print("Meta Tags:")
+            print(format_output(meta_tags, output_format))
+            print("-" * 50)
+    
+    # Generate single report for all images if report flag is set
+    if report:
+        generate_report(results, output_format, verbose, include_extracted)
+    
+    return results
+
 # Main execution with command-line arguments
 if __name__ == "__main__":
     # Set up argument parser
-    parser = argparse.ArgumentParser(description="Analyze a webpage screenshot and generate meta tags for technology and security insights.")
-    parser.add_argument("image_path", type=str, help="Path to the screenshot image file (e.g., screenshot.png)")
+    parser = argparse.ArgumentParser(description="Analyze a webpage screenshot or directory of screenshots and generate meta tags for technology and security insights.")
+    parser.add_argument("--image_path", type=str, help="Path to the screenshot image file (e.g., screenshot.png)")
+    parser.add_argument("--directory", type=str, help="Path to a directory containing screenshot image files")
     parser.add_argument("--verbose", action="store_true", help="Enable verbose output for debugging")
     parser.add_argument("--output-format", choices=["normal", "json", "xml"], default="normal", help="Output format: normal (default), json, or xml")
     parser.add_argument("--ai", action="store_true", help="Enable AI text classification using text_classifier.py")
-    parser.add_argument("--include-extracted", action="store_true", help="Include extracted text in Base64 format as a meta tag")
+    parser.add_argument("--include-extracted", action="store_true", help="Include Base64-encoded extracted text as a meta tag")
     parser.add_argument("--detection-pattern", action="store_true", help="Include meta tags from detection patterns")
+    parser.add_argument("--report", action="store_true", help="Generate a single report file with analysis results for all images")
     
     # Parse arguments
     args = parser.parse_args()
-    screenshot_path = args.image_path
+    image_path = args.image_path
+    directory_path = args.directory
     verbose = args.verbose
     output_format = args.output_format
     ai = args.ai
     include_extracted = args.include_extracted
     detection_pattern = args.detection_pattern
+    report = args.report
 
-    # Validate that the file exists
-    if not os.path.isfile(screenshot_path):
-        print(f"Error: The file '{screenshot_path}' does not exist.")
-        sys.exit(1)
-
-    # Validate that the file is an image (basic check based on extension)
-    valid_extensions = (".png", ".jpg", ".jpeg", ".gif", ".bmp")
-    if not screenshot_path.lower().endswith(valid_extensions):
-        print(f"Error: The file '{screenshot_path}' must be an image file ({', '.join(valid_extensions)}).")
+    # Validate input: either image_path or directory must be provided, but not both
+    if (image_path and directory_path) or (not image_path and not directory_path):
+        print("Error: Exactly one of --image_path or --directory must be provided.")
         sys.exit(1)
 
     # Load templates
     templates = load_templates("detectionPatterns")
 
-    # Analyze the screenshot
-    extracted_text, meta_tags = analyze_screenshot(screenshot_path, templates, verbose, ai, include_extracted, detection_pattern)
+    if directory_path:
+        # Process directory of images
+        process_directory(directory_path, templates, verbose, ai, include_extracted, detection_pattern, report, output_format)
+    else:
+        # Validate single image
+        if not os.path.isfile(image_path):
+            print(f"Error: The file '{image_path}' does not exist.")
+            sys.exit(1)
 
-    # Output results in the specified format
-    if verbose:
-        print("Analysis Results:")
-        print(f"File Path: {screenshot_path}")
-        print(f"Extracted Text: {extracted_text}")
-        print("Meta Tags:")
-    print(format_output(meta_tags, output_format))
+        # Validate that the file is an image (basic check based on extension)
+        valid_extensions = (".png", ".jpg", ".jpeg", ".gif", ".bmp")
+        if not image_path.lower().endswith(valid_extensions):
+            print(f"Error: The file '{image_path}' must be an image file ({', '.join(valid_extensions)}).")
+            sys.exit(1)
+
+        # Analyze single screenshot
+        extracted_text, meta_tags = analyze_screenshot(image_path, templates, verbose, ai, include_extracted, detection_pattern)
+
+        # Handle output
+        if report:
+            # Wrap single image result in a list for consistent report generation
+            results = [{
+                "image_path": image_path,
+                "extracted_text": extracted_text,
+                "meta_tags": meta_tags
+            }]
+            generate_report(results, output_format, verbose, include_extracted)
+        else:
+            if verbose:
+                print("Analysis Results:")
+                print(f"File Path: {image_path}")
+                if verbose or include_extracted:
+                    try:
+                        base64_text = base64.b64encode(extracted_text.encode('utf-8')).decode('utf-8')
+                        print(f"Extracted Text (Base64): {base64_text}")
+                    except Exception as e:
+                        print(f"Extracted Text Error: Failed to encode text to Base64: {str(e)}")
+                print("Meta Tags:")
+            print(format_output(meta_tags, output_format))
