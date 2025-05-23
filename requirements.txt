@@ -5,9 +5,4 @@ numpy==1.26.4
 torch==2.4.1
 selenium==4.11.2
 webdriver-manager==4.0.0
-playwright==1.37.0
-playwright-asyncio==1.37.0
-pandas==2.0.3
-pandas-gbq==0.17.1
-
-
+playwright
