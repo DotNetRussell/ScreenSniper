@@ -1,190 +1,174 @@
-AI Page Classifier
-The AI_Page_Classifier directory contains a text classification system designed to identify web error pages (e.g., 404, 500, 403 errors) versus non-error pages using machine learning. It includes two implementations: a Python version using PyTorch and a C# version using Alea.CUDA, both leveraging GPU acceleration for training and inference. The classifiers analyze text extracted from web pages (e.g., via OCR) and predict whether the page indicates an error based on word frequency features.
-Features
+![ScreenSniper Logo](https://i.imgur.com/yfJZLWm.png)  
 
-Dual Implementations:
-Python (PyTorch): Modern, optimized for GPU acceleration, using a neural network with ReLU, dropout, and sigmoid activation.
-C# (Alea.CUDA): Legacy implementation with manual CUDA kernel management, suitable for .NET environments.
+# AI Page Classifier
 
+The `AI_Page_Classifier` directory contains the AI-based text classification component for [ScreenSniper](https://github.com/DotNetRussell/ScreenSniper), a Python tool for analyzing webpage screenshots. This component uses a trained neural network to predict whether a webpage screenshot contains "interesting" content, such as error pages, login pages, or sensitive information, based on text extracted via OCR (Optical Character Recognition).
 
-GPU Support: Optimized for NVIDIA GPUs (tested with RTX 3090 Ti) using CUDA 12.4.
-Text Classification: Detects error pages (e.g., "404 Not Found") vs. non-error pages (e.g., "Welcome to Our Site") using a vocabulary-based feature extraction approach.
-Docker Integration: Runs in a containerized environment for easy setup and portability.
-Vocabulary Generation: Automatically builds a vocabulary from training data for feature extraction.
+The classifier is integrated into ScreenSniper via the `--ai` flag, enhancing its ability to categorize webpages for web reconnaissance, security assessments, and bug bounty hunting.
 
-Directory Contents
+## Table of Contents
+- [AI Page Classifier](#ai-page-classifier)
+  - [Features](#features)
+  - [Files](#files)
+  - [Installation](#installation)
+  - [Usage](#usage)
+    - [Integration with ScreenSniper](#integration-with-screensniper)
+    - [Standalone Usage](#standalone-usage)
+    - [Retraining the Model](#retraining-the-model)
+  - [Dependencies](#dependencies)
+  - [Troubleshooting](#troubleshooting)
+  - [Contributing](#contributing)
+  - [License](#license)
+  - [Contact](#contact)
 
-text_classifier.py: Python script implementing the text classifier using PyTorch.
-TextClassifier.cs: C# source code for the text classifier using Alea.CUDA.
-TextClassifier.csproj: C# project file defining dependencies (Alea, System.Text.Json).
-training_data.json: Training dataset with text samples and labels (1 for error pages, 0 for non-error pages).
-vocabulary.json: Vocabulary array of unique words used for feature extraction.
-generate_vocabulary.py: Script to generate vocabulary.json from training_data.json.
+## Features
+- Predicts if a webpage is "interesting" (e.g., error pages, login pages, sensitive content) using a trained neural network.
+- Outputs a binary classification (`Interesting Page: True/False`) and a confidence score (`ClassifierProbability`).
+- Processes text extracted from screenshots via Tesseract OCR.
+- Supports model retraining with custom training data.
+- Lightweight and optimized for integration with ScreenSniper.
 
-Requirements
+## Files
+- `text_classifier.py`: Main script for text classification and model training.
+- `model.pt`: Trained PyTorch model for classification.
+- `training_data.json`: JSON file containing training data for the classifier.
+- `vocabulary.json`: JSON file defining the vocabulary for text feature extraction.
 
-Hardware:
-NVIDIA GPU (e.g., RTX 3090 Ti) with CUDA 11.1 or later.
-Windows 10/11 with WSL 2 (for Docker Desktop).
+## Installation
+The AI Page Classifier is a component of ScreenSniper and is included in its installation process. To set up the classifier, ensure the `AI_Page_Classifier` directory is present in the ScreenSniper root directory with all required files.
 
+### Prerequisites
+- Python 3.6+
+- Python dependencies: `torch`, `numpy`
+- ScreenSniper installed (see [ScreenSniper README](https://github.com/DotNetRussell/ScreenSniper/blob/main/README.md))
 
-Software:
-Docker Desktop with WSL 2 backend and NVIDIA Container Toolkit.
-NVIDIA drivers supporting CUDA 12.4 (e.g., driver version 545 or newer).
-Git (for cloning the repository).
+### Steps
+1. Clone the ScreenSniper repository:
+   ```bash
+   git clone https://github.com/DotNetRussell/ScreenSniper.git
+   cd ScreenSniper
+   ```
 
+2. Install Python dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+   This includes `torch` and `numpy`, required for the AI classifier.
 
-Dependencies (handled by Docker):
-Python 3.10, PyTorch 2.3, NumPy (for Python implementation).
-.NET 8 SDK, Alea.CUDA 3.0.4 (for C# implementation).
+3. Verify the `AI_Page_Classifier` directory contains:
+   - `text_classifier.py`
+   - `model.pt`
+   - `training_data.json`
+   - `vocabulary.json`
 
+4. If `model.pt` is missing, train the model:
+   ```bash
+   python3 AI_Page_Classifier/text_classifier.py --retrain "dummy text"
+   ```
 
+### Docker
+If using ScreenSniper's Docker image, the `AI_Page_Classifier` directory and its dependencies are included automatically. Build the image:
+```bash
+docker build -t screensniper .
+```
 
-Setup
-1. Clone the Repository
-git clone https://github.com/DotNetRussell/ScreenSniper.git
-cd ScreenSniper/AI_Page_Classifier
+## Usage
 
-2. Prepare Docker Environment
-
-Install Docker Desktop: Download from docker.com and enable WSL 2 backend (Settings > General > Use WSL 2 based engine).
-
-Install NVIDIA Container Toolkit:
-curl -fsSL https://nvidia.github.io/libnvidia-container/gpgkey | sudo gpg --dearmor -o /usr/share/keyrings/nvidia-container-toolkit-keyring.gpg \
-&& curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-container-toolkit.list | \
-sed 's#deb https://#deb [signed-by=/usr/share/keyrings/nvidia-container-toolkit-keyring.gpg] https://#g' | \
-sudo tee /etc/apt/sources.list.d/nvidia-container-toolkit.list
-sudo apt-get update
-sudo apt-get install -y nvidia-container-toolkit
-sudo nvidia-ctk runtime configure --runtime=docker
-
-
-Verify GPU Access:
-docker run --gpus all -it --rm nvidia/cuda:12.4.1-base-ubuntu22.04 nvidia-smi
-
-Ensure your RTX 3090 Ti is listed.
-
-
-3. Build and Run the Container
-Use the provided Dockerfile and docker-compose.yml in the parent directory to build a custom container with Python, PyTorch, .NET SDK, and Alea.CUDA.
-
-Directory Structure:
-ScreenSniper/
-├── Dockerfile
-├── docker-compose.yml
-├── AI_Page_Classifier/
-│   ├── text_classifier.py
-│   ├── TextClassifier.cs
-│   ├── TextClassifier.csproj
-│   ├── training_data.json
-│   ├── vocabulary.json
-│   ├── generate_vocabulary.py
-
-
-Build:
-cd ScreenSniper
-docker-compose build
-
-
-Run:
-docker-compose up
-
-This starts an interactive shell in the container with AI_Page_Classifier mounted at /workspace.
-
-
-Usage
-Run Python Classifier
-Train and predict with the PyTorch implementation:
-python /workspace/text_classifier.py "404 Not Found" --retrain
-
-Or use a pre-trained model:
-python /workspace/text_classifier.py "404 Not Found"
-
-Use --no-gpu to disable GPU acceleration if needed.
-Run C# Classifier
-Train and predict with the Alea.CUDA implementation:
-dotnet /workspace/dotnet/bin/TextClassifier.dll "404 Not Found" --retrain --gpu
-
-Or use a pre-trained model:
-dotnet /workspace/dotnet/bin/TextClassifier.dll "404 Not Found" --gpu
-
-The --threads N flag can specify the number of training threads.
-Output
-Both classifiers output:
-
-Prediction (Error Page or Not Error Page).
-Probability score.
-Matched words from the vocabulary.
+### Integration with ScreenSniper
+The AI classifier is activated in ScreenSniper with the `--ai` flag, processing OCR-extracted text from screenshots to predict if a page is interesting.
 
 Example:
-Text: 404 Not Found
-Predicted: Error Page, Probability: 0.9876
-Matched Words: 404 (1), not (1), found (1)
+```bash
+python3 ScreenSniper --output-format=json --ai testImages/aspx-stacktrace.png
+```
+**Output**:
+```json
+{
+    "meta_tags": [
+        "Interesting Page: True",
+        "ClassifierProbability: 0.9485",
+        "File Path: testImages/aspx-stacktrace.png"
+    ]
+}
+```
 
-Training Data
-The training_data.json contains labeled text samples:
+Docker example:
+```bash
+docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --output-format=json --ai testImages/random-wp-page.png
+```
+**Output**:
+```json
+{
+    "meta_tags": [
+        "Interesting Page: False",
+        "ClassifierProbability: 0.6768",
+        "File Path: testImages/random-wp-page.png"
+    ]
+}
+```
 
-Error Pages (Target: 1): HTTP errors (404, 500, 403, etc.), server issues, WAF blocks.
-Non-Error Pages (Target: 0): Welcome pages, product catalogs, blogs, etc.
+### Standalone Usage
+The `text_classifier.py` script can be run independently to classify text or train the model.
 
-Example:
-[
-    {"Text": "404 Not Found Page Missing", "Target": 1},
-    {"Text": "Welcome to Our Site", "Target": 0}
-]
+Classify text:
+```bash
+python3 AI_Page_Classifier/text_classifier.py --classify "Sample error page text"
+```
+**Output**:
+```plaintext
+Interesting Page: True
+ClassifierProbability: 0.85
+```
 
-Notes
+### Retraining the Model
+To improve accuracy or adapt to new data, update `training_data.json` with new text samples and labels, then retrain:
+```bash
+python3 AI_Page_Classifier/text_classifier.py --retrain "dummy text"
+```
+- `training_data.json` format:
+  ```json
+  [
+      {"text": "Error 500 Internal Server Error", "label": 1},
+      {"text": "Welcome to our homepage", "label": 0}
+  ]
+  ```
+- `label`: 1 (interesting) or 0 (not interesting).
 
-GPU Acceleration: Ensure your NVIDIA drivers are up-to-date for CUDA 12.4 compatibility. The 3090 Ti requires CUDA 11.1 or later.
+The retrained model is saved as `model.pt`, and the vocabulary is updated in `vocabulary.json`.
 
-File Updates: The volume mount (./AI_Page_Classifier:/workspace) ensures real-time synchronization between host and container files.
+## Dependencies
+- **Python**: `torch`, `numpy`
+- **Files**: `model.pt`, `training_data.json`, `vocabulary.json`
 
-Alea.CUDA License: The C# implementation uses Alea.CUDA, which may require a license for commercial use. Verify at QuantAlea.
+Install dependencies:
+```bash
+pip install torch numpy
+```
 
-Git Configuration: Set your Git email to avoid push errors:
-git config --global user.email "DotNetRussell@users.noreply.github.com"
+## Troubleshooting
+- **Missing `model.pt`**: Run `python3 AI_Page_Classifier/text_classifier.py --retrain "dummy text"` to generate the model.
+- **Vocabulary Error**: Ensure `vocabulary.json` exists and matches the format expected by `text_classifier.py`.
+- **Low Accuracy**: Add more diverse samples to `training_data.json` and retrain the model.
+- **PyTorch Issues**: Verify `torch` is installed correctly (`pip show torch`) and compatible with your system.
 
+## Contributing
+Contributions to the AI classifier are welcome! To contribute:
+1. Fork the ScreenSniper repository.
+2. Create a feature branch (`git checkout -b feature/ai-improvement`).
+3. Commit changes (`git commit -m 'Improve AI classifier accuracy'`).
+4. Push to the branch (`git push origin feature/ai-improvement`).
+5. Open a pull request.
 
+Please include tests or updated `training_data.json` for new features.
 
-Troubleshooting
-
-Mount Issues:
-Verify files in /workspace:
-ls /workspace
-
-
-Check mount path:
-ls /mnt/c/Users/YourName/source/repos/ScreenSniper/AI_Page_Classifier
-
-
-Add the path to Docker Desktop’s File Sharing (Settings > Resources > File Sharing).
-
-
-
-GPU Errors:
-Run nvidia-smi in the container to confirm GPU detection.
-Reinstall NVIDIA Container Toolkit if needed.
-
-
-C# Build Errors:
-Check build logs:
-cd /workspace/dotnet/TextClassifier
-dotnet build -c Release
+## License
+MIT License. See `LICENSE` in the ScreenSniper root directory for details.
 
 
+## Contact
+- Author: ☣️ Mr. The Plague ☣️
+- Twitter: [@DotNetRussell](https://twitter.com/DotNetRussell)
+- Twitter: [@Squid_Sec](https://twitter.com/Squid_Sec)
+- Website: [https://www.SquidHacker.com](https://www.SquidHacker.com)
 
-
-File Errors:
-Ensure training_data.json and vocabulary.json are valid JSON.
-
-
-
-Contributing
-Contributions are welcome! Please:
-
-Fork the repository.
-Create a feature branch.
-Submit a pull request with clear descriptions.
-
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+For issues or feature requests, open an issue on [GitHub](https://github.com/DotNetRussell/ScreenSniper) or contact via Twitter.
