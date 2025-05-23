@@ -1,323 +1,170 @@
+ScreenSniper
+ScreenSniper is a Python tool designed to analyze webpage screenshots by extracting text via OCR (Optical Character Recognition) and categorizing content using detection patterns and/or an AI text classifier. It generates meta tags to provide insights into technologies, security issues, and page types, making it useful for web reconnaissance, security assessments, and bug bounty hunting.
+The tool supports:
 
-![ScreenSniper Logo](https://i.imgur.com/yfJZLWm.png)  
+Template-based detection using JSON patterns in the detectionPatterns directory.
+AI-based classification using a trained neural network to identify interesting pages (e.g., error pages, login pages).
+Multiple output formats: normal (plain text), JSON, and XML.
 
-# ScreenSniper
+Recent updates include integration with an AI classifier (text_classifier.py) for enhanced page analysis and new flags for flexible output control.
+Features
 
-**A Penetration Testing Tool for Webpage Screenshot Analysis**
+Extracts text from screenshots using Tesseract OCR.
+Categorizes pages using detection patterns (e.g., identifying IIS, login pages).
+AI classification to predict if a page is "interesting" (e.g., error pages, sensitive content).
+Supports Base64-encoded extracted text output.
+Configurable output formats: normal, JSON, XML.
+Verbose mode for debugging OCR and classification steps.
 
-ScreenSniper is a Python-based tool designed for penetration testers to analyze webpage screenshots and identify security risks. It extracts text from screenshots using Tesseract OCR and matches the text against customizable templates to generate meta tags, such as `PageType: Login Page` or `SecurityRisk: Sensitive Information Exposure`. This tool is ideal for authorized testing scenarios where you need to quickly identify vulnerabilities like directory listings, default server pages, or exposed stack traces.
+Installation
+Prerequisites
 
-## Features
+Python 3.6+
+Tesseract OCR (system package)
+Python dependencies: opencv-python, pytesseract, Pillow, numpy, torch (for AI)
 
-- **OCR-Powered Text Extraction**: Uses Tesseract OCR to extract text from webpage screenshots.
-- **Template-Based Detection**: Matches extracted text against JSON templates in the `detectionPatterns/` directory to generate security-relevant meta tags.
-- **Flexible Output Formats**: Supports `normal` (plain text), `json`, and `xml` output formats for easy integration into workflows.
-- **Verbose Debugging**: Optional `--verbose` flag to display preprocessing steps and extracted text for troubleshooting.
-- **Customizable**: Easily add or modify detection templates to suit your testing needs.
-- **Lightweight and Free**: Built with open-source libraries, requiring no additional costs.
+Install system dependencies (Debian/Ubuntu):
+sudo apt-get update
+sudo apt-get install -y tesseract-ocr
 
-## Installation
+Clone the repository:
+git clone https://github.com/DotNetRussell/ScreenSniper.git
+cd ScreenSniper
 
-### Prerequisites
-- **Python 3.8+**
-- **Tesseract OCR** installed on your system:
-  - **Ubuntu**: `sudo apt-get install tesseract-ocr`
-  - **macOS**: `brew install tesseract`
-  - **Windows**: Download and install from [GitHub](https://github.com/UB-Mannheim/tesseract/wiki), then add to your PATH.
+Install Python dependencies:
+pip install -r requirements.txt
 
-### Steps
-1. **Clone the Repository**:
-   ```
-   git clone https://github.com/DotNetRussell/screensniper.git
-   cd screensniper
-   ```
+For AI classification (--ai flag), ensure the following files are in the AI_Page_Classifier directory:
 
-2. **Install Dependencies**:
-   Create a virtual environment (optional but recommended) and install the required Python packages:
-   ```
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   pip install -r requirements.txt
-   ```
+text_classifier.py
+model.pt (trained model)
+training_data.json (training data)
+vocabulary.json (vocabulary for text features)
 
-3. **Verify Tesseract Installation**:
-   Ensure Tesseract is installed and accessible:
-   ```
-   tesseract --version
-   ```
+If model.pt is missing, train the model:
+python3 AI_Page_Classifier/text_classifier.py --retrain "dummy text"
 
-## Usage
+Directory Structure
+ScreenSniper/
+├── detectionPatterns/    # JSON files with detection patterns
+├── AI_Page_Classifier/   # AI classifier script and data
+│   ├── text_classifier.py
+│   ├── model.pt
+│   ├── training_data.json
+│   ├── vocabulary.json
+├── ScreenSniper         # Main script
+├── requirements.txt     # Python dependencies
+├── README.md            # This file
 
-### Basic Command
-Analyze a webpage screenshot and output meta tags in the default `normal` format:
-```
-python screenSniper.py path/to/screenshot.png
-```
+Usage
+Run ScreenSniper on a single screenshot:
+python3 ScreenSniper --output-format=json --ai --include-extracted ./path/to/screenshot.png
 
-### Example Output
-For a screenshot `testImages/login-cms.png` containing a login page and CMS signature:
-```
-PageType: Login Page
-Technology: amFOSS CMS
-SecurityRisk: Check for Known CMS Vulnerabilities
-File Path: testImages/login-cms.png
-```
+Process multiple screenshots in a directory:
+for image in $(ls testImages/); do
+    python3 ScreenSniper --include-extracted --output-format=json --ai testImages/$image
+done
 
-### Options
-- **Verbose Output**: Display preprocessing steps and extracted text for debugging:
-  ```
-  python screenSniper.py path/to/screenshot.png --verbose
-  ```
-  Example verbose output:
-  ```
-  Starting image preprocessing...
-  Image loaded successfully.
-  Image resized and saved as debug_resized.png
-  Converted to grayscale and saved as debug_grayscale.png
-  Applied CLAHE and saved as debug_clahe.png
-  Applied adaptive thresholding and saved as debug_threshold.png
-  Applied dilation and saved as debug_dilated.png
-  Final preprocessed image saved as preprocessed.png
-  Extracted Text: Username: Password: Forgotten your password or username? Log In This is amFOSS CMS < By the CLUB | Of the CLUB | For the CLUB >
-  Analysis Results:
-  File Path: testImages/login-cms.png
-  Extracted Text: Username: Password: Forgotten your password or username? Log In This is amFOSS CMS < By the CLUB | Of the CLUB | For the CLUB >
-  Meta Tags:
-  PageType: Login Page
-  Technology: amFOSS CMS
-  SecurityRisk: Check for Known CMS Vulnerabilities
-  File Path: testImages/login-cms.png
-  ```
+Command-Line Flags
 
-- **Output Formats**: Choose between `normal`, `json`, or `xml` formats:
-  - JSON:
-    ```
-    python screenSniper.py path/to/screenshot.png --output-format json
-    ```
-    Output:
-    ```
-    {
-        "meta_tags": [
-            "PageType: Login Page",
-            "Technology: amFOSS CMS",
-            "SecurityRisk: Check for Known CMS Vulnerabilities",
-            "File Path: testImages/login-cms.png"
-        ]
-    }
-    ```
-  - XML:
-    ```
-    python screenSniper.py path/to/screenshot.png --output-format xml
-    ```
-    Output:
-    ```
-    <?xml version="1.0" ?>
-    <result>
-        <meta_tags>
-            <meta_tag>PageType: Login Page</meta_tag>
-            <meta_tag>Technology: amFOSS CMS</meta_tag>
-            <meta_tag>SecurityRisk: Check for Known CMS Vulnerabilities</meta_tag>
-            <meta_tag>File Path: testImages/login-cms.png</meta_tag>
-        </meta_tags>
-    </result>
-    ```
+--verbose: Enable detailed debugging output (e.g., OCR steps, classifier logs).
+--output-format [normal|json|xml]: Specify output format (default: normal).
+--ai: Enable AI text classification using text_classifier.py to predict if a page is interesting.
+--include-extracted: Include the OCR’d text as a Base64-encoded meta tag (ExtractedTextBase64).
+--detection-pattern: Include meta tags from template-based detection patterns in detectionPatterns.
 
-## Directory Structure
-- `screenSniper.py`: The main script for analyzing screenshots.
-- `detectionPatterns/`: Directory containing JSON templates for detection patterns.
-  - `login_page.json`: Template for detecting login pages.
-  - `amfoss_cms.json`: Template for detecting amFOSS CMS.
-  - Add more templates as needed (see [Customizing Templates](#customizing-templates)).
-- `testImages/`: Directory for test screenshots (not included in the repo; create your own).
-- `requirements.txt`: List of Python dependencies.
-- `README.md`: This documentation file.
+Example Outputs
+JSON Output with AI and Extracted Text
+python3 ScreenSniper --output-format=json --ai --include-extracted ./starbucks.com.png
 
-## Customizing Templates
-ScreenSniper uses JSON templates in the `detectionPatterns/` directory to match extracted text and generate meta tags. Each template has the following structure:
-- `name`: Descriptive name of the detection rule.
-- `conditions`: List of keywords to match (case-insensitive).
-- `negative_conditions` (optional): Keywords that, if present, prevent the template from matching.
-- `meta_tags`: List of meta tags to apply if the conditions are met.
-- `additional_checks` (optional): Extra logic, such as checking for sensitive file extensions.
-
-### Example Template: `detectionPatterns/login_page.json`
-```
 {
-  "name": "Login Page",
-  "conditions": ["login", "sign in", "username", "password", "user", "pass", "forgot"],
-  "negative_conditions": ["logout", "sign out"],
-  "meta_tags": [
-    "PageType: Login Page"
-  ]
+    "meta_tags": [
+        "Interesting Page: True",
+        "ClassifierProbability: 0.6623",
+        "ExtractedTextBase64: SUlTIGxvZ2lu",
+        "File Path: ./starbucks.com.png"
+    ]
 }
-```
 
-### Adding a New Template
-To detect a new pattern (e.g., password reset pages):
-1. Create a new file `detectionPatterns/password_reset.json`:
-   ```
-   {
-     "name": "Password Reset Page",
-     "conditions": ["forgot", "reset", "password"],
-     "meta_tags": [
-       "PageType: Password Reset Page",
-       "SecurityRisk: Check for Insecure Reset Mechanism"
-     ]
-   }
-   ```
-2. Run ScreenSniper on a screenshot containing a password reset page to test the new template.
+XML Output with Detection Patterns
+python3 ScreenSniper --output-format=xml --detection-pattern ./starbucks.com.png
 
-## Troubleshooting
-- **OCR Errors**:
-  - If text extraction fails (`OCR Error: No text extracted`), use `--verbose` to inspect preprocessing steps.
-  - Check the debug images (e.g., `.debug_resized.png`, `.debug_threshold.png`) to identify issues.
-  - Adjust preprocessing parameters in `preprocess_image` (e.g., `scale_factor`, `clipLimit`) if needed.
-  - Ensure the screenshot is high-resolution and text is legible.
-- **Tesseract Not Found**:
-  - Verify Tesseract is installed and in your PATH:
-    ```
-    tesseract --version
-    ```
-  - On Windows, you may need to set the Tesseract path explicitly in the script:
-    ```
-    pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
-    ```
-- **Template Not Matching**:
-  - Check the extracted text (`--verbose`) to ensure expected keywords are present.
-  - Add more keyword variations to the template’s `conditions` (e.g., “usrname” for “username”).
-- **File Not Found**:
-  - Ensure the screenshot file exists and has a valid extension (`.png`, `.jpg`, `.jpeg`, `.gif`, `.bmp`).
+<?xml version="1.0" ?>
+<result>
+    <meta_tags>
+        <meta_tag>Technology: IIS</meta_tag>
+        <meta_tag>PageType: Login Page</meta_tag>
+        <meta_tag>File Path: ./starbucks.com.png</meta_tag>
+    </meta_tags>
+</result>
 
-## Contributing
-Contributions are welcome! To contribute:
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature`).
-3. Make your changes and commit (`git commit -m "Add your feature"`).
-4. Push to your branch (`git push origin feature/your-feature`).
-5. Open a pull request with a detailed description of your changes.
+Normal Output with AI and Detection Patterns
+python3 ScreenSniper --ai --detection-pattern ./starbucks.com.png
 
-### Ideas for Contributions
-- Add new detection templates for specific vulnerabilities or technologies.
-- Enhance OCR accuracy with alternative libraries (e.g., PaddleOCR, EasyOCR).
-- Implement batch processing for multiple screenshots.
-- Integrate automated testing scripts for detected vulnerabilities (e.g., brute-force login pages).
+Technology: IIS
+PageType: Login Page
+Interesting Page: True
+ClassifierProbability: 0.6623
+File Path: ./starbucks.com.png
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+AI Integration
+The --ai flag enables the AI text classifier (text_classifier.py), which uses a trained neural network to predict if a page is "interesting" (e.g., error pages, login pages, or sensitive content). The classifier requires:
 
+model.pt: Trained model file.
+training_data.json: Training data in JSON format.
+vocabulary.json: Vocabulary for text feature extraction.
 
-### Notes
-- **Correct Code Block**: The README is now presented in a raw Markdown code block with triple backticks (```), ensuring proper formatting and avoiding escaping issues. You can copy this content directly into a `README.md` file.
-- **Tool Name**: All references to the tool are updated to "ScreenSniper," including the script name (`screenSniper.py`), commands, and mentions throughout the document.
-- **Formatting**: The content remains well-structured for GitHub, with clear sections, code blocks for examples, and proper Markdown syntax.
-- **Copying**: To use this, copy the content within the code block (excluding the outer triple backticks) into a `README.md` file in your repository’s root directory.
+The classifier outputs:
 
-If you need further adjustments or have additional files to generate, let me know!
+Interesting Page: True/False: Whether the page is deemed interesting.
+ClassifierProbability: <float>: Confidence score (0.0 to 1.0).
+
+To update the training data or retrain the model, modify training_data.json and run:
+python3 AI_Page_Classifier/text_classifier.py --retrain "dummy text"
+
+Recent updates include a newly trained model for improved accuracy, with training data included in the AI_Page_Classifier directory.
+Detection Patterns
+The --detection-pattern flag enables template-based detection using JSON files in the detectionPatterns directory. Each file specifies conditions (e.g., keywords like "IIS", "login") and corresponding meta tags (e.g., Technology: IIS, PageType: Login Page). Example:
+{
+    "conditions": ["IIS"],
+    "meta_tags": ["Technology: IIS"]
+}
+
+Without --detection-pattern, only AI classifier results (if --ai is set) and file path are included, unless --include-extracted is used.
+Dependencies
+
+System: tesseract-ocr
+Python: opencv-python, pytesseract, Pillow, numpy, torch
+AI Classifier: text_classifier.py, model.pt, training_data.json, vocabulary.json
+
+Install Python dependencies:
+pip install opencv-python pytesseract Pillow numpy torch
+
+Troubleshooting
+
+Tesseract Error: Ensure tesseract-ocr is installed and in PATH:tesseract --version
 
 
-------------------------------------------------------------------------
+AI Classifier Error: Verify text_classifier.py and required files are in AI_Page_Classifier. Check model.pt exists or retrain.
+OCR Failure: Use --verbose to inspect preprocessing steps (saved as .debug_*.png).
+Gibberish in Text: Some screenshots may produce noisy OCR output. Update training_data.json to improve classifier performance.
 
-# Website Screenshot Tool
-
-A Python script that captures screenshots of websites using Playwright. The script reads a list of URLs from standard input, navigates to each URL, and saves a screenshot of the webpage as a PNG file named after the website's domain.
-
-## Features
-
-- **Concurrent Processing**: Captures screenshots for multiple URLs concurrently, with a semaphore to limit resource usage.
-- **Headless Browser**: Uses Playwright's Chromium browser in headless mode for reliable rendering.
-- **Error Handling**: Gracefully handles timeouts and other errors, ensuring robust operation.
-- **Customizable**: Configurable viewport size and user agent for consistent screenshots.
-
-## Prerequisites
-
-- Python 3.8 or higher
-- [Playwright](https://playwright.dev/python/) for browser automation
-- A list of URLs to process (provided via standard input)
-
-## Installation
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/DotNetRussell/ScreenSniper.git
-   cd your-repo
-   ```
-
-2. **Set Up a Virtual Environment** (optional but recommended):
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install Dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-   This installs the required Python packages and Playwright browsers.
-
-4. **Install Playwright Browsers**:
-   ```bash
-   playwright install
-   ```
-
-## Usage
-
-1. **Prepare a List of URLs**:
-   Create a file (e.g., `urls.txt`) with one URL per line. For example:
-   ```
-   google.com
-   github.com
-   example.com
-   ```
-
-2. **Run the Script**:
-   Pipe the URLs into the script via standard input:
-   ```bash
-   cat urls.txt | python3 screenshot.py
-   ```
-   Alternatively, you can manually input URLs by running:
-   ```bash
-   python3 screenshot.py
-   ```
-   Then type each URL followed by Enter, and press Ctrl+D (or Ctrl+Z on Windows) to finish.
-
-3. **Output**:
-   - Screenshots are saved as PNG files in the current directory, named after the domain (e.g., `google.com.png`).
-   - Console output indicates success or errors for each URL.
-
-## Example
-
-```bash
-echo -e "google.com\ngithub.com" | python3 screenshot.py
-```
-
-**Output**:
-```
-Saved screenshot for https://google.com as google.com.png
-Saved screenshot for https://github.com as github.com.png
-```
-
-## Requirements
-
-See the `requirements.txt` file for dependencies:
-- `playwright>=1.47.0`
-
-## Notes
-
-- **Concurrency**: The script limits concurrent browser instances to 5 to prevent resource exhaustion. Adjust the `semaphore` value in the script if needed.
-- **Timeouts**: URLs that take longer than 10 seconds to load are skipped with a timeout message.
-- **URL Formatting**: URLs without a scheme (e.g., `google.com`) are automatically prefixed with `https://`.
-- **Screenshot Size**: Screenshots are taken at a 1280x720 viewport. Modify the `viewport` parameter in the script to change this.
-
-## Contributing
-
+Contributing
 Contributions are welcome! Please:
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature/your-feature`).
-3. Commit your changes (`git commit -m "Add your feature"`).
-4. Push to the branch (`git push origin feature/your-feature`).
-5. Open a pull request.
 
-## License
+Fork the repository.
+Create a feature branch (git checkout -b feature/new-feature).
+Commit changes (git commit -m 'Add new feature').
+Push to the branch (git push origin feature/new-feature).
+Open a pull request.
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
+License
+MIT License. See LICENSE for details.
+Contact
+
+Author: ☣️ Mr. The Plague ☣️
+Twitter: @DotNetRussell
+Twitter: @Squid_Sec
+Website: https://www.SquidHacker.com
+
+For issues or feature requests, open an issue on GitHub or contact via Twitter.
