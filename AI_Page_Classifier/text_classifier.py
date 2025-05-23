@@ -8,6 +8,7 @@ import os
 import sys
 import time
 import base64
+import argparse
 
 class NeuralNetwork(nn.Module):
     def __init__(self, input_size, hidden_size, output_size, learning_rate=0.01, use_gpu=True, automation=False, retrain=True, model_exists=True):
@@ -30,7 +31,7 @@ class NeuralNetwork(nn.Module):
         self.layer2 = nn.Linear(hidden_size, output_size)
         self.sigmoid = nn.Sigmoid()
         
-        # Initialize weights
+        # Initialize weights with Xavier initialization
         self._initialize_weights()
         
         # Move to device
@@ -40,12 +41,9 @@ class NeuralNetwork(nn.Module):
         self.optimizer = torch.optim.SGD(self.parameters(), lr=learning_rate)
         
     def _initialize_weights(self):
-        scale = np.sqrt(2.0 / (self.input_size + self.hidden_size))
-        nn.init.normal_(self.layer1.weight, mean=0, std=scale)
+        nn.init.xavier_uniform_(self.layer1.weight)
         nn.init.zeros_(self.layer1.bias)
-        
-        scale = np.sqrt(2.0 / (self.hidden_size + self.output_size))
-        nn.init.normal_(self.layer2.weight, mean=0, std=scale)
+        nn.init.xavier_uniform_(self.layer2.weight)
         nn.init.zeros_(self.layer2.bias)
     
     def forward(self, x, training=False):
@@ -100,6 +98,7 @@ class TextClassifier:
         self.model_file_path = "./AI_Page_Classifier/model.pt"
         self.training_data_file_path = "./AI_Page_Classifier/training_data.json"
         self.vocabulary_file_path = "./AI_Page_Classifier/vocabulary.json"
+        
         
         self.vocabulary = self._load_vocabulary()
         self.vocab_size = len(self.vocabulary)
@@ -216,6 +215,13 @@ class TextClassifier:
     def predict(self, text):
         self.nn.eval()
         features, matched_words = self._text_to_features(text.lower())
+        if args.verbose:
+            print(f"Feature vector sum: {sum(features)}")
+        if not any(features):
+            if args.verbose:
+                print("No features matched, returning non-interesting")
+            return (False, 0.0, features, matched_words)
+        
         features_tensor = torch.tensor(features, dtype=torch.float32).to(self.nn.device)
         
         with torch.no_grad():
@@ -225,83 +231,120 @@ class TextClassifier:
         return (prob > 0.8, prob, features, matched_words)
 
 def main():
-    # Debug: Uncomment to inspect arguments
-    # print(f"sys.argv: {sys.argv}")
-    
-    retrain = '--retrain' in sys.argv
-    verbose = '--verbose' in sys.argv
-    automation = '--automation' in sys.argv
-    use_gpu = '--gpu' in sys.argv or torch.cuda.is_available()
-    test_file = None
-    test_string = None
-    max_threads = 1  # Default to 1 thread
-    
-    i = 1
-    while i < len(sys.argv):
-        arg = sys.argv[i]
-        if arg == '--threads' and i + 1 < len(sys.argv):
-            try:
-                max_threads = max(1, min(int(sys.argv[i + 1]), os.cpu_count()))
-                i += 2
-            except ValueError:
-                print(f"Warning: Invalid threads value '{sys.argv[i + 1]}', using default (1)")
-                i += 2
-        elif arg == '--test-file' and i + 1 < len(sys.argv):
-            test_file = sys.argv[i + 1]
-            i += 2
-        elif arg not in ['--retrain', '--gpu', '--verbose', '--automation', '--threads'] and test_string is None:
-            test_string = sys.argv[i]
-            i += 1
+    global args  # Make args accessible for verbose logging in predict
+    parser = argparse.ArgumentParser(
+        description="Text classifier for predicting interesting pages.",
+        epilog="Example: python3 text_classifier.py \"404 Not Found\" --automation"
+    )
+    parser.add_argument(
+        "text",
+        type=str,
+        nargs='?',
+        help="Input text to classify (required unless --test-file is used)"
+    )
+    parser.add_argument(
+        "--retrain",
+        action="store_true",
+        help="Retrain the model even if model.pt exists"
+    )
+    parser.add_argument(
+        "--gpu",
+        action="store_true",
+        help="Use GPU if available"
+    )
+    parser.add_argument(
+        "--verbose",
+        action="store_true",
+        help="Enable verbose output"
+    )
+    parser.add_argument(
+        "--automation",
+        action="store_true",
+        help="Output JSON for automation (requires single text input)"
+    )
+    parser.add_argument(
+        "--test-file",
+        type=str,
+        help="Path to a file containing test texts (one per line)"
+    )
+    parser.add_argument(
+        "--threads",
+        type=int,
+        default=1,
+        help="Number of threads for training (default: 1, max: 32)"
+    )
+
+    try:
+        args = parser.parse_args()
+    except SystemExit as e:
+        if args.automation:
+            print(json.dumps({"error": "Invalid arguments"}, indent=2))
+        sys.exit(e.code)
+
+    # Validate arguments
+    if not args.text and not args.test_file:
+        error_msg = "Please provide either a test string or a test file using --test-file"
+        if args.automation:
+            print(json.dumps({"error": error_msg}, indent=2))
         else:
-            i += 1  # Skip known flags or invalid args
-    
-    if not test_string and not test_file:
-        if automation:
-            print(json.dumps({"error": "Please provide a test string for automation mode"}, indent=2))
-        else:
-            print("Error: Please provide either a test string or a test file using --test-file <file_path>.")
+            print(f"Error: {error_msg}.")
             print("Example: python text_classifier.py \"404 Not Found\" [--retrain] [--threads 4] [--gpu] [--verbose] [--automation]")
             print("Or: python text_classifier.py --test-file test_data.txt [--retrain] [--threads 4] [--gpu] [--verbose]")
-        return
+        sys.exit(1)
     
-    if automation and (test_file or not test_string):
+    if args.automation and (args.test_file or not args.text):
         print(json.dumps({"error": "--automation requires a single test string, not a test file"}, indent=2))
-        return
+        sys.exit(1)
     
-    if test_file and not os.path.exists(test_file):
-        if automation:
-            print(json.dumps({"error": f"Test file '{test_file}' not found"}, indent=2))
+    if args.test_file and not os.path.exists(args.test_file):
+        error_msg = f"Test file '{args.test_file}' not found"
+        if args.automation:
+            print(json.dumps({"error": error_msg}, indent=2))
         else:
-            print(f"Error: Test file '{test_file}' not found.")
-        return
+            print(f"Error: {error_msg}.")
+        sys.exit(1)
+    
+    # Clamp threads to a reasonable maximum (e.g., 32)
+    max_threads = max(1, min(args.threads, 32))
+    if args.threads != max_threads:
+        if args.verbose:
+            print(f"Warning: Threads adjusted to {max_threads} (requested: {args.threads}, max: 32)")
     
     try:
-        model_exists = os.path.exists("./AI_Page_Classifier/model.pt")
-        classifier = TextClassifier(use_gpu, automation, retrain, model_exists)
+        model_exists = os.path.exists("model.pt")
+        classifier = TextClassifier(
+            use_gpu=args.gpu,
+            automation=args.automation,
+            retrain=args.retrain,
+            model_exists=model_exists
+        )
         
-        if retrain or not model_exists:
-            if automation:
+        # Train only if --retrain is set or model.pt is missing and not in automation mode
+        if args.retrain or (not model_exists and not args.automation):
+            if args.automation:
                 print(json.dumps({"error": "Model file 'model.pt' missing. Training not allowed in automation mode"}, indent=2))
-                return
-            if not automation:
+                sys.exit(1)
+            if args.verbose:
                 print(f"Training model with {max_threads} thread{'s' if max_threads > 1 else ''} {'on GPU' if classifier.nn.device.type == 'cuda' else 'on CPU'}...")
             elapsed_time = classifier.train(max_threads)
-            if not automation:
+            if args.verbose:
                 print(f"Training took {elapsed_time:.2f} seconds")
             classifier.nn.save(classifier.model_file_path)
-            if not automation:
+            if args.verbose:
                 print("Model trained and saved.")
         else:
-            if not automation:
+            if args.verbose:
                 print("Loading saved model...")
-            classifier.load(automation, retrain, model_exists)
-            if not automation:
+            classifier.load(args.automation, args.retrain, model_exists)
+            if args.verbose:
                 print("Model loaded.")
         
-        if automation:
-            is_error, probability, _, _ = classifier.predict(test_string)
+        if args.automation:
+            if args.verbose:
+                print(f"Predicting for text: {args.text}")
+            is_error, probability, _, _ = classifier.predict(args.text)
             result = {
-                "text": base64.b64encode(test_string.encode('utf-8')).decode('utf-8'),
+                "text": base64.b64encode(args.text.encode('utf-8')).decode('utf-8'),
                 "probability": probability,
                 "is_interesting": is_error
             }
@@ -312,8 +355,8 @@ def main():
         negative_count = 0
         total_tests = 0
         
-        if test_file:
-            with open(test_file, 'r', encoding='utf-8') as f:
+        if args.test_file:
+            with open(args.test_file, 'r', encoding='utf-8') as f:
                 for line in f:
                     test_text = line.strip()
                     if not test_text:
@@ -322,7 +365,7 @@ def main():
                     total_tests += 1
                     is_error, probability, features, matched_words = classifier.predict(test_text)
                     
-                    if verbose:
+                    if args.verbose:
                         print(f"Text: {test_text}")
                         print(f"Predicted: {'Interesting Page' if is_error else 'Not Interesting Page'}, Probability: {probability:.4f}")
                         print(f"Matched Words: {', '.join(matched_words) if matched_words else 'None'}")
@@ -334,10 +377,12 @@ def main():
                         negative_count += 1
         else:
             total_tests = 1
-            is_error, probability, features, matched_words = classifier.predict(test_string)
+            if args.verbose:
+                print(f"Predicting for text: {args.text}")
+            is_error, probability, features, matched_words = classifier.predict(args.text)
             
-            if verbose or not verbose:  # Always print for single string
-                print(f"Text: {test_string}")
+            if args.verbose or not args.automation:
+                print(f"Text: {args.text}")
                 print(f"Predicted: {'Interesting Page' if is_error else 'Not Interesting Page'}, Probability: {probability:.4f}")
                 print(f"Matched Words: {', '.join(matched_words) if matched_words else 'None'}")
             
@@ -346,16 +391,18 @@ def main():
             else:
                 negative_count += 1
         
-        print(f"Test Summary:")
-        print(f"Total Tests: {total_tests}")
-        print(f"Positive Cases (Interesting): {positive_count}")
-        print(f"Negative Cases (Not Interesting): {negative_count}")
+        if args.verbose or not args.automation:
+            print(f"Test Summary:")
+            print(f"Total Tests: {total_tests}")
+            print(f"Positive Cases (Interesting): {positive_count}")
+            print(f"Negative Cases (Not Interesting): {negative_count}")
     
     except Exception as ex:
-        if automation:
+        if args.automation:
             print(json.dumps({"error": str(ex)}, indent=2))
         else:
             print(f"Error: {str(ex)}")
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()

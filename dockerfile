@@ -1,0 +1,35 @@
+# Use a slim Python 3.9 image with explicit Debian Bullseye for reliability
+FROM python:3.9-slim-bullseye
+
+# Set working directory
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+	tesseract-ocr \
+	chromium \
+	chromium-driver \
+	&& rm -rf /var/lib/apt/lists/*
+
+# Copy requirements file (to cache pip install)
+COPY requirements.txt .
+
+# Install Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Copy repository files (adjust for potential filename variations)
+COPY ScreenSniper* screensniper
+COPY detectionPatterns/ detectionPatterns/
+COPY AI_Page_Classifier/ AI_Page_Classifier/
+COPY testImages/ testImages/
+
+# Ensure scripts are executable and have correct shebang
+RUN chmod +x screensniper && \
+	sed -i 's|#!/usr/bin/python3|#!/usr/bin/env python3|' screensniper
+
+# Set environment variables for Python and Tesseract
+ENV PYTHONUNBUFFERED=1
+ENV PATH="/app:${PATH}"
+
+# Default command (run screensniper with --help)
+CMD ["screensniper", "--help"]

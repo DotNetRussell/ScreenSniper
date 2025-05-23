@@ -1,4 +1,3 @@
-
 ![ScreenSniper Logo](https://i.imgur.com/yfJZLWm.png)  
 
 # ScreenSniper
@@ -10,7 +9,7 @@ The tool supports:
 - **AI-based classification** using a trained neural network to identify interesting pages (e.g., error pages, login pages).
 - Multiple output formats: normal (plain text), JSON, and XML.
 
-Recent updates include integration with an AI classifier (`text_classifier.py`) for enhanced page analysis and new flags for flexible output control.
+Recent updates include integration with an AI classifier (`text_classifier.py`) for enhanced page analysis, new flags for flexible output control, and Docker support for easy deployment.
 
 ## Features
 - Extracts text from screenshots using Tesseract OCR.
@@ -19,6 +18,7 @@ Recent updates include integration with an AI classifier (`text_classifier.py`) 
 - Supports Base64-encoded extracted text output.
 - Configurable output formats: normal, JSON, XML.
 - Verbose mode for debugging OCR and classification steps.
+- Docker support for consistent and portable execution.
 
 ## Installation
 
@@ -26,7 +26,9 @@ Recent updates include integration with an AI classifier (`text_classifier.py`) 
 - Python 3.6+
 - Tesseract OCR (system package)
 - Python dependencies: `opencv-python`, `pytesseract`, `Pillow`, `numpy`, `torch` (for AI)
+- Optional: Docker for containerized execution
 
+#### Manual Installation
 Install system dependencies (Debian/Ubuntu):
 ```bash
 sudo apt-get update
@@ -55,6 +57,18 @@ If `model.pt` is missing, train the model:
 python3 AI_Page_Classifier/text_classifier.py --retrain "dummy text"
 ```
 
+#### Docker Installation
+ScreenSniper includes a Dockerfile for running the tool in a containerized environment, ensuring consistent dependencies and easy setup. The Docker image is based on `python:3.9-slim-bullseye` and includes:
+- Tesseract OCR
+- Chromium and Chromium Driver
+- All required Python dependencies from `requirements.txt`
+- Project files (`ScreenSniper`, `detectionPatterns`, `AI_Page_Classifier`, `testImages`)
+
+To build the Docker image:
+```bash
+docker build -t screensniper .
+```
+
 ### Directory Structure
 ```
 ScreenSniper/
@@ -64,13 +78,16 @@ ScreenSniper/
 │   ├── model.pt
 │   ├── training_data.json
 │   ├── vocabulary.json
-├── ScreenSniper         # Main script
-├── requirements.txt     # Python dependencies
-├── README.md            # This file
+├── ScreenSniper          # Main script
+├── requirements.txt      # Python dependencies
+├── Dockerfile            # Docker configuration
+├── README.md             # This file
+├── testImages/           # Sample images for testing
 ```
 
 ## Usage
 
+### Manual Usage
 Run `ScreenSniper` on a single screenshot:
 ```bash
 python3 ScreenSniper --output-format=json --ai --include-extracted ./path/to/screenshot.png
@@ -82,6 +99,46 @@ for image in $(ls testImages/); do
     python3 ScreenSniper --include-extracted --output-format=json --ai testImages/$image
 done
 ```
+
+### Docker Usage
+Run ScreenSniper in a Docker container by mounting the current directory to `/app` in the container. The `-v $(pwd):/app` flag mounts the host directory, allowing access to local screenshots and ensuring output is saved to the host.
+
+#### Example Commands
+Analyze a WordPress page screenshot:
+```bash
+docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --output-format=json testImages/random-wp-page.png --ai
+```
+**Output**:
+```json
+{
+    "meta_tags": [
+        "Interesting Page: False",
+        "ClassifierProbability: 0.6768",
+        "File Path: testImages/random-wp-page.png"
+    ]
+}
+```
+
+Analyze an ASPX stacktrace screenshot:
+```bash
+docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --output-format=json testImages/aspx-stacktrace.png --ai
+```
+**Output**:
+```json
+{
+    "meta_tags": [
+        "Interesting Page: True",
+        "ClassifierProbability: 0.9485",
+        "File Path: testImages/aspx-stacktrace.png"
+    ]
+}
+```
+
+**Notes**:
+- The `--rm` flag ensures the container is removed after execution.
+- The `-it` flag enables interactive mode with a TTY.
+- The `-v $(pwd):/app` flag mounts the current directory to `/app`, making local files (e.g., `testImages/`) accessible in the container.
+- The `--ai` flag enables AI classification, and `--output-format=json` specifies JSON output.
 
 ### Command-Line Flags
 - `--verbose`: Enable detailed debugging output (e.g., OCR steps, classifier logs).
@@ -163,11 +220,11 @@ The `--detection-pattern` flag enables template-based detection using JSON files
 Without `--detection-pattern`, only AI classifier results (if `--ai` is set) and file path are included, unless `--include-extracted` is used.
 
 ## Dependencies
-- **System**: `tesseract-ocr`
+- **System**: `tesseract-ocr`, `chromium`, `chromium-driver` (included in Docker image)
 - **Python**: `opencv-python`, `pytesseract`, `Pillow`, `numpy`, `torch`
 - **AI Classifier**: `text_classifier.py`, `model.pt`, `training_data.json`, `vocabulary.json`
 
-Install Python dependencies:
+Install Python dependencies (manual installation):
 ```bash
 pip install opencv-python pytesseract Pillow numpy torch
 ```
@@ -180,6 +237,7 @@ pip install opencv-python pytesseract Pillow numpy torch
 - **AI Classifier Error**: Verify `text_classifier.py` and required files are in `AI_Page_Classifier`. Check `model.pt` exists or retrain.
 - **OCR Failure**: Use `--verbose` to inspect preprocessing steps (saved as `.debug_*.png`).
 - **Gibberish in Text**: Some screenshots may produce noisy OCR output. Update `training_data.json` to improve classifier performance.
+- **Docker Issues**: Ensure the `-v $(pwd):/app` flag is used correctly to mount the current directory. Verify Docker image is built with `docker build -t screensniper .`.
 
 ## Contributing
 Contributions are welcome! Please:
@@ -193,9 +251,38 @@ Contributions are welcome! Please:
 MIT License. See `LICENSE` for details.
 
 ## Contact
-- Author: Anthony Russell
+- Author: ☣️ Mr. The Plague ☣️
 - Twitter: [@DotNetRussell](https://twitter.com/DotNetRussell)
-- Blog: [https://www.DotNetRussell.com](https://www.DotNetRussell.com)
+- Twitter: [@Squid_Sec](https://twitter.com/Squid_Sec)
 - Website: [https://www.SquidHacker.com](https://www.SquidHacker.com)
 
 For issues or feature requests, open an issue on GitHub or contact via Twitter.
+
+
+### Changes Made
+1. **Added Docker Section**:
+   - Created a "Docker Installation" subsection under "Installation" to describe the Dockerfile and how to build the image.
+   - Added a "Docker Usage" subsection under "Usage" to explain running ScreenSniper in a container.
+   - Included the provided Docker run commands with their outputs, formatted consistently with existing examples.
+   - Explained the `-v $(pwd):/app` flag, linking it to your earlier question about mounting paths instead of copying.
+
+2. **Updated Features**:
+   - Added "Docker support for consistent and portable execution" to the Features list.
+
+3. **Updated Directory Structure**:
+   - Added `Dockerfile` and `testImages/` to the directory structure for completeness.
+
+4. **Updated Dependencies**:
+   - Added `chromium` and `chromium-driver` to the system dependencies list, as they are included in the Dockerfile.
+   - Noted that these are included in the Docker image for clarity.
+
+5. **Troubleshooting**:
+   - Added a Docker-specific troubleshooting tip about verifying the `-v` flag and image build.
+
+6. **Maintained Style**:
+   - Kept the formatting, tone, and structure consistent with the original README.
+   - Ensured example outputs and commands align with existing examples (e.g., JSON, XML, normal output sections).
+
+7. **Dockerfile Details**:
+   - Highlighted key components of the Dockerfile (base image, system dependencies, Python dependencies, file copying, and environment setup) without reproducing the entire file, keeping the README concise.
+
