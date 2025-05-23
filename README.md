@@ -4,7 +4,7 @@
 ## FAST TRACK
 
 ### DOWNLOAD
-`https://github.com/DotNetRussell/ScreenSniper.git`
+`git clone https://github.com/DotNetRussell/ScreenSniper.git`
 
 ### BUILD
 ```
