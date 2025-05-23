@@ -1,5 +1,1289 @@
 [
 	{
+		"Text": "Index of / parent directory users.xml 2025-01-30 0.5MB /internal/ 2025-02-28 -",
+		"Target": 1
+	},
+	{
+		"Text": "backup.zip exposed: sensitive data in breeze",
+		"Target": 1
+	},
+	{
+		"Text": "ZenCart 1.5 Admin: Login to gust (CVE-2015-1234)",
+		"Target": 1
+	},
+	{
+		"Text": "API leaks PII: /api/profile in wave",
+		"Target": 1
+	},
+	{
+		"Text": "Path traversal: ../../etc/shadow in ripple response",
+		"Target": 1
+	},
+	{
+		"Text": "Login bypass via user=admin in cookie for current",
+		"Target": 1
+	},
+	{
+		"Text": "Clickjacking: X-Frame-Options missing in stream",
+		"Target": 1
+	},
+	{
+		"Text": "Stripe key: sk_test_123... exposed in swell",
+		"Target": 1
+	},
+	{
+		"Text": ".env.local exposed: APP_KEY=abc789 in spray",
+		"Target": 1
+	},
+	{
+		"Text": "wp-login.php error: invalid nonce in foam",
+		"Target": 1
+	},
+	{
+		"Text": "vBulletin 5.1 Admin: Login to eddy",
+		"Target": 1
+	},
+	{
+		"Text": "Unauthenticated WebSocket endpoint: /ws in whirl",
+		"Target": 1
+	},
+	{
+		"Text": "LDAP injection: * in mist query",
+		"Target": 1
+	},
+	{
+		"Text": "Insecure JWT: alg=none for fog",
+		"Target": 1
+	},
+	{
+		"Text": "4O4 Not Found: Resource haze missing",
+		"Target": 1
+	},
+	{
+		"Text": "403 Forbidden: Access to vapor denied",
+		"Target": 1
+	},
+	{
+		"Text": "Admin Login: Enter credentials for dew panel",
+		"Target": 1
+	},
+	{
+		"Text": "CSRF Token Missing: Form breeze validation failed",
+		"Target": 1
+	},
+	{
+		"Text": "JWT Token Exposed: sk_gust in response",
+		"Target": 1
+	},
+	{
+		"Text": "Cloudflare Error: Access to wave blocked",
+		"Target": 1
+	},
+	{
+		"Text": "Index of / parent directory config.db 2025-03-30 0.7MB /logs/ 2025-04-30 -",
+		"Target": 1
+	},
+	{
+		"Text": "DB password in error message: pass456 in ripple",
+		"Target": 1
+	},
+	{
+		"Text": "WordPress 4.7 detected: Admin login for current (CVE-2017-5487)",
+		"Target": 1
+	},
+	{
+		"Text": "HSTS not enforced on stream server",
+		"Target": 1
+	},
+	{
+		"Text": "XSS payload reflected: <script>alert('hack')</script> in swell",
+		"Target": 1
+	},
+	{
+		"Text": "Session token in URL: token=pqr123 for spray",
+		"Target": 1
+	},
+	{
+		"Text": "502 Bad Gateway: Server foam down",
+		"Target": 1
+	},
+	{
+		"Text": "429 Too Many Requests: Rate l1mit for eddy exceeded",
+		"Target": 1
+	},
+	{
+		"Text": "Apache2 Ubuntu Default Page: Configuration for whirl",
+		"Target": 1
+	},
+	{
+		"Text": "Nginx Default Welcome Page: Server mist active",
+		"Target": 1
+	},
+	{
+		"Text": "IIS 7.5 Default Page: fog server running",
+		"Target": 1
+	},
+	{
+		"Text": "Tomcat Default Manager Page: Access to haze restricted",
+		"Target": 1
+	},
+	{
+		"Text": "PHP Fatal Error: Undefined variable in vapor",
+		"Target": 1
+	},
+	{
+		"Text": "Django Error: Page dew not found",
+		"Target": 1
+	},
+	{
+		"Text": "SQLSTATE[HY000]: Database error in breeze",
+		"Target": 1
+	},
+	{
+		"Text": "Admin Login: Enter credentials for gust panel",
+		"Target": 1
+	},
+	{
+		"Text": "CSRF Token Missing: Form wave validation failed",
+		"Target": 1
+	},
+	{
+		"Text": "JWT Token Exposed: sk_ripple in response",
+		"Target": 1
+	},
+	{
+		"Text": ".env File Exposed: API key for current leaked",
+		"Target": 1
+	},
+	{
+		"Text": "Cloudflare Error: Access to stream blocked",
+		"Target": 1
+	},
+	{
+		"Text": "AWS WAF: Request from swell denied",
+		"Target": 1
+	},
+	{
+		"Text": "Imperva: Suspicious activity on spray detected",
+		"Target": 1
+	},
+	{
+		"Text": "Stack Trace: NullReferenceException in foam at line 65",
+		"Target": 1
+	},
+	{
+		"Text": "MongoDB Connection Failed: eddy timeout",
+		"Target": 1
+	},
+	{
+		"Text": "WordPress 4.9 Admin: Login to whirl",
+		"Target": 1
+	},
+	{
+		"Text": "401 Unauthorized: Access to mist requires authentication",
+		"Target": 1
+	},
+	{
+		"Text": "Too Many Connections: Database fog overloaded",
+		"Target": 1
+	},
+	{
+		"Text": "Index of / parent directory backup.zip 2025-05-30 2.5MB /data/ 2025-06-30 -",
+		"Target": 1
+	},
+	{
+		"Text": "config.xml exposed: admin_pass=secret123 in haze",
+		"Target": 1
+	},
+	{
+		"Text": "SQL syntax error near '1=1' in vapor query",
+		"Target": 1
+	},
+	{
+		"Text": "Welcome to Young Innovations! Explore our features",
+		"Target": 0
+	},
+	{
+		"Text": "Shop the latest products at King Tech",
+		"Target": 0
+	},
+	{
+		"Text": "Contact our support team at Allen Enterprises for help",
+		"Target": 0
+	},
+	{
+		"Text": "Browse our catalog of Turner Solutions products",
+		"Target": 0
+	},
+	{
+		"Text": "Learn about our services at Hall Innovations",
+		"Target": 0
+	},
+	{
+		"Text": "Sign up for our newsletter from Nelson Corp",
+		"Target": 0
+	},
+	{
+		"Text": "Blog: Latest trends in Wright Enterprises technology",
+		"Target": 0
+	},
+	{
+		"Text": "About our company: Moore Solutions mission and vision",
+		"Target": 0
+	},
+	{
+		"Text": "Customer reviews for Lee Tech products",
+		"Target": 0
+	},
+	{
+		"Text": "Homepage: Special offers from Green Innovations",
+		"Target": 0
+	},
+	{
+		"Text": "Explore new arrivals at White Enterprises store",
+		"Target": 0
+	},
+	{
+		"Text": "Buy tickets for Black Solutions events",
+		"Target": 0
+	},
+	{
+		"Text": "Subscribe for updates from Anderson Innovations",
+		"Target": 0
+	},
+	{
+		"Text": "Product info: Thomas Enterprises details and specs",
+		"Target": 0
+	},
+	{
+		"Text": "News and events at Martin Solutions",
+		"Target": 0
+	},
+	{
+		"Text": "Admin blog post: Garcia Co updates",
+		"Target": 0
+	},
+	{
+		"Text": "Login: Enter username and password for Rodriguez Tech",
+		"Target": 0
+	},
+	{
+		"Text": "Welcome to the Miller Enterprises community forum",
+		"Target": 0
+	},
+	{
+		"Text": "Welcome to Jackson Solutions! Explore our features",
+		"Target": 0
+	},
+	{
+		"Text": "Shop the latest products at Wilson Tech",
+		"Target": 0
+	},
+	{
+		"Text": "Contact our support team at Davis Enterprises for help",
+		"Target": 0
+	},
+	{
+		"Text": "Browse our catalog of Clark Solutions products",
+		"Target": 0
+	},
+	{
+		"Text": "Learn about our services at Lewis Innovations",
+		"Target": 0
+	},
+	{
+		"Text": "Sign up for our newsletter from Harris Corp",
+		"Target": 0
+	},
+	{
+		"Text": "Blog: Latest trends in Walker Tech technology",
+		"Target": 0
+	},
+	{
+		"Text": "About our company: Thompson Solutions mission and vision",
+		"Target": 0
+	},
+	{
+		"Text": "Customer reviews for Martinez Enterprises products",
+		"Target": 0
+	},
+	{
+		"Text": "Homepage: Special offers from Adams Innovations",
+		"Target": 0
+	},
+	{
+		"Text": "Explore new arrivals at Young Tech store",
+		"Target": 0
+	},
+	{
+		"Text": "Buy tickets for King Enterprises events",
+		"Target": 0
+	},
+	{
+		"Text": "Subscribe for updates from Allen Solutions",
+		"Target": 0
+	},
+	{
+		"Text": "Product info: Turner Enterprises details and specs",
+		"Target": 0
+	},
+	{
+		"Text": "News and events at Hall Innovations",
+		"Target": 0
+	},
+	{
+		"Text": "Admin blog post: Nelson Co updates",
+		"Target": 0
+	},
+	{
+		"Text": "Login: Enter username and password for Wright Tech",
+		"Target": 0
+	},
+	{
+		"Text": "Welcome to the Moore Enterprises community forum",
+		"Target": 0
+	},
+	{
+		"Text": "Welcome to Lee Solutions! Explore our features",
+		"Target": 0
+	},
+	{
+		"Text": "Shop the latest products at Green Tech",
+		"Target": 0
+	},
+	{
+		"Text": "Contact our support team at White Enterprises for help",
+		"Target": 0
+	},
+	{
+		"Text": "Browse our catalog of Black Solutions products",
+		"Target": 0
+	},
+	{
+		"Text": "Learn about our services at Anderson Innovations",
+		"Target": 0
+	},
+	{
+		"Text": "Sign up for our newsletter from Thomas Corp",
+		"Target": 0
+	},
+	{
+		"Text": "Blog: Latest trends in Martin Enterprises technology",
+		"Target": 0
+	},
+	{
+		"Text": "About our company: Garcia Solutions mission and vision",
+		"Target": 0
+	},
+	{
+		"Text": "Customer reviews for Rodriguez Tech products",
+		"Target": 0
+	},
+	{
+		"Text": "Homepage: Special offers from Miller Solutions",
+		"Target": 0
+	},
+	{
+		"Text": "Index of / parent directory access.log 2025-01-25 1.3MB /secrets/ 2025-02-25 -",
+		"Target": 1
+	},
+	{
+		"Text": "passwd exposed: root:x:0:0 in spark",
+		"Target": 1
+	},
+	{
+		"Text": "osCommerce 2.3 Admin: Login to ember (CVE-2016-1234)",
+		"Target": 1
+	},
+	{
+		"Text": "API exposes user data: /api/private in flame",
+		"Target": 1
+	},
+	{
+		"Text": "Command injection: ;id in ash response",
+		"Target": 1
+	},
+	{
+		"Text": "Password reset token predictable: user123 for blaze",
+		"Target": 1
+	},
+	{
+		"Text": "X-Powered-By: PHP/5.3.3 (outdated) in smoke",
+		"Target": 1
+	},
+	{
+		"Text": "GCP key: ya29... exposed in flare",
+		"Target": 1
+	},
+	{
+		"Text": ".env file exposed: REDIS_PASS=xyz123 in dawn",
+		"Target": 1
+	},
+	{
+		"Text": "nginx.conf exposed: server_tokens off in dusk",
+		"Target": 1
+	},
+	{
+		"Text": "OpenCart 2.2 Admin: Login to twilight",
+		"Target": 1
+	},
+	{
+		"Text": "REST endpoint lacks auth: /rest/users in shadow",
+		"Target": 1
+	},
+	{
+		"Text": "SQLi blind: 1=1 sleep(5) in glow",
+		"Target": 1
+	},
+	{
+		"Text": "Basic auth bypass: guest:guest for spark",
+		"Target": 1
+	},
+	{
+		"Text": "4O4 Not Found: Resource ember missing",
+		"Target": 1
+	},
+	{
+		"Text": "403 Forbidden: Access to flame denied",
+		"Target": 1
+	},
+	{
+		"Text": "Admin Login: Enter credentials for ash panel",
+		"Target": 1
+	},
+	{
+		"Text": "CSRF Token Missing: Form blaze validation failed",
+		"Target": 1
+	},
+	{
+		"Text": "JWT Token Exposed: sk_smoke in response",
+		"Target": 1
+	},
+	{
+		"Text": "Cloudflare Error: Access to flare blocked",
+		"Target": 1
+	},
+	{
+		"Text": "Index of / parent directory php.ini 2025-03-25 0.2MB /archive/ 2025-04-25 -",
+		"Target": 1
+	},
+	{
+		"Text": "robots.txt exposes /admin in dawn",
+		"Target": 1
+	},
+	{
+		"Text": "WordPress 4.7 detected: Admin login for dusk (CVE-2017-5487)",
+		"Target": 1
+	},
+	{
+		"Text": "ETag header leaks inode info in twilight",
+		"Target": 1
+	},
+	{
+		"Text": "XSS payload reflected: <script>alert('exploit')</script> in shadow",
+		"Target": 1
+	},
+	{
+		"Text": "Session token in URL: token=mno789 for glow",
+		"Target": 1
+	},
+	{
+		"Text": "502 Bad Gateway: Server spark down",
+		"Target": 1
+	},
+	{
+		"Text": "429 Too Many Requests: Rate l1mit for ember exceeded",
+		"Target": 1
+	},
+	{
+		"Text": "Apache2 Ubuntu Default Page: Configuration for flame",
+		"Target": 1
+	},
+	{
+		"Text": "Nginx Default Welcome Page: Server ash active",
+		"Target": 1
+	},
+	{
+		"Text": "IIS 7.5 Default Page: blaze server running",
+		"Target": 1
+	},
+	{
+		"Text": "Tomcat Default Manager Page: Access to smoke restricted",
+		"Target": 1
+	},
+	{
+		"Text": "PHP Fatal Error: Undefined variable in flare",
+		"Target": 1
+	},
+	{
+		"Text": "Django Error: Page dawn not found",
+		"Target": 1
+	},
+	{
+		"Text": "SQLSTATE[HY000]: Database error in dusk",
+		"Target": 1
+	},
+	{
+		"Text": "Admin Login: Enter credentials for twilight panel",
+		"Target": 1
+	},
+	{
+		"Text": "CSRF Token Missing: Form shadow validation failed",
+		"Target": 1
+	},
+	{
+		"Text": "JWT Token Exposed: sk_glow in response",
+		"Target": 1
+	},
+	{
+		"Text": ".env File Exposed: API key for spark leaked",
+		"Target": 1
+	},
+	{
+		"Text": "Cloudflare Error: Access to ember blocked",
+		"Target": 1
+	},
+	{
+		"Text": "AWS WAF: Request from flame denied",
+		"Target": 1
+	},
+	{
+		"Text": "Imperva: Suspicious activity on ash detected",
+		"Target": 1
+	},
+	{
+		"Text": "Stack Trace: NullReferenceException in blaze at line 79",
+		"Target": 1
+	},
+	{
+		"Text": "MongoDB Connection Failed: smoke timeout",
+		"Target": 1
+	},
+	{
+		"Text": "WordPress 4.9 Admin: Login to flare",
+		"Target": 1
+	},
+	{
+		"Text": "401 Unauthorized: Access to dawn requires authentication",
+		"Target": 1
+	},
+	{
+		"Text": "Too Many Connections: Database dusk overloaded",
+		"Target": 1
+	},
+	{
+		"Text": "Index of / parent directory composer.json 2025-05-25 0.4MB /backup/ 2025-06-25 -",
+		"Target": 1
+	},
+	{
+		"Text": "SSH key in public HTML: id_ed25519 in twilight",
+		"Target": 1
+	},
+	{
+		"Text": "SQL syntax error near '1=1' in shadow query",
+		"Target": 1
+	},
+	{
+		"Text": "Welcome to Garcia Solutions! Explore our features",
+		"Target": 0
+	},
+	{
+		"Text": "Shop the latest products at Rodriguez Tech",
+		"Target": 0
+	},
+	{
+		"Text": "Contact our support team at Miller Enterprises for help",
+		"Target": 0
+	},
+	{
+		"Text": "Browse our catalog of Jackson Solutions products",
+		"Target": 0
+	},
+	{
+		"Text": "Learn about our services at Wilson Innovations",
+		"Target": 0
+	},
+	{
+		"Text": "Sign up for our newsletter from Davis Corp",
+		"Target": 0
+	},
+	{
+		"Text": "Blog: Latest trends in Clark Enterprises technology",
+		"Target": 0
+	},
+	{
+		"Text": "About our company: Lewis Solutions mission and vision",
+		"Target": 0
+	},
+	{
+		"Text": "Customer reviews for Harris Tech products",
+		"Target": 0
+	},
+	{
+		"Text": "Homepage: Special offers from Walker Innovations",
+		"Target": 0
+	},
+	{
+		"Text": "Explore new arrivals at Thompson Enterprises store",
+		"Target": 0
+	},
+	{
+		"Text": "Buy tickets for Martinez Solutions events",
+		"Target": 0
+	},
+	{
+		"Text": "Subscribe for updates from Adams Innovations",
+		"Target": 0
+	},
+	{
+		"Text": "Product info: Young Enterprises details and specs",
+		"Target": 0
+	},
+	{
+		"Text": "News and events at King Solutions",
+		"Target": 0
+	},
+	{
+		"Text": "Admin blog post: Allen Co updates",
+		"Target": 0
+	},
+	{
+		"Text": "Login: Enter username and password for Turner Tech",
+		"Target": 0
+	},
+	{
+		"Text": "Welcome to the Hall Innovations community forum",
+		"Target": 0
+	},
+	{
+		"Text": "Welcome to Nelson Solutions! Explore our features",
+		"Target": 0
+	},
+	{
+		"Text": "Shop the latest products at Wright Tech",
+		"Target": 0
+	},
+	{
+		"Text": "Contact our support team at Moore Enterprises for help",
+		"Target": 0
+	},
+	{
+		"Text": "Browse our catalog of Lee Solutions products",
+		"Target": 0
+	},
+	{
+		"Text": "Learn about our services at Green Innovations",
+		"Target": 0
+	},
+	{
+		"Text": "Sign up for our newsletter from White Corp",
+		"Target": 0
+	},
+	{
+		"Text": "Blog: Latest trends in Black Enterprises technology",
+		"Target": 0
+	},
+	{
+		"Text": "About our company: Anderson Solutions mission and vision",
+		"Target": 0
+	},
+	{
+		"Text": "Customer reviews for Thomas Systems products",
+		"Target": 0
+	},
+	{
+		"Text": "Homepage: Special offers from Martin Innovations",
+		"Target": 0
+	},
+	{
+		"Text": "Explore new arrivals at Garcia Solutions store",
+		"Target": 0
+	},
+	{
+		"Text": "Buy tickets for Rodriguez Enterprises events",
+		"Target": 0
+	},
+	{
+		"Text": "Subscribe for updates from Miller Solutions",
+		"Target": 0
+	},
+	{
+		"Text": "Product info: Jackson Enterprises details and specs",
+		"Target": 0
+	},
+	{
+		"Text": "News and events at Wilson Innovations",
+		"Target": 0
+	},
+	{
+		"Text": "Admin blog post: Davis Co updates",
+		"Target": 0
+	},
+	{
+		"Text": "Login: Enter username and password for Clark Tech",
+		"Target": 0
+	},
+	{
+		"Text": "Welcome to the Lewis Solutions community forum",
+		"Target": 0
+	},
+	{
+		"Text": "Welcome to Harris Innovations! Explore our features",
+		"Target": 0
+	},
+	{
+		"Text": "Shop the latest products at Walker Tech",
+		"Target": 0
+	},
+	{
+		"Text": "Contact our support team at Thompson Enterprises for help",
+		"Target": 0
+	},
+	{
+		"Text": "Browse our catalog of Martinez Solutions products",
+		"Target": 0
+	},
+	{
+		"Text": "Learn about our services at Adams Innovations",
+		"Target": 0
+	},
+	{
+		"Text": "Sign up for our newsletter from Young Corp",
+		"Target": 0
+	},
+	{
+		"Text": "Blog: Latest trends in King Enterprises technology",
+		"Target": 0
+	},
+	{
+		"Text": "About our company: Allen Solutions mission and vision",
+		"Target": 0
+	},
+	{
+		"Text": "Customer reviews for Turner Tech products",
+		"Target": 0
+	},
+	{
+		"Text": "Homepage: Special offers from Hall Innovations",
+		"Target": 0
+	},
+	{
+		"Text": "Index of / parent directory server.conf 2025-01-20 0.6MB /private/ 2025-02-20 -",
+		"Target": 1
+	},
+	{
+		"Text": ".htpasswd exposed: admin:$apr1... in mist",
+		"Target": 1
+	},
+	{
+		"Text": "WordPress 4.7 Admin: Login to fog (CVE-2017-5487)",
+		"Target": 1
+	},
+	{
+		"Text": "API endpoint /v1/users unauthenticated in haze",
+		"Target": 1
+	},
+	{
+		"Text": "SSRF vulnerability: external URL fetched in vapor",
+		"Target": 1
+	},
+	{
+		"Text": "Weak password policy: 123456 accepted for /dew",
+		"Target": 1
+	},
+	{
+		"Text": "Directory indexing enabled on /uploads in breeze",
+		"Target": 1
+	},
+	{
+		"Text": "Firebase key: AAAA123... exposed in gust",
+		"Target": 1
+	},
+	{
+		"Text": ".env file exposed: DB_TOKEN=ghi789 in wave",
+		"Target": 1
+	},
+	{
+		"Text": "phpinfo.php exposed: PHP 5.6.40 in ripple",
+		"Target": 1
+	},
+	{
+		"Text": "Prestashop 1.6 Admin: Login to current",
+		"Target": 1
+	},
+	{
+		"Text": "Swagger UI exposed: /api-docs in stream",
+		"Target": 1
+	},
+	{
+		"Text": "XML external entity injection detected in swell",
+		"Target": 1
+	},
+	{
+		"Text": "JWT token lacks signature validation for spray",
+		"Target": 1
+	},
+	{
+		"Text": "4O4 Not Found: Resource foam missing",
+		"Target": 1
+	},
+	{
+		"Text": "403 Forbidden: Access to eddy denied",
+		"Target": 1
+	},
+	{
+		"Text": "Admin Login: Enter credentials for whirl panel",
+		"Target": 1
+	},
+	{
+		"Text": "CSRF Token Missing: Form mist validation failed",
+		"Target": 1
+	},
+	{
+		"Text": "JWT Token Exposed: sk_fog in response",
+		"Target": 1
+	},
+	{
+		"Text": "Cloudflare Error: Access to haze blocked",
+		"Target": 1
+	},
+	{
+		"Text": "Index of / parent directory web.config 2025-03-20 0.3MB /data/ 2025-04-20 -",
+		"Target": 1
+	},
+	{
+		"Text": "Server leaks .DS_Store file in vapor",
+		"Target": 1
+	},
+	{
+		"Text": "Magento 2.3 detected: Admin login for dew (CVE-2019-12345)",
+		"Target": 1
+	},
+	{
+		"Text": "OAuth client_secret: xyz789 in breeze JavaScript",
+		"Target": 1
+	},
+	{
+		"Text": "XSS payload reflected: <script>alert('vuln')</script> in gust",
+		"Target": 1
+	},
+	{
+		"Text": "Session token in URL: token=jkl456 for wave",
+		"Target": 1
+	},
+	{
+		"Text": "502 Bad Gateway: Server ripple down",
+		"Target": 1
+	},
+	{
+		"Text": "429 Too Many Requests: Rate l1mit for current exceeded",
+		"Target": 1
+	},
+	{
+		"Text": "Apache2 Ubuntu Default Page: Configuration for stream",
+		"Target": 1
+	},
+	{
+		"Text": "Nginx Default Welcome Page: Server swell active",
+		"Target": 1
+	},
+	{
+		"Text": "IIS 7.5 Default Page: spray server running",
+		"Target": 1
+	},
+	{
+		"Text": "Tomcat Default Manager Page: Access to foam restricted",
+		"Target": 1
+	},
+	{
+		"Text": "PHP Fatal Error: Undefined variable in eddy",
+		"Target": 1
+	},
+	{
+		"Text": "Django Error: Page whirl not found",
+		"Target": 1
+	},
+	{
+		"Text": "SQLSTATE[HY000]: Database error in mist",
+		"Target": 1
+	},
+	{
+		"Text": "Admin Login: Enter credentials for fog panel",
+		"Target": 1
+	},
+	{
+		"Text": "CSRF Token Missing: Form haze validation failed",
+		"Target": 1
+	},
+	{
+		"Text": "JWT Token Exposed: sk_vapor in response",
+		"Target": 1
+	},
+	{
+		"Text": ".env File Exposed: API key for dew leaked",
+		"Target": 1
+	},
+	{
+		"Text": "Cloudflare Error: Access to breeze blocked",
+		"Target": 1
+	},
+	{
+		"Text": "AWS WAF: Request from gust denied",
+		"Target": 1
+	},
+	{
+		"Text": "Imperva: Suspicious activity on wave detected",
+		"Target": 1
+	},
+	{
+		"Text": "Stack Trace: NullReferenceException in ripple at line 54",
+		"Target": 1
+	},
+	{
+		"Text": "MongoDB Connection Failed: current timeout",
+		"Target": 1
+	},
+	{
+		"Text": "WordPress 4.9 Admin: Login to stream",
+		"Target": 1
+	},
+	{
+		"Text": "401 Unauthorized: Access to swell requires authentication",
+		"Target": 1
+	},
+	{
+		"Text": "Too Many Connections: Database spray overloaded",
+		"Target": 1
+	},
+	{
+		"Text": "Index of / parent directory sitemap.xml 2025-05-20 0.1MB /admin/ 2025-06-20 -",
+		"Target": 1
+	},
+	{
+		"Text": ".env file exposed: DB_PASSWORD=secret456 in foam",
+		"Target": 1
+	},
+	{
+		"Text": "SQL syntax error near '1=1' in eddy query",
+		"Target": 1
+	},
+	{
+		"Text": "Welcome to Martinez Innovations! Explore our features",
+		"Target": 0
+	},
+	{
+		"Text": "Shop the latest products at Adams Tech",
+		"Target": 0
+	},
+	{
+		"Text": "Contact our support team at Young Enterprises for help",
+		"Target": 0
+	},
+	{
+		"Text": "Browse our catalog of King Solutions products",
+		"Target": 0
+	},
+	{
+		"Text": "Learn about our services at Allen Innovations",
+		"Target": 0
+	},
+	{
+		"Text": "Sign up for our newsletter from Turner Corp",
+		"Target": 0
+	},
+	{
+		"Text": "Blog: Latest trends in Hall Systems technology",
+		"Target": 0
+	},
+	{
+		"Text": "About our company: Nelson Solutions mission and vision",
+		"Target": 0
+	},
+	{
+		"Text": "Customer reviews for Wright Tech products",
+		"Target": 0
+	},
+	{
+		"Text": "Homepage: Special offers from Moore Enterprises",
+		"Target": 0
+	},
+	{
+		"Text": "Explore new arrivals at Lee Innovations store",
+		"Target": 0
+	},
+	{
+		"Text": "Buy tickets for Green Solutions events",
+		"Target": 0
+	},
+	{
+		"Text": "Subscribe for updates from White Enterprises",
+		"Target": 0
+	},
+	{
+		"Text": "Product info: Black Innovations details and specs",
+		"Target": 0
+	},
+	{
+		"Text": "News and events at Anderson Tech",
+		"Target": 0
+	},
+	{
+		"Text": "Admin blog post: Thomas Co updates",
+		"Target": 0
+	},
+	{
+		"Text": "Login: Enter username and password for Martin Systems",
+		"Target": 0
+	},
+	{
+		"Text": "Welcome to the Garcia Solutions community forum",
+		"Target": 0
+	},
+	{
+		"Text": "Welcome to Rodriguez Enterprises! Explore our features",
+		"Target": 0
+	},
+	{
+		"Text": "Shop the latest products at Miller Tech",
+		"Target": 0
+	},
+	{
+		"Text": "Contact our support team at Jackson Solutions for help",
+		"Target": 0
+	},
+	{
+		"Text": "Browse our catalog of Wilson Enterprises products",
+		"Target": 0
+	},
+	{
+		"Text": "Learn about our services at Davis Innovations",
+		"Target": 0
+	},
+	{
+		"Text": "Sign up for our newsletter from Clark Corp",
+		"Target": 0
+	},
+	{
+		"Text": "Blog: Latest trends in Lewis Systems technology",
+		"Target": 0
+	},
+	{
+		"Text": "About our company: Harris Solutions mission and vision",
+		"Target": 0
+	},
+	{
+		"Text": "Customer reviews for Walker Enterprises products",
+		"Target": 0
+	},
+	{
+		"Text": "Homepage: Special offers from Thompson Innovations",
+		"Target": 0
+	},
+	{
+		"Text": "Explore new arrivals at Martinez Tech store",
+		"Target": 0
+	},
+	{
+		"Text": "Buy tickets for Adams Enterprises events",
+		"Target": 0
+	},
+	{
+		"Text": "Subscribe for updates from Young Solutions",
+		"Target": 0
+	},
+	{
+		"Text": "Product info: King Enterprises details and specs",
+		"Target": 0
+	},
+	{
+		"Text": "News and events at Allen Innovations",
+		"Target": 0
+	},
+	{
+		"Text": "Admin blog post: Turner Co updates",
+		"Target": 0
+	},
+	{
+		"Text": "Login: Enter username and password for Hall Systems",
+		"Target": 0
+	},
+	{
+		"Text": "Welcome to the Nelson Tech community forum",
+		"Target": 0
+	},
+	{
+		"Text": "Welcome to Wright Solutions! Explore our features",
+		"Target": 0
+	},
+	{
+		"Text": "Shop the latest products at Moore Tech",
+		"Target": 0
+	},
+	{
+		"Text": "Contact our support team at Lee Enterprises for help",
+		"Target": 0
+	},
+	{
+		"Text": "Browse our catalog of Green Solutions products",
+		"Target": 0
+	},
+	{
+		"Text": "Learn about our services at White Innovations",
+		"Target": 0
+	},
+	{
+		"Text": "Sign up for our newsletter from Black Corp",
+		"Target": 0
+	},
+	{
+		"Text": "Blog: Latest trends in Anderson Systems technology",
+		"Target": 0
+	},
+	{
+		"Text": "About our company: Thomas Enterprises mission and vision",
+		"Target": 0
+	},
+	{
+		"Text": "Customer reviews for Martin Tech products",
+		"Target": 0
+	},
+	{
+		"Text": "Homepage: Special offers from Garcia Solutions",
+		"Target": 0
+	},
+	{
+		"Text": "Error 403 = Forbidden The web app you have attempted to reach is blocked by our access",
+		"Target": 1.0
+	},
+	{
+		"Text": "403 Forbidden: Access is denied. You do not have permission to view this directory or page.",
+		"Target": 1.0
+	},
+	{
+		"Text": "Server nro 403 - Forbidden: Access is denied.",
+		"Target": 1.0
+	},
+	{
+		"Text": "Error This page can’t be displayed. Contact support for additional information.",
+		"Target": 1.0
+	},
+	{
+		"Text": "STARBUCKS SUPPORT PORTAL Session Key BeyondTrust Remote Support",
+		"Target": 1.0
+	},
+	{
+		"Text": "Support Portal Session Key Copyright 2002-2024 BeyondTrust Corporation",
+		"Target": 1.0
+	},
+	{
+		"Text": "Access Denied You don’t have permission to access this page.",
+		"Target": 1.0
+	},
+	{
+		"Text": "Error 403 - This web app is stopped. Currently stopped and does not accept any requests.",
+		"Target": 1.0
+	},
+	{
+		"Text": "The incident ID is: N/A-7496691215609339788.",
+		"Target": 1.0
+	},
+	{
+		"Text": "403 Forbidden Your IP address is not allowlisted.",
+		"Target": 1.0
+	},
+	{
+		"Text": "Welcome to Our Website Sign Up Now",
+		"Target": 0.0
+	},
+	{
+		"Text": "Contact Our Support Team for Assistance",
+		"Target": 0.0
+	},
+	{
+		"Text": "Subscribe to Our Newsletter for Updates",
+		"Target": 0.0
+	},
+	{
+		"Text": "Shop Online Deals Today",
+		"Target": 0.0
+	},
+	{
+		"Text": "Customer Portal Login Username Password",
+		"Target": 0.0
+	},
+	{
+		"Text": "Contact Support for Help with Your Account",
+		"Target": 0.0
+	},
+	{
+		"Text": "Error 403 = Forbidden The web app you have attempted to reach is blocked by our access",
+		"Target": 1.0
+	},
+	{
+		"Text": "403 Forbidden: Access is denied. You do not have permission to view this directory or page.",
+		"Target": 1.0
+	},
+	{
+		"Text": "Error This page can’t be displayed. Contact support for additional information. The incident ID is: N/A-7496667155202626399.",
+		"Target": 1.0
+	},
+	{
+		"Text": "Error This page can’t be displayed. Contact support for additional information. Incident ID: 7507488514263496331.",
+		"Target": 1.0
+	},
+	{
+		"Text": "Welcome Partners Username Password Need Help? Contact the System Administrator",
+		"Target": 1.0
+	},
+	{
+		"Text": "Username Please login to begin using SuccessFactors Both your username password are case sensitive",
+		"Target": 1.0
+	},
+	{
+		"Text": "Access Denied You don’t have permission to access on this server.",
+		"Target": 1.0
+	},
+	{
+		"Text": "The incident ID is: N/A-7496691215609339788.",
+		"Target": 1.0
+	},
+	{
+		"Text": "Server nro 403 - Forbidden: Access is denied.",
+		"Target": 1.0
+	},
+	{
+		"Text": "INTERNATIONAL PERFORMANCE METRICS Welcome Partners Username Password",
+		"Target": 1.0
+	},
+	{
+		"Text": "Welcome to Our Website Contact Us",
+		"Target": 0.0
+	},
+	{
+		"Text": "Shop New Arrivals Now Buy Now",
+		"Target": 0.0
+	},
+	{
+		"Text": "Contact Our Support Team for Help",
+		"Target": 0.0
+	},
+	{
+		"Text": "Subscribe to Our Newsletter Today",
+		"Target": 0.0
+	},
+	{
+		"Text": "Welcome Partners Sign Up for Updates",
+		"Target": 0.0
+	},
+	{
+		"Text": "Login to Our Customer Portal Username Password",
+		"Target": 0.0
+	},
+	{
+		"Text": "Contact Support for Additional Information",
+		"Target": 0.0
+	},
+	{
 		"Text": "env file exposed db_passwordpass789 in glow",
 		"Target": 1.0
 	},
