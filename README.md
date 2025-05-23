@@ -1,12 +1,14 @@
 ![ScreenSniper Logo](https://i.imgur.com/yfJZLWm.png)  
 
 
-## FAST TRACK
+# FAST TRACK
 
 ### DOWNLOAD
+
 `git clone https://github.com/DotNetRussell/ScreenSniper.git`
 
 ### BUILD
+
 ```
 cd ScreenSniper
 docker build -t screensniper .
@@ -15,16 +17,28 @@ docker build -t screensniper .
 ### RUN
 
 - How to give it a directory of images
-`docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --directory testImages/ --detection-pattern --output-format=json --ai`
+  
+```
+docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --directory testImages/ --detection-pattern --output-format=json --ai
+```
 
 - How to give it a single image
-`docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --image_path testImages/aspx-stacktrace.png --detection-pattern --output-format=json --ai`
+  
+```
+docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --image_path testImages/aspx-stacktrace.png --detection-pattern --output-format=json --ai
+```
 
 - How to report
-`docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --image_path testImages/aspx-stacktrace.png --detection-pattern --output-format=json --ai --report`
+  
+```
+docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --image_path testImages/aspx-stacktrace.png --detection-pattern --output-format=json --ai --report
+```
 
 - How to retrain
-`docker run --rm -it -v $(pwd):/app screensniper python3 AI_Page_Classifier/text_classifier.py --retrain --threads=20 --verbose "test text"`
+  
+```
+docker run --rm -it -v $(pwd):/app screensniper python3 AI_Page_Classifier/text_classifier.py --retrain --threads=20 --verbose "test text"
+```
 
 
 
