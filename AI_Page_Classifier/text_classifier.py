@@ -11,7 +11,7 @@ import base64
 import argparse
 
 class NeuralNetwork(nn.Module):
-    def __init__(self, input_size, hidden_size, output_size, learning_rate=0.01, use_gpu=True, automation=False, retrain=True, model_exists=True):
+    def __init__(self, input_size, hidden_size, output_size, learning_rate=0.005, use_gpu=True, automation=False, retrain=True, model_exists=True):
         super(NeuralNetwork, self).__init__()
         self.input_size = input_size
         self.hidden_size = hidden_size
@@ -24,27 +24,25 @@ class NeuralNetwork(nn.Module):
             else:
                 print("Using CPU for training.")
         
-        # Define layers
         self.layer1 = nn.Linear(input_size, hidden_size)
         self.relu = nn.ReLU()
-        self.dropout = nn.Dropout(p=0.2)
-        self.layer2 = nn.Linear(hidden_size, output_size)
+        self.dropout = nn.Dropout(p=0.5)  # Increased from 0.3
+        self.layer2 = nn.Linear(hidden_size, hidden_size // 2)
+        self.relu2 = nn.ReLU()
+        self.layer3 = nn.Linear(hidden_size // 2, output_size)
         self.sigmoid = nn.Sigmoid()
         
-        # Initialize weights with Xavier initialization
         self._initialize_weights()
-        
-        # Move to device
         self.to(self.device)
-        
-        # Optimizer
-        self.optimizer = torch.optim.SGD(self.parameters(), lr=learning_rate)
+        self.optimizer = torch.optim.Adam(self.parameters(), lr=learning_rate)
         
     def _initialize_weights(self):
         nn.init.xavier_uniform_(self.layer1.weight)
         nn.init.zeros_(self.layer1.bias)
         nn.init.xavier_uniform_(self.layer2.weight)
         nn.init.zeros_(self.layer2.bias)
+        nn.init.xavier_uniform_(self.layer3.weight)
+        nn.init.zeros_(self.layer3.bias)
     
     def forward(self, x, training=False):
         x = self.layer1(x)
@@ -52,18 +50,21 @@ class NeuralNetwork(nn.Module):
         if training:
             x = self.dropout(x)
         x = self.layer2(x)
+        x = self.relu2(x)
+        x = self.layer3(x)
         x = self.sigmoid(x)
         return x
     
-    def train_step(self, inputs, targets):
+    def train_step(self, inputs, targets, criterion):
         self.train()
-        inputs = inputs.to(self.device)  # Already a tensor
+        inputs = inputs.to(self.device)
         targets = targets.to(self.device)
         self.optimizer.zero_grad()
         outputs = self(inputs, training=True)
-        loss = nn.BCELoss()(outputs, targets)
+        loss = criterion(outputs, targets)
         loss.backward()
         self.optimizer.step()
+        return loss.item()
     
     def save(self, file_path):
         torch.save({
@@ -74,7 +75,7 @@ class NeuralNetwork(nn.Module):
         }, file_path)
     
     @staticmethod
-    def load(file_path, learning_rate=0.01, use_gpu=True, automation=False, retrain=True, model_exists=True):
+    def load(file_path, learning_rate=0.005, use_gpu=True, automation=False, retrain=True, model_exists=True):
         if not os.path.exists(file_path):
             raise FileNotFoundError(f"Model file {file_path} not found.")
         
@@ -95,18 +96,17 @@ class NeuralNetwork(nn.Module):
 
 class TextClassifier:
     def __init__(self, use_gpu=True, automation=False, retrain=True, model_exists=True):
-        self.model_file_path = "./AI_Page_Classifier/model.pt"
-        self.training_data_file_path = "./AI_Page_Classifier/training_data.json"
-        self.vocabulary_file_path = "./AI_Page_Classifier/vocabulary.json"
-        
+        self.model_file_path = "./AI_Page_Classifier/model.pt" if os.path.exists("./AI_Page_Classifier/model.pt") else "./model.pt"
+        self.training_data_file_path = "./AI_Page_Classifier/training_data_v2.json" if os.path.exists("./AI_Page_Classifier/training_data_v2.json") else "./training_data_v2.json"
+        self.vocabulary_file_path = "./AI_Page_Classifier/vocabulary.json" if os.path.exists("./AI_Page_Classifier/vocabulary.json") else "./vocabulary.json"
         
         self.vocabulary = self._load_vocabulary()
         self.vocab_size = len(self.vocabulary)
         self.nn = NeuralNetwork(
             input_size=self.vocab_size,
-            hidden_size=16,
+            hidden_size=64,
             output_size=1,
-            learning_rate=0.1,
+            learning_rate=0.005,
             use_gpu=use_gpu,
             automation=automation,
             retrain=retrain,
@@ -130,20 +130,33 @@ class TextClassifier:
     
     def _text_to_features(self, text):
         text = re.sub(r'[^\w\s]', '', text)
-        words = text.split()
+        text = text.replace('1', 'l').replace('0', 'o').replace('|', 'l')
+        words = text.lower().split()
         matched_words = []
-        
         features = np.zeros(self.vocab_size)
-        total_words = len(words)
         
-        if total_words == 0:
+        if not words:
             return features, matched_words
         
+        processed_words = []
+        i = 0
+        while i < len(words):
+            if words[i] == "not" and i + 1 < len(words) and words[i + 1] == "interesting":
+                processed_words.append("not_interesting")
+                i += 2
+            else:
+                processed_words.append(words[i])
+                i += 1
+        
         for i, vocab_word in enumerate(self.vocabulary):
-            count = sum(1 for w in words if w.lower() == vocab_word.lower())
+            count = sum(1 for w in processed_words if w.lower() == vocab_word.lower())
             if count > 0:
                 matched_words.append(f"{vocab_word} ({count})")
-            features[i] = count / total_words
+                features[i] = 1.0
+        if args.verbose:
+            print(f"Processed words: {processed_words}")
+            print(f"Non-zero feature indices: {np.nonzero(features)[0]}")
+            print(f"Matched words (raw): {matched_words}")
         
         return features, matched_words
     
@@ -166,15 +179,19 @@ class TextClassifier:
                 print(f"Warning: Skipping invalid entry at index {i}: not a dictionary")
                 continue
             if 'Text' not in item or 'Target' not in item:
-                print(f"Warning: Skipping invalid entry at index {i}: missing 'text' or 'target'")
+                print(f"Warning: Skipping invalid entry at index {i}: missing 'Text' or 'Target'")
                 continue
             if not isinstance(item['Text'], str) or not isinstance(item['Target'], (int, float)):
-                print(f"Warning: Skipping invalid entry at index {i}: 'text' must be string, 'target' must be number")
+                print(f"Warning: Skipping invalid entry at index {i}: 'Text' must be string, 'Target' must be number")
                 continue
             validated_data.append((item['Text'], np.array([float(item['Target'])])))
         
         if not validated_data:
             raise ValueError("No valid training data entries found after validation.")
+        
+        positive = sum(1 for _, target in validated_data if target[0] == 1.0)
+        negative = sum(1 for _, target in validated_data if target[0] == 0.0)
+        print(f"Training data stats: Positive examples (Interesting): {positive}, Negative examples (Not Interesting): {negative}")
         
         return validated_data
     
@@ -184,18 +201,47 @@ class TextClassifier:
             training_data,
             batch_size=batch_size,
             shuffle=True,
+            num_workers=max_threads,
             collate_fn=lambda batch: (
                 [self._text_to_features(d[0].lower())[0] for d in batch],
                 [d[1] for d in batch]
             )
         )
         
+        criterion = nn.BCELoss(reduction='none')
+        class_weights = torch.tensor([1.0, 2.5]).to(self.nn.device)
+        
         start_time = time.time()
+        best_loss = float('inf')
+        patience = 15
+        epochs_no_improve = 0
+        
         for epoch in range(1000):
+            epoch_loss = 0.0
             for batch_features, batch_targets in data_loader:
                 features = torch.from_numpy(np.stack(batch_features)).float().to(self.nn.device)
                 targets = torch.from_numpy(np.stack(batch_targets)).float().to(self.nn.device)
-                self.nn.train_step(features, targets)
+                weights = torch.where(targets == 0.0, class_weights[1], class_weights[0]).to(self.nn.device)
+                outputs = self.nn(features, training=True)
+                loss = criterion(outputs, targets)
+                weighted_loss = (loss * weights).mean()
+                self.nn.optimizer.zero_grad()
+                weighted_loss.backward()
+                self.nn.optimizer.step()
+                epoch_loss += weighted_loss.item()
+            
+            epoch_loss /= len(data_loader)
+            print(f"Epoch {epoch+1}, Loss: {epoch_loss:.4f}")
+            
+            if epoch_loss < best_loss:
+                best_loss = epoch_loss
+                epochs_no_improve = 0
+            else:
+                epochs_no_improve += 1
+                if epochs_no_improve >= patience:
+                    print(f"Early stopping at epoch {epoch+1}")
+                    break
+        
         elapsed_time = time.time() - start_time
         return elapsed_time
     
@@ -203,7 +249,7 @@ class TextClassifier:
         if os.path.exists(self.model_file_path):
             self.nn = NeuralNetwork.load(
                 self.model_file_path,
-                learning_rate=0.1,
+                learning_rate=0.005,
                 use_gpu=self.nn.device.type == "cuda",
                 automation=automation,
                 retrain=retrain,
@@ -215,6 +261,8 @@ class TextClassifier:
     def predict(self, text):
         self.nn.eval()
         features, matched_words = self._text_to_features(text.lower())
+        if self.nn.device.type == "cuda":
+            torch.cuda.empty_cache()
         if args.verbose:
             print(f"Feature vector sum: {sum(features)}")
         if not any(features):
@@ -228,10 +276,10 @@ class TextClassifier:
             output = self.nn(features_tensor)
             prob = output.item()
         
-        return (prob > 0.8, prob, features, matched_words)
+        return (prob > 0.5, prob, features, matched_words)
 
 def main():
-    global args  # Make args accessible for verbose logging in predict
+    global args
     parser = argparse.ArgumentParser(
         description="Text classifier for predicting interesting pages.",
         epilog="Example: python3 text_classifier.py \"404 Not Found\" --automation"
@@ -281,7 +329,6 @@ def main():
             print(json.dumps({"error": "Invalid arguments"}, indent=2))
         sys.exit(e.code)
 
-    # Validate arguments
     if not args.text and not args.test_file:
         error_msg = "Please provide either a test string or a test file using --test-file"
         if args.automation:
@@ -304,14 +351,13 @@ def main():
             print(f"Error: {error_msg}.")
         sys.exit(1)
     
-    # Clamp threads to a reasonable maximum (e.g., 32)
     max_threads = max(1, min(args.threads, 32))
     if args.threads != max_threads:
         if args.verbose:
             print(f"Warning: Threads adjusted to {max_threads} (requested: {args.threads}, max: 32)")
     
     try:
-        model_exists = os.path.exists("model.pt")
+        model_exists = os.path.exists("./AI_Page_Classifier/model.pt") or os.path.exists("./model.pt")
         classifier = TextClassifier(
             use_gpu=args.gpu,
             automation=args.automation,
@@ -319,7 +365,6 @@ def main():
             model_exists=model_exists
         )
         
-        # Train only if --retrain is set or model.pt is missing and not in automation mode
         if args.retrain or (not model_exists and not args.automation):
             if args.automation:
                 print(json.dumps({"error": "Model file 'model.pt' missing. Training not allowed in automation mode"}, indent=2))
@@ -360,7 +405,7 @@ def main():
                 for line in f:
                     test_text = line.strip()
                     if not test_text:
-                        continue  # Skip empty lines
+                        continue
                     
                     total_tests += 1
                     is_error, probability, features, matched_words = classifier.predict(test_text)

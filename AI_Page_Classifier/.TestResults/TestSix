@@ -1,0 +1,5323 @@
+Loading saved model...
+Model loaded.
+Predicting for text: Shop New Arrivals Now
+Processed words: ['shop', 'new', 'arrivals', 'now']
+Non - zero feature indices: [72 77 97]
+Feature vector sum: 4.5
+{
+	"text": "U2hvcCBOZXcgQXJyaXZhbHMgTm93DQ==",
+		"probability": 7.503223997673558e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Our Support Team
+Processed words: ['contact', 'our', 'support', 'team']
+Non - zero feature indices: [31  81 105]
+Feature vector sum: 4.5
+{
+	"text": "Q29udGFjdCBPdXIgU3VwcG9ydCBUZWFtDQ==",
+		"probability": 6.555293959563391e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Browse Our Product Catalog
+Processed words: ['browse', 'our', 'product', 'catalog']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QnJvd3NlIE91ciBQcm9kdWN0IENhdGFsb2cN",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Learn About Our Services
+Processed words: ['learn', 'about', 'our', 'services']
+Non - zero feature indices: [62 81]
+Feature vector sum: 3.0
+{
+	"text": "TGVhcm4gQWJvdXQgT3VyIFNlcnZpY2VzDQ==",
+		"probability": 2.0526302879630975e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Subscribe to Our Newsletter
+Processed words: ['subscribe', 'to', 'our', 'newsletter']
+Non - zero feature indices: [81 104 115]
+Feature vector sum: 4.5
+{
+	"text": "U3Vic2NyaWJlIHRvIE91ciBOZXdzbGV0dGVyDQ==",
+		"probability": 1.2609693088414149e-14,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore New Features Today
+Processed words: ['explore', 'new', 'features', 'today']
+Non - zero feature indices: [39 42 72]
+Feature vector sum: 4.5
+{
+	"text": "RXhwbG9yZSBOZXcgRmVhdHVyZXMgVG9kYXkN",
+		"probability": 7.800399770552247e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Now and Save More
+Processed words: ['buy', 'now', 'and', 'save', 'more']
+Non - zero feature indices: [23 70 77]
+Feature vector sum: 4.5
+{
+	"text": "QnV5IE5vdyBhbmQgU2F2ZSBNb3JlDQ==",
+		"probability": 3.408786142244935e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page Special Offers
+Processed words: ['home', 'page', 'special', 'offers']
+Non - zero feature indices: [52 82]
+Feature vector sum: 3.0
+{
+	"text": "SG9tZSBQYWdlIFNwZWNpYWwgT2ZmZXJzDQ==",
+		"probability": 1.0,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Company Mission
+Processed words: ['about', 'our', 'company', 'mission']
+Non - zero feature indices: [27 81]
+Feature vector sum: 3.0
+{
+	"text": "QWJvdXQgT3VyIENvbXBhbnkgTWlzc2lvbg0=",
+		"probability": 3.6086952870384437e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Customer Reviews and Ratings
+Processed words: ['customer', 'reviews', 'and', 'ratings']
+Non - zero feature indices: [33 92]
+Feature vector sum: 3.0
+{
+	"text": "Q3VzdG9tZXIgUmV2aWV3cyBhbmQgUmF0aW5ncw0=",
+		"probability": 4.643935369585961e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Online Deals Today
+Processed words: ['shop', 'online', 'deals', 'today']
+Non - zero feature indices: [79 97]
+Feature vector sum: 3.0
+{
+	"text": "U2hvcCBPbmxpbmUgRGVhbHMgVG9kYXkN",
+		"probability": 0.008897606283426285,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Online Store
+Processed words: ['welcome', 'to', 'our', 'online', 'store']
+Non - zero feature indices: [79  81 103 115 130]
+Feature vector sum: 7.5
+{
+	"text": "V2VsY29tZSB0byBPdXIgT25saW5lIFN0b3JlDQ==",
+		"probability": 3.372606556008295e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Information Hub
+Processed words: ['product', 'information', 'hub']
+Non - zero feature indices: [57]
+Feature vector sum: 1.5
+{
+	"text": "UHJvZHVjdCBJbmZvcm1hdGlvbiBIdWIN",
+		"probability": 0.999976396560669,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Us for Details
+Processed words: ['contact', 'us', 'for', 'details']
+Non - zero feature indices: [31  45 125]
+Feature vector sum: 4.5
+{
+	"text": "Q29udGFjdCBVcyBmb3IgRGV0YWlscw0=",
+		"probability": 0.0007402501651085913,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog Post Latest Trends
+Processed words: ['blog', 'post', 'latest', 'trends']
+Non - zero feature indices: [19]
+Feature vector sum: 1.5
+{
+	"text": "QmxvZyBQb3N0IExhdGVzdCBUcmVuZHMN",
+		"probability": 4.381394447250386e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Services and Plans Available
+Processed words: ['services', 'and', 'plans', 'available']
+Non - zero feature indices: [15]
+Feature vector sum: 1.5
+{
+	"text": "U2VydmljZXMgYW5kIFBsYW5zIEF2YWlsYWJsZQ0=",
+		"probability": 0.9999910354614259,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Homepage New Arrivals
+Processed words: ['homepage', 'new', 'arrivals']
+Non - zero feature indices: [53 72]
+Feature vector sum: 3.0
+{
+	"text": "SG9tZXBhZ2UgTmV3IEFycml2YWxzDQ==",
+		"probability": 3.4280935728991935e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Subscribe for Updates Now
+Processed words: ['subscribe', 'for', 'updates', 'now']
+Non - zero feature indices: [45  77 104]
+Feature vector sum: 4.5
+{
+	"text": "U3Vic2NyaWJlIGZvciBVcGRhdGVzIE5vdw0=",
+		"probability": 1.2427875395459864e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore Our Product Range
+Processed words: ['explore', 'our', 'product', 'range']
+Non - zero feature indices: [39 81]
+Feature vector sum: 3.0
+{
+	"text": "RXhwbG9yZSBPdXIgUHJvZHVjdCBSYW5nZQ0=",
+		"probability": 3.18676030008902e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Learn More About Us
+Processed words: ['learn', 'more', 'about', 'us']
+Non - zero feature indices: [62  70 125]
+Feature vector sum: 4.5
+{
+	"text": "TGVhcm4gTW9yZSBBYm91dCBVcw0=",
+		"probability": 0.00016659383254591376,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Tickets for Events
+Processed words: ['buy', 'tickets', 'for', 'events']
+Non - zero feature indices: [23 45]
+Feature vector sum: 3.0
+{
+	"text": "QnV5IFRpY2tldHMgZm9yIEV2ZW50cw0=",
+		"probability": 4.635298367361429e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Our Special Deals
+Processed words: ['shop', 'our', 'special', 'deals']
+Non - zero feature indices: [81 97]
+Feature vector sum: 3.0
+{
+	"text": "U2hvcCBPdXIgU3BlY2lhbCBEZWFscw0=",
+		"probability": 6.325890922198596e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Features
+Processed words: ['welcome', 'to', 'our', 'features']
+Non - zero feature indices: [42  81 115 130]
+Feature vector sum: 6.0
+{
+	"text": "V2VsY29tZSB0byBPdXIgRmVhdHVyZXMN",
+		"probability": 3.654645596568029e-12,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Catalog Browse Now
+Processed words: ['product', 'catalog', 'browse', 'now']
+Non - zero feature indices: [77]
+Feature vector sum: 1.5
+{
+	"text": "UHJvZHVjdCBDYXRhbG9nIEJyb3dzZSBOb3cN",
+		"probability": 0.9999670505523682,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Team and Vision
+Processed words: ['about', 'our', 'team', 'and', 'vision']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIFRlYW0gYW5kIFZpc2lvbg0=",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Service Info and Support
+Processed words: ['service', 'info', 'and', 'support']
+Non - zero feature indices: [56  96 105]
+Feature vector sum: 4.5
+{
+	"text": "U2VydmljZSBJbmZvIGFuZCBTdXBwb3J0DQ==",
+		"probability": 2.3249715042084063e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page Great Offers
+Processed words: ['home', 'page', 'great', 'offers']
+Non - zero feature indices: [51 52 82]
+Feature vector sum: 4.5
+{
+	"text": "SG9tZSBQYWdlIEdyZWF0IE9mZmVycw0=",
+		"probability": 1.0,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Products Online Today
+Processed words: ['buy', 'products', 'online', 'today']
+Non - zero feature indices: [23 79 84]
+Feature vector sum: 4.5
+{
+	"text": "QnV5IFByb2R1Y3RzIE9ubGluZSBUb2RheQ0=",
+		"probability": 3.136667358141776e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Support for Help
+Processed words: ['contact', 'support', 'for', 'help']
+Non - zero feature indices: [31  45 105]
+Feature vector sum: 4.5
+{
+	"text": "Q29udGFjdCBTdXBwb3J0IGZvciBIZWxwDQ==",
+		"probability": 5.0500234465289395e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Newsletter Sign Up Today
+Processed words: ['newsletter', 'sign', 'up', 'today']
+Non - zero feature indices: [124]
+Feature vector sum: 1.5
+{
+	"text": "TmV3c2xldHRlciBTaWduIFVwIFRvZGF5DQ==",
+		"probability": 9.219803359883372e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog Post New Features
+Processed words: ['blog', 'post', 'new', 'features']
+Non - zero feature indices: [19 42 72]
+Feature vector sum: 4.5
+{
+	"text": "QmxvZyBQb3N0IE5ldyBGZWF0dXJlcw0=",
+		"probability": 3.0665105871241494e-12,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Sign Up for Free Trial
+Processed words: ['sign', 'up', 'for', 'free', 'trial']
+Non - zero feature indices: [45  48 117 124]
+Feature vector sum: 6.0
+{
+	"text": "U2lnbiBVcCBmb3IgRnJlZSBUcmlhbA0=",
+		"probability": 0.00040370761416852474,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop New Collections Now
+Processed words: ['shop', 'new', 'collections', 'now']
+Non - zero feature indices: [72 77 97]
+Feature vector sum: 4.5
+{
+	"text": "U2hvcCBOZXcgQ29sbGVjdGlvbnMgTm93DQ==",
+		"probability": 7.503223997673558e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Site
+Processed words: ['welcome', 'to', 'our', 'site']
+Non - zero feature indices: [81  99 115 130]
+Feature vector sum: 6.0
+{
+	"text": "V2VsY29tZSB0byBPdXIgU2l0ZQ0=",
+		"probability": 1.1486251533243674e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Browse Our Latest Offers
+Processed words: ['browse', 'our', 'latest', 'offers']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QnJvd3NlIE91ciBMYXRlc3QgT2ZmZXJzDQ==",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Our Team Today
+Processed words: ['contact', 'our', 'team', 'today']
+Non - zero feature indices: [31 81]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBPdXIgVGVhbSBUb2RheQ0=",
+		"probability": 6.80637837757736e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: News and Events Updates
+Processed words: ['news', 'and', 'events', 'updates']
+Non - zero feature indices: [73]
+Feature vector sum: 1.5
+{
+	"text": "TmV3cyBhbmQgRXZlbnRzIFVwZGF0ZXMN",
+		"probability": 7.358364655374316e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Catalog Browse Online
+Processed words: ['catalog', 'browse', 'online']
+Non - zero feature indices: [79]
+Feature vector sum: 1.5
+{
+	"text": "Q2F0YWxvZyBCcm93c2UgT25saW5lDQ==",
+		"probability": 0.9999753952026368,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Company Info
+Processed words: ['about', 'our', 'company', 'info']
+Non - zero feature indices: [27 56 81]
+Feature vector sum: 4.5
+{
+	"text": "QWJvdXQgT3VyIENvbXBhbnkgSW5mbw0=",
+		"probability": 3.405068212797551e-16,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Services Available Today
+Processed words: ['services', 'available', 'today']
+Non - zero feature indices: [15]
+Feature vector sum: 1.5
+{
+	"text": "U2VydmljZXMgQXZhaWxhYmxlIFRvZGF5DQ==",
+		"probability": 0.9999910354614259,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page New Deals
+Processed words: ['home', 'page', 'new', 'deals']
+Non - zero feature indices: [52 72 82]
+Feature vector sum: 4.5
+{
+	"text": "SG9tZSBQYWdlIE5ldyBEZWFscw0=",
+		"probability": 0.9739728450775147,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Our New Products
+Processed words: ['buy', 'our', 'new', 'products']
+Non - zero feature indices: [23 72 81 84]
+Feature vector sum: 6.0
+{
+	"text": "QnV5IE91ciBOZXcgUHJvZHVjdHMN",
+		"probability": 4.211154082235981e-22,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Online Specials
+Processed words: ['shop', 'online', 'specials']
+Non - zero feature indices: [79 97]
+Feature vector sum: 3.0
+{
+	"text": "U2hvcCBPbmxpbmUgU3BlY2lhbHMN",
+		"probability": 0.008897606283426285,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Subscribe for Free Info
+Processed words: ['subscribe', 'for', 'free', 'info']
+Non - zero feature indices: [45  48  56 104]
+Feature vector sum: 6.0
+{
+	"text": "U3Vic2NyaWJlIGZvciBGcmVlIEluZm8N",
+		"probability": 2.239998449584963e-14,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog New Trends Today
+Processed words: ['blog', 'new', 'trends', 'today']
+Non - zero feature indices: [19 72]
+Feature vector sum: 3.0
+{
+	"text": "QmxvZyBOZXcgVHJlbmRzIFRvZGF5DQ==",
+		"probability": 7.617694669503905e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Sign Up for Exclusive Offers
+Processed words: ['sign', 'up', 'for', 'exclusive', 'offers']
+Non - zero feature indices: [45 124]
+Feature vector sum: 3.0
+{
+	"text": "U2lnbiBVcCBmb3IgRXhjbHVzaXZlIE9mZmVycw0=",
+		"probability": 0.0006613887962885201,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore Site Features Now
+Processed words: ['explore', 'site', 'features', 'now']
+Non - zero feature indices: [39 42 77 99]
+Feature vector sum: 6.0
+{
+	"text": "RXhwbG9yZSBTaXRlIEZlYXR1cmVzIE5vdw0=",
+		"probability": 8.774918569542933e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Support Contact Us Now
+Processed words: ['support', 'contact', 'us', 'now']
+Non - zero feature indices: [31  77 105 125]
+Feature vector sum: 6.0
+{
+	"text": "U3VwcG9ydCBDb250YWN0IFVzIE5vdw0=",
+		"probability": 5.437026402432821e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Reviews and More
+Processed words: ['product', 'reviews', 'and', 'more']
+Non - zero feature indices: [70 92]
+Feature vector sum: 3.0
+{
+	"text": "UHJvZHVjdCBSZXZpZXdzIGFuZCBNb3JlDQ==",
+		"probability": 0.0025976174511015415,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Discover Our Homepage
+Processed words: ['discover', 'our', 'homepage']
+Non - zero feature indices: [53 81]
+Feature vector sum: 3.0
+{
+	"text": "RGlzY292ZXIgT3VyIEhvbWVwYWdlDQ==",
+		"probability": 1.962035135055773e-12,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Exclusive Products
+Processed words: ['shop', 'exclusive', 'products']
+Non - zero feature indices: [84 97]
+Feature vector sum: 3.0
+{
+	"text": "U2hvcCBFeGNsdXNpdmUgUHJvZHVjdHMN",
+		"probability": 4.0368823839287415e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Us for Support
+Processed words: ['contact', 'us', 'for', 'support']
+Non - zero feature indices: [31  45 105 125]
+Feature vector sum: 6.0
+{
+	"text": "Q29udGFjdCBVcyBmb3IgU3VwcG9ydA0=",
+		"probability": 6.922677584952908e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Browse New Collections
+Processed words: ['browse', 'new', 'collections']
+Non - zero feature indices: [72]
+Feature vector sum: 1.5
+{
+	"text": "QnJvd3NlIE5ldyBDb2xsZWN0aW9ucw0=",
+		"probability": 7.902665674919263e-05,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Learn Our Service Plans
+Processed words: ['learn', 'our', 'service', 'plans']
+Non - zero feature indices: [62 81 96]
+Feature vector sum: 4.5
+{
+	"text": "TGVhcm4gT3VyIFNlcnZpY2UgUGxhbnMN",
+		"probability": 5.137351308248661e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Join Our Newsletter Today
+Processed words: ['join', 'our', 'newsletter', 'today']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "Sm9pbiBPdXIgTmV3c2xldHRlciBUb2RheQ0=",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore Product Features
+Processed words: ['explore', 'product', 'features']
+Non - zero feature indices: [39 42]
+Feature vector sum: 3.0
+{
+	"text": "RXhwbG9yZSBQcm9kdWN0IEZlYXR1cmVzDQ==",
+		"probability": 1.1684642231557518e-05,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Now for Discounts
+Processed words: ['buy', 'now', 'for', 'discounts']
+Non - zero feature indices: [23 45 77]
+Feature vector sum: 4.5
+{
+	"text": "QnV5IE5vdyBmb3IgRGlzY291bnRzDQ==",
+		"probability": 1.7563969834100135e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page Latest Deals
+Processed words: ['home', 'page', 'latest', 'deals']
+Non - zero feature indices: [52 82]
+Feature vector sum: 3.0
+{
+	"text": "SG9tZSBQYWdlIExhdGVzdCBEZWFscw0=",
+		"probability": 1.0,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Core Values
+Processed words: ['about', 'our', 'core', 'values']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIENvcmUgVmFsdWVzDQ==",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Customer Feedback Hub
+Processed words: ['customer', 'feedback', 'hub']
+Non - zero feature indices: [33]
+Feature vector sum: 1.5
+{
+	"text": "Q3VzdG9tZXIgRmVlZGJhY2sgSHViDQ==",
+		"probability": 7.189165626186877e-05,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Deals Online Now
+Processed words: ['shop', 'deals', 'online', 'now']
+Non - zero feature indices: [77 79 97]
+Feature vector sum: 4.5
+{
+	"text": "U2hvcCBEZWFscyBPbmxpbmUgTm93DQ==",
+		"probability": 0.0071210409514606,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Shop
+Processed words: ['welcome', 'to', 'our', 'shop']
+Non - zero feature indices: [81  97 115 130]
+Feature vector sum: 6.0
+{
+	"text": "V2VsY29tZSB0byBPdXIgU2hvcA0=",
+		"probability": 2.557950054028757e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Details and Info
+Processed words: ['product', 'details', 'and', 'info']
+Non - zero feature indices: [56]
+Feature vector sum: 1.5
+{
+	"text": "UHJvZHVjdCBEZXRhaWxzIGFuZCBJbmZvDQ==",
+		"probability": 3.252513351981179e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Our Experts
+Processed words: ['contact', 'our', 'experts']
+Non - zero feature indices: [31 81]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBPdXIgRXhwZXJ0cw0=",
+		"probability": 6.80637837757736e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog Articles and Tips
+Processed words: ['blog', 'articles', 'and', 'tips']
+Non - zero feature indices: [19]
+Feature vector sum: 1.5
+{
+	"text": "QmxvZyBBcnRpY2xlcyBhbmQgVGlwcw0=",
+		"probability": 4.381394447250386e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Services for Your Needs
+Processed words: ['services', 'for', 'your', 'needs']
+Non - zero feature indices: [45 133]
+Feature vector sum: 3.0
+{
+	"text": "U2VydmljZXMgZm9yIFlvdXIgTmVlZHMN",
+		"probability": 1.0,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Homepage Exclusive Offers
+Processed words: ['homepage', 'exclusive', 'offers']
+Non - zero feature indices: [53]
+Feature vector sum: 1.5
+{
+	"text": "SG9tZXBhZ2UgRXhjbHVzaXZlIE9mZmVycw0=",
+		"probability": 1.1247743714193348e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Subscribe to News Updates
+Processed words: ['subscribe', 'to', 'news', 'updates']
+Non - zero feature indices: [73 104 115]
+Feature vector sum: 4.5
+{
+	"text": "U3Vic2NyaWJlIHRvIE5ld3MgVXBkYXRlcw0=",
+		"probability": 1.712171935263837e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore New Products
+Processed words: ['explore', 'new', 'products']
+Non - zero feature indices: [39 72 84]
+Feature vector sum: 4.5
+{
+	"text": "RXhwbG9yZSBOZXcgUHJvZHVjdHMN",
+		"probability": 2.8588402803918223e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Learn About Our Team
+Processed words: ['learn', 'about', 'our', 'team']
+Non - zero feature indices: [62 81]
+Feature vector sum: 3.0
+{
+	"text": "TGVhcm4gQWJvdXQgT3VyIFRlYW0N",
+		"probability": 2.0526302879630975e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Event Passes Now
+Processed words: ['buy', 'event', 'passes', 'now']
+Non - zero feature indices: [23 77]
+Feature vector sum: 3.0
+{
+	"text": "QnV5IEV2ZW50IFBhc3NlcyBOb3cN",
+		"probability": 7.627283693523168e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Seasonal Deals
+Processed words: ['shop', 'seasonal', 'deals']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "U2hvcCBTZWFzb25hbCBEZWFscw0=",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Platform
+Processed words: ['welcome', 'to', 'our', 'platform']
+Non - zero feature indices: [81 115 130]
+Feature vector sum: 4.5
+{
+	"text": "V2VsY29tZSB0byBPdXIgUGxhdGZvcm0N",
+		"probability": 2.459575598745545e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Catalog Online
+Processed words: ['product', 'catalog', 'online']
+Non - zero feature indices: [79]
+Feature vector sum: 1.5
+{
+	"text": "UHJvZHVjdCBDYXRhbG9nIE9ubGluZQ0=",
+		"probability": 0.9999753952026368,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Brand Story
+Processed words: ['about', 'our', 'brand', 'story']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIEJyYW5kIFN0b3J5DQ==",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Service Plans and Pricing
+Processed words: ['service', 'plans', 'and', 'pricing']
+Non - zero feature indices: [96]
+Feature vector sum: 1.5
+{
+	"text": "U2VydmljZSBQbGFucyBhbmQgUHJpY2luZw0=",
+		"probability": 0.9999997615814209,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page Top Picks
+Processed words: ['home', 'page', 'top', 'picks']
+Non - zero feature indices: [52 82]
+Feature vector sum: 3.0
+{
+	"text": "SG9tZSBQYWdlIFRvcCBQaWNrcw0=",
+		"probability": 1.0,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Products Today
+Processed words: ['buy', 'products', 'today']
+Non - zero feature indices: [23 84]
+Feature vector sum: 3.0
+{
+	"text": "QnV5IFByb2R1Y3RzIFRvZGF5DQ==",
+		"probability": 2.7474379650678504e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Us Anytime
+Processed words: ['contact', 'us', 'anytime']
+Non - zero feature indices: [31 125]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBVcyBBbnl0aW1lDQ==",
+		"probability": 2.3834016246837564e-05,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Newsletter Updates Free
+Processed words: ['newsletter', 'updates', 'free']
+Non - zero feature indices: [48]
+Feature vector sum: 1.5
+{
+	"text": "TmV3c2xldHRlciBVcGRhdGVzIEZyZWUN",
+		"probability": 0.9979603290557861,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog Post New Ideas
+Processed words: ['blog', 'post', 'new', 'ideas']
+Non - zero feature indices: [19 72]
+Feature vector sum: 3.0
+{
+	"text": "QmxvZyBQb3N0IE5ldyBJZGVhcw0=",
+		"probability": 7.617694669503905e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Sign Up for Deals
+Processed words: ['sign', 'up', 'for', 'deals']
+Non - zero feature indices: [45 124]
+Feature vector sum: 3.0
+{
+	"text": "U2lnbiBVcCBmb3IgRGVhbHMN",
+		"probability": 0.0006613887962885201,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Latest Trends
+Processed words: ['shop', 'latest', 'trends']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "U2hvcCBMYXRlc3QgVHJlbmRzDQ==",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Community
+Processed words: ['welcome', 'to', 'our', 'community']
+Non - zero feature indices: [81 115 130]
+Feature vector sum: 4.5
+{
+	"text": "V2VsY29tZSB0byBPdXIgQ29tbXVuaXR5DQ==",
+		"probability": 2.459575598745545e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Browse Product Offers
+Processed words: ['browse', 'product', 'offers']
+Non - zero feature indices: []
+Feature vector sum: 0.0
+No features matched, returning non - interesting
+{
+	"text": "QnJvd3NlIFByb2R1Y3QgT2ZmZXJzDQ==",
+		"probability": 0.0,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Support Team
+Processed words: ['contact', 'support', 'team']
+Non - zero feature indices: [31 105]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBTdXBwb3J0IFRlYW0N",
+		"probability": 2.4793826014501974e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: News Updates and More
+Processed words: ['news', 'updates', 'and', 'more']
+Non - zero feature indices: [70 73]
+Feature vector sum: 3.0
+{
+	"text": "TmV3cyBVcGRhdGVzIGFuZCBNb3JlDQ==",
+		"probability": 3.103127710346598e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Catalog Shop Online
+Processed words: ['catalog', 'shop', 'online']
+Non - zero feature indices: [79 97]
+Feature vector sum: 3.0
+{
+	"text": "Q2F0YWxvZyBTaG9wIE9ubGluZQ0=",
+		"probability": 0.008897606283426285,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Vision
+Processed words: ['about', 'our', 'vision']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIFZpc2lvbg0=",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Services Tailored for You
+Processed words: ['services', 'tailored', 'for', 'you']
+Non - zero feature indices: [45]
+Feature vector sum: 1.5
+{
+	"text": "U2VydmljZXMgVGFpbG9yZWQgZm9yIFlvdQ0=",
+		"probability": 0.9999999046325684,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page New Products
+Processed words: ['home', 'page', 'new', 'products']
+Non - zero feature indices: [52 72 82 84]
+Feature vector sum: 6.0
+{
+	"text": "SG9tZSBQYWdlIE5ldyBQcm9kdWN0cw0=",
+		"probability": 2.9737293516518548e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Now Special Offers
+Processed words: ['buy', 'now', 'special', 'offers']
+Non - zero feature indices: [23 77]
+Feature vector sum: 3.0
+{
+	"text": "QnV5IE5vdyBTcGVjaWFsIE9mZmVycw0=",
+		"probability": 7.627283693523168e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Online Today
+Processed words: ['shop', 'online', 'today']
+Non - zero feature indices: [79 97]
+Feature vector sum: 3.0
+{
+	"text": "U2hvcCBPbmxpbmUgVG9kYXkN",
+		"probability": 0.008897606283426285,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Subscribe for Deals
+Processed words: ['subscribe', 'for', 'deals']
+Non - zero feature indices: [45 104]
+Feature vector sum: 3.0
+{
+	"text": "U3Vic2NyaWJlIGZvciBEZWFscw0=",
+		"probability": 2.5520490165575893e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog Trends and Insights
+Processed words: ['blog', 'trends', 'and', 'insights']
+Non - zero feature indices: [19]
+Feature vector sum: 1.5
+{
+	"text": "QmxvZyBUcmVuZHMgYW5kIEluc2lnaHRzDQ==",
+		"probability": 4.381394447250386e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Sign Up for Updates
+Processed words: ['sign', 'up', 'for', 'updates']
+Non - zero feature indices: [45 124]
+Feature vector sum: 3.0
+{
+	"text": "U2lnbiBVcCBmb3IgVXBkYXRlcw0=",
+		"probability": 0.0006613887962885201,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore Our Site Now
+Processed words: ['explore', 'our', 'site', 'now']
+Non - zero feature indices: [39 77 81 99]
+Feature vector sum: 6.0
+{
+	"text": "RXhwbG9yZSBPdXIgU2l0ZSBOb3cN",
+		"probability": 2.1178860054593684e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Support and Contact Info
+Processed words: ['support', 'and', 'contact', 'info']
+Non - zero feature indices: [31  56 105]
+Feature vector sum: 4.5
+{
+	"text": "U3VwcG9ydCBhbmQgQ29udGFjdCBJbmZvDQ==",
+		"probability": 1.3972881011958815e-12,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Ratings Online
+Processed words: ['product', 'ratings', 'online']
+Non - zero feature indices: [79]
+Feature vector sum: 1.5
+{
+	"text": "UHJvZHVjdCBSYXRpbmdzIE9ubGluZQ0=",
+		"probability": 0.9999753952026368,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Storefront
+Processed words: ['welcome', 'to', 'our', 'storefront']
+Non - zero feature indices: [81 115 130]
+Feature vector sum: 4.5
+{
+	"text": "V2VsY29tZSB0byBPdXIgU3RvcmVmcm9udA0=",
+		"probability": 2.459575598745545e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Our New Range
+Processed words: ['shop', 'our', 'new', 'range']
+Non - zero feature indices: [72 81 97]
+Feature vector sum: 4.5
+{
+	"text": "U2hvcCBPdXIgTmV3IFJhbmdlDQ==",
+		"probability": 1.6112923441249233e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact for Assistance
+Processed words: ['contact', 'for', 'assistance']
+Non - zero feature indices: [31 45]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBmb3IgQXNzaXN0YW5jZQ0=",
+		"probability": 0.0006495505804196,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Browse Top Products
+Processed words: ['browse', 'top', 'products']
+Non - zero feature indices: [84]
+Feature vector sum: 1.5
+{
+	"text": "QnJvd3NlIFRvcCBQcm9kdWN0cw0=",
+		"probability": 1.9182094547431916e-05,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Learn About Plans
+Processed words: ['learn', 'about', 'plans']
+Non - zero feature indices: [62]
+Feature vector sum: 1.5
+{
+	"text": "TGVhcm4gQWJvdXQgUGxhbnMN",
+		"probability": 0.0003085871576331556,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Join Our Updates List
+Processed words: ['join', 'our', 'updates', 'list']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "Sm9pbiBPdXIgVXBkYXRlcyBMaXN0DQ==",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore New Arrivals
+Processed words: ['explore', 'new', 'arrivals']
+Non - zero feature indices: [39 72]
+Feature vector sum: 3.0
+{
+	"text": "RXhwbG9yZSBOZXcgQXJyaXZhbHMN",
+		"probability": 1.530715465491994e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy with Confidence
+Processed words: ['buy', 'with', 'confidence']
+Non - zero feature indices: [23]
+Feature vector sum: 1.5
+{
+	"text": "QnV5IHdpdGggQ29uZmlkZW5jZQ0=",
+		"probability": 1.7132215646142868e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page Best Deals
+Processed words: ['home', 'page', 'best', 'deals']
+Non - zero feature indices: [52 82]
+Feature vector sum: 3.0
+{
+	"text": "SG9tZSBQYWdlIEJlc3QgRGVhbHMN",
+		"probability": 1.0,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Journey
+Processed words: ['about', 'our', 'journey']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIEpvdXJuZXkN",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Customer Reviews Online
+Processed words: ['customer', 'reviews', 'online']
+Non - zero feature indices: [33 79 92]
+Feature vector sum: 4.5
+{
+	"text": "Q3VzdG9tZXIgUmV2aWV3cyBPbmxpbmUN",
+		"probability": 7.950024638603281e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Special Promotions
+Processed words: ['shop', 'special', 'promotions']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "U2hvcCBTcGVjaWFsIFByb21vdGlvbnMN",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Hub
+Processed words: ['welcome', 'to', 'our', 'hub']
+Non - zero feature indices: [81 115 130]
+Feature vector sum: 4.5
+{
+	"text": "V2VsY29tZSB0byBPdXIgSHViDQ==",
+		"probability": 2.459575598745545e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Info and Details
+Processed words: ['product', 'info', 'and', 'details']
+Non - zero feature indices: [56]
+Feature vector sum: 1.5
+{
+	"text": "UHJvZHVjdCBJbmZvIGFuZCBEZXRhaWxzDQ==",
+		"probability": 3.252513351981179e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Our Staff
+Processed words: ['contact', 'our', 'staff']
+Non - zero feature indices: [31 81]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBPdXIgU3RhZmYN",
+		"probability": 6.80637837757736e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog News and Updates
+Processed words: ['blog', 'news', 'and', 'updates']
+Non - zero feature indices: [19 73]
+Feature vector sum: 3.0
+{
+	"text": "QmxvZyBOZXdzIGFuZCBVcGRhdGVzDQ==",
+		"probability": 1.5877471863309789e-12,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Services You Can Trust
+Processed words: ['services', 'you', 'can', 'trust']
+Non - zero feature indices: []
+Feature vector sum: 0.0
+No features matched, returning non - interesting
+{
+	"text": "U2VydmljZXMgWW91IENhbiBUcnVzdA0=",
+		"probability": 0.0,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Homepage Top Offers
+Processed words: ['homepage', 'top', 'offers']
+Non - zero feature indices: [53]
+Feature vector sum: 1.5
+{
+	"text": "SG9tZXBhZ2UgVG9wIE9mZmVycw0=",
+		"probability": 1.1247743714193348e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Subscribe for News
+Processed words: ['subscribe', 'for', 'news']
+Non - zero feature indices: [45  73 104]
+Feature vector sum: 4.5
+{
+	"text": "U3Vic2NyaWJlIGZvciBOZXdzDQ==",
+		"probability": 3.728701917539434e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore Product Lines
+Processed words: ['explore', 'product', 'lines']
+Non - zero feature indices: [39]
+Feature vector sum: 1.5
+{
+	"text": "RXhwbG9yZSBQcm9kdWN0IExpbmVzDQ==",
+		"probability": 0.001655267784371972,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Learn Our Story
+Processed words: ['learn', 'our', 'story']
+Non - zero feature indices: [62 81]
+Feature vector sum: 3.0
+{
+	"text": "TGVhcm4gT3VyIFN0b3J5DQ==",
+		"probability": 2.0526302879630975e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Tickets Online
+Processed words: ['buy', 'tickets', 'online']
+Non - zero feature indices: [23 79]
+Feature vector sum: 3.0
+{
+	"text": "QnV5IFRpY2tldHMgT25saW5lDQ==",
+		"probability": 1.133057381252911e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Exclusive Deals
+Processed words: ['shop', 'exclusive', 'deals']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "U2hvcCBFeGNsdXNpdmUgRGVhbHMN",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Portal
+Processed words: ['welcome', 'to', 'our', 'portal']
+Non - zero feature indices: [81 115 130]
+Feature vector sum: 4.5
+{
+	"text": "V2VsY29tZSB0byBPdXIgUG9ydGFsDQ==",
+		"probability": 2.459575598745545e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Catalog Shop
+Processed words: ['product', 'catalog', 'shop']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "UHJvZHVjdCBDYXRhbG9nIFNob3AN",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Leadership
+Processed words: ['about', 'our', 'leadership']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIExlYWRlcnNoaXAN",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Service Info Online
+Processed words: ['service', 'info', 'online']
+Non - zero feature indices: [56 79 96]
+Feature vector sum: 4.5
+{
+	"text": "U2VydmljZSBJbmZvIE9ubGluZQ0=",
+		"probability": 1.2027686580040609e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page New Items
+Processed words: ['home', 'page', 'new', 'items']
+Non - zero feature indices: [52 72 82]
+Feature vector sum: 4.5
+{
+	"text": "SG9tZSBQYWdlIE5ldyBJdGVtcw0=",
+		"probability": 0.9739728450775147,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Products Now
+Processed words: ['buy', 'products', 'now']
+Non - zero feature indices: [23 77 84]
+Feature vector sum: 4.5
+{
+	"text": "QnV5IFByb2R1Y3RzIE5vdw0=",
+		"probability": 1.8841078328578342e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact for Info
+Processed words: ['contact', 'for', 'info']
+Non - zero feature indices: [31 45 56]
+Feature vector sum: 4.5
+{
+	"text": "Q29udGFjdCBmb3IgSW5mbw0=",
+		"probability": 1.026601581521902e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Newsletter Free Signup
+Processed words: ['newsletter', 'free', 'signup']
+Non - zero feature indices: [48 98]
+Feature vector sum: 3.0
+{
+	"text": "TmV3c2xldHRlciBGcmVlIFNpZ251cA0=",
+		"probability": 0.9994292259216309,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog Post Highlights
+Processed words: ['blog', 'post', 'highlights']
+Non - zero feature indices: [19]
+Feature vector sum: 1.5
+{
+	"text": "QmxvZyBQb3N0IEhpZ2hsaWdodHMN",
+		"probability": 4.381394447250386e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Sign Up for Free
+Processed words: ['sign', 'up', 'for', 'free']
+Non - zero feature indices: [45  48 124]
+Feature vector sum: 4.5
+{
+	"text": "U2lnbiBVcCBmb3IgRnJlZQ0=",
+		"probability": 0.000262444926192984,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop New Products
+Processed words: ['shop', 'new', 'products']
+Non - zero feature indices: [72 84 97]
+Feature vector sum: 4.5
+{
+	"text": "U2hvcCBOZXcgUHJvZHVjdHMN",
+		"probability": 6.921525527205097e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Brand
+Processed words: ['welcome', 'to', 'our', 'brand']
+Non - zero feature indices: [81 115 130]
+Feature vector sum: 4.5
+{
+	"text": "V2VsY29tZSB0byBPdXIgQnJhbmQN",
+		"probability": 2.459575598745545e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Browse Our Deals
+Processed words: ['browse', 'our', 'deals']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QnJvd3NlIE91ciBEZWFscw0=",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Our Advisors
+Processed words: ['contact', 'our', 'advisors']
+Non - zero feature indices: [31 81]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBPdXIgQWR2aXNvcnMN",
+		"probability": 6.80637837757736e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: News and Event Info
+Processed words: ['news', 'and', 'event', 'info']
+Non - zero feature indices: [56 73]
+Feature vector sum: 3.0
+{
+	"text": "TmV3cyBhbmQgRXZlbnQgSW5mbw0=",
+		"probability": 5.122984501892969e-12,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Catalog Online Now
+Processed words: ['catalog', 'online', 'now']
+Non - zero feature indices: [77 79]
+Feature vector sum: 3.0
+{
+	"text": "Q2F0YWxvZyBPbmxpbmUgTm93DQ==",
+		"probability": 0.9999731063842774,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Services
+Processed words: ['about', 'our', 'services']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIFNlcnZpY2VzDQ==",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Services for Everyone
+Processed words: ['services', 'for', 'everyone']
+Non - zero feature indices: [45]
+Feature vector sum: 1.5
+{
+	"text": "U2VydmljZXMgZm9yIEV2ZXJ5b25lDQ==",
+		"probability": 0.9999999046325684,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page Promotions
+Processed words: ['home', 'page', 'promotions']
+Non - zero feature indices: [52 82]
+Feature vector sum: 3.0
+{
+	"text": "SG9tZSBQYWdlIFByb21vdGlvbnMN",
+		"probability": 1.0,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Now Online
+Processed words: ['buy', 'now', 'online']
+Non - zero feature indices: [23 77 79]
+Feature vector sum: 4.5
+{
+	"text": "QnV5IE5vdyBPbmxpbmUN",
+		"probability": 5.3552171586090935e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Seasonal Offers
+Processed words: ['shop', 'seasonal', 'offers']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "U2hvcCBTZWFzb25hbCBPZmZlcnMN",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Subscribe to Updates
+Processed words: ['subscribe', 'to', 'updates']
+Non - zero feature indices: [104 115]
+Feature vector sum: 3.0
+{
+	"text": "U3Vic2NyaWJlIHRvIFVwZGF0ZXMN",
+		"probability": 7.947743574376886e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog New Articles
+Processed words: ['blog', 'new', 'articles']
+Non - zero feature indices: [19 72]
+Feature vector sum: 3.0
+{
+	"text": "QmxvZyBOZXcgQXJ0aWNsZXMN",
+		"probability": 7.617694669503905e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Sign Up Today
+Processed words: ['sign', 'up', 'today']
+Non - zero feature indices: [124]
+Feature vector sum: 1.5
+{
+	"text": "U2lnbiBVcCBUb2RheQ0=",
+		"probability": 9.219803359883372e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore Our Offers
+Processed words: ['explore', 'our', 'offers']
+Non - zero feature indices: [39 81]
+Feature vector sum: 3.0
+{
+	"text": "RXhwbG9yZSBPdXIgT2ZmZXJzDQ==",
+		"probability": 3.18676030008902e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Support Contact Page
+Processed words: ['support', 'contact', 'page']
+Non - zero feature indices: [31  82 105]
+Feature vector sum: 4.5
+{
+	"text": "U3VwcG9ydCBDb250YWN0IFBhZ2UN",
+		"probability": 0.0005350048304535449,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Reviews Today
+Processed words: ['product', 'reviews', 'today']
+Non - zero feature indices: [92]
+Feature vector sum: 1.5
+{
+	"text": "UHJvZHVjdCBSZXZpZXdzIFRvZGF5DQ==",
+		"probability": 0.0016907114768400788,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Marketplace
+Processed words: ['welcome', 'to', 'our', 'marketplace']
+Non - zero feature indices: [81 115 130]
+Feature vector sum: 4.5
+{
+	"text": "V2VsY29tZSB0byBPdXIgTWFya2V0cGxhY2UN",
+		"probability": 2.459575598745545e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Top Collections
+Processed words: ['shop', 'top', 'collections']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "U2hvcCBUb3AgQ29sbGVjdGlvbnMN",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact for Support
+Processed words: ['contact', 'for', 'support']
+Non - zero feature indices: [31  45 105]
+Feature vector sum: 4.5
+{
+	"text": "Q29udGFjdCBmb3IgU3VwcG9ydA0=",
+		"probability": 5.0500234465289395e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Browse New Items
+Processed words: ['browse', 'new', 'items']
+Non - zero feature indices: [72]
+Feature vector sum: 1.5
+{
+	"text": "QnJvd3NlIE5ldyBJdGVtcw0=",
+		"probability": 7.902665674919263e-05,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Learn Our Benefits
+Processed words: ['learn', 'our', 'benefits']
+Non - zero feature indices: [62 81]
+Feature vector sum: 3.0
+{
+	"text": "TGVhcm4gT3VyIEJlbmVmaXRzDQ==",
+		"probability": 2.0526302879630975e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Join Our Community
+Processed words: ['join', 'our', 'community']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "Sm9pbiBPdXIgQ29tbXVuaXR5DQ==",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore Site Features
+Processed words: ['explore', 'site', 'features']
+Non - zero feature indices: [39 42 99]
+Feature vector sum: 4.5
+{
+	"text": "RXhwbG9yZSBTaXRlIEZlYXR1cmVzDQ==",
+		"probability": 7.822860425221734e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Now Great Deals
+Processed words: ['buy', 'now', 'great', 'deals']
+Non - zero feature indices: [23 51 77]
+Feature vector sum: 4.5
+{
+	"text": "QnV5IE5vdyBHcmVhdCBEZWFscw0=",
+		"probability": 2.6711799439027573e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page New Sales
+Processed words: ['home', 'page', 'new', 'sales']
+Non - zero feature indices: [52 72 82]
+Feature vector sum: 4.5
+{
+	"text": "SG9tZSBQYWdlIE5ldyBTYWxlcw0=",
+		"probability": 0.9739728450775147,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Commitment
+Processed words: ['about', 'our', 'commitment']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIENvbW1pdG1lbnQN",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Customer Ratings Hub
+Processed words: ['customer', 'ratings', 'hub']
+Non - zero feature indices: [33]
+Feature vector sum: 1.5
+{
+	"text": "Q3VzdG9tZXIgUmF0aW5ncyBIdWIN",
+		"probability": 7.189165626186877e-05,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Online Specials
+Processed words: ['shop', 'online', 'specials']
+Non - zero feature indices: [79 97]
+Feature vector sum: 3.0
+{
+	"text": "U2hvcCBPbmxpbmUgU3BlY2lhbHMN",
+		"probability": 0.008897606283426285,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Site
+Processed words: ['welcome', 'to', 'our', 'site']
+Non - zero feature indices: [81  99 115 130]
+Feature vector sum: 6.0
+{
+	"text": "V2VsY29tZSB0byBPdXIgU2l0ZQ0=",
+		"probability": 1.1486251533243674e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Info Online
+Processed words: ['product', 'info', 'online']
+Non - zero feature indices: [56 79]
+Feature vector sum: 3.0
+{
+	"text": "UHJvZHVjdCBJbmZvIE9ubGluZQ0=",
+		"probability": 4.545770195818477e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Our Team
+Processed words: ['contact', 'our', 'team']
+Non - zero feature indices: [31 81]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBPdXIgVGVhbQ0=",
+		"probability": 6.80637837757736e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog Trends Today
+Processed words: ['blog', 'trends', 'today']
+Non - zero feature indices: [19]
+Feature vector sum: 1.5
+{
+	"text": "QmxvZyBUcmVuZHMgVG9kYXkN",
+		"probability": 4.381394447250386e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Services for You
+Processed words: ['services', 'for', 'you']
+Non - zero feature indices: [45]
+Feature vector sum: 1.5
+{
+	"text": "U2VydmljZXMgZm9yIFlvdQ0=",
+		"probability": 0.9999999046325684,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Homepage Latest Offers
+Processed words: ['homepage', 'latest', 'offers']
+Non - zero feature indices: [53]
+Feature vector sum: 1.5
+{
+	"text": "SG9tZXBhZ2UgTGF0ZXN0IE9mZmVycw0=",
+		"probability": 1.1247743714193348e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Subscribe for Info
+Processed words: ['subscribe', 'for', 'info']
+Non - zero feature indices: [45  56 104]
+Feature vector sum: 4.5
+{
+	"text": "U3Vic2NyaWJlIGZvciBJbmZvDQ==",
+		"probability": 2.4742369408186672e-14,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore New Deals
+Processed words: ['explore', 'new', 'deals']
+Non - zero feature indices: [39 72]
+Feature vector sum: 3.0
+{
+	"text": "RXhwbG9yZSBOZXcgRGVhbHMN",
+		"probability": 1.530715465491994e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Learn About Us
+Processed words: ['learn', 'about', 'us']
+Non - zero feature indices: [62 125]
+Feature vector sum: 3.0
+{
+	"text": "TGVhcm4gQWJvdXQgVXMN",
+		"probability": 5.0292612286284566e-05,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Event Tickets
+Processed words: ['buy', 'event', 'tickets']
+Non - zero feature indices: [23]
+Feature vector sum: 1.5
+{
+	"text": "QnV5IEV2ZW50IFRpY2tldHMN",
+		"probability": 1.7132215646142868e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop New Arrivals
+Processed words: ['shop', 'new', 'arrivals']
+Non - zero feature indices: [72 97]
+Feature vector sum: 3.0
+{
+	"text": "U2hvcCBOZXcgQXJyaXZhbHMN",
+		"probability": 4.503521111587361e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Shop
+Processed words: ['welcome', 'to', 'our', 'shop']
+Non - zero feature indices: [81  97 115 130]
+Feature vector sum: 6.0
+{
+	"text": "V2VsY29tZSB0byBPdXIgU2hvcA0=",
+		"probability": 2.557950054028757e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Catalog Now
+Processed words: ['product', 'catalog', 'now']
+Non - zero feature indices: [77]
+Feature vector sum: 1.5
+{
+	"text": "UHJvZHVjdCBDYXRhbG9nIE5vdw0=",
+		"probability": 0.9999670505523682,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Mission
+Processed words: ['about', 'our', 'mission']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIE1pc3Npb24N",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Service Plans Online
+Processed words: ['service', 'plans', 'online']
+Non - zero feature indices: [79 96]
+Feature vector sum: 3.0
+{
+	"text": "U2VydmljZSBQbGFucyBPbmxpbmUN",
+		"probability": 0.9999998569488526,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page Top Deals
+Processed words: ['home', 'page', 'top', 'deals']
+Non - zero feature indices: [52 82]
+Feature vector sum: 3.0
+{
+	"text": "SG9tZSBQYWdlIFRvcCBEZWFscw0=",
+		"probability": 1.0,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Products Online
+Processed words: ['buy', 'products', 'online']
+Non - zero feature indices: [23 79 84]
+Feature vector sum: 4.5
+{
+	"text": "QnV5IFByb2R1Y3RzIE9ubGluZQ0=",
+		"probability": 3.136667358141776e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Support Now
+Processed words: ['contact', 'support', 'now']
+Non - zero feature indices: [31  77 105]
+Feature vector sum: 4.5
+{
+	"text": "Q29udGFjdCBTdXBwb3J0IE5vdw0=",
+		"probability": 3.7352322124206694e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Newsletter Sign Up
+Processed words: ['newsletter', 'sign', 'up']
+Non - zero feature indices: [124]
+Feature vector sum: 1.5
+{
+	"text": "TmV3c2xldHRlciBTaWduIFVwDQ==",
+		"probability": 9.219803359883372e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog Post New Trends
+Processed words: ['blog', 'post', 'new', 'trends']
+Non - zero feature indices: [19 72]
+Feature vector sum: 3.0
+{
+	"text": "QmxvZyBQb3N0IE5ldyBUcmVuZHMN",
+		"probability": 7.617694669503905e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Sign Up for Offers
+Processed words: ['sign', 'up', 'for', 'offers']
+Non - zero feature indices: [45 124]
+Feature vector sum: 3.0
+{
+	"text": "U2lnbiBVcCBmb3IgT2ZmZXJzDQ==",
+		"probability": 0.0006613887962885201,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Latest Deals
+Processed words: ['shop', 'latest', 'deals']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "U2hvcCBMYXRlc3QgRGVhbHMN",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Store
+Processed words: ['welcome', 'to', 'our', 'store']
+Non - zero feature indices: [81 103 115 130]
+Feature vector sum: 6.0
+{
+	"text": "V2VsY29tZSB0byBPdXIgU3RvcmUN",
+		"probability": 3.6655690960861465e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Browse Product Range
+Processed words: ['browse', 'product', 'range']
+Non - zero feature indices: []
+Feature vector sum: 0.0
+No features matched, returning non - interesting
+{
+	"text": "QnJvd3NlIFByb2R1Y3QgUmFuZ2UN",
+		"probability": 0.0,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact for Help
+Processed words: ['contact', 'for', 'help']
+Non - zero feature indices: [31 45]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBmb3IgSGVscA0=",
+		"probability": 0.0006495505804196,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: News Updates Online
+Processed words: ['news', 'updates', 'online']
+Non - zero feature indices: [73 79]
+Feature vector sum: 3.0
+{
+	"text": "TmV3cyBVcGRhdGVzIE9ubGluZQ0=",
+		"probability": 2.216707343905e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Catalog Browse Now
+Processed words: ['catalog', 'browse', 'now']
+Non - zero feature indices: [77]
+Feature vector sum: 1.5
+{
+	"text": "Q2F0YWxvZyBCcm93c2UgTm93DQ==",
+		"probability": 0.9999670505523682,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Team
+Processed words: ['about', 'our', 'team']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIFRlYW0N",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Services Available Now
+Processed words: ['services', 'available', 'now']
+Non - zero feature indices: [15 77]
+Feature vector sum: 3.0
+{
+	"text": "U2VydmljZXMgQXZhaWxhYmxlIE5vdw0=",
+		"probability": 0.9999951839447022,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page New Offers
+Processed words: ['home', 'page', 'new', 'offers']
+Non - zero feature indices: [52 72 82]
+Feature vector sum: 4.5
+{
+	"text": "SG9tZSBQYWdlIE5ldyBPZmZlcnMN",
+		"probability": 0.9739728450775147,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Now for Savings
+Processed words: ['buy', 'now', 'for', 'savings']
+Non - zero feature indices: [23 45 77]
+Feature vector sum: 4.5
+{
+	"text": "QnV5IE5vdyBmb3IgU2F2aW5ncw0=",
+		"probability": 1.7563969834100135e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Online Deals
+Processed words: ['shop', 'online', 'deals']
+Non - zero feature indices: [79 97]
+Feature vector sum: 3.0
+{
+	"text": "U2hvcCBPbmxpbmUgRGVhbHMN",
+		"probability": 0.008897606283426285,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Subscribe for News
+Processed words: ['subscribe', 'for', 'news']
+Non - zero feature indices: [45  73 104]
+Feature vector sum: 4.5
+{
+	"text": "U3Vic2NyaWJlIGZvciBOZXdzDQ==",
+		"probability": 3.728701917539434e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog Articles Online
+Processed words: ['blog', 'articles', 'online']
+Non - zero feature indices: [19 79]
+Feature vector sum: 3.0
+{
+	"text": "QmxvZyBBcnRpY2xlcyBPbmxpbmUN",
+		"probability": 4.111882745405637e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Sign Up for Deals
+Processed words: ['sign', 'up', 'for', 'deals']
+Non - zero feature indices: [45 124]
+Feature vector sum: 3.0
+{
+	"text": "U2lnbiBVcCBmb3IgRGVhbHMN",
+		"probability": 0.0006613887962885201,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore Our Products
+Processed words: ['explore', 'our', 'products']
+Non - zero feature indices: [39 81 84]
+Feature vector sum: 4.5
+{
+	"text": "RXhwbG9yZSBPdXIgUHJvZHVjdHMN",
+		"probability": 3.137136656746202e-15,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Support and Info
+Processed words: ['support', 'and', 'info']
+Non - zero feature indices: [56 105]
+Feature vector sum: 3.0
+{
+	"text": "U3VwcG9ydCBhbmQgSW5mbw0=",
+		"probability": 2.3738229160130686e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Reviews Now
+Processed words: ['product', 'reviews', 'now']
+Non - zero feature indices: [77 92]
+Feature vector sum: 3.0
+{
+	"text": "UHJvZHVjdCBSZXZpZXdzIE5vdw0=",
+		"probability": 0.0037057807203382254,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Discover Our Website
+Processed words: ['discover', 'our', 'website']
+Non - zero feature indices: [81 129]
+Feature vector sum: 3.0
+{
+	"text": "RGlzY292ZXIgT3VyIFdlYnNpdGUN",
+		"probability": 5.54988127987599e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Exclusive Items
+Processed words: ['shop', 'exclusive', 'items']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "U2hvcCBFeGNsdXNpdmUgSXRlbXMN",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Our Experts
+Processed words: ['contact', 'our', 'experts']
+Non - zero feature indices: [31 81]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBPdXIgRXhwZXJ0cw0=",
+		"probability": 6.80637837757736e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Browse Product Lines
+Processed words: ['browse', 'product', 'lines']
+Non - zero feature indices: []
+Feature vector sum: 0.0
+No features matched, returning non - interesting
+{
+	"text": "QnJvd3NlIFByb2R1Y3QgTGluZXMN",
+		"probability": 0.0,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Learn About Benefits
+Processed words: ['learn', 'about', 'benefits']
+Non - zero feature indices: [62]
+Feature vector sum: 1.5
+{
+	"text": "TGVhcm4gQWJvdXQgQmVuZWZpdHMN",
+		"probability": 0.0003085871576331556,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Join Our Newsletter
+Processed words: ['join', 'our', 'newsletter']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "Sm9pbiBPdXIgTmV3c2xldHRlcg0=",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore New Products
+Processed words: ['explore', 'new', 'products']
+Non - zero feature indices: [39 72 84]
+Feature vector sum: 4.5
+{
+	"text": "RXhwbG9yZSBOZXcgUHJvZHVjdHMN",
+		"probability": 2.8588402803918223e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Now Specials
+Processed words: ['buy', 'now', 'specials']
+Non - zero feature indices: [23 77]
+Feature vector sum: 3.0
+{
+	"text": "QnV5IE5vdyBTcGVjaWFscw0=",
+		"probability": 7.627283693523168e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page Great Offers
+Processed words: ['home', 'page', 'great', 'offers']
+Non - zero feature indices: [51 52 82]
+Feature vector sum: 4.5
+{
+	"text": "SG9tZSBQYWdlIEdyZWF0IE9mZmVycw0=",
+		"probability": 1.0,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Values
+Processed words: ['about', 'our', 'values']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIFZhbHVlcw0=",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Customer Feedback Online
+Processed words: ['customer', 'feedback', 'online']
+Non - zero feature indices: [33 79]
+Feature vector sum: 3.0
+{
+	"text": "Q3VzdG9tZXIgRmVlZGJhY2sgT25saW5lDQ==",
+		"probability": 0.00019390489615034312,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Top Deals
+Processed words: ['shop', 'top', 'deals']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "U2hvcCBUb3AgRGVhbHMN",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Platform
+Processed words: ['welcome', 'to', 'our', 'platform']
+Non - zero feature indices: [81 115 130]
+Feature vector sum: 4.5
+{
+	"text": "V2VsY29tZSB0byBPdXIgUGxhdGZvcm0N",
+		"probability": 2.459575598745545e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Details Online
+Processed words: ['product', 'details', 'online']
+Non - zero feature indices: [79]
+Feature vector sum: 1.5
+{
+	"text": "UHJvZHVjdCBEZXRhaWxzIE9ubGluZQ0=",
+		"probability": 0.9999753952026368,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Support Team
+Processed words: ['contact', 'support', 'team']
+Non - zero feature indices: [31 105]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBTdXBwb3J0IFRlYW0N",
+		"probability": 2.4793826014501974e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog News and Tips
+Processed words: ['blog', 'news', 'and', 'tips']
+Non - zero feature indices: [19 73]
+Feature vector sum: 3.0
+{
+	"text": "QmxvZyBOZXdzIGFuZCBUaXBzDQ==",
+		"probability": 1.5877471863309789e-12,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Services for All
+Processed words: ['services', 'for', 'all']
+Non - zero feature indices: [45]
+Feature vector sum: 1.5
+{
+	"text": "U2VydmljZXMgZm9yIEFsbA0=",
+		"probability": 0.9999999046325684,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Homepage New Deals
+Processed words: ['homepage', 'new', 'deals']
+Non - zero feature indices: [53 72]
+Feature vector sum: 3.0
+{
+	"text": "SG9tZXBhZ2UgTmV3IERlYWxzDQ==",
+		"probability": 3.4280935728991935e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Subscribe to Updates
+Processed words: ['subscribe', 'to', 'updates']
+Non - zero feature indices: [104 115]
+Feature vector sum: 3.0
+{
+	"text": "U3Vic2NyaWJlIHRvIFVwZGF0ZXMN",
+		"probability": 7.947743574376886e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore Product Offers
+Processed words: ['explore', 'product', 'offers']
+Non - zero feature indices: [39]
+Feature vector sum: 1.5
+{
+	"text": "RXhwbG9yZSBQcm9kdWN0IE9mZmVycw0=",
+		"probability": 0.001655267784371972,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Learn Our Mission
+Processed words: ['learn', 'our', 'mission']
+Non - zero feature indices: [62 81]
+Feature vector sum: 3.0
+{
+	"text": "TGVhcm4gT3VyIE1pc3Npb24N",
+		"probability": 2.0526302879630975e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Tickets Now
+Processed words: ['buy', 'tickets', 'now']
+Non - zero feature indices: [23 77]
+Feature vector sum: 3.0
+{
+	"text": "QnV5IFRpY2tldHMgTm93DQ==",
+		"probability": 7.627283693523168e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Seasonal Sales
+Processed words: ['shop', 'seasonal', 'sales']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "U2hvcCBTZWFzb25hbCBTYWxlcw0=",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Site
+Processed words: ['welcome', 'to', 'our', 'site']
+Non - zero feature indices: [81  99 115 130]
+Feature vector sum: 6.0
+{
+	"text": "V2VsY29tZSB0byBPdXIgU2l0ZQ0=",
+		"probability": 1.1486251533243674e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Catalog Online
+Processed words: ['product', 'catalog', 'online']
+Non - zero feature indices: [79]
+Feature vector sum: 1.5
+{
+	"text": "UHJvZHVjdCBDYXRhbG9nIE9ubGluZQ0=",
+		"probability": 0.9999753952026368,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Brand
+Processed words: ['about', 'our', 'brand']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIEJyYW5kDQ==",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Service Info and Plans
+Processed words: ['service', 'info', 'and', 'plans']
+Non - zero feature indices: [56 96]
+Feature vector sum: 3.0
+{
+	"text": "U2VydmljZSBJbmZvIGFuZCBQbGFucw0=",
+		"probability": 6.001600354466063e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page Best Offers
+Processed words: ['home', 'page', 'best', 'offers']
+Non - zero feature indices: [52 82]
+Feature vector sum: 3.0
+{
+	"text": "SG9tZSBQYWdlIEJlc3QgT2ZmZXJzDQ==",
+		"probability": 1.0,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Products Today
+Processed words: ['buy', 'products', 'today']
+Non - zero feature indices: [23 84]
+Feature vector sum: 3.0
+{
+	"text": "QnV5IFByb2R1Y3RzIFRvZGF5DQ==",
+		"probability": 2.7474379650678504e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Us for Help
+Processed words: ['contact', 'us', 'for', 'help']
+Non - zero feature indices: [31  45 125]
+Feature vector sum: 4.5
+{
+	"text": "Q29udGFjdCBVcyBmb3IgSGVscA0=",
+		"probability": 0.0007402501651085913,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Newsletter Updates Now
+Processed words: ['newsletter', 'updates', 'now']
+Non - zero feature indices: [77]
+Feature vector sum: 1.5
+{
+	"text": "TmV3c2xldHRlciBVcGRhdGVzIE5vdw0=",
+		"probability": 0.9999670505523682,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog Post New Ideas
+Processed words: ['blog', 'post', 'new', 'ideas']
+Non - zero feature indices: [19 72]
+Feature vector sum: 3.0
+{
+	"text": "QmxvZyBQb3N0IE5ldyBJZGVhcw0=",
+		"probability": 7.617694669503905e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Sign Up for Free
+Processed words: ['sign', 'up', 'for', 'free']
+Non - zero feature indices: [45  48 124]
+Feature vector sum: 4.5
+{
+	"text": "U2lnbiBVcCBmb3IgRnJlZQ0=",
+		"probability": 0.000262444926192984,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop New Collections
+Processed words: ['shop', 'new', 'collections']
+Non - zero feature indices: [72 97]
+Feature vector sum: 3.0
+{
+	"text": "U2hvcCBOZXcgQ29sbGVjdGlvbnMN",
+		"probability": 4.503521111587361e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Hub
+Processed words: ['welcome', 'to', 'our', 'hub']
+Non - zero feature indices: [81 115 130]
+Feature vector sum: 4.5
+{
+	"text": "V2VsY29tZSB0byBPdXIgSHViDQ==",
+		"probability": 2.459575598745545e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Browse Our Products
+Processed words: ['browse', 'our', 'products']
+Non - zero feature indices: [81 84]
+Feature vector sum: 3.0
+{
+	"text": "QnJvd3NlIE91ciBQcm9kdWN0cw0=",
+		"probability": 1.9250448457519553e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Our Staff
+Processed words: ['contact', 'our', 'staff']
+Non - zero feature indices: [31 81]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBPdXIgU3RhZmYN",
+		"probability": 6.80637837757736e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: News and Events Now
+Processed words: ['news', 'and', 'events', 'now']
+Non - zero feature indices: [73 77]
+Feature vector sum: 3.0
+{
+	"text": "TmV3cyBhbmQgRXZlbnRzIE5vdw0=",
+		"probability": 9.418258741789032e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Catalog Shop Today
+Processed words: ['catalog', 'shop', 'today']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "Q2F0YWxvZyBTaG9wIFRvZGF5DQ==",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Services
+Processed words: ['about', 'our', 'services']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIFNlcnZpY2VzDQ==",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Services Tailored to You
+Processed words: ['services', 'tailored', 'to', 'you']
+Non - zero feature indices: [115]
+Feature vector sum: 1.5
+{
+	"text": "U2VydmljZXMgVGFpbG9yZWQgdG8gWW91DQ==",
+		"probability": 0.9999995708465577,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page New Items
+Processed words: ['home', 'page', 'new', 'items']
+Non - zero feature indices: [52 72 82]
+Feature vector sum: 4.5
+{
+	"text": "SG9tZSBQYWdlIE5ldyBJdGVtcw0=",
+		"probability": 0.9739728450775147,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Now Online Deals
+Processed words: ['buy', 'now', 'online', 'deals']
+Non - zero feature indices: [23 77 79]
+Feature vector sum: 4.5
+{
+	"text": "QnV5IE5vdyBPbmxpbmUgRGVhbHMN",
+		"probability": 5.3552171586090935e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Exclusive Offers
+Processed words: ['shop', 'exclusive', 'offers']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "U2hvcCBFeGNsdXNpdmUgT2ZmZXJzDQ==",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Subscribe for Info
+Processed words: ['subscribe', 'for', 'info']
+Non - zero feature indices: [45  56 104]
+Feature vector sum: 4.5
+{
+	"text": "U3Vic2NyaWJlIGZvciBJbmZvDQ==",
+		"probability": 2.4742369408186672e-14,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog Trends and News
+Processed words: ['blog', 'trends', 'and', 'news']
+Non - zero feature indices: [19 73]
+Feature vector sum: 3.0
+{
+	"text": "QmxvZyBUcmVuZHMgYW5kIE5ld3MN",
+		"probability": 1.5877471863309789e-12,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Sign Up for Updates
+Processed words: ['sign', 'up', 'for', 'updates']
+Non - zero feature indices: [45 124]
+Feature vector sum: 3.0
+{
+	"text": "U2lnbiBVcCBmb3IgVXBkYXRlcw0=",
+		"probability": 0.0006613887962885201,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore Site Offers
+Processed words: ['explore', 'site', 'offers']
+Non - zero feature indices: [39 99]
+Feature vector sum: 3.0
+{
+	"text": "RXhwbG9yZSBTaXRlIE9mZmVycw0=",
+		"probability": 0.0009859208948910236,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Support Contact Info
+Processed words: ['support', 'contact', 'info']
+Non - zero feature indices: [31  56 105]
+Feature vector sum: 4.5
+{
+	"text": "U3VwcG9ydCBDb250YWN0IEluZm8N",
+		"probability": 1.3972881011958815e-12,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Ratings Now
+Processed words: ['product', 'ratings', 'now']
+Non - zero feature indices: [77]
+Feature vector sum: 1.5
+{
+	"text": "UHJvZHVjdCBSYXRpbmdzIE5vdw0=",
+		"probability": 0.9999670505523682,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Store
+Processed words: ['welcome', 'to', 'our', 'store']
+Non - zero feature indices: [81 103 115 130]
+Feature vector sum: 6.0
+{
+	"text": "V2VsY29tZSB0byBPdXIgU3RvcmUN",
+		"probability": 3.6655690960861465e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Latest Products
+Processed words: ['shop', 'latest', 'products']
+Non - zero feature indices: [84 97]
+Feature vector sum: 3.0
+{
+	"text": "U2hvcCBMYXRlc3QgUHJvZHVjdHMN",
+		"probability": 4.0368823839287415e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact for Details
+Processed words: ['contact', 'for', 'details']
+Non - zero feature indices: [31 45]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBmb3IgRGV0YWlscw0=",
+		"probability": 0.0006495505804196,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Browse New Arrivals
+Processed words: ['browse', 'new', 'arrivals']
+Non - zero feature indices: [72]
+Feature vector sum: 1.5
+{
+	"text": "QnJvd3NlIE5ldyBBcnJpdmFscw0=",
+		"probability": 7.902665674919263e-05,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Learn Our Services
+Processed words: ['learn', 'our', 'services']
+Non - zero feature indices: [62 81]
+Feature vector sum: 3.0
+{
+	"text": "TGVhcm4gT3VyIFNlcnZpY2VzDQ==",
+		"probability": 2.0526302879630975e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Join Our Updates
+Processed words: ['join', 'our', 'updates']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "Sm9pbiBPdXIgVXBkYXRlcw0=",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore New Features
+Processed words: ['explore', 'new', 'features']
+Non - zero feature indices: [39 42 72]
+Feature vector sum: 4.5
+{
+	"text": "RXhwbG9yZSBOZXcgRmVhdHVyZXMN",
+		"probability": 7.800399770552247e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Now for Deals
+Processed words: ['buy', 'now', 'for', 'deals']
+Non - zero feature indices: [23 45 77]
+Feature vector sum: 4.5
+{
+	"text": "QnV5IE5vdyBmb3IgRGVhbHMN",
+		"probability": 1.7563969834100135e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page Top Picks
+Processed words: ['home', 'page', 'top', 'picks']
+Non - zero feature indices: [52 82]
+Feature vector sum: 3.0
+{
+	"text": "SG9tZSBQYWdlIFRvcCBQaWNrcw0=",
+		"probability": 1.0,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Team
+Processed words: ['about', 'our', 'team']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIFRlYW0N",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Customer Reviews Today
+Processed words: ['customer', 'reviews', 'today']
+Non - zero feature indices: [33 92]
+Feature vector sum: 3.0
+{
+	"text": "Q3VzdG9tZXIgUmV2aWV3cyBUb2RheQ0=",
+		"probability": 4.643935369585961e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Online Promotions
+Processed words: ['shop', 'online', 'promotions']
+Non - zero feature indices: [79 97]
+Feature vector sum: 3.0
+{
+	"text": "U2hvcCBPbmxpbmUgUHJvbW90aW9ucw0=",
+		"probability": 0.008897606283426285,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Shop
+Processed words: ['welcome', 'to', 'our', 'shop']
+Non - zero feature indices: [81  97 115 130]
+Feature vector sum: 6.0
+{
+	"text": "V2VsY29tZSB0byBPdXIgU2hvcA0=",
+		"probability": 2.557950054028757e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Info and More
+Processed words: ['product', 'info', 'and', 'more']
+Non - zero feature indices: [56 70]
+Feature vector sum: 3.0
+{
+	"text": "UHJvZHVjdCBJbmZvIGFuZCBNb3JlDQ==",
+		"probability": 5.011805228605226e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Our Advisors
+Processed words: ['contact', 'our', 'advisors']
+Non - zero feature indices: [31 81]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBPdXIgQWR2aXNvcnMN",
+		"probability": 6.80637837757736e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog Articles Today
+Processed words: ['blog', 'articles', 'today']
+Non - zero feature indices: [19]
+Feature vector sum: 1.5
+{
+	"text": "QmxvZyBBcnRpY2xlcyBUb2RheQ0=",
+		"probability": 4.381394447250386e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Services You Need
+Processed words: ['services', 'you', 'need']
+Non - zero feature indices: []
+Feature vector sum: 0.0
+No features matched, returning non - interesting
+{
+	"text": "U2VydmljZXMgWW91IE5lZWQN",
+		"probability": 0.0,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Homepage Special Deals
+Processed words: ['homepage', 'special', 'deals']
+Non - zero feature indices: [53]
+Feature vector sum: 1.5
+{
+	"text": "SG9tZXBhZ2UgU3BlY2lhbCBEZWFscw0=",
+		"probability": 1.1247743714193348e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Subscribe for Offers
+Processed words: ['subscribe', 'for', 'offers']
+Non - zero feature indices: [45 104]
+Feature vector sum: 3.0
+{
+	"text": "U3Vic2NyaWJlIGZvciBPZmZlcnMN",
+		"probability": 2.5520490165575893e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore New Items
+Processed words: ['explore', 'new', 'items']
+Non - zero feature indices: [39 72]
+Feature vector sum: 3.0
+{
+	"text": "RXhwbG9yZSBOZXcgSXRlbXMN",
+		"probability": 1.530715465491994e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Learn About Our Brand
+Processed words: ['learn', 'about', 'our', 'brand']
+Non - zero feature indices: [62 81]
+Feature vector sum: 3.0
+{
+	"text": "TGVhcm4gQWJvdXQgT3VyIEJyYW5kDQ==",
+		"probability": 2.0526302879630975e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Event Passes
+Processed words: ['buy', 'event', 'passes']
+Non - zero feature indices: [23]
+Feature vector sum: 1.5
+{
+	"text": "QnV5IEV2ZW50IFBhc3Nlcw0=",
+		"probability": 1.7132215646142868e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Top Offers
+Processed words: ['shop', 'top', 'offers']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "U2hvcCBUb3AgT2ZmZXJzDQ==",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Portal
+Processed words: ['welcome', 'to', 'our', 'portal']
+Non - zero feature indices: [81 115 130]
+Feature vector sum: 4.5
+{
+	"text": "V2VsY29tZSB0byBPdXIgUG9ydGFsDQ==",
+		"probability": 2.459575598745545e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Catalog Shop
+Processed words: ['product', 'catalog', 'shop']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "UHJvZHVjdCBDYXRhbG9nIFNob3AN",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Vision
+Processed words: ['about', 'our', 'vision']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIFZpc2lvbg0=",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Service Plans for You
+Processed words: ['service', 'plans', 'for', 'you']
+Non - zero feature indices: [45 96]
+Feature vector sum: 3.0
+{
+	"text": "U2VydmljZSBQbGFucyBmb3IgWW91DQ==",
+		"probability": 1.0,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page New Sales
+Processed words: ['home', 'page', 'new', 'sales']
+Non - zero feature indices: [52 72 82]
+Feature vector sum: 4.5
+{
+	"text": "SG9tZSBQYWdlIE5ldyBTYWxlcw0=",
+		"probability": 0.9739728450775147,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Products Now
+Processed words: ['buy', 'products', 'now']
+Non - zero feature indices: [23 77 84]
+Feature vector sum: 4.5
+{
+	"text": "QnV5IFByb2R1Y3RzIE5vdw0=",
+		"probability": 1.8841078328578342e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Support Today
+Processed words: ['contact', 'support', 'today']
+Non - zero feature indices: [31 105]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBTdXBwb3J0IFRvZGF5DQ==",
+		"probability": 2.4793826014501974e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Newsletter Free Info
+Processed words: ['newsletter', 'free', 'info']
+Non - zero feature indices: [48 56]
+Feature vector sum: 3.0
+{
+	"text": "TmV3c2xldHRlciBGcmVlIEluZm8N",
+		"probability": 5.623000447485538e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog Post Highlights
+Processed words: ['blog', 'post', 'highlights']
+Non - zero feature indices: [19]
+Feature vector sum: 1.5
+{
+	"text": "QmxvZyBQb3N0IEhpZ2hsaWdodHMN",
+		"probability": 4.381394447250386e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Sign Up for Deals
+Processed words: ['sign', 'up', 'for', 'deals']
+Non - zero feature indices: [45 124]
+Feature vector sum: 3.0
+{
+	"text": "U2lnbiBVcCBmb3IgRGVhbHMN",
+		"probability": 0.0006613887962885201,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Latest Trends
+Processed words: ['shop', 'latest', 'trends']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "U2hvcCBMYXRlc3QgVHJlbmRzDQ==",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Community
+Processed words: ['welcome', 'to', 'our', 'community']
+Non - zero feature indices: [81 115 130]
+Feature vector sum: 4.5
+{
+	"text": "V2VsY29tZSB0byBPdXIgQ29tbXVuaXR5DQ==",
+		"probability": 2.459575598745545e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Browse Product Deals
+Processed words: ['browse', 'product', 'deals']
+Non - zero feature indices: []
+Feature vector sum: 0.0
+No features matched, returning non - interesting
+{
+	"text": "QnJvd3NlIFByb2R1Y3QgRGVhbHMN",
+		"probability": 0.0,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Our Team
+Processed words: ['contact', 'our', 'team']
+Non - zero feature indices: [31 81]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBPdXIgVGVhbQ0=",
+		"probability": 6.80637837757736e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: News Updates and Events
+Processed words: ['news', 'updates', 'and', 'events']
+Non - zero feature indices: [73]
+Feature vector sum: 1.5
+{
+	"text": "TmV3cyBVcGRhdGVzIGFuZCBFdmVudHMN",
+		"probability": 7.358364655374316e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Catalog Online Shop
+Processed words: ['catalog', 'online', 'shop']
+Non - zero feature indices: [79 97]
+Feature vector sum: 3.0
+{
+	"text": "Q2F0YWxvZyBPbmxpbmUgU2hvcA0=",
+		"probability": 0.008897606283426285,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Mission
+Processed words: ['about', 'our', 'mission']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIE1pc3Npb24N",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Services for Everyone
+Processed words: ['services', 'for', 'everyone']
+Non - zero feature indices: [45]
+Feature vector sum: 1.5
+{
+	"text": "U2VydmljZXMgZm9yIEV2ZXJ5b25lDQ==",
+		"probability": 0.9999999046325684,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page New Products
+Processed words: ['home', 'page', 'new', 'products']
+Non - zero feature indices: [52 72 82 84]
+Feature vector sum: 6.0
+{
+	"text": "SG9tZSBQYWdlIE5ldyBQcm9kdWN0cw0=",
+		"probability": 2.9737293516518548e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Now Special Offers
+Processed words: ['buy', 'now', 'special', 'offers']
+Non - zero feature indices: [23 77]
+Feature vector sum: 3.0
+{
+	"text": "QnV5IE5vdyBTcGVjaWFsIE9mZmVycw0=",
+		"probability": 7.627283693523168e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Online Today
+Processed words: ['shop', 'online', 'today']
+Non - zero feature indices: [79 97]
+Feature vector sum: 3.0
+{
+	"text": "U2hvcCBPbmxpbmUgVG9kYXkN",
+		"probability": 0.008897606283426285,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Subscribe for News
+Processed words: ['subscribe', 'for', 'news']
+Non - zero feature indices: [45  73 104]
+Feature vector sum: 4.5
+{
+	"text": "U3Vic2NyaWJlIGZvciBOZXdzDQ==",
+		"probability": 3.728701917539434e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog New Insights
+Processed words: ['blog', 'new', 'insights']
+Non - zero feature indices: [19 72]
+Feature vector sum: 3.0
+{
+	"text": "QmxvZyBOZXcgSW5zaWdodHMN",
+		"probability": 7.617694669503905e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Sign Up for Offers
+Processed words: ['sign', 'up', 'for', 'offers']
+Non - zero feature indices: [45 124]
+Feature vector sum: 3.0
+{
+	"text": "U2lnbiBVcCBmb3IgT2ZmZXJzDQ==",
+		"probability": 0.0006613887962885201,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore Our Site
+Processed words: ['explore', 'our', 'site']
+Non - zero feature indices: [39 81 99]
+Feature vector sum: 4.5
+{
+	"text": "RXhwbG9yZSBPdXIgU2l0ZQ0=",
+		"probability": 1.849466829684232e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Support and Contact
+Processed words: ['support', 'and', 'contact']
+Non - zero feature indices: [31 105]
+Feature vector sum: 3.0
+{
+	"text": "U3VwcG9ydCBhbmQgQ29udGFjdA0=",
+		"probability": 2.4793826014501974e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Reviews Online
+Processed words: ['product', 'reviews', 'online']
+Non - zero feature indices: [79 92]
+Feature vector sum: 3.0
+{
+	"text": "UHJvZHVjdCBSZXZpZXdzIE9ubGluZQ0=",
+		"probability": 0.01415275875478983,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Discover Our Store
+Processed words: ['discover', 'our', 'store']
+Non - zero feature indices: [81 103]
+Feature vector sum: 3.0
+{
+	"text": "RGlzY292ZXIgT3VyIFN0b3JlDQ==",
+		"probability": 2.289143319345044e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop New Collections
+Processed words: ['shop', 'new', 'collections']
+Non - zero feature indices: [72 97]
+Feature vector sum: 3.0
+{
+	"text": "U2hvcCBOZXcgQ29sbGVjdGlvbnMN",
+		"probability": 4.503521111587361e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact for Support
+Processed words: ['contact', 'for', 'support']
+Non - zero feature indices: [31  45 105]
+Feature vector sum: 4.5
+{
+	"text": "Q29udGFjdCBmb3IgU3VwcG9ydA0=",
+		"probability": 5.0500234465289395e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Browse Top Items
+Processed words: ['browse', 'top', 'items']
+Non - zero feature indices: []
+Feature vector sum: 0.0
+No features matched, returning non - interesting
+{
+	"text": "QnJvd3NlIFRvcCBJdGVtcw0=",
+		"probability": 0.0,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Learn Our Plans
+Processed words: ['learn', 'our', 'plans']
+Non - zero feature indices: [62 81]
+Feature vector sum: 3.0
+{
+	"text": "TGVhcm4gT3VyIFBsYW5zDQ==",
+		"probability": 2.0526302879630975e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Join Our Community
+Processed words: ['join', 'our', 'community']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "Sm9pbiBPdXIgQ29tbXVuaXR5DQ==",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore Product Range
+Processed words: ['explore', 'product', 'range']
+Non - zero feature indices: [39]
+Feature vector sum: 1.5
+{
+	"text": "RXhwbG9yZSBQcm9kdWN0IFJhbmdlDQ==",
+		"probability": 0.001655267784371972,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Now Great Deals
+Processed words: ['buy', 'now', 'great', 'deals']
+Non - zero feature indices: [23 51 77]
+Feature vector sum: 4.5
+{
+	"text": "QnV5IE5vdyBHcmVhdCBEZWFscw0=",
+		"probability": 2.6711799439027573e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page Best Deals
+Processed words: ['home', 'page', 'best', 'deals']
+Non - zero feature indices: [52 82]
+Feature vector sum: 3.0
+{
+	"text": "SG9tZSBQYWdlIEJlc3QgRGVhbHMN",
+		"probability": 1.0,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Journey
+Processed words: ['about', 'our', 'journey']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIEpvdXJuZXkN",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Customer Feedback Hub
+Processed words: ['customer', 'feedback', 'hub']
+Non - zero feature indices: [33]
+Feature vector sum: 1.5
+{
+	"text": "Q3VzdG9tZXIgRmVlZGJhY2sgSHViDQ==",
+		"probability": 7.189165626186877e-05,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Special Deals
+Processed words: ['shop', 'special', 'deals']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "U2hvcCBTcGVjaWFsIERlYWxzDQ==",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Hub
+Processed words: ['welcome', 'to', 'our', 'hub']
+Non - zero feature indices: [81 115 130]
+Feature vector sum: 4.5
+{
+	"text": "V2VsY29tZSB0byBPdXIgSHViDQ==",
+		"probability": 2.459575598745545e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Details and Info
+Processed words: ['product', 'details', 'and', 'info']
+Non - zero feature indices: [56]
+Feature vector sum: 1.5
+{
+	"text": "UHJvZHVjdCBEZXRhaWxzIGFuZCBJbmZvDQ==",
+		"probability": 3.252513351981179e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Our Experts
+Processed words: ['contact', 'our', 'experts']
+Non - zero feature indices: [31 81]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBPdXIgRXhwZXJ0cw0=",
+		"probability": 6.80637837757736e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog News and Updates
+Processed words: ['blog', 'news', 'and', 'updates']
+Non - zero feature indices: [19 73]
+Feature vector sum: 3.0
+{
+	"text": "QmxvZyBOZXdzIGFuZCBVcGRhdGVzDQ==",
+		"probability": 1.5877471863309789e-12,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Services for Your Needs
+Processed words: ['services', 'for', 'your', 'needs']
+Non - zero feature indices: [45 133]
+Feature vector sum: 3.0
+{
+	"text": "U2VydmljZXMgZm9yIFlvdXIgTmVlZHMN",
+		"probability": 1.0,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Homepage Top Offers
+Processed words: ['homepage', 'top', 'offers']
+Non - zero feature indices: [53]
+Feature vector sum: 1.5
+{
+	"text": "SG9tZXBhZ2UgVG9wIE9mZmVycw0=",
+		"probability": 1.1247743714193348e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Subscribe for Updates
+Processed words: ['subscribe', 'for', 'updates']
+Non - zero feature indices: [45 104]
+Feature vector sum: 3.0
+{
+	"text": "U3Vic2NyaWJlIGZvciBVcGRhdGVzDQ==",
+		"probability": 2.5520490165575893e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore New Products
+Processed words: ['explore', 'new', 'products']
+Non - zero feature indices: [39 72 84]
+Feature vector sum: 4.5
+{
+	"text": "RXhwbG9yZSBOZXcgUHJvZHVjdHMN",
+		"probability": 2.8588402803918223e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Learn Our Story
+Processed words: ['learn', 'our', 'story']
+Non - zero feature indices: [62 81]
+Feature vector sum: 3.0
+{
+	"text": "TGVhcm4gT3VyIFN0b3J5DQ==",
+		"probability": 2.0526302879630975e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Tickets Online
+Processed words: ['buy', 'tickets', 'online']
+Non - zero feature indices: [23 79]
+Feature vector sum: 3.0
+{
+	"text": "QnV5IFRpY2tldHMgT25saW5lDQ==",
+		"probability": 1.133057381252911e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Exclusive Deals
+Processed words: ['shop', 'exclusive', 'deals']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "U2hvcCBFeGNsdXNpdmUgRGVhbHMN",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Platform
+Processed words: ['welcome', 'to', 'our', 'platform']
+Non - zero feature indices: [81 115 130]
+Feature vector sum: 4.5
+{
+	"text": "V2VsY29tZSB0byBPdXIgUGxhdGZvcm0N",
+		"probability": 2.459575598745545e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Catalog Now
+Processed words: ['product', 'catalog', 'now']
+Non - zero feature indices: [77]
+Feature vector sum: 1.5
+{
+	"text": "UHJvZHVjdCBDYXRhbG9nIE5vdw0=",
+		"probability": 0.9999670505523682,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Leadership
+Processed words: ['about', 'our', 'leadership']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIExlYWRlcnNoaXAN",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Service Info Online
+Processed words: ['service', 'info', 'online']
+Non - zero feature indices: [56 79 96]
+Feature vector sum: 4.5
+{
+	"text": "U2VydmljZSBJbmZvIE9ubGluZQ0=",
+		"probability": 1.2027686580040609e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page New Items
+Processed words: ['home', 'page', 'new', 'items']
+Non - zero feature indices: [52 72 82]
+Feature vector sum: 4.5
+{
+	"text": "SG9tZSBQYWdlIE5ldyBJdGVtcw0=",
+		"probability": 0.9739728450775147,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Products Today
+Processed words: ['buy', 'products', 'today']
+Non - zero feature indices: [23 84]
+Feature vector sum: 3.0
+{
+	"text": "QnV5IFByb2R1Y3RzIFRvZGF5DQ==",
+		"probability": 2.7474379650678504e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact for Info
+Processed words: ['contact', 'for', 'info']
+Non - zero feature indices: [31 45 56]
+Feature vector sum: 4.5
+{
+	"text": "Q29udGFjdCBmb3IgSW5mbw0=",
+		"probability": 1.026601581521902e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Newsletter Sign Up
+Processed words: ['newsletter', 'sign', 'up']
+Non - zero feature indices: [124]
+Feature vector sum: 1.5
+{
+	"text": "TmV3c2xldHRlciBTaWduIFVwDQ==",
+		"probability": 9.219803359883372e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog Post New Trends
+Processed words: ['blog', 'post', 'new', 'trends']
+Non - zero feature indices: [19 72]
+Feature vector sum: 3.0
+{
+	"text": "QmxvZyBQb3N0IE5ldyBUcmVuZHMN",
+		"probability": 7.617694669503905e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Sign Up for Free
+Processed words: ['sign', 'up', 'for', 'free']
+Non - zero feature indices: [45  48 124]
+Feature vector sum: 4.5
+{
+	"text": "U2lnbiBVcCBmb3IgRnJlZQ0=",
+		"probability": 0.000262444926192984,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop New Products
+Processed words: ['shop', 'new', 'products']
+Non - zero feature indices: [72 84 97]
+Feature vector sum: 4.5
+{
+	"text": "U2hvcCBOZXcgUHJvZHVjdHMN",
+		"probability": 6.921525527205097e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Brand
+Processed words: ['welcome', 'to', 'our', 'brand']
+Non - zero feature indices: [81 115 130]
+Feature vector sum: 4.5
+{
+	"text": "V2VsY29tZSB0byBPdXIgQnJhbmQN",
+		"probability": 2.459575598745545e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Browse Our Deals
+Processed words: ['browse', 'our', 'deals']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QnJvd3NlIE91ciBEZWFscw0=",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Our Advisors
+Processed words: ['contact', 'our', 'advisors']
+Non - zero feature indices: [31 81]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBPdXIgQWR2aXNvcnMN",
+		"probability": 6.80637837757736e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: News and Event Info
+Processed words: ['news', 'and', 'event', 'info']
+Non - zero feature indices: [56 73]
+Feature vector sum: 3.0
+{
+	"text": "TmV3cyBhbmQgRXZlbnQgSW5mbw0=",
+		"probability": 5.122984501892969e-12,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Catalog Browse Now
+Processed words: ['catalog', 'browse', 'now']
+Non - zero feature indices: [77]
+Feature vector sum: 1.5
+{
+	"text": "Q2F0YWxvZyBCcm93c2UgTm93DQ==",
+		"probability": 0.9999670505523682,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Services
+Processed words: ['about', 'our', 'services']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIFNlcnZpY2VzDQ==",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Services Tailored for You
+Processed words: ['services', 'tailored', 'for', 'you']
+Non - zero feature indices: [45]
+Feature vector sum: 1.5
+{
+	"text": "U2VydmljZXMgVGFpbG9yZWQgZm9yIFlvdQ0=",
+		"probability": 0.9999999046325684,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page Promotions
+Processed words: ['home', 'page', 'promotions']
+Non - zero feature indices: [52 82]
+Feature vector sum: 3.0
+{
+	"text": "SG9tZSBQYWdlIFByb21vdGlvbnMN",
+		"probability": 1.0,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Now Online
+Processed words: ['buy', 'now', 'online']
+Non - zero feature indices: [23 77 79]
+Feature vector sum: 4.5
+{
+	"text": "QnV5IE5vdyBPbmxpbmUN",
+		"probability": 5.3552171586090935e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Seasonal Offers
+Processed words: ['shop', 'seasonal', 'offers']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "U2hvcCBTZWFzb25hbCBPZmZlcnMN",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Subscribe to News
+Processed words: ['subscribe', 'to', 'news']
+Non - zero feature indices: [73 104 115]
+Feature vector sum: 4.5
+{
+	"text": "U3Vic2NyaWJlIHRvIE5ld3MN",
+		"probability": 1.712171935263837e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog Articles Online
+Processed words: ['blog', 'articles', 'online']
+Non - zero feature indices: [19 79]
+Feature vector sum: 3.0
+{
+	"text": "QmxvZyBBcnRpY2xlcyBPbmxpbmUN",
+		"probability": 4.111882745405637e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Sign Up for Deals
+Processed words: ['sign', 'up', 'for', 'deals']
+Non - zero feature indices: [45 124]
+Feature vector sum: 3.0
+{
+	"text": "U2lnbiBVcCBmb3IgRGVhbHMN",
+		"probability": 0.0006613887962885201,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore Our Products
+Processed words: ['explore', 'our', 'products']
+Non - zero feature indices: [39 81 84]
+Feature vector sum: 4.5
+{
+	"text": "RXhwbG9yZSBPdXIgUHJvZHVjdHMN",
+		"probability": 3.137136656746202e-15,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Support Contact Page
+Processed words: ['support', 'contact', 'page']
+Non - zero feature indices: [31  82 105]
+Feature vector sum: 4.5
+{
+	"text": "U3VwcG9ydCBDb250YWN0IFBhZ2UN",
+		"probability": 0.0005350048304535449,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Reviews Today
+Processed words: ['product', 'reviews', 'today']
+Non - zero feature indices: [92]
+Feature vector sum: 1.5
+{
+	"text": "UHJvZHVjdCBSZXZpZXdzIFRvZGF5DQ==",
+		"probability": 0.0016907114768400788,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Marketplace
+Processed words: ['welcome', 'to', 'our', 'marketplace']
+Non - zero feature indices: [81 115 130]
+Feature vector sum: 4.5
+{
+	"text": "V2VsY29tZSB0byBPdXIgTWFya2V0cGxhY2UN",
+		"probability": 2.459575598745545e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Top Collections
+Processed words: ['shop', 'top', 'collections']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "U2hvcCBUb3AgQ29sbGVjdGlvbnMN",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact for Help
+Processed words: ['contact', 'for', 'help']
+Non - zero feature indices: [31 45]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBmb3IgSGVscA0=",
+		"probability": 0.0006495505804196,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Browse New Items
+Processed words: ['browse', 'new', 'items']
+Non - zero feature indices: [72]
+Feature vector sum: 1.5
+{
+	"text": "QnJvd3NlIE5ldyBJdGVtcw0=",
+		"probability": 7.902665674919263e-05,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Learn About Benefits
+Processed words: ['learn', 'about', 'benefits']
+Non - zero feature indices: [62]
+Feature vector sum: 1.5
+{
+	"text": "TGVhcm4gQWJvdXQgQmVuZWZpdHMN",
+		"probability": 0.0003085871576331556,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Join Our Newsletter
+Processed words: ['join', 'our', 'newsletter']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "Sm9pbiBPdXIgTmV3c2xldHRlcg0=",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore Site Features
+Processed words: ['explore', 'site', 'features']
+Non - zero feature indices: [39 42 99]
+Feature vector sum: 4.5
+{
+	"text": "RXhwbG9yZSBTaXRlIEZlYXR1cmVzDQ==",
+		"probability": 7.822860425221734e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Now for Savings
+Processed words: ['buy', 'now', 'for', 'savings']
+Non - zero feature indices: [23 45 77]
+Feature vector sum: 4.5
+{
+	"text": "QnV5IE5vdyBmb3IgU2F2aW5ncw0=",
+		"probability": 1.7563969834100135e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page New Sales
+Processed words: ['home', 'page', 'new', 'sales']
+Non - zero feature indices: [52 72 82]
+Feature vector sum: 4.5
+{
+	"text": "SG9tZSBQYWdlIE5ldyBTYWxlcw0=",
+		"probability": 0.9739728450775147,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Commitment
+Processed words: ['about', 'our', 'commitment']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIENvbW1pdG1lbnQN",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Customer Ratings Online
+Processed words: ['customer', 'ratings', 'online']
+Non - zero feature indices: [33 79]
+Feature vector sum: 3.0
+{
+	"text": "Q3VzdG9tZXIgUmF0aW5ncyBPbmxpbmUN",
+		"probability": 0.00019390489615034312,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Online Specials
+Processed words: ['shop', 'online', 'specials']
+Non - zero feature indices: [79 97]
+Feature vector sum: 3.0
+{
+	"text": "U2hvcCBPbmxpbmUgU3BlY2lhbHMN",
+		"probability": 0.008897606283426285,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Site
+Processed words: ['welcome', 'to', 'our', 'site']
+Non - zero feature indices: [81  99 115 130]
+Feature vector sum: 6.0
+{
+	"text": "V2VsY29tZSB0byBPdXIgU2l0ZQ0=",
+		"probability": 1.1486251533243674e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Info Online
+Processed words: ['product', 'info', 'online']
+Non - zero feature indices: [56 79]
+Feature vector sum: 3.0
+{
+	"text": "UHJvZHVjdCBJbmZvIE9ubGluZQ0=",
+		"probability": 4.545770195818477e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Support Team
+Processed words: ['contact', 'support', 'team']
+Non - zero feature indices: [31 105]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBTdXBwb3J0IFRlYW0N",
+		"probability": 2.4793826014501974e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog Trends Today
+Processed words: ['blog', 'trends', 'today']
+Non - zero feature indices: [19]
+Feature vector sum: 1.5
+{
+	"text": "QmxvZyBUcmVuZHMgVG9kYXkN",
+		"probability": 4.381394447250386e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Services for You
+Processed words: ['services', 'for', 'you']
+Non - zero feature indices: [45]
+Feature vector sum: 1.5
+{
+	"text": "U2VydmljZXMgZm9yIFlvdQ0=",
+		"probability": 0.9999999046325684,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Homepage Latest Offers
+Processed words: ['homepage', 'latest', 'offers']
+Non - zero feature indices: [53]
+Feature vector sum: 1.5
+{
+	"text": "SG9tZXBhZ2UgTGF0ZXN0IE9mZmVycw0=",
+		"probability": 1.1247743714193348e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Subscribe for Info
+Processed words: ['subscribe', 'for', 'info']
+Non - zero feature indices: [45  56 104]
+Feature vector sum: 4.5
+{
+	"text": "U3Vic2NyaWJlIGZvciBJbmZvDQ==",
+		"probability": 2.4742369408186672e-14,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore New Deals
+Processed words: ['explore', 'new', 'deals']
+Non - zero feature indices: [39 72]
+Feature vector sum: 3.0
+{
+	"text": "RXhwbG9yZSBOZXcgRGVhbHMN",
+		"probability": 1.530715465491994e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Learn About Us
+Processed words: ['learn', 'about', 'us']
+Non - zero feature indices: [62 125]
+Feature vector sum: 3.0
+{
+	"text": "TGVhcm4gQWJvdXQgVXMN",
+		"probability": 5.0292612286284566e-05,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Event Tickets
+Processed words: ['buy', 'event', 'tickets']
+Non - zero feature indices: [23]
+Feature vector sum: 1.5
+{
+	"text": "QnV5IEV2ZW50IFRpY2tldHMN",
+		"probability": 1.7132215646142868e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop New Arrivals
+Processed words: ['shop', 'new', 'arrivals']
+Non - zero feature indices: [72 97]
+Feature vector sum: 3.0
+{
+	"text": "U2hvcCBOZXcgQXJyaXZhbHMN",
+		"probability": 4.503521111587361e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Shop
+Processed words: ['welcome', 'to', 'our', 'shop']
+Non - zero feature indices: [81  97 115 130]
+Feature vector sum: 6.0
+{
+	"text": "V2VsY29tZSB0byBPdXIgU2hvcA0=",
+		"probability": 2.557950054028757e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Catalog Shop
+Processed words: ['product', 'catalog', 'shop']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "UHJvZHVjdCBDYXRhbG9nIFNob3AN",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Mission
+Processed words: ['about', 'our', 'mission']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIE1pc3Npb24N",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Service Plans Online
+Processed words: ['service', 'plans', 'online']
+Non - zero feature indices: [79 96]
+Feature vector sum: 3.0
+{
+	"text": "U2VydmljZSBQbGFucyBPbmxpbmUN",
+		"probability": 0.9999998569488526,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page Top Deals
+Processed words: ['home', 'page', 'top', 'deals']
+Non - zero feature indices: [52 82]
+Feature vector sum: 3.0
+{
+	"text": "SG9tZSBQYWdlIFRvcCBEZWFscw0=",
+		"probability": 1.0,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Products Online
+Processed words: ['buy', 'products', 'online']
+Non - zero feature indices: [23 79 84]
+Feature vector sum: 4.5
+{
+	"text": "QnV5IFByb2R1Y3RzIE9ubGluZQ0=",
+		"probability": 3.136667358141776e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Support Now
+Processed words: ['contact', 'support', 'now']
+Non - zero feature indices: [31  77 105]
+Feature vector sum: 4.5
+{
+	"text": "Q29udGFjdCBTdXBwb3J0IE5vdw0=",
+		"probability": 3.7352322124206694e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Newsletter Updates Free
+Processed words: ['newsletter', 'updates', 'free']
+Non - zero feature indices: [48]
+Feature vector sum: 1.5
+{
+	"text": "TmV3c2xldHRlciBVcGRhdGVzIEZyZWUN",
+		"probability": 0.9979603290557861,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog Post New Ideas
+Processed words: ['blog', 'post', 'new', 'ideas']
+Non - zero feature indices: [19 72]
+Feature vector sum: 3.0
+{
+	"text": "QmxvZyBQb3N0IE5ldyBJZGVhcw0=",
+		"probability": 7.617694669503905e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Sign Up for Offers
+Processed words: ['sign', 'up', 'for', 'offers']
+Non - zero feature indices: [45 124]
+Feature vector sum: 3.0
+{
+	"text": "U2lnbiBVcCBmb3IgT2ZmZXJzDQ==",
+		"probability": 0.0006613887962885201,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Latest Deals
+Processed words: ['shop', 'latest', 'deals']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "U2hvcCBMYXRlc3QgRGVhbHMN",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Store
+Processed words: ['welcome', 'to', 'our', 'store']
+Non - zero feature indices: [81 103 115 130]
+Feature vector sum: 6.0
+{
+	"text": "V2VsY29tZSB0byBPdXIgU3RvcmUN",
+		"probability": 3.6655690960861465e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Browse Product Range
+Processed words: ['browse', 'product', 'range']
+Non - zero feature indices: []
+Feature vector sum: 0.0
+No features matched, returning non - interesting
+{
+	"text": "QnJvd3NlIFByb2R1Y3QgUmFuZ2UN",
+		"probability": 0.0,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact for Support
+Processed words: ['contact', 'for', 'support']
+Non - zero feature indices: [31  45 105]
+Feature vector sum: 4.5
+{
+	"text": "Q29udGFjdCBmb3IgU3VwcG9ydA0=",
+		"probability": 5.0500234465289395e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: News Updates Online
+Processed words: ['news', 'updates', 'online']
+Non - zero feature indices: [73 79]
+Feature vector sum: 3.0
+{
+	"text": "TmV3cyBVcGRhdGVzIE9ubGluZQ0=",
+		"probability": 2.216707343905e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Catalog Shop Today
+Processed words: ['catalog', 'shop', 'today']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "Q2F0YWxvZyBTaG9wIFRvZGF5DQ==",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Team
+Processed words: ['about', 'our', 'team']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIFRlYW0N",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Services Available Now
+Processed words: ['services', 'available', 'now']
+Non - zero feature indices: [15 77]
+Feature vector sum: 3.0
+{
+	"text": "U2VydmljZXMgQXZhaWxhYmxlIE5vdw0=",
+		"probability": 0.9999951839447022,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page New Offers
+Processed words: ['home', 'page', 'new', 'offers']
+Non - zero feature indices: [52 72 82]
+Feature vector sum: 4.5
+{
+	"text": "SG9tZSBQYWdlIE5ldyBPZmZlcnMN",
+		"probability": 0.9739728450775147,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Now for Discounts
+Processed words: ['buy', 'now', 'for', 'discounts']
+Non - zero feature indices: [23 45 77]
+Feature vector sum: 4.5
+{
+	"text": "QnV5IE5vdyBmb3IgRGlzY291bnRzDQ==",
+		"probability": 1.7563969834100135e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Online Deals
+Processed words: ['shop', 'online', 'deals']
+Non - zero feature indices: [79 97]
+Feature vector sum: 3.0
+{
+	"text": "U2hvcCBPbmxpbmUgRGVhbHMN",
+		"probability": 0.008897606283426285,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Subscribe for News
+Processed words: ['subscribe', 'for', 'news']
+Non - zero feature indices: [45  73 104]
+Feature vector sum: 4.5
+{
+	"text": "U3Vic2NyaWJlIGZvciBOZXdzDQ==",
+		"probability": 3.728701917539434e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog News and Tips
+Processed words: ['blog', 'news', 'and', 'tips']
+Non - zero feature indices: [19 73]
+Feature vector sum: 3.0
+{
+	"text": "QmxvZyBOZXdzIGFuZCBUaXBzDQ==",
+		"probability": 1.5877471863309789e-12,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Sign Up for Updates
+Processed words: ['sign', 'up', 'for', 'updates']
+Non - zero feature indices: [45 124]
+Feature vector sum: 3.0
+{
+	"text": "U2lnbiBVcCBmb3IgVXBkYXRlcw0=",
+		"probability": 0.0006613887962885201,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore Site Offers
+Processed words: ['explore', 'site', 'offers']
+Non - zero feature indices: [39 99]
+Feature vector sum: 3.0
+{
+	"text": "RXhwbG9yZSBTaXRlIE9mZmVycw0=",
+		"probability": 0.0009859208948910236,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Support and Info
+Processed words: ['support', 'and', 'info']
+Non - zero feature indices: [56 105]
+Feature vector sum: 3.0
+{
+	"text": "U3VwcG9ydCBhbmQgSW5mbw0=",
+		"probability": 2.3738229160130686e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Ratings Now
+Processed words: ['product', 'ratings', 'now']
+Non - zero feature indices: [77]
+Feature vector sum: 1.5
+{
+	"text": "UHJvZHVjdCBSYXRpbmdzIE5vdw0=",
+		"probability": 0.9999670505523682,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Discover Our Website
+Processed words: ['discover', 'our', 'website']
+Non - zero feature indices: [81 129]
+Feature vector sum: 3.0
+{
+	"text": "RGlzY292ZXIgT3VyIFdlYnNpdGUN",
+		"probability": 5.54988127987599e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Exclusive Products
+Processed words: ['shop', 'exclusive', 'products']
+Non - zero feature indices: [84 97]
+Feature vector sum: 3.0
+{
+	"text": "U2hvcCBFeGNsdXNpdmUgUHJvZHVjdHMN",
+		"probability": 4.0368823839287415e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Our Staff
+Processed words: ['contact', 'our', 'staff']
+Non - zero feature indices: [31 81]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBPdXIgU3RhZmYN",
+		"probability": 6.80637837757736e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Browse Product Lines
+Processed words: ['browse', 'product', 'lines']
+Non - zero feature indices: []
+Feature vector sum: 0.0
+No features matched, returning non - interesting
+{
+	"text": "QnJvd3NlIFByb2R1Y3QgTGluZXMN",
+		"probability": 0.0,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Learn Our Service Plans
+Processed words: ['learn', 'our', 'service', 'plans']
+Non - zero feature indices: [62 81 96]
+Feature vector sum: 4.5
+{
+	"text": "TGVhcm4gT3VyIFNlcnZpY2UgUGxhbnMN",
+		"probability": 5.137351308248661e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Join Our Updates List
+Processed words: ['join', 'our', 'updates', 'list']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "Sm9pbiBPdXIgVXBkYXRlcyBMaXN0DQ==",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore New Arrivals
+Processed words: ['explore', 'new', 'arrivals']
+Non - zero feature indices: [39 72]
+Feature vector sum: 3.0
+{
+	"text": "RXhwbG9yZSBOZXcgQXJyaXZhbHMN",
+		"probability": 1.530715465491994e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy with Confidence
+Processed words: ['buy', 'with', 'confidence']
+Non - zero feature indices: [23]
+Feature vector sum: 1.5
+{
+	"text": "QnV5IHdpdGggQ29uZmlkZW5jZQ0=",
+		"probability": 1.7132215646142868e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page Great Offers
+Processed words: ['home', 'page', 'great', 'offers']
+Non - zero feature indices: [51 52 82]
+Feature vector sum: 4.5
+{
+	"text": "SG9tZSBQYWdlIEdyZWF0IE9mZmVycw0=",
+		"probability": 1.0,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Core Values
+Processed words: ['about', 'our', 'core', 'values']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIENvcmUgVmFsdWVzDQ==",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Customer Feedback Online
+Processed words: ['customer', 'feedback', 'online']
+Non - zero feature indices: [33 79]
+Feature vector sum: 3.0
+{
+	"text": "Q3VzdG9tZXIgRmVlZGJhY2sgT25saW5lDQ==",
+		"probability": 0.00019390489615034312,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Top Promotions
+Processed words: ['shop', 'top', 'promotions']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "U2hvcCBUb3AgUHJvbW90aW9ucw0=",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Platform
+Processed words: ['welcome', 'to', 'our', 'platform']
+Non - zero feature indices: [81 115 130]
+Feature vector sum: 4.5
+{
+	"text": "V2VsY29tZSB0byBPdXIgUGxhdGZvcm0N",
+		"probability": 2.459575598745545e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Details Online
+Processed words: ['product', 'details', 'online']
+Non - zero feature indices: [79]
+Feature vector sum: 1.5
+{
+	"text": "UHJvZHVjdCBEZXRhaWxzIE9ubGluZQ0=",
+		"probability": 0.9999753952026368,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Our Advisors
+Processed words: ['contact', 'our', 'advisors']
+Non - zero feature indices: [31 81]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBPdXIgQWR2aXNvcnMN",
+		"probability": 6.80637837757736e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog Articles and Tips
+Processed words: ['blog', 'articles', 'and', 'tips']
+Non - zero feature indices: [19]
+Feature vector sum: 1.5
+{
+	"text": "QmxvZyBBcnRpY2xlcyBhbmQgVGlwcw0=",
+		"probability": 4.381394447250386e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Services You Can Trust
+Processed words: ['services', 'you', 'can', 'trust']
+Non - zero feature indices: []
+Feature vector sum: 0.0
+No features matched, returning non - interesting
+{
+	"text": "U2VydmljZXMgWW91IENhbiBUcnVzdA0=",
+		"probability": 0.0,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Homepage Exclusive Deals
+Processed words: ['homepage', 'exclusive', 'deals']
+Non - zero feature indices: [53]
+Feature vector sum: 1.5
+{
+	"text": "SG9tZXBhZ2UgRXhjbHVzaXZlIERlYWxzDQ==",
+		"probability": 1.1247743714193348e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Subscribe for Offers
+Processed words: ['subscribe', 'for', 'offers']
+Non - zero feature indices: [45 104]
+Feature vector sum: 3.0
+{
+	"text": "U3Vic2NyaWJlIGZvciBPZmZlcnMN",
+		"probability": 2.5520490165575893e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore Product Offers
+Processed words: ['explore', 'product', 'offers']
+Non - zero feature indices: [39]
+Feature vector sum: 1.5
+{
+	"text": "RXhwbG9yZSBQcm9kdWN0IE9mZmVycw0=",
+		"probability": 0.001655267784371972,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Learn Our Mission
+Processed words: ['learn', 'our', 'mission']
+Non - zero feature indices: [62 81]
+Feature vector sum: 3.0
+{
+	"text": "TGVhcm4gT3VyIE1pc3Npb24N",
+		"probability": 2.0526302879630975e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Tickets Now
+Processed words: ['buy', 'tickets', 'now']
+Non - zero feature indices: [23 77]
+Feature vector sum: 3.0
+{
+	"text": "QnV5IFRpY2tldHMgTm93DQ==",
+		"probability": 7.627283693523168e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Seasonal Sales
+Processed words: ['shop', 'seasonal', 'sales']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "U2hvcCBTZWFzb25hbCBTYWxlcw0=",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Site
+Processed words: ['welcome', 'to', 'our', 'site']
+Non - zero feature indices: [81  99 115 130]
+Feature vector sum: 6.0
+{
+	"text": "V2VsY29tZSB0byBPdXIgU2l0ZQ0=",
+		"probability": 1.1486251533243674e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Catalog Online
+Processed words: ['product', 'catalog', 'online']
+Non - zero feature indices: [79]
+Feature vector sum: 1.5
+{
+	"text": "UHJvZHVjdCBDYXRhbG9nIE9ubGluZQ0=",
+		"probability": 0.9999753952026368,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Brand Story
+Processed words: ['about', 'our', 'brand', 'story']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIEJyYW5kIFN0b3J5DQ==",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Service Info and Plans
+Processed words: ['service', 'info', 'and', 'plans']
+Non - zero feature indices: [56 96]
+Feature vector sum: 3.0
+{
+	"text": "U2VydmljZSBJbmZvIGFuZCBQbGFucw0=",
+		"probability": 6.001600354466063e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page Best Offers
+Processed words: ['home', 'page', 'best', 'offers']
+Non - zero feature indices: [52 82]
+Feature vector sum: 3.0
+{
+	"text": "SG9tZSBQYWdlIEJlc3QgT2ZmZXJzDQ==",
+		"probability": 1.0,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Products Today
+Processed words: ['buy', 'products', 'today']
+Non - zero feature indices: [23 84]
+Feature vector sum: 3.0
+{
+	"text": "QnV5IFByb2R1Y3RzIFRvZGF5DQ==",
+		"probability": 2.7474379650678504e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Us for Help
+Processed words: ['contact', 'us', 'for', 'help']
+Non - zero feature indices: [31  45 125]
+Feature vector sum: 4.5
+{
+	"text": "Q29udGFjdCBVcyBmb3IgSGVscA0=",
+		"probability": 0.0007402501651085913,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Newsletter Free Signup
+Processed words: ['newsletter', 'free', 'signup']
+Non - zero feature indices: [48 98]
+Feature vector sum: 3.0
+{
+	"text": "TmV3c2xldHRlciBGcmVlIFNpZ251cA0=",
+		"probability": 0.9994292259216309,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog Post Highlights
+Processed words: ['blog', 'post', 'highlights']
+Non - zero feature indices: [19]
+Feature vector sum: 1.5
+{
+	"text": "QmxvZyBQb3N0IEhpZ2hsaWdodHMN",
+		"probability": 4.381394447250386e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Sign Up for Deals
+Processed words: ['sign', 'up', 'for', 'deals']
+Non - zero feature indices: [45 124]
+Feature vector sum: 3.0
+{
+	"text": "U2lnbiBVcCBmb3IgRGVhbHMN",
+		"probability": 0.0006613887962885201,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop New Collections
+Processed words: ['shop', 'new', 'collections']
+Non - zero feature indices: [72 97]
+Feature vector sum: 3.0
+{
+	"text": "U2hvcCBOZXcgQ29sbGVjdGlvbnMN",
+		"probability": 4.503521111587361e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Hub
+Processed words: ['welcome', 'to', 'our', 'hub']
+Non - zero feature indices: [81 115 130]
+Feature vector sum: 4.5
+{
+	"text": "V2VsY29tZSB0byBPdXIgSHViDQ==",
+		"probability": 2.459575598745545e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Browse Our Products
+Processed words: ['browse', 'our', 'products']
+Non - zero feature indices: [81 84]
+Feature vector sum: 3.0
+{
+	"text": "QnJvd3NlIE91ciBQcm9kdWN0cw0=",
+		"probability": 1.9250448457519553e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Our Team
+Processed words: ['contact', 'our', 'team']
+Non - zero feature indices: [31 81]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBPdXIgVGVhbQ0=",
+		"probability": 6.80637837757736e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: News and Events Now
+Processed words: ['news', 'and', 'events', 'now']
+Non - zero feature indices: [73 77]
+Feature vector sum: 3.0
+{
+	"text": "TmV3cyBhbmQgRXZlbnRzIE5vdw0=",
+		"probability": 9.418258741789032e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Catalog Online Shop
+Processed words: ['catalog', 'online', 'shop']
+Non - zero feature indices: [79 97]
+Feature vector sum: 3.0
+{
+	"text": "Q2F0YWxvZyBPbmxpbmUgU2hvcA0=",
+		"probability": 0.008897606283426285,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Services
+Processed words: ['about', 'our', 'services']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIFNlcnZpY2VzDQ==",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Services for Everyone
+Processed words: ['services', 'for', 'everyone']
+Non - zero feature indices: [45]
+Feature vector sum: 1.5
+{
+	"text": "U2VydmljZXMgZm9yIEV2ZXJ5b25lDQ==",
+		"probability": 0.9999999046325684,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page New Products
+Processed words: ['home', 'page', 'new', 'products']
+Non - zero feature indices: [52 72 82 84]
+Feature vector sum: 6.0
+{
+	"text": "SG9tZSBQYWdlIE5ldyBQcm9kdWN0cw0=",
+		"probability": 2.9737293516518548e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Now Special Offers
+Processed words: ['buy', 'now', 'special', 'offers']
+Non - zero feature indices: [23 77]
+Feature vector sum: 3.0
+{
+	"text": "QnV5IE5vdyBTcGVjaWFsIE9mZmVycw0=",
+		"probability": 7.627283693523168e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Online Today
+Processed words: ['shop', 'online', 'today']
+Non - zero feature indices: [79 97]
+Feature vector sum: 3.0
+{
+	"text": "U2hvcCBPbmxpbmUgVG9kYXkN",
+		"probability": 0.008897606283426285,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Subscribe for Info
+Processed words: ['subscribe', 'for', 'info']
+Non - zero feature indices: [45  56 104]
+Feature vector sum: 4.5
+{
+	"text": "U3Vic2NyaWJlIGZvciBJbmZvDQ==",
+		"probability": 2.4742369408186672e-14,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog Trends and News
+Processed words: ['blog', 'trends', 'and', 'news']
+Non - zero feature indices: [19 73]
+Feature vector sum: 3.0
+{
+	"text": "QmxvZyBUcmVuZHMgYW5kIE5ld3MN",
+		"probability": 1.5877471863309789e-12,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Sign Up for Updates
+Processed words: ['sign', 'up', 'for', 'updates']
+Non - zero feature indices: [45 124]
+Feature vector sum: 3.0
+{
+	"text": "U2lnbiBVcCBmb3IgVXBkYXRlcw0=",
+		"probability": 0.0006613887962885201,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore Our Site Now
+Processed words: ['explore', 'our', 'site', 'now']
+Non - zero feature indices: [39 77 81 99]
+Feature vector sum: 6.0
+{
+	"text": "RXhwbG9yZSBPdXIgU2l0ZSBOb3cN",
+		"probability": 2.1178860054593684e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Support Contact Info
+Processed words: ['support', 'contact', 'info']
+Non - zero feature indices: [31  56 105]
+Feature vector sum: 4.5
+{
+	"text": "U3VwcG9ydCBDb250YWN0IEluZm8N",
+		"probability": 1.3972881011958815e-12,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Reviews Now
+Processed words: ['product', 'reviews', 'now']
+Non - zero feature indices: [77 92]
+Feature vector sum: 3.0
+{
+	"text": "UHJvZHVjdCBSZXZpZXdzIE5vdw0=",
+		"probability": 0.0037057807203382254,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Store
+Processed words: ['welcome', 'to', 'our', 'store']
+Non - zero feature indices: [81 103 115 130]
+Feature vector sum: 6.0
+{
+	"text": "V2VsY29tZSB0byBPdXIgU3RvcmUN",
+		"probability": 3.6655690960861465e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Latest Products
+Processed words: ['shop', 'latest', 'products']
+Non - zero feature indices: [84 97]
+Feature vector sum: 3.0
+{
+	"text": "U2hvcCBMYXRlc3QgUHJvZHVjdHMN",
+		"probability": 4.0368823839287415e-09,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact for Details
+Processed words: ['contact', 'for', 'details']
+Non - zero feature indices: [31 45]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBmb3IgRGV0YWlscw0=",
+		"probability": 0.0006495505804196,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Browse New Arrivals
+Processed words: ['browse', 'new', 'arrivals']
+Non - zero feature indices: [72]
+Feature vector sum: 1.5
+{
+	"text": "QnJvd3NlIE5ldyBBcnJpdmFscw0=",
+		"probability": 7.902665674919263e-05,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Learn Our Services
+Processed words: ['learn', 'our', 'services']
+Non - zero feature indices: [62 81]
+Feature vector sum: 3.0
+{
+	"text": "TGVhcm4gT3VyIFNlcnZpY2VzDQ==",
+		"probability": 2.0526302879630975e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Join Our Community
+Processed words: ['join', 'our', 'community']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "Sm9pbiBPdXIgQ29tbXVuaXR5DQ==",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore New Features
+Processed words: ['explore', 'new', 'features']
+Non - zero feature indices: [39 42 72]
+Feature vector sum: 4.5
+{
+	"text": "RXhwbG9yZSBOZXcgRmVhdHVyZXMN",
+		"probability": 7.800399770552247e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Now for Deals
+Processed words: ['buy', 'now', 'for', 'deals']
+Non - zero feature indices: [23 45 77]
+Feature vector sum: 4.5
+{
+	"text": "QnV5IE5vdyBmb3IgRGVhbHMN",
+		"probability": 1.7563969834100135e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page Top Picks
+Processed words: ['home', 'page', 'top', 'picks']
+Non - zero feature indices: [52 82]
+Feature vector sum: 3.0
+{
+	"text": "SG9tZSBQYWdlIFRvcCBQaWNrcw0=",
+		"probability": 1.0,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Team
+Processed words: ['about', 'our', 'team']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIFRlYW0N",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Customer Reviews Today
+Processed words: ['customer', 'reviews', 'today']
+Non - zero feature indices: [33 92]
+Feature vector sum: 3.0
+{
+	"text": "Q3VzdG9tZXIgUmV2aWV3cyBUb2RheQ0=",
+		"probability": 4.643935369585961e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Online Promotions
+Processed words: ['shop', 'online', 'promotions']
+Non - zero feature indices: [79 97]
+Feature vector sum: 3.0
+{
+	"text": "U2hvcCBPbmxpbmUgUHJvbW90aW9ucw0=",
+		"probability": 0.008897606283426285,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Shop
+Processed words: ['welcome', 'to', 'our', 'shop']
+Non - zero feature indices: [81  97 115 130]
+Feature vector sum: 6.0
+{
+	"text": "V2VsY29tZSB0byBPdXIgU2hvcA0=",
+		"probability": 2.557950054028757e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Info and More
+Processed words: ['product', 'info', 'and', 'more']
+Non - zero feature indices: [56 70]
+Feature vector sum: 3.0
+{
+	"text": "UHJvZHVjdCBJbmZvIGFuZCBNb3JlDQ==",
+		"probability": 5.011805228605226e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Our Experts
+Processed words: ['contact', 'our', 'experts']
+Non - zero feature indices: [31 81]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBPdXIgRXhwZXJ0cw0=",
+		"probability": 6.80637837757736e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog News and Updates
+Processed words: ['blog', 'news', 'and', 'updates']
+Non - zero feature indices: [19 73]
+Feature vector sum: 3.0
+{
+	"text": "QmxvZyBOZXdzIGFuZCBVcGRhdGVzDQ==",
+		"probability": 1.5877471863309789e-12,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Services for Your Needs
+Processed words: ['services', 'for', 'your', 'needs']
+Non - zero feature indices: [45 133]
+Feature vector sum: 3.0
+{
+	"text": "U2VydmljZXMgZm9yIFlvdXIgTmVlZHMN",
+		"probability": 1.0,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Homepage Special Offers
+Processed words: ['homepage', 'special', 'offers']
+Non - zero feature indices: [53]
+Feature vector sum: 1.5
+{
+	"text": "SG9tZXBhZ2UgU3BlY2lhbCBPZmZlcnMN",
+		"probability": 1.1247743714193348e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Subscribe for News
+Processed words: ['subscribe', 'for', 'news']
+Non - zero feature indices: [45  73 104]
+Feature vector sum: 4.5
+{
+	"text": "U3Vic2NyaWJlIGZvciBOZXdzDQ==",
+		"probability": 3.728701917539434e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Explore New Items
+Processed words: ['explore', 'new', 'items']
+Non - zero feature indices: [39 72]
+Feature vector sum: 3.0
+{
+	"text": "RXhwbG9yZSBOZXcgSXRlbXMN",
+		"probability": 1.530715465491994e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Learn About Our Brand
+Processed words: ['learn', 'about', 'our', 'brand']
+Non - zero feature indices: [62 81]
+Feature vector sum: 3.0
+{
+	"text": "TGVhcm4gQWJvdXQgT3VyIEJyYW5kDQ==",
+		"probability": 2.0526302879630975e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Event Passes
+Processed words: ['buy', 'event', 'passes']
+Non - zero feature indices: [23]
+Feature vector sum: 1.5
+{
+	"text": "QnV5IEV2ZW50IFBhc3Nlcw0=",
+		"probability": 1.7132215646142868e-08,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop Top Offers
+Processed words: ['shop', 'top', 'offers']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "U2hvcCBUb3AgT2ZmZXJzDQ==",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Welcome to Our Portal
+Processed words: ['welcome', 'to', 'our', 'portal']
+Non - zero feature indices: [81 115 130]
+Feature vector sum: 4.5
+{
+	"text": "V2VsY29tZSB0byBPdXIgUG9ydGFsDQ==",
+		"probability": 2.459575598745545e-10,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Product Catalog Shop
+Processed words: ['product', 'catalog', 'shop']
+Non - zero feature indices: [97]
+Feature vector sum: 1.5
+{
+	"text": "UHJvZHVjdCBDYXRhbG9nIFNob3AN",
+		"probability": 0.003523013088852167,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: About Our Vision
+Processed words: ['about', 'our', 'vision']
+Non - zero feature indices: [81]
+Feature vector sum: 1.5
+{
+	"text": "QWJvdXQgT3VyIFZpc2lvbg0=",
+		"probability": 2.0985203263990115e-06,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Service Plans for You
+Processed words: ['service', 'plans', 'for', 'you']
+Non - zero feature indices: [45 96]
+Feature vector sum: 3.0
+{
+	"text": "U2VydmljZSBQbGFucyBmb3IgWW91DQ==",
+		"probability": 1.0,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Home Page New Sales
+Processed words: ['home', 'page', 'new', 'sales']
+Non - zero feature indices: [52 72 82]
+Feature vector sum: 4.5
+{
+	"text": "SG9tZSBQYWdlIE5ldyBTYWxlcw0=",
+		"probability": 0.9739728450775147,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Buy Products Now
+Processed words: ['buy', 'products', 'now']
+Non - zero feature indices: [23 77 84]
+Feature vector sum: 4.5
+{
+	"text": "QnV5IFByb2R1Y3RzIE5vdw0=",
+		"probability": 1.8841078328578342e-13,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Contact Support Today
+Processed words: ['contact', 'support', 'today']
+Non - zero feature indices: [31 105]
+Feature vector sum: 3.0
+{
+	"text": "Q29udGFjdCBTdXBwb3J0IFRvZGF5DQ==",
+		"probability": 2.4793826014501974e-07,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Newsletter Updates Now
+Processed words: ['newsletter', 'updates', 'now']
+Non - zero feature indices: [77]
+Feature vector sum: 1.5
+{
+	"text": "TmV3c2xldHRlciBVcGRhdGVzIE5vdw0=",
+		"probability": 0.9999670505523682,
+			"is_interesting": true
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Blog Post New Trends
+Processed words: ['blog', 'post', 'new', 'trends']
+Non - zero feature indices: [19 72]
+Feature vector sum: 3.0
+{
+	"text": "QmxvZyBQb3N0IE5ldyBUcmVuZHMN",
+		"probability": 7.617694669503905e-11,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Sign Up for Free
+Processed words: ['sign', 'up', 'for', 'free']
+Non - zero feature indices: [45  48 124]
+Feature vector sum: 4.5
+{
+	"text": "U2lnbiBVcCBmb3IgRnJlZQ0=",
+		"probability": 0.000262444926192984,
+			"is_interesting": false
+}
+Loading saved model...
+Model loaded.
+Predicting for text: Shop New Products
+Processed words: ['shop', 'new', 'products']
+Non - zero feature indices: [72 84 97]
+Feature vector sum: 4.5
+{
+	"text": "U2hvcCBOZXcgUHJvZHVjdHMN",
+		"probability": 6.921525527205097e-13,
+			"is_interesting": false
+}
