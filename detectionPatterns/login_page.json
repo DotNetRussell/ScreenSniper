@@ -1,6 +1,6 @@
 {
   "name": "Login Page",
-  "conditions": ["login", "sign in", "username", "password", "logging in", "log in", "logging.in", "sign in", "signin"],
+  "conditions": ["login", "sign in", "username", "password", "logging in", "log in", "logging.in", "sign in", "signin", "logging"],
   "meta_tags": [
     "PageType: Login Page"
   ]

@@ -136,11 +136,12 @@ def generate_meta_tags(text, templates):
 
     # Handle OCR failure
     if text.startswith("OCR Error"):
-        return [
-            "Error: Unable to generate meta tags due to OCR failure",
-            "Suggestion: Possible Text Detection Failure - Review Screenshot Manually",
-            "Debug: Check debug_*.png files for preprocessing steps (run with --verbose)"
-        ]
+         return []
+#        return [
+#            "Error: Unable to generate meta tags due to OCR failure",
+#            "Suggestion: Possible Text Detection Failure - Review Screenshot Manually",
+#            "Debug: Check debug_*.png files for preprocessing steps (run with --verbose)"
+#        ]
 
     # Check each template
     for template in templates:
@@ -305,7 +306,7 @@ def generate_report(results, output_format, verbose=False, include_extracted=Fal
     return report_text
 
 # Function to call text_classifier.py with OCR'd text
-def run_text_classifier(text, verbose=False):
+def run_text_classifier(text, meta_tags, verbose=False):
     try:
         # Check if text_classifier.py exists
         classifier_path = os.path.join(os.getcwd(), "AI_Page_Classifier", "text_classifier.py")
@@ -317,6 +318,9 @@ def run_text_classifier(text, verbose=False):
                 "Suggestion": "Ensure text_classifier.py is in the AI_Page_Classifier directory"
             }
         
+        tags = " ".join(meta_tags)
+        text = text + tags
+
         # Escape quotes in text to handle special characters
         escaped_text = text.replace('"', '\\"')
         cmd = ['python3', classifier_path, escaped_text, '--automation']
@@ -417,10 +421,10 @@ def analyze_screenshot(image_path, templates, verbose=False, ai=False, include_e
         meta_tags = []
         if detection_pattern:
             meta_tags = generate_meta_tags(extracted_text, templates)
-        
+
         # Run text classifier if --ai flag is set
         if ai and not extracted_text.startswith("OCR Error"):
-            classifier_results = run_text_classifier(extracted_text, verbose)
+            classifier_results = run_text_classifier(extracted_text, meta_tags, verbose)
             if isinstance(classifier_results, list):
                 # If classifier returns meta tags, append them
                 # Only add PageType: Interesting if no other PageType exists

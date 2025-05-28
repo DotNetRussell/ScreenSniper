@@ -1,0 +1,7 @@
+{
+  "name": "Cloudfront Detection",
+  "conditions": ["cloudfront"],
+  "meta_tags": [
+    "Security: WAF Detected Cloudfront"
+  ]
+}

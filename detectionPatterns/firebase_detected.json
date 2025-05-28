@@ -1,0 +1,7 @@
+{
+  "name": "Firebase page detected",
+  "conditions": ["firebase"],
+  "meta_tags": [
+	"PageType: Firebase page detected"
+  ]
+}
