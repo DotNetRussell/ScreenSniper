@@ -1,0 +1,20 @@
+{
+  "name": "Legacy Flash Content",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      {
+        "type": "OR",
+        "values": ["flash", "swf"]
+      },
+      {
+        "type": "OR",
+        "values": ["adobe", "player"]
+      }
+    ]
+  },
+  "meta_tags": [
+    "Technology: Adobe Flash",
+    "SecurityRisk: Deprecated Technology"
+  ]
+}

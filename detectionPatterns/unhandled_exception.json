@@ -1,0 +1,17 @@
+{
+  "name": "Unhandled Exception",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "exception",
+      {
+        "type": "OR",
+        "values": ["unhandled", "runtime"]
+      }
+    ]
+  },
+  "meta_tags": [
+    "Security: Unhandled Exception",
+    "SecurityRisk: Potential Exploit"
+  ]
+}

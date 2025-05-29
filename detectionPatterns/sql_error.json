@@ -1,6 +1,15 @@
 {
   "name": "SQL Error",
-  "conditions": ["sql"],
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "sql",
+      {
+        "type": "OR",
+        "values": ["error", "exception"]
+      }
+    ]
+  },
   "negative_conditions": ["php version"],
   "meta_tags": [
     "Security: SQL Error",

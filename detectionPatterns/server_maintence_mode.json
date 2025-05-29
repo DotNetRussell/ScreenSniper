@@ -1,0 +1,17 @@
+{
+  "name": "Server Maintenance Mode",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "maintenance",
+      {
+        "type": "OR",
+        "values": ["mode", "offline"]
+      }
+    ]
+  },
+  "meta_tags": [
+    "PageType: Maintenance Mode",
+    "SecurityRisk: Potential Downtime Exploit"
+  ]
+}

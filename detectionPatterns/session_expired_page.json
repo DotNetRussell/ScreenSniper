@@ -1,0 +1,16 @@
+{
+  "name": "Session Expired Page",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "session",
+      {
+        "type": "OR",
+        "values": ["expired", "timeout"]
+      }
+    ]
+  },
+  "meta_tags": [
+    "PageType: Session Expired Page"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "Exposed API Keys",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      {
+        "type": "OR",
+        "values": ["api key", "api_key", "secret"]
+      },
+      {
+        "type": "OR",
+        "values": ["key", "token"]
+      }
+    ]
+  },
+  "meta_tags": [
+    "Security: Exposed API Keys",
+    "SecurityRisk: Critical Information Disclosure"
+  ],
+  "additional_checks": {
+    "sensitive_extensions": [".txt", ".json"]
+  }
+}

@@ -1,6 +1,12 @@
 {
   "name": "Default Apache Page",
-  "conditions": ["apache", "default"],
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "apache",
+      "default"
+    ]
+  },
   "meta_tags": [
     "Security: Default Apache Page",
     "SecurityRisk: Default Configuration"

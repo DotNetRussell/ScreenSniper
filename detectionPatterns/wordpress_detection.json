@@ -1,6 +1,15 @@
 {
   "name": "WordPress Detection",
-  "conditions": ["wordpress", "wp-content", "wp-admin"],
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "wordpress",
+      {
+        "type": "OR",
+        "values": ["wp-content", "wp-admin"]
+      }
+    ]
+  },
   "negative_conditions": ["allow", "disallow", "site-map"],
   "meta_tags": [
     "Technology: WordPress",

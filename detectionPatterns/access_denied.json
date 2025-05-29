@@ -1,6 +1,12 @@
 {
   "name": "Default 403 page",
-  "conditions": ["You don't have permission", "Access Denied"],
+  "conditions": {
+    "type": "OR",
+    "values": [
+      "You don't have permission",
+      "Access Denied"
+    ]
+  },
   "meta_tags": [
     "Security: Access denied page"
   ]

@@ -1,0 +1,19 @@
+{
+  "name": "Search Page",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      {
+        "type": "OR",
+        "values": ["search", "query"]
+      },
+      {
+        "type": "OR",
+        "values": ["results", "find"]
+      }
+    ]
+  },
+  "meta_tags": [
+    "PageType: Search Page"
+  ]
+}

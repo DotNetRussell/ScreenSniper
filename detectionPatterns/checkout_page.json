@@ -1,0 +1,20 @@
+{
+  "name": "Checkout Page",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      {
+        "type": "OR",
+        "values": ["checkout", "payment"]
+      },
+      {
+        "type": "OR",
+        "values": ["credit card", "paypal", "billing"]
+      }
+    ]
+  },
+  "meta_tags": [
+    "PageType: Checkout Page",
+    "Security: Payment Processing"
+  ]
+}

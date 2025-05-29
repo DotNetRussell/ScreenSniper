@@ -1,0 +1,17 @@
+{
+  "name": "ColdFusion Detection",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "coldfusion",
+      {
+        "type": "OR",
+        "values": [".cfm", "cfadmin"]
+      }
+    ]
+  },
+  "meta_tags": [
+    "Technology: ColdFusion",
+    "SecurityRisk: Legacy Technology"
+  ]
+}

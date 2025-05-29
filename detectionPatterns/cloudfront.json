@@ -1,6 +1,15 @@
 {
   "name": "Cloudfront Detection",
-  "conditions": ["cloudfront"],
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "cloudfront",
+      {
+        "type": "OR",
+        "values": ["aws", "amazon"]
+      }
+    ]
+  },
   "meta_tags": [
     "Security: WAF Detected Cloudfront"
   ]

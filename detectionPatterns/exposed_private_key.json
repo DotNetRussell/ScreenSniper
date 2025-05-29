@@ -1,0 +1,23 @@
+{
+  "name": "Exposed Private Key",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      {
+        "type": "OR",
+        "values": ["private key", "ssh key"]
+      },
+      {
+        "type": "OR",
+        "values": ["BEGIN RSA", "BEGIN DSA"]
+      }
+    ]
+  },
+  "meta_tags": [
+    "Security: Exposed Private Key",
+    "SecurityRisk: Critical Security Breach"
+  ],
+  "additional_checks": {
+    "sensitive_extensions": [".pem", ".key"]
+  }
+}

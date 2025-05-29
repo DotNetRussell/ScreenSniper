@@ -1,0 +1,20 @@
+{
+  "name": "HTTP Basic Auth",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      {
+        "type": "OR",
+        "values": ["authorization required", "basic auth"]
+      },
+      {
+        "type": "OR",
+        "values": ["username", "password"]
+      }
+    ]
+  },
+  "meta_tags": [
+    "Security: HTTP Basic Authentication",
+    "SecurityRisk: Weak Authentication"
+  ]
+}

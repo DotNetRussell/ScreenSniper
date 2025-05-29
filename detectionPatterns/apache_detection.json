@@ -1,7 +1,19 @@
 {
-  "name": "Apache Detection",
-  "conditions": ["apache"],
+  "name": "Admin Panel",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "admin",
+      {
+        "type": "OR",
+        "values": ["dashboard", "control panel"]
+      }
+    ]
+  },
+  "negative_conditions": ["Internal Server Error", "misconfiguration", "error", "default page", "allow", "disallow", "site-map"],
   "meta_tags": [
-    "Technology: Apache"
-  ]
+    "PageType: Admin Panel",
+    "SecurityRisk: Potential Unauthorized Access Target"
+  ],
+  "IgnoreAI": true
 }

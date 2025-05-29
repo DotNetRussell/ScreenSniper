@@ -1,6 +1,12 @@
 {
   "name": "Default Nginx Page",
-  "conditions": ["welcome to nginx"],
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "nginx",
+      "welcome to"
+    ]
+  },
   "meta_tags": [
     "Security: Default Nginx Page",
     "SecurityRisk: Default Configuration"

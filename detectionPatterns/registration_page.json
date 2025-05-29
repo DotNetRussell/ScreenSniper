@@ -1,0 +1,22 @@
+{
+  "name": "Registration Page",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      {
+        "type": "OR",
+        "values": ["register", "signup", "sign up"]
+      },
+      {
+        "type": "OR",
+        "values": ["username", "email", "phone"]
+      },
+      "password"
+    ]
+  },
+  "negative_conditions": ["login", "sign in"],
+  "meta_tags": [
+    "PageType: Registration Page",
+    "Security: User Account Creation"
+  ]
+}

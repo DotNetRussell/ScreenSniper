@@ -1,0 +1,18 @@
+{
+  "name": "Outdated jQuery",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "jquery",
+      {
+        "type": "OR",
+        "values": ["1.", "2."]
+      }
+    ]
+  },
+  "negative_conditions": ["3."],
+  "meta_tags": [
+    "Technology: jQuery",
+    "SecurityRisk: Outdated JavaScript Library"
+  ]
+}

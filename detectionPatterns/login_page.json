@@ -17,6 +17,5 @@
   "negative_conditions": ["logout", "sign out"],
   "meta_tags": [
     "PageType: Login Page"
-  ],
-  "IgnoreAI": true
+  ]
 }

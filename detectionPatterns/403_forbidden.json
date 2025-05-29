@@ -1,6 +1,15 @@
 {
   "name": "Default 403 page",
-  "conditions": ["forbidden", "403", "error"],
+  "conditions": {
+    "type": "AND",
+    "values": [
+      {
+        "type": "OR",
+        "values": ["forbidden", "403"]
+      },
+      "error"
+    ]
+  },
   "meta_tags": [
     "Security: Default 403 page"
   ]

@@ -1,6 +1,12 @@
 {
   "name": "Stack Trace Exposure",
-  "conditions": ["stack trace", "traceback"],
+  "conditions": {
+    "type": "OR",
+    "values": [
+      "stack trace",
+      "traceback"
+    ]
+  },
   "meta_tags": [
     "Security: Stack Trace Exposed",
     "SecurityRisk: Sensitive Information Disclosure"

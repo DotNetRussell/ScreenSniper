@@ -1,6 +1,15 @@
 {
   "name": "Joomla Detection",
-  "conditions": ["joomla"],
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "joomla",
+      {
+        "type": "OR",
+        "values": ["com_", "administrator"]
+      }
+    ]
+  },
   "meta_tags": [
     "Technology: Joomla",
     "SecurityRisk: Check for Known Vulnerabilities"

@@ -1,0 +1,20 @@
+{
+  "name": "SSO Login Page",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      {
+        "type": "OR",
+        "values": ["sso", "single sign-on"]
+      },
+      {
+        "type": "OR",
+        "values": ["oauth", "saml"]
+      }
+    ]
+  },
+  "meta_tags": [
+    "PageType: SSO Login Page",
+    "Security: Single Sign-On"
+  ]
+}

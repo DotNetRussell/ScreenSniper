@@ -1,9 +1,17 @@
 {
   "name": "Default Server Page",
-  "conditions": ["default", "welcome to", "it works"],
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "default",
+      {
+        "type": "OR",
+        "values": ["welcome to", "it works"]
+      }
+    ]
+  },
   "meta_tags": [
     "PageType: Default Server Page",
-    "Security: Default Server Page",
     "SecurityRisk: Default Configuration"
   ]
 }

@@ -1,6 +1,18 @@
 {
   "name": "Database Connection Error",
-  "conditions": ["mysql", "postgres", "database", "connection"],
+  "conditions": {
+    "type": "AND",
+    "values": [
+      {
+        "type": "OR",
+        "values": ["mysql", "postgres"]
+      },
+      {
+        "type": "OR",
+        "values": ["database", "connection"]
+      }
+    ]
+  },
   "negative_conditions": ["php version"],
   "meta_tags": [
     "Security: Database Connection Error",

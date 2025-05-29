@@ -1,6 +1,12 @@
 {
   "name": "Default 401 Unauthorized",
-  "conditions": ["unauthorized", "401"],
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "unauthorized",
+      "401"
+    ]
+  },
   "meta_tags": [
     "Security: Default 401 page"
   ]

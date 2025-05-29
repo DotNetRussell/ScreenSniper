@@ -1,7 +1,16 @@
 {
   "name": "Firebase page detected",
-  "conditions": ["firebase"],
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "firebase",
+      {
+        "type": "OR",
+        "values": ["google", "firestore"]
+      }
+    ]
+  },
   "meta_tags": [
-	"PageType: Firebase page detected"
+    "PageType: Firebase page detected"
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "name": "Maintenance Page",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      {
+        "type": "OR",
+        "values": ["maintenance", "down for"]
+      },
+      {
+        "type": "OR",
+        "values": ["temporarily", "scheduled"]
+      }
+    ]
+  },
+  "meta_tags": [
+    "PageType: Maintenance Page"
+  ]
+}

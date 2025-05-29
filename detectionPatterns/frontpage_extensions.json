@@ -1,0 +1,17 @@
+{
+  "name": "FrontPage Extensions",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "frontpage",
+      {
+        "type": "OR",
+        "values": ["_vti_bin", "extensions"]
+      }
+    ]
+  },
+  "meta_tags": [
+    "Technology: FrontPage",
+    "SecurityRisk: Legacy Technology"
+  ]
+}

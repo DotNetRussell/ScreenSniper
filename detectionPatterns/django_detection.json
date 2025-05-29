@@ -1,0 +1,17 @@
+{
+  "name": "Django Detection",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "django",
+      {
+        "type": "OR",
+        "values": ["admin/", "settings.py"]
+      }
+    ]
+  },
+  "meta_tags": [
+    "Technology: Django",
+    "SecurityRisk: Check for Admin Exposure"
+  ]
+}

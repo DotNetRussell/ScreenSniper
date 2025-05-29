@@ -1,0 +1,20 @@
+{
+  "name": "Exposed Config Files",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "index of",
+      {
+        "type": "OR",
+        "values": [".env", ".ini", ".config"]
+      }
+    ]
+  },
+  "meta_tags": [
+    "Security: Exposed Config Files",
+    "SecurityRisk: Sensitive Information Exposure"
+  ],
+  "additional_checks": {
+    "sensitive_extensions": [".env", ".ini", ".config"]
+  }
+}

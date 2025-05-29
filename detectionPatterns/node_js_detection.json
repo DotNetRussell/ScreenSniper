@@ -1,0 +1,19 @@
+{
+  "name": "Node.js Detection",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      {
+        "type": "OR",
+        "values": ["node", "nodejs"]
+      },
+      {
+        "type": "OR",
+        "values": ["express", "package.json"]
+      }
+    ]
+  },
+  "meta_tags": [
+    "Technology: Node.js"
+  ]
+}

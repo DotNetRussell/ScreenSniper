@@ -1,0 +1,17 @@
+{
+  "name": "Exposed Web Config",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "index of",
+      "web.config"
+    ]
+  },
+  "meta_tags": [
+    "Security: Exposed Configuration File",
+    "SecurityRisk: Sensitive Information Exposure"
+  ],
+  "additional_checks": {
+    "sensitive_extensions": [".config"]
+  }
+}

@@ -1,6 +1,12 @@
 {
   "name": "Directory Listing",
-  "conditions": ["index of", "parent directory"],
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "index of",
+      "parent directory"
+    ]
+  },
   "meta_tags": [
     "PageType: Directory Listing",
     "Security: Directory Listing Exposed",

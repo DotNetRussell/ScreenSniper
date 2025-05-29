@@ -1,6 +1,18 @@
 {
   "name": "Server Signature Exposure",
-  "conditions": ["server at", "powered by"],
+  "conditions": {
+    "type": "AND",
+    "values": [
+      {
+        "type": "OR",
+        "values": ["server at", "powered by"]
+      },
+      {
+        "type": "OR",
+        "values": ["apache", "nginx", "iis"]
+      }
+    ]
+  },
   "meta_tags": [
     "Security: Server Signature Exposed",
     "SecurityRisk: Information Disclosure"

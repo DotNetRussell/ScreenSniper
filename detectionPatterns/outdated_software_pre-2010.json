@@ -1,6 +1,15 @@
 {
   "name": "Outdated Software (Pre-2010)",
-  "conditions": ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009"],
+  "conditions": {
+    "type": "AND",
+    "values": [
+      {
+        "type": "OR",
+        "values": ["2000", "2001", "2002", "2003", "2004", "2005", "2006", "2007", "2008", "2009"]
+      },
+      "version"
+    ]
+  },
   "meta_tags": [
     "Security: Potentially Outdated Software",
     "SecurityRisk: Unpatched Vulnerabilities"

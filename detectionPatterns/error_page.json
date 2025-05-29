@@ -1,6 +1,15 @@
 {
   "name": "Error Page",
-  "conditions": ["error", "exception", "fatal"],
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "error",
+      {
+        "type": "OR",
+        "values": ["exception", "fatal"]
+      }
+    ]
+  },
   "meta_tags": [
     "PageType: Error Page"
   ]

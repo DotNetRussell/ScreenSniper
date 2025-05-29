@@ -1,6 +1,18 @@
 {
   "name": "Verification Page",
-  "conditions": ["select all squares", "security challenge", "verification", "captcha", "puzzle", "in the picture", "type the word", "not a robot", "not robot", "select images", "recaptcha", "in there are noe, click skip"],
+  "conditions": {
+    "type": "AND",
+    "values": [
+      {
+        "type": "OR",
+        "values": ["captcha", "recaptcha", "not a robot", "not robot"]
+      },
+      {
+        "type": "OR",
+        "values": ["select all squares", "security challenge", "verification", "puzzle", "in the picture", "type the word", "select images", "in there are noe, click skip"]
+      }
+    ]
+  },
   "meta_tags": [
     "PageType: Captcha Page",
     "Security: Verification page"

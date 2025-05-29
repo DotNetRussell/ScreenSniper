@@ -1,6 +1,9 @@
 {
   "name": "ASP.NET Detection",
-  "conditions": [".asp", ".aspx"],
+  "conditions": {
+    "type": "OR",
+    "values": [".asp", ".aspx"]
+  },
   "meta_tags": [
     "Technology: ASP.NET"
   ]

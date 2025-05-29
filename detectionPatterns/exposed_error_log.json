@@ -1,0 +1,20 @@
+{
+  "name": "Exposed Error Log",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "error",
+      {
+        "type": "OR",
+        "values": ["log", "error_log"]
+      }
+    ]
+  },
+  "meta_tags": [
+    "Security: Exposed Error Log",
+    "SecurityRisk: Sensitive Information Disclosure"
+  ],
+  "additional_checks": {
+    "sensitive_extensions": [".log"]
+  }
+}

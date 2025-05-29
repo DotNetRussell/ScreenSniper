@@ -1,0 +1,17 @@
+{
+  "name": "Internal Server Error",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      {
+        "type": "OR",
+        "values": ["internal server error", "server error"]
+      },
+      "500"
+    ]
+  },
+  "meta_tags": [
+    "PageType: Error Page",
+    "SecurityRisk: Potential Server Misconfiguration"
+  ]
+}

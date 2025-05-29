@@ -1,0 +1,19 @@
+{
+  "name": "Contact Form",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      {
+        "type": "OR",
+        "values": ["contact", "get in touch"]
+      },
+      {
+        "type": "OR",
+        "values": ["email", "message"]
+      }
+    ]
+  },
+  "meta_tags": [
+    "PageType: Contact Form"
+  ]
+}

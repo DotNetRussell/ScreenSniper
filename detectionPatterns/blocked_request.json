@@ -1,6 +1,12 @@
 {
   "name": "Blocked Request",
-  "conditions": ["The request is blocked", "request blocked"],
+  "conditions": {
+    "type": "OR",
+    "values": [
+      "The request is blocked",
+      "request blocked"
+    ]
+  },
   "meta_tags": [
     "PageType: Possible WAF Blocked Request"
   ]

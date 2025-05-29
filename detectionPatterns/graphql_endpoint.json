@@ -1,0 +1,17 @@
+{
+  "name": "GraphQL Endpoint",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "graphql",
+      {
+        "type": "OR",
+        "values": ["/graphql", "query"]
+      }
+    ]
+  },
+  "meta_tags": [
+    "Security: GraphQL Endpoint Exposed",
+    "SecurityRisk: Check for Introspection Queries"
+  ]
+}

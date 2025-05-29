@@ -1,6 +1,12 @@
 {
   "name": "IIS Detection",
-  "conditions": ["iis", "microsoft"],
+  "conditions": {
+    "type": "AND",
+    "values": [
+      "iis",
+      "microsoft"
+    ]
+  },
   "meta_tags": [
     "Technology: IIS"
   ]

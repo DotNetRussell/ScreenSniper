@@ -1,17 +1,17 @@
 {
-  "name": "Debug Information Exposure",
+  "name": "PHPInfo Exposure",
   "conditions": {
     "type": "AND",
     "values": [
-      "debug",
+      "phpinfo",
       {
         "type": "OR",
-        "values": ["debugging", "trace"]
+        "values": ["php version", "configuration"]
       }
     ]
   },
   "meta_tags": [
-    "Security: Debug Information Exposed",
+    "Security: PHPInfo Exposed",
     "SecurityRisk: Sensitive Information Disclosure"
   ]
 }
