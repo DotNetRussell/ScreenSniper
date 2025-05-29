@@ -137,11 +137,6 @@ def generate_meta_tags(text, templates):
     # Handle OCR failure
     if text.startswith("OCR Error"):
          return []
-#        return [
-#            "Error: Unable to generate meta tags due to OCR failure",
-#            "Suggestion: Possible Text Detection Failure - Review Screenshot Manually",
-#            "Debug: Check debug_*.png files for preprocessing steps (run with --verbose)"
-#        ]
 
     # Check each template
     for template in templates:
@@ -164,6 +159,9 @@ def generate_meta_tags(text, templates):
                     if ext.lower() in text_lower:
                         meta_tags.append(f"Security: Exposed File Type ({ext})")
                         meta_tags.append("SecurityRisk: Potential Sensitive File Exposure")
+
+            if "IgnoreAI" in template:
+                meta_tags.append("IgnoreAI: true")
 
     # If no templates matched, add a default "Unknown" page type
     if not any(tag.startswith("PageType:") for tag in meta_tags):
@@ -284,7 +282,7 @@ def generate_report(results, output_format, verbose=False, include_extracted=Fal
             tag_elem.text = tag
     
     # Finalize report text based on format
-    if output_format == "normal":
+    if output_format == "norl":
         report_text = "\n".join(report_content)
     elif output_format == "json":
         report_text = json.dumps(report_dict, indent=4)
@@ -423,7 +421,7 @@ def analyze_screenshot(image_path, templates, verbose=False, ai=False, include_e
             meta_tags = generate_meta_tags(extracted_text, templates)
 
         # Run text classifier if --ai flag is set
-        if ai and not extracted_text.startswith("OCR Error"):
+        if ai and not extracted_text.startswith("OCR Error") and "IgnoreAI: true" not in meta_tags:
             classifier_results = run_text_classifier(extracted_text, meta_tags, verbose)
             if isinstance(classifier_results, list):
                 # If classifier returns meta tags, append them
