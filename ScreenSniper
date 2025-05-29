@@ -130,6 +130,31 @@ def load_templates(template_dir="detectionPatterns"):
         sys.exit(1)
     return templates
 
+# Helper function to evaluate conditions recursively
+def evaluate_conditions(conditions, text_lower):
+    # Handle backward-compatible array of keywords (implicit OR)
+    if isinstance(conditions, list):
+        return any(keyword.lower() in text_lower for keyword in conditions)
+    
+    # Handle structured conditions
+    if not isinstance(conditions, dict) or "type" not in conditions or "values" not in conditions:
+        return False
+    
+    condition_type = conditions["type"].upper()
+    values = conditions["values"]
+
+    if condition_type == "AND":
+        return all(
+            evaluate_conditions(value, text_lower) if isinstance(value, (dict, list)) else value.lower() in text_lower
+            for value in values
+        )
+    elif condition_type == "OR":
+        return any(
+            evaluate_conditions(value, text_lower) if isinstance(value, (dict, list)) else value.lower() in text_lower
+            for value in values
+        )
+    return False
+
 # Function to generate meta tags based on extracted text and templates
 def generate_meta_tags(text, templates):
     meta_tags = []
@@ -141,8 +166,8 @@ def generate_meta_tags(text, templates):
 
     # Check each template
     for template in templates:
-        # Check positive conditions: at least one must match
-        conditions_met = any(keyword.lower() in text_lower for keyword in template["conditions"])
+        # Evaluate conditions
+        conditions_met = evaluate_conditions(template.get("conditions", []), text_lower)
 
         # Check negative conditions: none must match
         negative_conditions_met = False

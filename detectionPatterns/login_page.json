@@ -1,7 +1,22 @@
 {
   "name": "Login Page",
-  "conditions": ["login", "sign in", "username", "password", "logging in", "log in", "logging.in", "sign in", "signin", "logging", "email", "phone"],
+  "conditions": {
+    "type": "AND",
+    "values": [
+      {
+        "type": "OR",
+        "values": ["login", "sign in", "log in", "signin"]
+      },
+      {
+        "type": "OR",
+        "values": ["username", "email", "phone"]
+      },
+      "password"
+    ]
+  },
+  "negative_conditions": ["logout", "sign out"],
   "meta_tags": [
     "PageType: Login Page"
-  ]
+  ],
+  "IgnoreAI": true
 }
