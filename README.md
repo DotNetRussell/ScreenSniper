@@ -50,7 +50,6 @@ docker run --rm -it -v $(pwd):/app screensniper python3 AI_Page_Classifier/text_
 
 # ScreenSniper
 
-![ScreenSniper Logo](https://i.imgur.com/yfJZLWm.png)
 
 ScreenSniper is a Python tool designed to analyze webpage screenshots by extracting text via OCR (Optical Character Recognition) and categorizing content using detection patterns and/or an AI text classifier. It generates meta tags to provide insights into technologies, security issues, and page types, making it ideal for web reconnaissance, security assessments, and bug bounty hunting.
 
@@ -238,7 +237,7 @@ docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --directory
 
 #### JSON Output with AI and Extracted Text (Single Image)
 ```bash
-docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --image_path testImages/starbucks.com.png --output-format=json --ai --include-extracted
+docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --image_path testImages/test.com.png --output-format=json --ai --include-extracted
 ```
 ```json
 [
@@ -247,7 +246,7 @@ docker run --rm -it -v $(pwd):/app screensniper python3 ScreenSniper --image_pat
             "Interesting Page: True",
             "ClassifierProbability: 0.6623",
             "ExtractedTextBase64: SUlTIGxvZ2lu",
-            "File Path: testImages/starbucks.com.png"
+            "File Path: testImages/test.com.png"
         ]
     }
 ]

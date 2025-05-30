@@ -1,0 +1,187 @@
+[
+    {
+        "image_path": "testImages/fileupload-1.png",
+        "meta_tags": [
+            "PageType: Unknown",
+            "Interesting Page: True",
+            "ClassifierProbability: 1.0000",
+            "File Path: testImages/fileupload-1.png"
+        ]
+    },
+    {
+        "image_path": "testImages/verification-3.png",
+        "meta_tags": [
+            "PageType: Unknown",
+            "Interesting Page: True",
+            "ClassifierProbability: 1.0000",
+            "File Path: testImages/verification-3.png"
+        ]
+    },
+    {
+        "image_path": "testImages/wp-login.png",
+        "meta_tags": [
+            "PageType: Unknown",
+            "Interesting Page: True",
+            "ClassifierProbability: 0.9841",
+            "File Path: testImages/wp-login.png"
+        ]
+    },
+    {
+        "image_path": "testImages/drupal-default-1.png",
+        "meta_tags": [
+            "PageType: Unknown",
+            "Interesting Page: False",
+            "ClassifierProbability: 0.0000",
+            "File Path: testImages/drupal-default-1.png"
+        ]
+    },
+    {
+        "image_path": "testImages/internal-server-error.png",
+        "meta_tags": [
+            "Security: Exposed Error Log",
+            "SecurityRisk: Sensitive Information Disclosure",
+            "PageType: Unknown",
+            "Interesting Page: True",
+            "ClassifierProbability: 1.0000",
+            "File Path: testImages/internal-server-error.png"
+        ]
+    },
+    {
+        "image_path": "testImages/default.png",
+        "meta_tags": [
+            "Security: Default Apache Page",
+            "SecurityRisk: Default Configuration",
+            "PageType: Unknown",
+            "Interesting Page: True",
+            "ClassifierProbability: 1.0000",
+            "File Path: testImages/default.png"
+        ]
+    },
+    {
+        "image_path": "testImages/aspx-stacktrace.png",
+        "meta_tags": [
+            "Technology: ASP.NET",
+            "PageType: Error Page",
+            "Security: Stack Trace Exposed",
+            "SecurityRisk: Sensitive Information Disclosure",
+            "Security: Unhandled Exception",
+            "SecurityRisk: Potential Exploit",
+            "Interesting Page: True",
+            "ClassifierProbability: 1.0000",
+            "File Path: testImages/aspx-stacktrace.png"
+        ]
+    },
+    {
+        "image_path": "testImages/fileupload-2.png",
+        "meta_tags": [
+            "PageType: Unknown",
+            "Interesting Page: True",
+            "ClassifierProbability: 0.9999",
+            "File Path: testImages/fileupload-2.png"
+        ]
+    },
+    {
+        "image_path": "testImages/default-nginx.png",
+        "meta_tags": [
+            "Security: Default Nginx Page",
+            "SecurityRisk: Default Configuration",
+            "PageType: Unknown",
+            "Interesting Page: True",
+            "ClassifierProbability: 1.0000",
+            "File Path: testImages/default-nginx.png"
+        ]
+    },
+    {
+        "image_path": "testImages/fileupload-4.png",
+        "meta_tags": [
+            "File Path: testImages/fileupload-4.png"
+        ]
+    },
+    {
+        "image_path": "testImages/random-wp-page.png",
+        "meta_tags": [
+            "PageType: Unknown",
+            "Interesting Page: True",
+            "ClassifierProbability: 1.0000",
+            "File Path: testImages/random-wp-page.png"
+        ]
+    },
+    {
+        "image_path": "testImages/listing.png",
+        "meta_tags": [
+            "PageType: Directory Listing",
+            "Security: Directory Listing Exposed",
+            "SecurityRisk: Sensitive Information Exposure",
+            "Security: Exposed Log Files",
+            "SecurityRisk: Sensitive Information Exposure",
+            "Interesting Page: True",
+            "ClassifierProbability: 1.0000",
+            "File Path: testImages/listing.png"
+        ]
+    },
+    {
+        "image_path": "testImages/preprocessed.png",
+        "meta_tags": [
+            "Security: Exposed Error Log",
+            "SecurityRisk: Sensitive Information Disclosure",
+            "PageType: Unknown",
+            "Interesting Page: True",
+            "ClassifierProbability: 1.0000",
+            "File Path: testImages/preprocessed.png"
+        ]
+    },
+    {
+        "image_path": "testImages/robots-txt.png",
+        "meta_tags": [
+            "PageType: Unknown",
+            "Interesting Page: True",
+            "ClassifierProbability: 0.9033",
+            "File Path: testImages/robots-txt.png"
+        ]
+    },
+    {
+        "image_path": "testImages/fileupload-3.png",
+        "meta_tags": [
+            "PageType: Unknown",
+            "Interesting Page: True",
+            "ClassifierProbability: 0.8785",
+            "File Path: testImages/fileupload-3.png"
+        ]
+    },
+    {
+        "image_path": "testImages/login-cms.png",
+        "meta_tags": [
+            "PageType: Unknown",
+            "Interesting Page: True",
+            "ClassifierProbability: 0.9996",
+            "File Path: testImages/login-cms.png"
+        ]
+    },
+    {
+        "image_path": "testImages/php-default-page.png",
+        "meta_tags": [
+            "PageType: Unknown",
+            "Interesting Page: False",
+            "ClassifierProbability: 0.0000",
+            "File Path: testImages/php-default-page.png"
+        ]
+    },
+    {
+        "image_path": "testImages/verification-2.png",
+        "meta_tags": [
+            "PageType: Unknown",
+            "Interesting Page: False",
+            "ClassifierProbability: 0.0182",
+            "File Path: testImages/verification-2.png"
+        ]
+    },
+    {
+        "image_path": "testImages/verification-1.jpg",
+        "meta_tags": [
+            "PageType: Unknown",
+            "Interesting Page: True",
+            "ClassifierProbability: 1.0000",
+            "File Path: testImages/verification-1.jpg"
+        ]
+    }
+]

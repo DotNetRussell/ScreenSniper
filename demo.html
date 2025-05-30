@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Analysis Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .chart-container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .chart-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .chart-small {
+            flex: 1 1 400px;
+            max-width: 400px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        img {
+            max-width: 100px;
+            height: auto;
+        }
+        input[type="file"] {
+            margin: 20px 0;
+            display: block;
+        }
+        #wordCloud {
+            width: 100%;
+            height: 400px;
+        }
+        @media (max-width: 900px) {
+            .chart-small {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Image Analysis Dashboard</h1>
+        <input type="file" id="jsonFile" accept=".json" />
+        
+        <div class="chart-container">
+            <h2>Word Heat Map of Meta Tags</h2>
+            <div id="wordCloud"></div>
+        </div>
+        
+        <div class="chart-grid">
+            <div class="chart-container chart-small">
+                <h2>Interesting Pages Distribution</h2>
+                <canvas id="interestingChart"></canvas>
+            </div>
+            
+            <div class="chart-container chart-small">
+                <h2>Classifier Probability Distribution</h2>
+                <canvas id="probabilityChart"></canvas>
+            </div>
+            
+            <div class="chart-container chart-small">
+                <h2>Meta Tags Frequency</h2>
+                <canvas id="tagsChart"></canvas>
+            </div>
+        </div>
+        
+        <div class="chart-container">
+            <h2>Data Table</h2>
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>Image</__[xaiArtifact artifact_id="c345540e-3855-4bb9-b1f5-f921a5089c89" artifact_version_id="7e1a5c9b-2f3d-4e9f-a1b2-c5d6e8f0a9b1" title="demo.html" contentType="text/html"]>th>
+                        <th>Path</th>
+                        <th>Meta Tags</th>
+                        <th>Interesting</th>
+                        <th>Probability</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('jsonFile').addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const data = JSON.parse(e.target.result);
+
+                    // Process data for charts and table
+                    const interestingCount = { true: 0, false: 0 };
+                    const probabilities = [];
+                    const tagCounts = {};
+                    const wordCounts = {};
+
+                    data.forEach(item => {
+                        // Count interesting pages
+                        const interesting = item.meta_tags.find(tag => tag.startsWith('Interesting Page:'));
+                        if (interesting) {
+                            const value = interesting.split(': ')[1];
+                            interestingCount[value] = (interestingCount[value] || 0) + 1;
+                        }
+
+                        // Collect probabilities
+                        const prob = item.meta_tags.find(tag => tag.startsWith('ClassifierProbability:'));
+                        if (prob) {
+                            probabilities.push(parseFloat(prob.split(': ')[1]));
+                        }
+
+                        // Count meta tags and words
+                        item.meta_tags.forEach(tag => {
+                            const key = tag.split(': ')[0];
+                            tagCounts[key] = (tagCounts[key] || 0) + 1;
+                            if (key === 'File Path') return;
+                            const words = tag.split(': ')[1]?.split(' ') || [];
+                            words.forEach(word => {
+                                if (word && !/^(true|false|[\d.]+)$/i.test(word)) {
+                                    wordCounts[word] = (wordCounts[word] || 0) + 1;
+                                }
+                            });
+                        });
+
+                        // Populate table
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td><img src="${item.image_path}" alt="Image"></td>
+                            <td>${item.image_path}</td>
+                            <td>${item.meta_tags.join(', ')}</td>
+                            <td>${interesting ? interesting.split(': ')[1] : 'N/A'}</td>
+                            <td>${prob ? prob.split(': ')[1] : 'N/A'}</td>
+                        `;
+                        document.getElementById('tableBody').appendChild(row);
+                    });
+
+                    // Word Cloud (Heat Map)
+                    const words = Object.keys(wordCounts).map(key => ({
+                        text: key,
+                        size: 10 + wordCounts[key] * 20
+                    }));
+                    d3.layout.cloud()
+                        .size([800, 400])
+                        .words(words)
+                        .padding(5)
+                        .rotate(() => Math.random() * 60 - 30)
+                        .font("Arial")
+                        .fontSize(d => d.size)
+                        .on("end", draw)
+                        .start();
+
+                    function draw(words) {
+                        d3.select("#wordCloud")
+                            .append("svg")
+                            .attr("width", 800)
+                            .attr("height", 400)
+                            .append("g")
+                            .attr("transform", "translate(400,200)")
+                            .selectAll("text")
+                            .data(words)
+                            .enter()
+                            .append("text")
+                            .style("font-size", d => d.size + "px")
+                            .style("font-family", "Arial")
+                            .style("fill", (d, i) => d3.schemeCategory10[i % 10])
+                            .attr("text-anchor", "middle")
+                            .attr("transform", d => "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")")
+                            .text(d => d.text);
+                    }
+
+                    // Interesting Pages Pie Chart
+                    const interestingCtx = document.getElementById('interestingChart').getContext('2d');
+                    new Chart(interestingCtx, {
+                        type: 'pie',
+                        data: {
+                            labels: ['Interesting', 'Not Interesting'],
+                            datasets: [{
+                                data: [interestingCount['True'], interestingCount['False']],
+                                backgroundColor: ['#4CAF50', '#FF6384'],
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            plugins: {
+                                legend: { position: 'top' },
+                                title: { display: true, text: 'Interesting Pages Distribution' }
+                            }
+                        }
+                    });
+
+                    // Probability Histogram
+                    const probabilityCtx = document.getElementById('probabilityChart').getContext('2d');
+                    new Chart(probabilityCtx, {
+                        type: 'bar',
+                        data: {
+                            labels: ['0-0.2', '0.2-0.4', '0.4-0.6', '0.6-0.8', '0.8-1.0'],
+                            datasets: [{
+                                label: 'Count',
+                                data: [
+                                    probabilities.filter(p => p < 0.2).length,
+                                    probabilities.filter(p => p >= 0.2 && p < 0.4).length,
+                                    probabilities.filter(p => p >= 0.4 && p < 0.6).length,
+                                    probabilities.filter(p => p >= 0.6 && p < 0.8).length,
+                                    probabilities.filter(p => p >= 0.8).length
+                                ],
+                                backgroundColor: '#36A2EB'
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            scales: {
+                                y: { beginAtZero: true, title: { display: true, text: 'Count' } },
+                                x: { title: { display: true, text: 'Probability Range' } }
+                            }
+                        }
+                    });
+
+                    // Meta Tags Bar Chart
+                    const tagsCtx = document.getElementById('tagsChart').getContext('2d');
+                    new Chart(tagsCtx, {
+                        type: 'bar',
+                        data: {
+                            labels: Object.keys(tagCounts),
+                            datasets: [{
+                                label: 'Frequency',
+                                data: Object.values(tagCounts),
+                                backgroundColor: '#FFCE56'
+                            }]
+                        },
+                        options: {
+                            responsive: true,
+                            scales: {
+                                y: { beginAtZero: true, title: { display: true, text: 'Count' } },
+                                x: { title: { display: true, text: 'Meta Tag' } }
+                            }
+                        }
+                    });
+                } catch (error) {
+                    console.error('Error parsing data.json:', error);
+                }
+            };
+            reader.readAsText(file);
+        });
+    </script>
+</body>
+</html>
