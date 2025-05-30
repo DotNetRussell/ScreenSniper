@@ -1,12 +1,12 @@
 {
   "name": "Default Server Page",
   "conditions": {
-    "type": "AND",
+    "type": "OR",
     "values": [
       "default",
       {
         "type": "OR",
-        "values": ["welcome to", "it works"]
+        "values": ["welcome to", "it works","nothing here yet"]
       }
     ]
   },

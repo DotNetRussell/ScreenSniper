@@ -11,7 +11,7 @@
     ]
   },
   "meta_tags": [
-    "Security: Exposed Error Log",
+    "PageType: Exposed Error",
     "SecurityRisk: Sensitive Information Disclosure"
   ],
   "additional_checks": {

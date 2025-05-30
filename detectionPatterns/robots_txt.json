@@ -1,7 +1,7 @@
 {
   "name": "Robots.txt page",
   "conditions": {
-    "type": "AND",
+    "type": "OR",
     "values": [
       {
         "type": "OR",
@@ -10,6 +10,7 @@
       "site-map"
     ]
   },
+  "negative_conditions" : ["allowed"],
   "meta_tags": [
     "PageType: Robots.txt page",
     "Information: robots.txt page with entries"

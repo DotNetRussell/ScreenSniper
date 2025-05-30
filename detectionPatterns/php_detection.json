@@ -4,7 +4,7 @@
     "type": "OR",
     "values": [
       {
-        "type": "AND",
+        "type": "OR",
         "values": [".php", "php"]
       },
       "php fatal",

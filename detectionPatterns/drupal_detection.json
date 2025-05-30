@@ -3,8 +3,7 @@
   "conditions": {
     "type": "AND",
     "values": [
-      "drupal",
-      "sites/default"
+      "drupal"
     ]
   },
   "meta_tags": [

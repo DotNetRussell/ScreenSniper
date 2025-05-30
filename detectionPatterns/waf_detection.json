@@ -1,0 +1,9 @@
+{
+  "name": "WAF Detected",
+  "conditions": { "type": "AND", "values" : ["incident id"] },
+  "IgnoreAI" : true,
+  "meta_tags": [
+    "PageType: WAF Response",
+    "Security: WAF Detected"
+  ]
+}

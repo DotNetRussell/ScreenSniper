@@ -51,7 +51,7 @@ def preprocess_image(image_path, verbose=False):
         print("Converted to grayscale and saved as debug_grayscale.png")
     
     # Apply CLAHE (Contrast Limited Adaptive Histogram Equalization)
-    clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+    clahe = cv2.createCLAHE(clipLimit=0.5, tileGridSize=(15, 15))
     gray = clahe.apply(gray)
     if verbose:
         cv2.imwrite(".debug_clahe.png", gray)

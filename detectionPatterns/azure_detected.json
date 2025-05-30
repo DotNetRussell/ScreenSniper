@@ -1,0 +1,13 @@
+{
+    "name": "Azure Detection",
+    "conditions": {
+      "type": "OR",
+      "values": [
+        "azure"
+      ]
+    },
+    "meta_tags": [
+      "Technology: Azure"
+    ]
+  }
+  

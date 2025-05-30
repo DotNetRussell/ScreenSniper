@@ -1,0 +1,15 @@
+{
+  "name": "VM Airwatch",
+  "conditions": {
+    "type": "AND",
+    "values": [
+      {
+        "type": "OR",
+        "values": ["airwatch","workspace ONE", "vmware"]
+      }
+    ]
+  },
+  "meta_tags": [
+    "Technology: Airwatch"
+  ]
+}

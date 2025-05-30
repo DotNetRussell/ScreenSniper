@@ -1,7 +1,7 @@
 {
   "name": "File Upload Form",
   "conditions": {
-    "type": "AND",
+    "type": "OR",
     "values": [
       "upload",
       {
@@ -11,7 +11,7 @@
     ]
   },
   "meta_tags": [
-    "PageType: File Upload Form",
+    "PageType: File Upload",
     "SecurityRisk: Potential File Upload Vulnerability"
   ]
 }

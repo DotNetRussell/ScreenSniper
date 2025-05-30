@@ -1,17 +1,14 @@
 {
-  "name": "PHPInfo Exposure",
+  "name": "PHP Info Exposure",
   "conditions": {
-    "type": "AND",
+    "type": "OR",
     "values": [
       "phpinfo",
-      {
-        "type": "OR",
-        "values": ["php version", "configuration"]
-      }
-    ]
+      "php version"
+    ]  
   },
   "meta_tags": [
-    "Security: PHPInfo Exposed",
+    "Security: PHP Info Exposed",
     "SecurityRisk: Sensitive Information Disclosure"
   ]
 }

@@ -1,13 +1,9 @@
 {
   "name": "Nginx Detection",
   "conditions": {
-    "type": "AND",
+    "type": "OR",
     "values": [
-      "nginx",
-      {
-        "type": "OR",
-        "values": ["server", "http"]
-      }
+      "nginx"
     ]
   },
   "meta_tags": [

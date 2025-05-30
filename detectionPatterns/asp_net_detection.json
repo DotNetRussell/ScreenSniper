@@ -4,11 +4,11 @@
     "type": "OR",
     "values": [
       {
-        "type": "AND",
+        "type": "OR",
         "values": [".asp", "System.Web"]
       },
       {
-        "type": "AND",
+        "type": "OR",
         "values": [".aspx", "System.Web"]
       },
       {

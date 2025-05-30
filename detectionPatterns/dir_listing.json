@@ -1,7 +1,7 @@
 {
   "name": "Directory Listing",
   "conditions": {
-    "type": "AND",
+    "type": "OR",
     "values": [
       "index of",
       "parent directory"

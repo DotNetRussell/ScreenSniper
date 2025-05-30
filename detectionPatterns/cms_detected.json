@@ -1,0 +1,12 @@
+{
+    "name": "CMS Detection",
+    "conditions": {
+      "type": "AND",
+      "values": [
+        "cms"        
+      ]
+    },
+    "meta_tags": [
+      "Technology: CMS Detected"
+    ]
+  }

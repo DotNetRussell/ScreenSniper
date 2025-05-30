@@ -1,0 +1,13 @@
+{
+    "name": "Java Detection",
+    "conditions": {
+      "type": "OR",
+      "values": [
+        "java"
+      ]
+    },
+    "meta_tags": [
+      "Technology: Java"
+    ]
+  }
+  

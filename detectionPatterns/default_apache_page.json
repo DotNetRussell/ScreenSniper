@@ -8,7 +8,7 @@
     ]
   },
   "meta_tags": [
-    "Security: Default Apache Page",
+    "PageType: Default Apache Page",
     "SecurityRisk: Default Configuration"
   ]
 }

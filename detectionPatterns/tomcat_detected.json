@@ -1,0 +1,13 @@
+{
+    "name": "Tomcat Detection",
+    "conditions": {
+      "type": "OR",
+      "values": [
+        "tomcat"
+      ]
+    },
+    "meta_tags": [
+      "Technology: Tomcat"
+    ]
+  }
+  
