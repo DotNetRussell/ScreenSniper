@@ -6,3 +6,4 @@ torch==2.4.1
 selenium==4.11.2
 webdriver-manager==4.0.0
 playwright
+transformers
