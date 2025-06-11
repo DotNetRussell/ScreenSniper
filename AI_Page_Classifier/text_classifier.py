@@ -48,7 +48,7 @@ class TextDataset(Dataset):
 class TextClassifier:
     def __init__(self, use_gpu=True, automation=False, retrain=True, model_exists=True, verbose=False):
         self.model_file_path = "./AI_Page_Classifier/model.pt" if os.path.exists("./AI_Page_Classifier/model.pt") else "./model.pt"
-        self.training_data_file_path = "./AI_Page_Classifier/training_data_v2.json" if os.path.exists("./AI_Page_Classifier/training_data_v2.json") else "./training_data_v2.json"
+        self.training_data_file_path = "./AI_Page_Classifier/training_data_v3.json" if os.path.exists("./AI_Page_Classifier/training_data_v3.json") else "./training_data_v3.json"
         self.verbose = verbose
         
         self.device = torch.device("cuda" if use_gpu and torch.cuda.is_available() else "cpu")
